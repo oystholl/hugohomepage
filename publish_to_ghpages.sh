@@ -1,9 +1,5 @@
 
-#!/bin/sh
-
-DIR=$(dirname "$0")
-
-cd $DIR/..
+#!/bin/bash
 
 if [[ $(git status -s) ]]
 then
@@ -27,4 +23,4 @@ echo "Generating site"
 hugo
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && git push
+cd public && git add --all && git commit -m "Publishing to gh-pages" && git push
