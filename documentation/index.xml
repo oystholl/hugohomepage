@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documentations on My New Hugo Site</title>
-    <link>oystholl.github.io/hugohomepage/documentation/</link>
+    <link>https://oystholl.github.io/hugohomepage/documentation/</link>
     <description>Recent content in Documentations on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Apr 2019 14:15:54 +0200</lastBuildDate>
     
-	<atom:link href="oystholl.github.io/hugohomepage/documentation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://oystholl.github.io/hugohomepage/documentation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Intro</title>
-      <link>oystholl.github.io/hugohomepage/documentation/intro/</link>
+      <link>https://oystholl.github.io/hugohomepage/documentation/intro/</link>
       <pubDate>Fri, 19 Apr 2019 14:15:54 +0200</pubDate>
       
-      <guid>oystholl.github.io/hugohomepage/documentation/intro/</guid>
+      <guid>https://oystholl.github.io/hugohomepage/documentation/intro/</guid>
       <description>Introduction The start It all began in&amp;hellip;</description>
     </item>
     
