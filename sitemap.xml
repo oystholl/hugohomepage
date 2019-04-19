@@ -3,12 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://oystholl.github.io/hugohomepage/</loc>
-    <lastmod>2019-04-19T14:15:54+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://oystholl.github.io/hugohomepage/documentation/</loc>
     <lastmod>2019-04-19T14:15:54+02:00</lastmod>
     <priority>0</priority>
@@ -16,6 +10,11 @@
   
   <url>
     <loc>https://oystholl.github.io/hugohomepage/documentation/intro/</loc>
+    <lastmod>2019-04-19T14:15:54+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/</loc>
     <lastmod>2019-04-19T14:15:54+02:00</lastmod>
   </url>
   
