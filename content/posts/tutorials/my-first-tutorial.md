@@ -1,5 +1,5 @@
 ---
-title: "My First Tutorial
+title: "My First Tutorial"
 published: true
 ---
 
