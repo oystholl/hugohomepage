@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/documentation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/documentation/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/posts/my-first-post/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/posts/tutorials/my-first-tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/posts/tutorials/my-second-tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/</loc>
+  </url>
+  
+</urlset>
