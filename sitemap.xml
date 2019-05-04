@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://oystholl.github.io/hugohomepage/search/</loc>
+    <lastmod>2018-03-27T16:16:11-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/</loc>
+    <lastmod>2018-03-27T16:16:11-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://oystholl.github.io/hugohomepage/categories/</loc>
     <priority>0</priority>
   </url>
@@ -29,7 +39,6 @@
   
   <url>
     <loc>https://oystholl.github.io/hugohomepage/posts/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -39,10 +48,6 @@
   
   <url>
     <loc>https://oystholl.github.io/hugohomepage/posts/tutorials/</loc>
-  </url>
-  
-  <url>
-    <loc>https://oystholl.github.io/hugohomepage/</loc>
   </url>
   
 </urlset>
