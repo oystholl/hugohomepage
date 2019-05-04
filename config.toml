@@ -1,4 +1,6 @@
 baseURL = "https://oystholl.github.io/hugohomepage/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "gohugoioTheme"
+theme = "docdock"
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
