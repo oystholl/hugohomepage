@@ -1,6 +1,7 @@
 ---
-title: "Intro"
+title: "Documentation"
 published: true
+menu: "main"
 ---
 
 # Introduction

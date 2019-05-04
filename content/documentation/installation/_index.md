@@ -1,5 +1,5 @@
 ---
-title: "Intro"
+title: "Installation"
 published: true
 ---
 
