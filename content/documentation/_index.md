@@ -1,7 +1,7 @@
 ---
-title: "Documentation"
-published: true
-menu: "main"
+title = "Documentation"
+published = true
+menu = "main"
 ---
 
 # Introduction

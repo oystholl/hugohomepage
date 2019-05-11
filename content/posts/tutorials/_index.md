@@ -1,6 +1,6 @@
 ---
-title: "Tutorials"
-published: true
+title = "Tutorials"
+published = true
 ---
 
 # Tutorials

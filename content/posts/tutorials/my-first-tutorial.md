@@ -1,6 +1,6 @@
 ---
-title: "My First Tutorial"
-published: true
+title = "My First Tutorial"
+published = true
 ---
 
 # Hello World

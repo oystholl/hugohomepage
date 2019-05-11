@@ -1,6 +1,6 @@
 ---
-title: "Installation"
-published: true
+title = "Installation"
+published = true
 ---
 
 # Introduction
