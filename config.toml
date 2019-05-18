@@ -1,6 +1,6 @@
 baseURL = "https://oystholl.github.io/hugohomepage/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "docdock"
+theme = "ananke"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
