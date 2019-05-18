@@ -1,0 +1,78 @@
+[
+{
+	"uri": "https://oystholl.github.io/hugohomepage/search/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "\u0026lt;!DOCTYPE html\u0026gt; \n Hugo + Lunrjs = \u0026lt;3 search  \n Search: Results:    var lunrIndex, $results, pagesIndex;\n// Initialize lunrjs using our generated index file function initLunr() { // First retrieve the index file $.getJSON(\u0026quot;js/lunr/PagesIndex.json\u0026quot;) .done(function(index) { pagesIndex = index; console.log(\u0026quot;index:\u0026quot;, pagesIndex); // Set up lunrjs by declaring the fields we use // Also provide their boost level for the ranking lunrIndex = lunr(function() { this.field(\u0026quot;title\u0026quot;, { boost: 10 }); this.field(\u0026quot;tags\u0026quot;, { boost: 5 }); this.field(\u0026quot;content\u0026quot;); // ref is the result item identifier (I chose the page URL) this.ref(\u0026quot;href\u0026quot;); }); // Feed lunr with each file and let lunr actually index them pagesIndex.forEach(function(page) { lunrIndex.add(page); }); }) .fail(function(jqxhr, textStatus, error) { var err = textStatus + \u0026quot;, \u0026quot; + error; console.error(\u0026quot;Error getting Hugo index flie:\u0026quot;, err); }); } // Nothing crazy here, just hook up a listener on the input field function initUI() { $results = $(\u0026quot;#results\u0026quot;); $(\u0026quot;#search\u0026quot;).keyup(function() { $results.empty(); // Only trigger a search when 2 chars. at least have been provided var query = $(this).val(); if (query.length \u0026lt; 2) { return; } var results = search(query); renderResults(results); }); } /** * Trigger a search in lunr and transform the result * * @param {String} query * @return {Array} results */ function search(query) { // Find the item in our index corresponding to the lunr one to have more info // Lunr result: // {ref: \u0026quot;/section/page1\u0026quot;, score: 0.2725657778206127} // Our result: // {title:\u0026quot;Page1\u0026quot;, href:\u0026quot;/section/page1\u0026quot;, ...} return lunrIndex.search(query).map(function(result) { return pagesIndex.filter(function(page) { return page.href === result.ref; })[0]; }); } /** * Display the 10 first results * * @param {Array} results to display */ function renderResults(results) { if (!results.length) { return; } // Only show the ten first results results.slice(0, 10).forEach(function(result) { var $result = $(\u0026quot;\u0026lt;li\u0026gt;\u0026quot;); $result.append($(\u0026quot;\u0026lt;a\u0026gt;\u0026quot;, { href: result.href, text: \u0026quot;» \u0026quot; + result.title })); $results.append($result); }); } // Let's get started initLunr(); $(document).ready(function() { initUI(); }); \u0026lt;/script\u0026gt;  \n\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/documentation/",
+	"title": "Documentation",
+	"tags": [],
+	"description": "",
+	"content": " Introduction The start It all began in\u0026hellip;\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/documentation/installation/",
+	"title": "Installation",
+	"tags": [],
+	"description": "",
+	"content": " Introduction The start It all began in\u0026hellip;\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/my-first-post/",
+	"title": "My First Post",
+	"tags": [],
+	"description": "",
+	"content": " Hello World "
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/tutorials/my-first-tutorial/",
+	"title": "My First Tutorial",
+	"tags": [],
+	"description": "",
+	"content": " Hello World "
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/tutorials/my-second-tutorial/",
+	"title": "My Second Tutorial",
+	"tags": [],
+	"description": "",
+	"content": " Hello World "
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/",
+	"title": "Posts",
+	"tags": [],
+	"description": "",
+	"content": "Look at my posts\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/tutorials/",
+	"title": "Tutorials",
+	"tags": [],
+	"description": "",
+	"content": " Tutorials "
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/",
+	"title": "Welcome",
+	"tags": [],
+	"description": "",
+	"content": "Welcome to this site for testing deployment of a Hugo website with GitHub Pages\n"
+}]
