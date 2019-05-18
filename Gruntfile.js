@@ -44,19 +44,19 @@ module.exports = function(grunt) {
         };
 
         var processMDFile = function(abspath, filename) {
-            console.log(abspath);
+            //console.log(abspath);
             var content = grunt.file.read(abspath);
             var pageIndex;
             // First separate the Front Matter from the content and parse it
-            console.log(content);
+            //console.log(content);
             content = content.split("---");
-            console.log(content);
+            //console.log(content);
             var frontMatter;
-            console.log(content[1].trim());
+            //console.log(content[1].trim());
             try {
                 frontMatter = toml.parse(content[1].trim());
             } catch (e) {
-                console.log(e.message);
+                //console.log(e.message);
             }
 
             var href = S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(".md").s;
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
                 href = S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(filename).s;
             }
 
-            console.log(frontMatter);
+            //console.log(frontMatter);
 
             // Build Lunr index for this page
             pageIndex = {
