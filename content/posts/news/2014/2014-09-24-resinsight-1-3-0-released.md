@@ -5,7 +5,7 @@ published = true
 
 ## Main features
 
-- Added several [derived results]({{ site.baseurl }}/docs/derivedresults)
+- Added several [derived results](/docs/derivedresults)
 - Added support for mapping a separate result on faults
 - Improved text in Result Info when picking in 3D scene  
 
