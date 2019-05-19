@@ -1,5 +1,47 @@
 [
 {
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2013/",
+	"title": "2013",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2014/",
+	"title": "2014",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2015/",
+	"title": "2015",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2016/",
+	"title": "2016",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2017/",
+	"title": "2017",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/project/about/",
+	"title": "About",
+	"tags": [],
+	"description": "",
+	"content": " Project organization The development of ResInsight was initiated by Statoil Petroleum AS in 2011, and was followed up by a series of projects. ResInsight is still under active development, mainly by Ceetron Solutions AS who is responsible for the software development work.\nResInsight is a part of the Open Porous Media project.\nLicensing The software is licensed under GPL 3+, see Licensing details.\nProject hosting The software is hosted at GitHub, and the development progress can be monitored there. The GitHub issue tracker is heavily used to organize our development process.\nWeb site programming and design The programming and design of this site is based on work by Tom Preston-Werner. This is also the current theme of Jekyll, the publishing engine used to produce content of GitHub Pages.\n"
+},
+{
 	"uri": "https://oystholl.github.io/hugohomepage/categories/",
 	"title": "Categories",
 	"tags": [],
@@ -12,6 +54,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Introduction The start It all began in\u0026hellip;\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/project/download/",
+	"title": "Downloads",
+	"tags": [],
+	"description": "",
+	"content": "Windows : ResInsight-2019.04_oct-4.0.0_souring_win64.zip\nLinux - RHEL6 : ResInsight-2019.04_oct-3.4.3_souring_el6.tar.gz\nFor older versions, release notes and source code, please visit ResInsight on Github\n"
 },
 {
 	"uri": "https://oystholl.github.io/hugohomepage/documentation/installation/",
@@ -42,6 +91,13 @@
 	"content": " Hello World "
 },
 {
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/",
+	"title": "News",
+	"tags": [],
+	"description": "",
+	"content": "Welcome to the news\n"
+},
+{
 	"uri": "https://oystholl.github.io/hugohomepage/posts/",
 	"title": "Posts",
 	"tags": [],
@@ -49,11 +105,123 @@
 	"content": "Look at my posts\n"
 },
 {
+	"uri": "https://oystholl.github.io/hugohomepage/project/",
+	"title": "Project",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/project/releasenotification/",
+	"title": "Release Notification Subscription",
+	"tags": [],
+	"description": "",
+	"content": " LinkedIn Feel free to join ResInsight on LinkedIn\nNewsletter By subscribing to the Release Notification you will get notified when new releases are available. Please use the button below to send a request for subscription mail.\n Subscribe     "
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2013/2013-10-25-resinsight-1-0-0-released/",
+	"title": "ResInsight 1.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " Grid visualization Range and property filters Basic Fault visualization Octave interface  "
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2014/2014-01-23-resinsight-1-1-0-released/",
+	"title": "ResInsight 1.1.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " Batch functionality  statistics computations efficient handlig of multiple cases  Faults Vizualisation of NNCS "
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2014/2014-07-14-resinsight-1-2-0-released/",
+	"title": "ResInsight 1.2.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " Main features  Support for large datasets in Octave Custom display of ternary visualization  Download Release Binaries on GitHub\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2014/2014-09-24-resinsight-1-3-0-released/",
+	"title": "ResInsight 1.3.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " Main features  Added several derived results Added support for mapping a separate result on faults Improved text in Result Info when picking in 3D scene\n  Download Release Binaries on GitHub\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2014/2014-11-07-resinsight-1-3-1-released/",
+	"title": "ResInsight 1.3.1 Released",
+	"tags": [],
+	"description": "",
+	"content": " Main features The main focus for this release has been performance improvements related to file reading and parsing. Significant improvements has been achieved on both Windows and Linux platforms.\nDownload Release Binaries on GitHub\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2015/2015-08-23-resinsight-1-4-0-released/",
+	"title": "ResInsight 1.4.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " We are happy to announce the release of ResInsight v1.4.0 which is a maintenance release.\nIt also serves as an alignment of the codebase with the efforts done to add Geomechanical support to ResInsight.\nDownload Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.4.0 on GitHub\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2015/2015-11-09-resinsight-1-5-0-released/",
+	"title": "ResInsight 1.5.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " We are happy to announce the release of ResInsight v1.5.0.\nDownload Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.5.0 on GitHub\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2016/2016-01-11-resinsight-1-6-0-released/",
+	"title": "ResInsight 1.6.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " We are happy to announce the release of ResInsight v1.6.0.\nDownload Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.6.0 on GitHub\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2016/2016-11-29-resinsight-2016.11-released/",
+	"title": "ResInsight 2016.11 Released",
+	"tags": [],
+	"description": "",
+	"content": " We are happy to announce the release of ResInsight v2016.11.\nDownload Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v2016.11 on GitHub\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2017/2017-05-31-resinsight-2017.05-released/",
+	"title": "ResInsight 2017.05 Released",
+	"tags": [],
+	"description": "",
+	"content": " We are happy to announce the release of ResInsight v2017.05.\nDownload Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2017/2017-06-21-resinsight-2017.05.2-released/",
+	"title": "ResInsight 2017.05.2 Released",
+	"tags": [],
+	"description": "",
+	"content": " We are happy to announce the release of ResInsight v2017.05.2.\nDownload Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/posts/news/2019-04-26-resinsight-2019.04-released/",
+	"title": "ResInsight 2019.04 Released",
+	"tags": [],
+	"description": "",
+	"content": " We are happy to announce the release of ResInsight 2019.04.\nSee Release Notes for an overview.\nDownload Have a look at the GitHub release-page for details or download the new release from the Download page.\n"
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/project/support/",
+	"title": "Support",
+	"tags": [],
+	"description": "",
+	"content": "For inquiries for new features, enhancements or support and maintenance agreements, please contact us for an offer.\nBug reports and general feature requests can be filed directly on GitHub\nPhone : +47 73 60 43 00 e-mail : info@ceetronsolutions.com\nCeetron Solutions AS "
+},
+{
 	"uri": "https://oystholl.github.io/hugohomepage/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://oystholl.github.io/hugohomepage/project/testimonials/",
+	"title": "Testimonials",
+	"tags": [],
+	"description": "",
+	"content": "“I have been using ResInsight now for some time and have stopped using the commercial software as ResInsight is much more responsive and easier to use. It really is an excellent piece of software.”\nDavid Baxendale\nSenior Petroleum Engineering Advisor, RPS Energy\n\u0026ldquo;ResInsight is an excellent tool to visualize simulation results and offers good-looking and illustrative graphs for presentations. I found the integration with Octave especially powerful in my research.\u0026rdquo;\nTor Harald Sandve\nResearcher, International Research Institute of Stavanger (IRIS)\nEquinor ASA has initiated, financed and supervised the development of ResInsight and is using it on a daily basis.  "
 },
 {
 	"uri": "https://oystholl.github.io/hugohomepage/posts/tutorials/",

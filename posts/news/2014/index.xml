@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2014 on My New Hugo Site</title>
+    <link>https://oystholl.github.io/hugohomepage/posts/news/2014/</link>
+    <description>Recent content in 2014 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://oystholl.github.io/hugohomepage/posts/news/2014/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ResInsight 1.1.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-01-23-resinsight-1-1-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-01-23-resinsight-1-1-0-released/</guid>
+      <description> Batch functionality  statistics computations efficient handlig of multiple cases  Faults Vizualisation of NNCS </description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.2.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-07-14-resinsight-1-2-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-07-14-resinsight-1-2-0-released/</guid>
+      <description>Main features  Support for large datasets in Octave Custom display of ternary visualization  Download Release Binaries on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.3.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-09-24-resinsight-1-3-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-09-24-resinsight-1-3-0-released/</guid>
+      <description>Main features  Added several derived results Added support for mapping a separate result on faults Improved text in Result Info when picking in 3D scene
+  Download Release Binaries on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.3.1 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-11-07-resinsight-1-3-1-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-11-07-resinsight-1-3-1-released/</guid>
+      <description>Main features The main focus for this release has been performance improvements related to file reading and parsing. Significant improvements has been achieved on both Windows and Linux platforms.
+Download Release Binaries on GitHub</description>
+    </item>
+    
+  </channel>
+</rss>
