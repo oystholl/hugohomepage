@@ -59,10 +59,10 @@ module.exports = function(grunt) {
                 console.log(e.message);
             }
 
-            var href = S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(".md").s;
+            var href = "/hugohomepage" + S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(".md").s;
             // href for index.md files stops at the folder name
             if (filename === "_index.md") {
-                href = S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(filename).s;
+                href = "/hugohomepage" + S(abspath).chompLeft(CONTENT_PATH_PREFIX).chompRight(filename).s;
             }
 
             console.log(frontMatter);
