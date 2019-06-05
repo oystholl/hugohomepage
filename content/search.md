@@ -1,5 +1,5 @@
 +++
-title = ResInsight &bull; Search
+title = "ResInsight Search"
 published = true
 +++
 
@@ -17,21 +17,33 @@ published = true
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="./js/lunr.js"></script>
+<script src="../js/lunr.min.js"></script>
 <script>
-window.store = {
-{% for p in site.pages %}
-  {% if p.published %}
-    "{{ p.url | slugify }}": {
-      "title": "{{ p.title }}",
-      "content": {{ p.content | strip_html | jsonify }},
-      "html": {{ p.content | jsonify }},
-      "url": "{{ p.url }}",
-    },
-  {% endif %}
-{% endfor %}
-};
+
+/*window.store : [
+    "{{ $.Site.Home.Ref }}": {
+        "title": "{{ .Title }}",
+        "content": "{{ .Plain}}",
+        "html": "{{ .Content }}",
+        "url": "{{ .Ref }}",
+    }
+]*/
+
+window.store = {[
+    {{ .Range $.Site.Allpages }}
+        {
+            {{ .Ref }}: {
+                title: "{{ .Title }}",
+                content: "{{ .Plain}}",
+                html: "{{ .Content }}",
+                url: "{{ .Ref }}",
+        },
+    {{ end }}
+]};
+
+console.log(window.store);
+
 window.baseurl = "{{ site.baseurl }}";
 </script>
-<script src="./js/search.js"></script>
+<script src="../js/search.js"></script>
 
