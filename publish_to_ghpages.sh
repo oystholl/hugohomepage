@@ -7,9 +7,6 @@ then
     exit 1;
 fi
 
-echo "Updating search index"
-grunt lunr-index
-
 echo "Deleting old publication"
 rm -rf public
 mkdir public
