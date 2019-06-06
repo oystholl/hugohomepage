@@ -28,6 +28,10 @@
           <p>{{ .Site.Params.homepage_intro }}</p>
           {{ end }}
         </div>
+        <form action="./" method="GET" id="search-form">
+          <input type="search" name="q" id="search-box" placeholder="Search">
+        </form>
+
         <a class="button button-primary mb-2" href="{{ .Site.Params.homepage_button_link | relURL }}">
           {{ .Site.Params.homepage_button_text }}
         </a>
@@ -49,6 +53,45 @@
   </div>
 </div>
 {{ end }}
+
+<p>{{ .Title }}</p>
+
+{{ if eq .Title "Welcome"}}<p>test</p>{{end}}
+
+{{ if eq .Title "Welcome"}}
+<section>
+  <div class="grid">
+    <div class="whole">
+      <article>
+        <h1>Search for: <span id="search-title"></span></h1>
+        <div id="search-results">
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="clear"></div>
+</section>
+
+{{ end }}
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/lunr.min.js"></script>
+<script>
+  window.store = [];
+  //console.log(window.store);
+  {{ range .Site.AllPages }}
+  window.store[{{ .Dir }}] = {
+    title:    {{ .Title }},
+    content:  {{ .Plain }},
+    html:     {{ .Content }},
+    url:      {{ .Dir }}
+  };
+  //console.log(window.store);
+  {{ end }}
+
+</script>
+<script type="text/javascript" src="./js/search.js"></script>
+
 
 {{ end }}
 

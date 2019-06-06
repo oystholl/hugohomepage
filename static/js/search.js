@@ -74,6 +74,7 @@
     }
 
     function displaySearchResults(term, results, store) {
+        console.log("results: ", results);
         if (results.length === 0) {
             noResults();
         } else {
@@ -81,6 +82,7 @@
             var append = "";
             for (var i = 0; i < results.length; i++) {
                 var item = store[results[i].ref];
+                console.log(store[results[i].ref]);
                 append += getItemText(item, results[i].matchData.metadata);
             }
             searchResults.innerHTML = append;
@@ -117,12 +119,16 @@
     }
 
     var searchTerm = getQueryVariable("q");
+    console.log(searchTerm);
+
     if (searchTerm) {
         document.getElementById("search-title").innerHTML = searchTerm;
 
         var index = createIndex();
 
         var results = index.search(searchTerm);
+        console.log("results: ", results);
+
         displaySearchResults(searchTerm, results, window.store);
     } else {
         noResults();
