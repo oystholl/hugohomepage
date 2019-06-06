@@ -23,7 +23,7 @@
         var subtitle = $(from).prevAll(":header:first");
         if (subtitle.length > 0) {
             return {
-                content: "<p class='search-result-subtitle'><a href='"+window.baseurl+item.url+"#"+subtitle[0].id+"'>"+$(subtitle[0]).text()+"</a></p>",
+                content: "<p class='search-result-subtitle'><a href='"+item.url+"#"+subtitle[0].id+"'>"+$(subtitle[0]).text()+"</a></p>",
                 id: subtitle[0].id
             };
         }
@@ -56,7 +56,7 @@
     }
 
     function getItemText(item, metadata) {
-        var itemText = "<div><h3 class='search-result-title'><a href='"+window.baseurl+item.url+"'>"+item.title+"</a></h3>";
+        var itemText = "<div><h3 class='search-result-title'><a href='"+item.url+"'>"+item.title+"</a></h3>";
         var dummy = document.createElement("div");
         dummy.innerHTML = item.html;
         var paragraphs = $(dummy).find("p, li, div, td");
@@ -82,7 +82,7 @@
             var append = "";
             for (var i = 0; i < results.length; i++) {
                 var item = store[results[i].ref];
-                console.log(store[results[i].ref]);
+                console.log(store[results[i].matchData]);
                 append += getItemText(item, results[i].matchData.metadata);
             }
             searchResults.innerHTML = append;
@@ -119,7 +119,6 @@
     }
 
     var searchTerm = getQueryVariable("q");
-    console.log(searchTerm);
 
     if (searchTerm) {
         document.getElementById("search-title").innerHTML = searchTerm;
@@ -127,7 +126,6 @@
         var index = createIndex();
 
         var results = index.search(searchTerm);
-        console.log("results: ", results);
 
         displaySearchResults(searchTerm, results, window.store);
     } else {
