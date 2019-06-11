@@ -1,3 +1,7 @@
+<form action="{{ .Site.BaseURL }}/search" method="GET" id="search-form">
+  <input type="search" name="q" id="search-box" placeholder="Search">
+</form>
+
 {{- $currentNode := . }}
 {{- $showvisitedlinks := .Site.Params.showVisitedLinks -}}
 

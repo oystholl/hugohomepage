@@ -2,4 +2,4 @@
 published = true
 +++
 
-![logo](images/AppLogo48x48.png)
+![logo]({{ .Site.Home.RelPermalink} }/images/ResInsightCroppedIconPicture.png)
