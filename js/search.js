@@ -1,91 +1,134 @@
-var lunrIndex, pagesIndex;
+(function() {
+    function noResults() {
+        var searchResults = document.getElementById("search-results");
+        searchResults.innerHTML = "<div>No results found</div>";
+    }
 
-function endsWith(str, suffix) {
-    return str.indexOf(suffix, str.length - suffix.length) !== -1;
-}
-
-// Initialize lunrjs using our generated index file
-function initLunr() {
-    if (!endsWith(baseurl,"/")){
-        baseurl = baseurl+'/'
-    };
-
-    // First retrieve the index file
-    $.getJSON(baseurl +"index.json")
-        .done(function(index) {
-            pagesIndex =   index;
-            // Set up lunrjs by declaring the fields we use
-            // Also provide their boost level for the ranking
-            lunrIndex = new lunr.Index
-            lunrIndex.ref("uri");
-            lunrIndex.field('title', {
-                boost: 15
-            });
-            lunrIndex.field('tags', {
-                boost: 10
-            });
-            lunrIndex.field("content", {
-                boost: 5
-            });
-
-            // Feed lunr with each file and let lunr actually index them
-            pagesIndex.forEach(function(page) {
-                lunrIndex.add(page);
-            });
-            lunrIndex.pipeline.remove(lunrIndex.stemmer)
-        })
-        .fail(function(jqxhr, textStatus, error) {
-            var err = textStatus + ", " + error;
-            console.error("Error getting Hugo index file:", err);
-        });
-}
-
-/**
- * Trigger a search in lunr and transform the result
- *
- * @param  {String} query
- * @return {Array}  results
- */
-function search(query) {
-    // Find the item in our index corresponding to the lunr one to have more info
-    return lunrIndex.search(query).map(function(result) {
-            return pagesIndex.filter(function(page) {
-                return page.uri === result.ref;
-            })[0];
-        });
-}
-
-// Let's get started
-initLunr();
-$( document ).ready(function() {
-    var searchList = new autoComplete({
-        /* selector for the search box element */
-        selector: $("#search-by").get(0),
-        /* source is the callback to perform the search */
-        source: function(term, response) {
-            response(search(term));
-        },
-        /* renderItem displays individual search results */
-        renderItem: function(item, term) {
-            var numContextWords = 2;
-            var text = item.content.match(
-                "(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}" +
-                    term+"(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}");
-            item.context = text;
-            return '<div class="autocomplete-suggestion" ' +
-                'data-term="' + term + '" ' +
-                'data-title="' + item.title + '" ' +
-                'data-uri="'+ item.uri + '" ' +
-                'data-context="' + item.context + '">' +
-                '» ' + item.title +
-                '<div class="context">' +
-                (item.context || '') +'</div>' +
-                '</div>';
-        },
-        /* onSelect callback fires when a search suggestion is chosen */
-        onSelect: function(e, term, item) {
-            console.log(item.getAttribute('data-val'));
-            location.href = item.getAttribute('data-uri');
+    function hilightText(regexes, text) {
+        for (var i = 0; i < regexes.length; i++) {
+            text = text.replace(regexes[i], "<span class='search-hilight'>$1</span>");
         }
-    });
-});
+        return text;
+    }
+
+    function matchRegexes(metadata) {
+        var regexes = [];
+        for (var kw in metadata) {
+            regexes.push(new RegExp("\\b("+kw+"\\w*)", "mig"));
+        }
+        return regexes;
+    }
+
+    function getMatchingSubtitle(item, from) {
+        var subtitle = $(from).prevAll(":header:first");
+        if (subtitle.length > 0) {
+            return {
+                content: "<p class='search-result-subtitle'><a href='"+item.url+"#"+subtitle[0].id+"'>"+$(subtitle[0]).text()+"</a></p>",
+                id: subtitle[0].id
+            };
+        }
+        if ($(from).parent().length === 0) {
+            return null;
+        } else {
+            return getMatchingSubtitle(item, $(from).parent()[0]);
+        }
+    }
+
+    function getMatchingText(regexes, item, paragraph, lastSubtitle) {
+        var matchingText = "";
+        var text = paragraph.text();
+        for (var j = 0; j < regexes.length; j++) {
+            var match = regexes[j].exec(text);
+            if (match) {
+                var subtitle = getMatchingSubtitle(item, paragraph);
+                if (subtitle !== null && lastSubtitle != subtitle.id) {
+                    matchingText += subtitle.content;
+                    lastSubtitle = subtitle.id;
+                }
+                matchingText += "<p class='search-result-data'>" + hilightText(regexes, text) + "</p>";
+                return {
+                    content: matchingText,
+                    lastSubtitle: lastSubtitle
+                };
+            }
+        }
+        return null;
+    }
+
+    function getItemText(item, metadata) {
+        var itemText = "<div><h3 class='search-result-title'><a href='"+item.url+"'>"+item.title+"</a></h3>";
+        var dummy = document.createElement("div");
+        dummy.innerHTML = item.html;
+        var paragraphs = $(dummy).find("p, li, div, td");
+        var lastSubtitle = null;
+        var regexes = matchRegexes(metadata);
+        for (var p = 0;  p < paragraphs.length; p++) {
+            var matchingText = getMatchingText(regexes, item, $(paragraphs[p]), lastSubtitle);
+            if (matchingText !== null) {
+                itemText += matchingText.content;
+                lastSubtitle = matchingText.lastSubtitle;
+            }
+        }
+        itemText += "</div>";
+        return itemText;
+    }
+
+    function displaySearchResults(term, results, store) {
+        console.log("results: ", results);
+        if (results.length === 0) {
+            noResults();
+        } else {
+            var searchResults = document.getElementById("search-results");
+            var append = "";
+            for (var i = 0; i < results.length; i++) {
+                var item = store[results[i].ref];
+                console.log(store[results[i].matchData]);
+                append += getItemText(item, results[i].matchData.metadata);
+            }
+            searchResults.innerHTML = append;
+        }
+    }
+
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+
+            if (pair[0] === variable) {
+                return decodeURIComponent(pair[1].replace(/\+/g, "%20"));
+            }
+        }
+    }
+
+    function createIndex() {
+        var index = lunr(function() {
+            this.field("title");
+            this.field("content");
+
+            for (var key in window.store) {
+                this.add({
+                    "id": key,
+                    "title": window.store[key].title,
+                    "content": window.store[key].content
+                });
+            }
+        });
+
+        return index;
+    }
+
+    var searchTerm = getQueryVariable("q");
+
+    if (searchTerm) {
+        document.getElementById("search-title").innerHTML = searchTerm;
+
+        var index = createIndex();
+
+        var results = index.search(searchTerm);
+
+        displaySearchResults(searchTerm, results, window.store);
+    } else {
+        noResults();
+    }
+})();
