@@ -5,12 +5,14 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-11T14:34:44 CEST">
+<meta name="revised" content="2019-06-11T16:28:22 CEST">
 <title>ResInsight 2017.05.2 Released :: My New Hugo Site</title>
 <link rel="shortcut icon" href="/hugohomepage/images/favicon.png" type="image/x-icon" />
 <link href="/hugohomepage/css/font-awesome.min.css" rel="stylesheet">
 <link href="/hugohomepage/css/nucleus.css" rel="stylesheet">
 <link href="/hugohomepage/theme-flex/style.css" rel="stylesheet">
+
+	<link href="/hugohomepage/theme-flex/variant-gray.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/hugohomepage/css/bootstrap.min.css">
 <script src="/hugohomepage/js/jquery-2.x.min.js"></script>
@@ -30,9 +32,12 @@
     
 	
   
-    <p><img src="images/AppLogo48x48.png" alt="logo" /></p>
+    <p><img src="{{ .Site.Home.RelPermalink} }/images/ResInsightCroppedIconPicture.png" alt="logo" /></p>
 
   
+
+
+
 
 
   </div>
@@ -52,7 +57,9 @@
           <a href="/hugohomepage/">
             <i class="fa fa-fw fa-home"></i>
           </a>
-          </li>
+          </li><form action="https://oystholl.github.io/hugohomepage//search" method="GET" id="search-form">
+  <input type="search" name="q" id="search-box" placeholder="Search">
+</form>
     <li data-nav-id="/hugohomepage/documentation/" class="dd-item haschildren
         ">
       <div>
