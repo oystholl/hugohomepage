@@ -2,4 +2,4 @@
 published = true
 +++
 
-![logo]({{ .Site.Home.RelPermalink} }/images/ResInsightCroppedIconPicture.png)
+![logo]({{ .Site.BaseURL }}/images/ResInsightCroppedIconPicture.png)
