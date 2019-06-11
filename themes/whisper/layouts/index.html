@@ -54,7 +54,11 @@
 </div>
 {{ end }}
 
-{{ if eq .Title "Welcome"}}
+{{ .Permalink }}
+
+
+
+{{ if eq .Title "Search"}}
 <section>
   <div class="grid">
     <div class="whole">
@@ -74,18 +78,17 @@
 <script type="text/javascript" src="./js/lunr.min.js"></script>
 <script>
 
-    TODO: endre dir til noe som passer bedre med url-ene
   window.store = [];
   //console.log(window.store);
   {{ range .Site.AllPages }}
-  window.store[{{ .Dir }}] = {
+  window.store[{{ .RelPermalink }}] = {
     title:    {{ .Title }},
     content:  {{ .Plain }},
     html:     {{ .Content }},
     url:      {{ .RelPermalink }}
   };
-  //console.log(window.store);
   {{ end }}
+
 
 </script>
 <script type="text/javascript" src="./js/search.js"></script>

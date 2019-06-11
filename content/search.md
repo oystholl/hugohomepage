@@ -1,6 +1,6 @@
 +++
-title = "ResInsight Search"
+title = "Search"
 published = true
 +++
 
-Search
+Search content
