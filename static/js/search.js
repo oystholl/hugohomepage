@@ -74,7 +74,6 @@
     }
 
     function displaySearchResults(term, results, store) {
-        console.log("results: ", results);
         if (results.length === 0) {
             noResults();
         } else {
@@ -82,7 +81,6 @@
             var append = "";
             for (var i = 0; i < results.length; i++) {
                 var item = store[results[i].ref];
-                console.log(store[results[i].matchData]);
                 append += getItemText(item, results[i].matchData.metadata);
             }
             searchResults.innerHTML = append;
