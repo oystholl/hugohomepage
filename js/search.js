@@ -6,7 +6,7 @@
 
     function hilightText(regexes, text) {
         for (var i = 0; i < regexes.length; i++) {
-            text = text.replace(regexes[i], "<span class='search-hilight'>$1</span>");
+            text = text.replace(regexes[i], "<mark>$1</mark>");
         }
         return text;
     }
@@ -44,8 +44,16 @@
                 if (subtitle !== null && lastSubtitle != subtitle.id) {
                     matchingText += subtitle.content;
                     lastSubtitle = subtitle.id;
+                    console.log("subtitle.content", subtitle.content);
+
+                    console.log("subtitle.id", subtitle.id);
+
+                    console.log("lastSubtitle", lastSubtitle);
                 }
                 matchingText += "<p class='search-result-data'>" + hilightText(regexes, text) + "</p>";
+
+                console.log("matchingText", matchingText);
+
                 return {
                     content: matchingText,
                     lastSubtitle: lastSubtitle
@@ -74,7 +82,6 @@
     }
 
     function displaySearchResults(term, results, store) {
-        console.log("results: ", results);
         if (results.length === 0) {
             noResults();
         } else {
@@ -82,7 +89,6 @@
             var append = "";
             for (var i = 0; i < results.length; i++) {
                 var item = store[results[i].ref];
-                console.log(store[results[i].matchData]);
                 append += getItemText(item, results[i].matchData.metadata);
             }
             searchResults.innerHTML = append;
