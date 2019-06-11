@@ -2,4 +2,4 @@
 published = true
 +++
 
-![logo]("{{.Site.BaseURL}}"/images/ResInsightCroppedIconPicture.png)
+![logo](/images/ResInsightCroppedIconPicture.png)
