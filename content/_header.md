@@ -2,4 +2,4 @@
 published = true
 +++
 
-![logo](images/ResInsightCroppedIconPicture.png)
+![logo](https://oystholl.github.io/hugohomepage/images/ResInsightCroppedIconPicture.png)
