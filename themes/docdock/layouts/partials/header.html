@@ -3,7 +3,7 @@
 	{{ .Content }} 
 	{{else}}
   {{ if .Site.GetPage "page" "_header.md" }}
-    {{(.Site.GetPage "page" "_header.md").Content}}
+    <a class="baselink" href="{{.Site.BaseURL}}">{{(.Site.GetPage "page" "_header.md").Content}}</a>
   {{else}}
     <a class="baselink" href="{{.Site.BaseURL}}">{{.Site.Title}}</a>
   {{end}}
