@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on My New Hugo Site</title>
+    <link>https://oystholl.github.io/hugohomepage/getting-started/</link>
+    <description>Recent content in Getting Started on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://oystholl.github.io/hugohomepage/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Installation</title>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/windows-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/windows-installation/</guid>
+      <description>Note: None of the binary distributions includes support for ABAQUS odb files.
+ResInsight Installation  Download ZIP binary distribution from https://github.com/OPM/ResInsight/releases Extract content from ZIP file Start ResInsight.exe  Octave Installation (optional)  Download Octave-4.0.0 and install it. (Newer versions will not work) Launch ResInsight.exe, open Edit-&amp;gt;Preferences. On the Octave tab, enter the path to the Octave command line interpreter executable.
+( Usually C:\Your\Path\To\Octave-x.x.x\bin\octave-cli.exe )  A binary package of ResInsight will normally not work with other Octave versions than the one it is compiled with.</description>
+    </item>
+    
+    <item>
+      <title>Linux Installation</title>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/linux-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/linux-installation/</guid>
+      <description>Note: None of the binary distributions includes support for ABAQUS odb files.
+Install ResInsight From downloaded tarball  Download TAR.GZ binary distribution from https://github.com/OPM/ResInsight/releases Extract content from TAR file Start ./ResInsight  Display Menu Icons in GNOME (Optional) By default, icons are not visible in menus in the GNOME desktop environment. ResInsight has icons for many menu items, and icons can be set visible by issuing the following commands (Tested on RHEL6) :</description>
+    </item>
+    
+    <item>
+      <title>Grid Import</title>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/gridimportexport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/gridimportexport/</guid>
+      <description>Importing Eclipse Cases ResInsight supports the following type of Eclipse input data:
+ *.GRID and *.EGRID files along with their *.INIT and restart files *.XNNN and *.UNRST. Grid and Property data from *.GRDECL files.  Release 2018.11 supports import of simulations from Intersect. To be able to import into ResInsight, the Intersect simulation must be exported into Eclipse file format.  Eclipse Results ResInsight offers several ways to import Eclipse (grid) files.</description>
+    </item>
+    
+    <item>
+      <title>Model Navigation</title>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/modelnavigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/modelnavigation/</guid>
+      <description>ResInsight comes with four navigation modes. The active mode can be selected in the Preferences dialog (Edit -&amp;gt; Preferences).
+Note that changing the navigation mode applies to the currently active view only, and views created after the change.
+These abbreviations are used in the tables below:
+   Abbreviation Meaning     LMB Press the left mouse button   MMB Press the middle mouse button or scroll wheel button   RMB Press the right mouse button    The following applies to all navigation modes:</description>
+    </item>
+    
+  </channel>
+</rss>

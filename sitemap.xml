@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://oystholl.github.io/hugohomepage/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/getting-started/windows-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/getting-started/linux-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/getting-started/gridimportexport/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/getting-started/modelnavigation/</loc>
+  </url>
+  
+  <url>
     <loc>https://oystholl.github.io/hugohomepage/_header/</loc>
   </url>
   
@@ -27,6 +47,10 @@
   </url>
   
   <url>
+    <loc>https://oystholl.github.io/hugohomepage/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://oystholl.github.io/hugohomepage/project/about/</loc>
   </url>
   
@@ -41,6 +65,10 @@
   
   <url>
     <loc>https://oystholl.github.io/hugohomepage/project/download/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/getting-started/</loc>
   </url>
   
   <url>
@@ -146,6 +174,10 @@
   
   <url>
     <loc>https://oystholl.github.io/hugohomepage/</loc>
+  </url>
+  
+  <url>
+    <loc>https://oystholl.github.io/hugohomepage/introduction/releasenotes_2018_11/</loc>
   </url>
   
 </urlset>
