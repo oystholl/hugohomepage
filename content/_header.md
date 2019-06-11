@@ -2,4 +2,4 @@
 published = true
 +++
 
-![logo](hugohomepage/images/ResInsightCroppedIconPicture.png)
+![logo](images/ResInsightCroppedIconPicture.png)
