@@ -9,7 +9,6 @@
     {{end}}
   </head>
   <body data-url="{{ .RelPermalink }}">
-    <p>{{.Title }}</p>
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/body-beforecontent.html" .Site.Params.themeStyle) . }}
     {{else}}
@@ -17,8 +16,6 @@
     {{end}}
     
     {{ block "main" . }}
-
-    {{ if eq .Title "Search" }}
 
     <section>
       <h1>Search for: <span id="search-title"></span></h1>
@@ -46,8 +43,6 @@
 
     </script>
     <script type="text/javascript" src="./js/search.js"></script>
-
-    {{ end }}
 
     {{ end }}
     
