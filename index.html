@@ -6,7 +6,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-11T17:15:30 CEST">
+<meta name="revised" content="2019-06-11T17:21:39 CEST">
 <title>Welcome :: My New Hugo Site</title>
 <link rel="shortcut icon" href="/hugohomepage/images/favicon.png" type="image/x-icon" />
 <link href="/hugohomepage/css/font-awesome.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@
           <a href="/hugohomepage/">
             <i class="fa fa-fw fa-home"></i>
           </a>
-          </li><form action="https://oystholl.github.io/hugohomepage//search" method="GET" id="search-form">
+          </li><form action="" method="GET" id="search-form">
   <input type="search" name="q" id="search-box" placeholder="Search">
 </form>
     <li data-nav-id="/hugohomepage/documentation/" class="dd-item haschildren
@@ -328,8 +328,277 @@
 
 
 
+<section>
+	<h1>Search for: <span id="search-title"></span></h1>
+	<br>
+	<div id="search-results">
+	</div>
+	<div class="clear"></div>
+</section>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/lunr.min.js"></script>
+<script>
+
+	window.store = [];
+	
+	
+	window.store["/hugohomepage/_header/"] = {
+		title:    "",
+	content:  "",
+	html:     "\u003cp\u003e\u003cimg src=\"https://oystholl.github.io/hugohomepage/images/ResInsightCroppedIconPicture.png\" alt=\"logo\" /\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/_header/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2013/"] = {
+		title:    "2013",
+	content:  "",
+	html:     "",
+	url:      "/hugohomepage/posts/news/2013/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2014/"] = {
+		title:    "2014",
+	content:  "",
+	html:     "",
+	url:      "/hugohomepage/posts/news/2014/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2015/"] = {
+		title:    "2015",
+	content:  "",
+	html:     "",
+	url:      "/hugohomepage/posts/news/2015/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2016/"] = {
+		title:    "2016",
+	content:  "",
+	html:     "",
+	url:      "/hugohomepage/posts/news/2016/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2017/"] = {
+		title:    "2017",
+	content:  "",
+	html:     "",
+	url:      "/hugohomepage/posts/news/2017/"
+	};
+	
+	window.store["/hugohomepage/project/about/"] = {
+		title:    "About",
+	content:  " Project organization The development of ResInsight was initiated by Statoil Petroleum AS in 2011, and was followed up by a series of projects. ResInsight is still under active development, mainly by Ceetron Solutions AS who is responsible for the software development work.\nResInsight is a part of the Open Porous Media project.\nLicensing The software is licensed under GPL 3+, see Licensing details.\nProject hosting The software is hosted at GitHub, and the development progress can be monitored there. The GitHub issue tracker is heavily used to organize our development process.\nWeb site programming and design The programming and design of this site is based on work by Tom Preston-Werner. This is also the current theme of Jekyll, the publishing engine used to produce content of GitHub Pages.\n",
+	html:     "\n\n\u003ch3 id=\"project-organization\"\u003eProject organization\u003c/h3\u003e\n\n\u003cp\u003eThe development of ResInsight was initiated by Statoil Petroleum AS in 2011, and was followed up by a series of projects. ResInsight is still under active development, mainly by Ceetron Solutions AS who is responsible for the software development work.\u003c/p\u003e\n\n\u003cp\u003eResInsight is a part of the \u003ca href=\"http://opm-project.org/\"\u003eOpen Porous Media\u003c/a\u003e project.\u003c/p\u003e\n\n\u003ch3 id=\"licensing\"\u003eLicensing\u003c/h3\u003e\n\n\u003cp\u003eThe software is licensed under GPL 3+, see \u003ca href=\"https://github.com/OPM/ResInsight/blob/master/COPYING\"\u003eLicensing details\u003c/a\u003e.\u003c/p\u003e\n\n\u003ch3 id=\"project-hosting\"\u003eProject hosting\u003c/h3\u003e\n\n\u003cp\u003eThe software is hosted at \u003ca href=\"https://github.com/OPM/ResInsight\"\u003eGitHub\u003c/a\u003e, and the development progress can be monitored there. The GitHub issue tracker is heavily used to organize our development process.\u003c/p\u003e\n\n\u003ch3 id=\"web-site-programming-and-design\"\u003eWeb site programming and design\u003c/h3\u003e\n\n\u003cp\u003eThe programming and design of this site is based on work by \u003ca href=\"http://tom.preston-werner.com/\"\u003eTom Preston-Werner\u003c/a\u003e. This is also the current theme of \u003ca href=\"http://jekyllrb.com/\"\u003eJekyll\u003c/a\u003e, the publishing engine used to produce content of \u003ca href=\"https://pages.github.com/\"\u003eGitHub Pages\u003c/a\u003e.\u003c/p\u003e\n",
+	url:      "/hugohomepage/project/about/"
+	};
+	
+	window.store["/hugohomepage/categories/"] = {
+		title:    "Categories",
+	content:  "",
+	html:     "",
+	url:      "/hugohomepage/categories/"
+	};
+	
+	window.store["/hugohomepage/documentation/"] = {
+		title:    "Documentation",
+	content:  " Introduction The start It all began in\u0026hellip;\n",
+	html:     "\n\n\u003ch1 id=\"introduction\"\u003eIntroduction\u003c/h1\u003e\n\n\u003ch2 id=\"the-start\"\u003eThe start\u003c/h2\u003e\n\n\u003cp\u003eIt all began in\u0026hellip;\u003c/p\u003e\n",
+	url:      "/hugohomepage/documentation/"
+	};
+	
+	window.store["/hugohomepage/project/download/"] = {
+		title:    "Downloads",
+	content:  "Windows : ResInsight-2019.04_oct-4.0.0_souring_win64.zip\nLinux - RHEL6 : ResInsight-2019.04_oct-3.4.3_souring_el6.tar.gz\nFor older versions, release notes and source code, please visit ResInsight on Github\n",
+	html:     "\u003cp\u003eWindows : \u003ca href=\"https://github.com/OPM/ResInsight/releases/download/v2019.04/ResInsight-2019.04.0_oct-4.0.0_souring_win64.zip\"\u003eResInsight-2019.04_oct-4.0.0_souring_win64.zip\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eLinux - RHEL6 : \u003ca href=\"https://github.com/OPM/ResInsight/releases/download/v2019.04/ResInsight-2019.04.0_oct-3.4.3_souring_el6.tar.gz\"\u003eResInsight-2019.04_oct-3.4.3_souring_el6.tar.gz\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eFor older versions, release notes and source code, please visit \u003ca href=\"https://github.com/OPM/ResInsight/releases/\"\u003eResInsight on Github\u003c/a\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/project/download/"
+	};
+	
+	window.store["/hugohomepage/documentation/installation/"] = {
+		title:    "Installation",
+	content:  " Introduction The start It all began in\u0026hellip;\n",
+	html:     "\n\n\u003ch1 id=\"introduction\"\u003eIntroduction\u003c/h1\u003e\n\n\u003ch2 id=\"the-start\"\u003eThe start\u003c/h2\u003e\n\n\u003cp\u003eIt all began in\u0026hellip;\u003c/p\u003e\n",
+	url:      "/hugohomepage/documentation/installation/"
+	};
+	
+	window.store["/hugohomepage/posts/my-first-post/"] = {
+		title:    "My First Post",
+	content:  " Hello World ",
+	html:     "\n\n\u003ch1 id=\"hello-world\"\u003eHello World\u003c/h1\u003e\n",
+	url:      "/hugohomepage/posts/my-first-post/"
+	};
+	
+	window.store["/hugohomepage/posts/tutorials/my-first-tutorial/"] = {
+		title:    "My First Tutorial",
+	content:  " Hello World ",
+	html:     "\n\n\u003ch1 id=\"hello-world\"\u003eHello World\u003c/h1\u003e\n",
+	url:      "/hugohomepage/posts/tutorials/my-first-tutorial/"
+	};
+	
+	window.store["/hugohomepage/posts/tutorials/my-second-tutorial/"] = {
+		title:    "My Second Tutorial",
+	content:  " Hello World ",
+	html:     "\n\n\u003ch1 id=\"hello-world\"\u003eHello World\u003c/h1\u003e\n",
+	url:      "/hugohomepage/posts/tutorials/my-second-tutorial/"
+	};
+	
+	window.store["/hugohomepage/posts/news/"] = {
+		title:    "News",
+	content:  "Welcome to the news\n",
+	html:     "\u003cp\u003eWelcome to the news\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/"
+	};
+	
+	window.store["/hugohomepage/posts/"] = {
+		title:    "Posts",
+	content:  "Look at my posts\n",
+	html:     "\u003cp\u003eLook at my posts\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/"
+	};
+	
+	window.store["/hugohomepage/project/"] = {
+		title:    "Project",
+	content:  "",
+	html:     "",
+	url:      "/hugohomepage/project/"
+	};
+	
+	window.store["/hugohomepage/project/releasenotification/"] = {
+		title:    "Release Notification Subscription",
+	content:  " LinkedIn Feel free to join ResInsight on LinkedIn\nNewsletter By subscribing to the Release Notification you will get notified when new releases are available. Please use the button below to send a request for subscription mail.\n Subscribe     ",
+	html:     "\n\n\u003ch3 id=\"linkedin\"\u003eLinkedIn\u003c/h3\u003e\n\n\u003cp\u003eFeel free to join \u003ca href=\"https://www.linkedin.com/groups/12167660/\"\u003eResInsight on LinkedIn\u003c/a\u003e\u003c/p\u003e\n\n\u003ch3 id=\"newsletter\"\u003eNewsletter\u003c/h3\u003e\n\n\u003cp\u003eBy subscribing to the \u003cstrong\u003eRelease Notification\u003c/strong\u003e you will get notified when new releases are available.\nPlease use the button below to send a request for subscription mail.\u003c/p\u003e\n\n\u003cdiv class=\"grid\"\u003e\n  \u003cnav class=\"main-nav\"\u003e\n    \u003cul\u003e\n      \u003cli class=\"current\"\u003e\n        \u003ca href=\"mailto:info@ceetronsolutions.com?subject=ResInsight Release Notification subscription\u0026body=Hi ResInsight administrator, I would like to subscribe to the ResInsight release notifications.\"\u003eSubscribe\u003c/a\u003e\n      \u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/nav\u003e\n\u003c/div\u003e\n",
+	url:      "/hugohomepage/project/releasenotification/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2013/2013-10-25-resinsight-1-0-0-released/"] = {
+		title:    "ResInsight 1.0 Released",
+	content:  " Grid visualization Range and property filters Basic Fault visualization Octave interface  ",
+	html:     "\u003cul\u003e\n\u003cli\u003eGrid visualization\u003c/li\u003e\n\u003cli\u003eRange and property filters\u003c/li\u003e\n\u003cli\u003eBasic Fault visualization\u003c/li\u003e\n\u003cli\u003eOctave interface\u003c/li\u003e\n\u003c/ul\u003e\n",
+	url:      "/hugohomepage/posts/news/2013/2013-10-25-resinsight-1-0-0-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2014/2014-01-23-resinsight-1-1-0-released/"] = {
+		title:    "ResInsight 1.1.0 Released",
+	content:  " Batch functionality  statistics computations efficient handlig of multiple cases  Faults Vizualisation of NNCS ",
+	html:     "\n\n\u003ch3 id=\"batch-functionality\"\u003eBatch functionality\u003c/h3\u003e\n\n\u003cul\u003e\n\u003cli\u003estatistics computations\u003c/li\u003e\n\u003cli\u003eefficient handlig of multiple cases\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"faults\"\u003eFaults\u003c/h3\u003e\n\n\u003ch3 id=\"vizualisation-of-nncs\"\u003eVizualisation of NNCS\u003c/h3\u003e\n",
+	url:      "/hugohomepage/posts/news/2014/2014-01-23-resinsight-1-1-0-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2014/2014-07-14-resinsight-1-2-0-released/"] = {
+		title:    "ResInsight 1.2.0 Released",
+	content:  " Main features  Support for large datasets in Octave Custom display of ternary visualization  Download Release Binaries on GitHub\n",
+	html:     "\n\n\u003ch2 id=\"main-features\"\u003eMain features\u003c/h2\u003e\n\n\u003cul\u003e\n\u003cli\u003eSupport for large datasets in Octave\u003c/li\u003e\n\u003cli\u003eCustom display of ternary visualization\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"download\"\u003eDownload\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://github.com/OPM/ResInsight/releases/tag/v1.2.0\"\u003eRelease Binaries on GitHub\u003c/a\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2014/2014-07-14-resinsight-1-2-0-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2014/2014-09-24-resinsight-1-3-0-released/"] = {
+		title:    "ResInsight 1.3.0 Released",
+	content:  " Main features  Added several derived results Added support for mapping a separate result on faults Improved text in Result Info when picking in 3D scene\n  Download Release Binaries on GitHub\n",
+	html:     "\n\n\u003ch2 id=\"main-features\"\u003eMain features\u003c/h2\u003e\n\n\u003cul\u003e\n\u003cli\u003eAdded several \u003ca href=\"/docs/derivedresults\"\u003ederived results\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eAdded support for mapping a separate result on faults\u003c/li\u003e\n\u003cli\u003eImproved text in Result Info when picking in 3D scene\u003cbr /\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"download\"\u003eDownload\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://github.com/OPM/ResInsight/releases/tag/v1.3.0\"\u003eRelease Binaries on GitHub\u003c/a\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2014/2014-09-24-resinsight-1-3-0-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2014/2014-11-07-resinsight-1-3-1-released/"] = {
+		title:    "ResInsight 1.3.1 Released",
+	content:  " Main features The main focus for this release has been performance improvements related to file reading and parsing. Significant improvements has been achieved on both Windows and Linux platforms.\nDownload Release Binaries on GitHub\n",
+	html:     "\n\n\u003ch2 id=\"main-features\"\u003eMain features\u003c/h2\u003e\n\n\u003cp\u003eThe main focus for this release has been performance improvements related to file reading and parsing. Significant improvements has been achieved on both Windows and Linux platforms.\u003c/p\u003e\n\n\u003ch2 id=\"download\"\u003eDownload\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://github.com/OPM/ResInsight/releases/tag/v1.3.1\"\u003eRelease Binaries on GitHub\u003c/a\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2014/2014-11-07-resinsight-1-3-1-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2015/2015-08-23-resinsight-1-4-0-released/"] = {
+		title:    "ResInsight 1.4.0 Released",
+	content:  " We are happy to announce the release of ResInsight v1.4.0 which is a maintenance release.\nIt also serves as an alignment of the codebase with the efforts done to add Geomechanical support to ResInsight.\nDownload Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.4.0 on GitHub\n",
+	html:     "\n\n\u003cp\u003eWe are happy to announce the release of ResInsight v1.4.0 which is a maintenance release.\u003c/p\u003e\n\n\u003cp\u003eIt also serves as an alignment of the codebase with the efforts done to add Geomechanical support to ResInsight.\u003c/p\u003e\n\n\u003ch3 id=\"download\"\u003eDownload\u003c/h3\u003e\n\n\u003cp\u003eHave a look at the GitHub release-page to read the release-notes or to download the new release:\n\u003ca href=\"https://github.com/OPM/ResInsight/releases/tag/v1.4.0\"\u003eRelease v1.4.0 on GitHub\u003c/a\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2015/2015-08-23-resinsight-1-4-0-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2015/2015-11-09-resinsight-1-5-0-released/"] = {
+		title:    "ResInsight 1.5.0 Released",
+	content:  " We are happy to announce the release of ResInsight v1.5.0.\nDownload Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.5.0 on GitHub\n",
+	html:     "\n\n\u003cp\u003eWe are happy to announce the release of ResInsight v1.5.0.\u003c/p\u003e\n\n\u003ch3 id=\"download\"\u003eDownload\u003c/h3\u003e\n\n\u003cp\u003eHave a look at the GitHub release-page to read the release-notes or to download the new release:\n\u003ca href=\"https://github.com/OPM/ResInsight/releases/tag/v1.5.0\"\u003eRelease v1.5.0 on GitHub\u003c/a\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2015/2015-11-09-resinsight-1-5-0-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2016/2016-01-11-resinsight-1-6-0-released/"] = {
+		title:    "ResInsight 1.6.0 Released",
+	content:  " We are happy to announce the release of ResInsight v1.6.0.\nDownload Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.6.0 on GitHub\n",
+	html:     "\n\n\u003cp\u003eWe are happy to announce the release of ResInsight v1.6.0.\u003c/p\u003e\n\n\u003ch3 id=\"download\"\u003eDownload\u003c/h3\u003e\n\n\u003cp\u003eHave a look at the GitHub release-page to read the release-notes or to download the new release:\n\u003ca href=\"https://github.com/OPM/ResInsight/releases/tag/v1.6.0\"\u003eRelease v1.6.0 on GitHub\u003c/a\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2016/2016-01-11-resinsight-1-6-0-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2016/2016-11-29-resinsight-2016.11-released/"] = {
+		title:    "ResInsight 2016.11 Released",
+	content:  " We are happy to announce the release of ResInsight v2016.11.\nDownload Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v2016.11 on GitHub\n",
+	html:     "\n\n\u003cp\u003eWe are happy to announce the release of ResInsight v2016.11.\u003c/p\u003e\n\n\u003ch3 id=\"download\"\u003eDownload\u003c/h3\u003e\n\n\u003cp\u003eHave a look at the GitHub release-page to read the release-notes or to download the new release:\n\u003ca href=\"https://github.com/OPM/ResInsight/releases/tag/v2016.11\"\u003eRelease v2016.11 on GitHub\u003c/a\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2016/2016-11-29-resinsight-2016.11-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2017/2017-05-31-resinsight-2017.05-released/"] = {
+		title:    "ResInsight 2017.05 Released",
+	content:  " We are happy to announce the release of ResInsight v2017.05.\nDownload Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.\n",
+	html:     "\n\n\u003cp\u003eWe are happy to announce the release of ResInsight v2017.05.\u003c/p\u003e\n\n\u003ch3 id=\"download\"\u003eDownload\u003c/h3\u003e\n\n\u003cp\u003eHave a look at the \u003ca href=\"https://github.com/OPM/ResInsight/releases\"\u003eGitHub release-page\u003c/a\u003e to read the release-notes or download the new release from the \u003ca href=\"{{site.baseurl}}/project/download\"\u003eDownload\u003c/a\u003e page.\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2017/2017-05-31-resinsight-2017.05-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2017/2017-06-21-resinsight-2017.05.2-released/"] = {
+		title:    "ResInsight 2017.05.2 Released",
+	content:  " We are happy to announce the release of ResInsight v2017.05.2.\nDownload Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.\n",
+	html:     "\n\n\u003cp\u003eWe are happy to announce the release of ResInsight v2017.05.2.\u003c/p\u003e\n\n\u003ch3 id=\"download\"\u003eDownload\u003c/h3\u003e\n\n\u003cp\u003eHave a look at the \u003ca href=\"https://github.com/OPM/ResInsight/releases\"\u003eGitHub release-page\u003c/a\u003e to read the release-notes or download the new release from the \u003ca href=\"../../project/download\"\u003eDownload\u003c/a\u003e page.\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2017/2017-06-21-resinsight-2017.05.2-released/"
+	};
+	
+	window.store["/hugohomepage/posts/news/2019-04-26-resinsight-2019.04-released/"] = {
+		title:    "ResInsight 2019.04 Released",
+	content:  " We are happy to announce the release of ResInsight 2019.04.\nSee Release Notes for an overview.\nDownload Have a look at the GitHub release-page for details or download the new release from the Download page.\n",
+	html:     "\n\n\u003cp\u003eWe are happy to announce the release of ResInsight 2019.04.\u003c/p\u003e\n\n\u003cp\u003eSee \u003ca href=\"releasenotes/releasenotes_2019_04\"\u003eRelease Notes\u003c/a\u003e for an overview.\u003c/p\u003e\n\n\u003ch3 id=\"download\"\u003eDownload\u003c/h3\u003e\n\n\u003cp\u003eHave a look at the \u003ca href=\"https://github.com/OPM/ResInsight/releases\"\u003eGitHub release-page\u003c/a\u003e for details or download the new release from the \u003ca href=\"project/download\"\u003eDownload\u003c/a\u003e page.\u003c/p\u003e\n",
+	url:      "/hugohomepage/posts/news/2019-04-26-resinsight-2019.04-released/"
+	};
+	
+	window.store["/hugohomepage/search/"] = {
+		title:    "Search",
+	content:  "Search content\n",
+	html:     "\u003cp\u003eSearch content\u003c/p\u003e\n",
+	url:      "/hugohomepage/search/"
+	};
+	
+	window.store["/hugohomepage/project/support/"] = {
+		title:    "Support",
+	content:  "For inquiries for new features, enhancements or support and maintenance agreements, please contact us for an offer.\nBug reports and general feature requests can be filed directly on GitHub\nPhone : +47 73 60 43 00 e-mail : info@ceetronsolutions.com\nCeetron Solutions AS ",
+	html:     "\u003cp\u003eFor inquiries for new features, enhancements or support and maintenance agreements, please contact us for an offer.\u003c/p\u003e\n\n\u003cp\u003eBug reports and general feature requests can be filed directly on \u003ca href=\"https://github.com/OPM/ResInsight/issues?state=open\"\u003eGitHub\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003ePhone : +47 73 60 43 00 \u003cbr\u003e\ne-mail : info@ceetronsolutions.com\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"http://www.ceetronsolutions.com\"\u003eCeetron Solutions AS\u003c/a\u003e \u003cbr\u003e\n\u003cimg src=\"images/CeetronSolutionWebPage.png\" alt=\"\" /\u003e\u003c/p\u003e\n",
+	url:      "/hugohomepage/project/support/"
+	};
+	
+	window.store["/hugohomepage/tags/"] = {
+		title:    "Tags",
+	content:  "",
+	html:     "",
+	url:      "/hugohomepage/tags/"
+	};
+	
+	window.store["/hugohomepage/project/testimonials/"] = {
+		title:    "Testimonials",
+	content:  "“I have been using ResInsight now for some time and have stopped using the commercial software as ResInsight is much more responsive and easier to use. It really is an excellent piece of software.”\nDavid Baxendale\nSenior Petroleum Engineering Advisor, RPS Energy\n\u0026ldquo;ResInsight is an excellent tool to visualize simulation results and offers good-looking and illustrative graphs for presentations. I found the integration with Octave especially powerful in my research.\u0026rdquo;\nTor Harald Sandve\nResearcher, International Research Institute of Stavanger (IRIS)\nEquinor ASA has initiated, financed and supervised the development of ResInsight and is using it on a daily basis.  ",
+	html:     "\u003cp\u003e\u003cem\u003e“I have been using ResInsight now for some time and have stopped using the commercial software as ResInsight is much more responsive and easier to use. It really is an excellent piece of software.”\u003c/em\u003e\u003c/p\u003e\n\n\u003cp\u003e\u003cstrong\u003eDavid Baxendale\u003cbr\u003e\nSenior Petroleum Engineering Advisor, RPS Energy\u003c/strong\u003e\u003c/p\u003e\n\n\u003cp\u003e\u003cem\u003e\u0026ldquo;ResInsight is an excellent tool to visualize simulation results and offers good-looking and illustrative graphs for presentations. I found the integration with Octave especially powerful in my research.\u0026rdquo;\u003c/em\u003e\u003c/p\u003e\n\n\u003cp\u003e\u003cstrong\u003eTor Harald Sandve\u003cbr\u003e\nResearcher, International Research Institute of Stavanger (IRIS)\u003c/strong\u003e\u003c/p\u003e\n\n\u003cdiv class=\"note\"\u003e\nEquinor ASA has initiated, financed and supervised the development of ResInsight and is using it on a daily basis. \n\u003c/div\u003e\n",
+	url:      "/hugohomepage/project/testimonials/"
+	};
+	
+	window.store["/hugohomepage/posts/tutorials/"] = {
+		title:    "Tutorials",
+	content:  " Tutorials ",
+	html:     "\n\n\u003ch1 id=\"tutorials\"\u003eTutorials\u003c/h1\u003e\n",
+	url:      "/hugohomepage/posts/tutorials/"
+	};
+	
+	window.store["/hugohomepage/"] = {
+		title:    "Welcome",
+	content:  "Welcome to this site for testing deployment of a Hugo website with GitHub Pages\n",
+	html:     "\u003cp\u003eWelcome to this site for testing deployment of a Hugo website with GitHub Pages\u003c/p\u003e\n",
+	url:      "/hugohomepage/"
+	};
+	
 
 
+</script>
+<script type="text/javascript" src="./js/search.js"></script>
 
 
 
