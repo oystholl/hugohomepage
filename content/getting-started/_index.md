@@ -9,16 +9,16 @@ weigth = 1
 ResInsight has two main windows. One for 3D related visualization, and one for 2D graphs and plots. These ares shown in the images below. 
 
 ##### 3D Main Window
-![ResInsight User Interface](/images/ResInsightUIMediumSize.png)
+![ResInsight User Interface](../images/getting-started/ResInsightUIMediumSize.png)
 
 ##### Plot Main Window
-![ResInsight User Interface](images/ResInsightMainPlotMediumSize.png)
+![ResInsight User Interface](../images/getting-started/ResInsightMainPlotMediumSize.png)
 
 #### Switching Between the Two Main Windows
 
 The two main windows has a toolbar button each, that directly opens and raises the other window.
-![3D Main Window](/images/3DWindow24x24.png)
-![Plot Main Window](/images/PlotWindow24x24.png)
+![3D Main Window](../images/getting-started/3DWindow24x24.png)
+![Plot Main Window](../images/getting-started/PlotWindow24x24.png)
 
 Each of the windows can also be closed freely, but if both are closed, ResInsight exits.
 
@@ -52,7 +52,7 @@ In the main area of the application, several 3D views or plot windows can be ope
 
 Standard window management for applying minimized, normal and maximized state is available in the upper right corner.
 
-![Restore Down]({{ site.baseurl }}/images/RestoreDown.PNG)
+![Restore Down](../images/getting-started/RestoreDown.PNG)
 
 Commands to arrange the windows in the standard ways are available from the **Windows** menu
 
