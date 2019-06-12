@@ -83,15 +83,6 @@ For older versions, release notes and source code, please visit ResInsight on Gi
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>https://oystholl.github.io/hugohomepage/posts/my-first-post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oystholl.github.io/hugohomepage/posts/my-first-post/</guid>
-      <description> Hello World </description>
-    </item>
-    
-    <item>
       <title>My First Tutorial</title>
       <link>https://oystholl.github.io/hugohomepage/posts/tutorials/my-first-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
