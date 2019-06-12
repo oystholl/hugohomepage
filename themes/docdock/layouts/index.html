@@ -41,7 +41,7 @@
 <script>
 
 	window.store = [];
-	//console.log(window.store);
+	console.log(window.store);
 	{{ range .Site.AllPages }}
 	window.store[{{ .RelPermalink }}] = {
 		title:    {{ .Title }},
