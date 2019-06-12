@@ -12,7 +12,7 @@ ResInsight has two main windows. One for 3D related visualization, and one for 2
 ![ResInsight User Interface]({{< relref "" >}}images/getting-started/ResInsightUIMediumSize.png)
 
 ##### Plot Main Window
-![ResInsight User Interface](../images/getting-started/ResInsightMainPlotMediumSize.png)
+![ResInsight User Interface]({{< relref "" >}}images/getting-started/ResInsightMainPlotMediumSize.png)
 
 #### Switching Between the Two Main Windows
 
