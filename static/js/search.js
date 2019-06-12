@@ -108,7 +108,6 @@
     }
 
     function createIndex() {
-        console.log("create index");
         var index = lunr(function() {
             this.field("title");
             this.field("content");
@@ -122,6 +121,8 @@
             }
         });
 
+        console.log(index);
+
         return index;
     }
 
@@ -132,7 +133,11 @@
 
         var index = createIndex();
 
-        var results = index.mysearch(searchTerm);
+        console.log(index);
+
+        var results = index.search(searchTerm);
+
+        console.log(results);
 
         displaySearchResults(searchTerm, results, window.store);
     } else {
