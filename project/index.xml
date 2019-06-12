@@ -11,18 +11,6 @@
     
     
     <item>
-      <title>About</title>
-      <link>https://oystholl.github.io/hugohomepage/project/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oystholl.github.io/hugohomepage/project/about/</guid>
-      <description>Project organization The development of ResInsight was initiated by Statoil Petroleum AS in 2011, and was followed up by a series of projects. ResInsight is still under active development, mainly by Ceetron Solutions AS who is responsible for the software development work.
-ResInsight is a part of the Open Porous Media project.
-Licensing The software is licensed under GPL 3+, see Licensing details.
-Project hosting The software is hosted at GitHub, and the development progress can be monitored there.</description>
-    </item>
-    
-    <item>
       <title>Downloads</title>
       <link>https://oystholl.github.io/hugohomepage/project/download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

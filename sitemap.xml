@@ -7,11 +7,11 @@
   </url>
   
   <url>
-    <loc>https://oystholl.github.io/hugohomepage/getting-started/windows-installation/</loc>
+    <loc>https://oystholl.github.io/hugohomepage/getting-started/installation/windows-installation/</loc>
   </url>
   
   <url>
-    <loc>https://oystholl.github.io/hugohomepage/getting-started/linux-installation/</loc>
+    <loc>https://oystholl.github.io/hugohomepage/getting-started/installation/linux-installation/</loc>
   </url>
   
   <url>
@@ -51,16 +51,8 @@
   </url>
   
   <url>
-    <loc>https://oystholl.github.io/hugohomepage/project/about/</loc>
-  </url>
-  
-  <url>
     <loc>https://oystholl.github.io/hugohomepage/categories/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://oystholl.github.io/hugohomepage/documentation/</loc>
   </url>
   
   <url>
@@ -72,7 +64,7 @@
   </url>
   
   <url>
-    <loc>https://oystholl.github.io/hugohomepage/documentation/installation/</loc>
+    <loc>https://oystholl.github.io/hugohomepage/getting-started/installation/</loc>
   </url>
   
   <url>

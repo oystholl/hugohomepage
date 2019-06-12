@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-11T17:55:23 CEST">
-<title>Documentation :: My New Hugo Site</title>
+<meta name="revised" content="2019-06-12T08:27:03 CEST">
+<title>Installation :: My New Hugo Site</title>
 <link rel="shortcut icon" href="/hugohomepage/images/favicon.png" type="image/x-icon" />
 <link href="/hugohomepage/css/font-awesome.min.css" rel="stylesheet">
 <link href="/hugohomepage/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/hugohomepage/documentation/">
+  <body data-url="/hugohomepage/getting-started/installation/">
     
       <header>
   <div class="logo">
@@ -63,7 +63,7 @@
     <li data-nav-id="/hugohomepage/introduction/" class="dd-item haschildren
         ">
       <div>
-      <a href="/hugohomepage/introduction/">ResInsight 2018.11</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/hugohomepage/introduction/">Introduction</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/hugohomepage/introduction/releasenotes_2018_11/" class="dd-item">
@@ -75,41 +75,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/hugohomepage/documentation/" class="dd-item parent active haschildren
+    <li data-nav-id="/hugohomepage/getting-started/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/hugohomepage/documentation/">Documentation</a>
+      <a href="/hugohomepage/getting-started/">Getting Started</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/hugohomepage/documentation/installation/" class="dd-item
-        ">
-      <div>
-      <a href="/hugohomepage/documentation/installation/">Installation</a>
-      </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/hugohomepage/getting-started/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/hugohomepage/getting-started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/hugohomepage/getting-started/windows-installation/" class="dd-item">
-        <div>
-          <a href="/hugohomepage/getting-started/windows-installation/">
-            Windows Installation
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/hugohomepage/getting-started/linux-installation/" class="dd-item">
-        <div>
-          <a href="/hugohomepage/getting-started/linux-installation/">
-            Linux Installation
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/hugohomepage/getting-started/gridimportexport/" class="dd-item">
         <div>
           <a href="/hugohomepage/getting-started/gridimportexport/">
@@ -123,6 +95,29 @@
             Model Navigation
           </a>
         </div>
+    </li>
+    <li data-nav-id="/hugohomepage/getting-started/installation/" class="dd-item parent active haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/getting-started/installation/">Installation</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/getting-started/installation/windows-installation/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/getting-started/installation/windows-installation/">
+            Windows Installation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/getting-started/installation/linux-installation/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/getting-started/installation/linux-installation/">
+            Linux Installation
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -301,13 +296,6 @@
       <a href="/hugohomepage/project/">Project</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/hugohomepage/project/about/" class="dd-item">
-        <div>
-          <a href="/hugohomepage/project/about/">
-            About
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/hugohomepage/project/download/" class="dd-item">
         <div>
           <a href="/hugohomepage/project/download/">
@@ -353,15 +341,18 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/hugohomepage/introduction/" >
-   ResInsight 2018.11</option>
-    <option value="/hugohomepage/documentation/"  selected>
-   Documentation</option> 
-    <option value="/hugohomepage/documentation/installation/" >
-  - 
-   Installation</option>
-  
+   Introduction</option>
     <option value="/hugohomepage/getting-started/" >
-   Getting Started</option>
+   Getting Started</option> 
+      <option value="/hugohomepage/getting-started/gridimportexport/" >- Grid Import</option>
+      <option value="/hugohomepage/getting-started/modelnavigation/" >- Model Navigation</option>
+    <option value="/hugohomepage/getting-started/installation/"  selected>
+  - 
+   Installation</option> 
+      <option value="/hugohomepage/getting-started/installation/windows-installation/" >-- Windows Installation</option>
+      <option value="/hugohomepage/getting-started/installation/linux-installation/" >-- Linux Installation</option>
+  
+  
     <option value="/hugohomepage/posts/" >
    Posts</option>
     <option value="/hugohomepage/project/" >
@@ -374,18 +365,20 @@
     </div>
     
 
-    <h1>Documentation</h1>
+    <h1>Installation</h1>
     
     
     
 
 
 
-<h1 id="introduction">Introduction</h1>
+<h2 id="downloads">Downloads</h2>
 
-<h2 id="the-start">The start</h2>
+<p>Windows : <a href="https://github.com/OPM/ResInsight/releases/download/v2019.04/ResInsight-2019.04.0_oct-4.0.0_souring_win64.zip">ResInsight-2019.04_oct-4.0.0_souring_win64.zip</a></p>
 
-<p>It all began in&hellip;</p>
+<p>Linux - RHEL6 : <a href="https://github.com/OPM/ResInsight/releases/download/v2019.04/ResInsight-2019.04.0_oct-3.4.3_souring_el6.tar.gz">ResInsight-2019.04_oct-3.4.3_souring_el6.tar.gz</a></p>
+
+<p>For older versions, release notes and source code, please visit <a href="https://github.com/OPM/ResInsight/releases/">ResInsight on Github</a></p>
 
 
 
@@ -393,8 +386,8 @@
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/hugohomepage/introduction/releasenotes_2018_11/" title="What&#39;s New in 2018.11"> <i class="fa fa-chevron-left"></i><label>What&#39;s New in 2018.11</label></a>
-    <a class="nav nav-next" href="/hugohomepage/documentation/installation/" title="Installation" style="margin-right: 0px;"><label>Installation</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/hugohomepage/getting-started/modelnavigation/" title="Model Navigation"> <i class="fa fa-chevron-left"></i><label>Model Navigation</label></a>
+    <a class="nav nav-next" href="/hugohomepage/getting-started/installation/windows-installation/" title="Windows Installation" style="margin-right: 0px;"><label>Windows Installation</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>

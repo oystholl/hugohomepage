@@ -12,10 +12,10 @@
     
     <item>
       <title>Windows Installation</title>
-      <link>https://oystholl.github.io/hugohomepage/getting-started/windows-installation/</link>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/installation/windows-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://oystholl.github.io/hugohomepage/getting-started/windows-installation/</guid>
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/installation/windows-installation/</guid>
       <description>Note: None of the binary distributions includes support for ABAQUS odb files.
 ResInsight Installation  Download ZIP binary distribution from https://github.com/OPM/ResInsight/releases Extract content from ZIP file Start ResInsight.exe  Octave Installation (optional)  Download Octave-4.0.0 and install it. (Newer versions will not work) Launch ResInsight.exe, open Edit-&amp;gt;Preferences. On the Octave tab, enter the path to the Octave command line interpreter executable.
 ( Usually C:\Your\Path\To\Octave-x.x.x\bin\octave-cli.exe )  A binary package of ResInsight will normally not work with other Octave versions than the one it is compiled with.</description>
@@ -23,10 +23,10 @@ ResInsight Installation  Download ZIP binary distribution from https://github.co
     
     <item>
       <title>Linux Installation</title>
-      <link>https://oystholl.github.io/hugohomepage/getting-started/linux-installation/</link>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/installation/linux-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://oystholl.github.io/hugohomepage/getting-started/linux-installation/</guid>
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/installation/linux-installation/</guid>
       <description>Note: None of the binary distributions includes support for ABAQUS odb files.
 Install ResInsight From downloaded tarball  Download TAR.GZ binary distribution from https://github.com/OPM/ResInsight/releases Extract content from TAR file Start ./ResInsight  Display Menu Icons in GNOME (Optional) By default, icons are not visible in menus in the GNOME desktop environment. ResInsight has icons for many menu items, and icons can be set visible by issuing the following commands (Tested on RHEL6) :</description>
     </item>
@@ -69,18 +69,6 @@ These abbreviations are used in the tables below:
       
       <guid>https://oystholl.github.io/hugohomepage/about/</guid>
       <description>Something</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://oystholl.github.io/hugohomepage/project/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oystholl.github.io/hugohomepage/project/about/</guid>
-      <description>Project organization The development of ResInsight was initiated by Statoil Petroleum AS in 2011, and was followed up by a series of projects. ResInsight is still under active development, mainly by Ceetron Solutions AS who is responsible for the software development work.
-ResInsight is a part of the Open Porous Media project.
-Licensing The software is licensed under GPL 3+, see Licensing details.
-Project hosting The software is hosted at GitHub, and the development progress can be monitored there.</description>
     </item>
     
     <item>

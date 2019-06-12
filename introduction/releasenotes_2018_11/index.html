@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-11T17:55:24 CEST">
+<meta name="revised" content="2019-06-12T08:27:04 CEST">
 <title>What&#39;s New in 2018.11 :: My New Hugo Site</title>
 <link rel="shortcut icon" href="/hugohomepage/images/favicon.png" type="image/x-icon" />
 <link href="/hugohomepage/css/font-awesome.min.css" rel="stylesheet">
@@ -63,7 +63,7 @@
     <li data-nav-id="/hugohomepage/introduction/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/hugohomepage/introduction/">ResInsight 2018.11</a>
+      <a href="/hugohomepage/introduction/">Introduction</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
@@ -76,40 +76,12 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/hugohomepage/documentation/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/hugohomepage/documentation/">Documentation</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-    <li data-nav-id="/hugohomepage/documentation/installation/" class="dd-item
-        ">
-      <div>
-      <a href="/hugohomepage/documentation/installation/">Installation</a>
-      </div>
-    </li>
-        </ul>
-    </li>
     <li data-nav-id="/hugohomepage/getting-started/" class="dd-item haschildren
         ">
       <div>
       <a href="/hugohomepage/getting-started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/hugohomepage/getting-started/windows-installation/" class="dd-item">
-        <div>
-          <a href="/hugohomepage/getting-started/windows-installation/">
-            Windows Installation
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/hugohomepage/getting-started/linux-installation/" class="dd-item">
-        <div>
-          <a href="/hugohomepage/getting-started/linux-installation/">
-            Linux Installation
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/hugohomepage/getting-started/gridimportexport/" class="dd-item">
         <div>
           <a href="/hugohomepage/getting-started/gridimportexport/">
@@ -123,6 +95,28 @@
             Model Navigation
           </a>
         </div>
+    </li>
+    <li data-nav-id="/hugohomepage/getting-started/installation/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/getting-started/installation/">Installation</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/getting-started/installation/windows-installation/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/getting-started/installation/windows-installation/">
+            Windows Installation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/getting-started/installation/linux-installation/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/getting-started/installation/linux-installation/">
+            Linux Installation
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -301,13 +295,6 @@
       <a href="/hugohomepage/project/">Project</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/hugohomepage/project/about/" class="dd-item">
-        <div>
-          <a href="/hugohomepage/project/about/">
-            About
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/hugohomepage/project/download/" class="dd-item">
         <div>
           <a href="/hugohomepage/project/download/">
@@ -353,11 +340,9 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/hugohomepage/introduction/" >
-   ResInsight 2018.11</option> 
+   Introduction</option> 
       <option value="/hugohomepage/introduction/releasenotes_2018_11/"  selected>- What&#39;s New in 2018.11</option>
   
-    <option value="/hugohomepage/documentation/" >
-   Documentation</option>
     <option value="/hugohomepage/getting-started/" >
    Getting Started</option>
     <option value="/hugohomepage/posts/" >
@@ -378,13 +363,13 @@
     
     
 
-<p><img src="/images/TemporaryLGR.png" alt="Temporary LGR" /></p>
+<p><img src="../../images/introduction/TemporaryLGR.png" alt="Temporary LGR" /></p>
 
 <p>ResInsight 2018.11 is the latest version of ResInsight, the professional quality, open source 3D visualization, curve plotting and post-processing tool for Eclipse reservoir models. Version 2018.11 contains a larger number of new and exciting features, some of which are listed below.</p>
 
 <h2 id="local-grid-refinement-lgr">Local Grid Refinement (LGR)</h2>
 
-<p><img src="/images/TemporaryLGR_CompletionType.png" alt="" /> <img src="/images/TemporaryLGR_CompletionType2.png" alt="" /></p>
+<p><img src="../../images/introduction/TemporaryLGR_CompletionType.png" alt="LGR Type 1" /> <img src="../../images/introduction/TemporaryLGR_CompletionType2.png" alt="LGR Type 2" /></p>
 
 <p>Local Grid Refinement (LGR) can be created based on Eclipse simulations. The refined grids can also be visualised in 3D.</p>
 
@@ -392,7 +377,7 @@
 
 <h2 id="well-path-creation">Well Path Creation</h2>
 
-<p><img src="/images/WellPathCreation.png" alt="" /></p>
+<p><img src="../../images/introduction/WellPathCreation.png" alt="Well Path Creation" /></p>
 
 <p>ResInsight lets the user create new/custom well paths by clicking in the 3D view. A self-established well path will behave in the same way as a regular imported well path.</p>
 
@@ -400,7 +385,7 @@
 
 <h2 id="contour-maps">Contour Maps</h2>
 
-<p><img src="{{ site.baseurl }}/images/ContourMaps1.png" alt="" /></p>
+<p><img src="../../images/introduction/ContourMaps1.png" alt="Contour Maps" /></p>
 
 <p>ResInsight can create contour maps based on different forms of aggregation of 3D Eclipse data onto a 2D map.</p>
 
@@ -410,7 +395,7 @@
 
 <h2 id="well-bore-stability-plots-and-casing-design">Well Bore Stability Plots and Casing Design</h2>
 
-<p><img src="{{ site.baseurl }}/images/WellBoreStabilityPlots.png" alt="" /></p>
+<p><img src="../../images/introduction/WellBoreStabilityPlots.png" alt="Well Bore Stability Plots" /></p>
 
 <p>ResInsight can create <strong>Well Bore Stability</strong> plots for Geomechanical cases. These plots are specialized <strong>Well Log Plots</strong> and contain a visualization of Formations, Well Path Attributes as well as a set of well path derived curves in two different tracks.</p>
 
@@ -418,7 +403,7 @@
 
 <h2 id="memory-management">Memory Management</h2>
 
-<p><img src="{{ site.baseurl }}/images/MemoryManagementBanner.png" alt="" /></p>
+<p><img src="../../images/introduction/MemoryManagementBanner.png" alt="Memory Management" /></p>
 
 <p>ResInsight can require a considerable amount of memory to hold all the grids and necessary result variables. A Memory Management system is now in place to help the user if available memory is low.</p>
 
@@ -429,8 +414,8 @@
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/hugohomepage/introduction/" title="ResInsight 2018.11"> <i class="fa fa-chevron-left"></i><label>ResInsight 2018.11</label></a>
-    <a class="nav nav-next" href="/hugohomepage/documentation/" title="Documentation" style="margin-right: 0px;"><label>Documentation</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/hugohomepage/introduction/" title="Introduction"> <i class="fa fa-chevron-left"></i><label>Introduction</label></a>
+    <a class="nav nav-next" href="/hugohomepage/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
