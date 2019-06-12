@@ -9,7 +9,7 @@ weigth = 1
 ResInsight has two main windows. One for 3D related visualization, and one for 2D graphs and plots. These ares shown in the images below. 
 
 ##### 3D Main Window
-![ResInsight User Interface](../images/getting-started/ResInsightUIMediumSize.png)
+![ResInsight User Interface]({{< relref "" >}}images/getting-started/ResInsightUIMediumSize.png)
 
 ##### Plot Main Window
 ![ResInsight User Interface](../images/getting-started/ResInsightMainPlotMediumSize.png)
