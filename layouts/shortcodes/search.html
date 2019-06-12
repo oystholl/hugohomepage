@@ -1,18 +1,13 @@
-<form action="" method="GET" id="search-form">
-    <input type="search" name="q" id="search-box" placeholder="Search">
-</form>
-
 <h2>Search for: <span id="search-title"></span></h2>
 <div id="search-results">
 </div>
 <div class="clear"></div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="./js/lunr.min.js"></script>
-<script type="text/javascript" src="./js/search.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="{{ relref . "_index.md" }}js/lunr.min.js"></script>
+<script>
     window.store = [];
     {{ range .Site.AllPages }}
-        {{ if not (.IsHome) }}
+        {{ if not (eq .Title "Search") }} // To avoid infinite loop
             window.store[{{ .RelPermalink }}] = {
                 title:    {{ .Title }},
                 content:  {{ .Plain }},
@@ -21,5 +16,5 @@
             };
         {{ end }}
     {{ end }}
-    console.log(window.store);
 </script>
+<script type="text/javascript" src="{{ relref . "_index.md" }}js/search.js"></script>

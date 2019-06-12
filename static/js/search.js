@@ -44,15 +44,8 @@
                 if (subtitle !== null && lastSubtitle != subtitle.id) {
                     matchingText += subtitle.content;
                     lastSubtitle = subtitle.id;
-                    console.log("subtitle.content", subtitle.content);
-
-                    console.log("subtitle.id", subtitle.id);
-
-                    console.log("lastSubtitle", lastSubtitle);
                 }
                 matchingText += "<p class='search-result-data'>" + hilightText(regexes, text) + "</p>";
-
-                console.log("matchingText", matchingText);
 
                 return {
                     content: matchingText,
@@ -121,8 +114,6 @@
             }
         });
 
-        console.log(index);
-
         return index;
     }
 
@@ -130,15 +121,8 @@
 
     if (searchTerm) {
         document.getElementById("search-title").innerHTML = searchTerm;
-
         var index = createIndex();
-
-        console.log(index);
-
         var results = index.search(searchTerm);
-
-        console.log(results);
-
         displaySearchResults(searchTerm, results, window.store);
     } else {
         noResults();
