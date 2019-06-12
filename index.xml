@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on My New Hugo Site</title>
+    <link>https://oystholl.github.io/hugohomepage/</link>
+    <description>Recent content in Welcome on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://oystholl.github.io/hugohomepage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Installation</title>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/installation/windows-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/installation/windows-installation/</guid>
+      <description>Note: None of the binary distributions includes support for ABAQUS odb files.
+ResInsight Installation  Download ZIP binary distribution from https://github.com/OPM/ResInsight/releases Extract content from ZIP file Start ResInsight.exe  Octave Installation (optional)  Download Octave-4.0.0 and install it. (Newer versions will not work) Launch ResInsight.exe, open Edit-&amp;gt;Preferences. On the Octave tab, enter the path to the Octave command line interpreter executable.
+( Usually C:\Your\Path\To\Octave-x.x.x\bin\octave-cli.exe )  A binary package of ResInsight will normally not work with other Octave versions than the one it is compiled with.</description>
+    </item>
+    
+    <item>
+      <title>Linux Installation</title>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/installation/linux-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/installation/linux-installation/</guid>
+      <description>Note: None of the binary distributions includes support for ABAQUS odb files.
+Install ResInsight From downloaded tarball  Download TAR.GZ binary distribution from https://github.com/OPM/ResInsight/releases Extract content from TAR file Start ./ResInsight  Display Menu Icons in GNOME (Optional) By default, icons are not visible in menus in the GNOME desktop environment. ResInsight has icons for many menu items, and icons can be set visible by issuing the following commands (Tested on RHEL6) :</description>
+    </item>
+    
+    <item>
+      <title>Grid Import</title>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/gridimportexport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/gridimportexport/</guid>
+      <description>Importing Eclipse Cases ResInsight supports the following type of Eclipse input data:
+ *.GRID and *.EGRID files along with their *.INIT and restart files *.XNNN and *.UNRST. Grid and Property data from *.GRDECL files.  Release 2018.11 supports import of simulations from Intersect. To be able to import into ResInsight, the Intersect simulation must be exported into Eclipse file format.  Eclipse Results ResInsight offers several ways to import Eclipse (grid) files.</description>
+    </item>
+    
+    <item>
+      <title>Model Navigation</title>
+      <link>https://oystholl.github.io/hugohomepage/getting-started/modelnavigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/getting-started/modelnavigation/</guid>
+      <description>ResInsight comes with four navigation modes. The active mode can be selected in the Preferences dialog (Edit -&amp;gt; Preferences).
+Note that changing the navigation mode applies to the currently active view only, and views created after the change.
+These abbreviations are used in the tables below:
+   Abbreviation Meaning     LMB Press the left mouse button   MMB Press the middle mouse button or scroll wheel button   RMB Press the right mouse button    The following applies to all navigation modes:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oystholl.github.io/hugohomepage/_header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_header/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Downloads</title>
+      <link>https://oystholl.github.io/hugohomepage/project/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/project/download/</guid>
+      <description>Windows : ResInsight-2019.04_oct-4.0.0_souring_win64.zip
+Linux - RHEL6 : ResInsight-2019.04_oct-3.4.3_souring_el6.tar.gz
+For older versions, release notes and source code, please visit ResInsight on Github</description>
+    </item>
+    
+    <item>
+      <title>My First Tutorial</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/tutorials/my-first-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/tutorials/my-first-tutorial/</guid>
+      <description> Hello World </description>
+    </item>
+    
+    <item>
+      <title>My Second Tutorial</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/tutorials/my-second-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/tutorials/my-second-tutorial/</guid>
+      <description> Hello World </description>
+    </item>
+    
+    <item>
+      <title>Release Notification Subscription</title>
+      <link>https://oystholl.github.io/hugohomepage/project/releasenotification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/project/releasenotification/</guid>
+      <description> LinkedIn Feel free to join ResInsight on LinkedIn
+Newsletter By subscribing to the Release Notification you will get notified when new releases are available. Please use the button below to send a request for subscription mail.
+ Subscribe     </description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2013/2013-10-25-resinsight-1-0-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2013/2013-10-25-resinsight-1-0-0-released/</guid>
+      <description> Grid visualization Range and property filters Basic Fault visualization Octave interface  </description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.1.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-01-23-resinsight-1-1-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-01-23-resinsight-1-1-0-released/</guid>
+      <description> Batch functionality  statistics computations efficient handlig of multiple cases  Faults Vizualisation of NNCS </description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.2.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-07-14-resinsight-1-2-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-07-14-resinsight-1-2-0-released/</guid>
+      <description>Main features  Support for large datasets in Octave Custom display of ternary visualization  Download Release Binaries on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.3.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-09-24-resinsight-1-3-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-09-24-resinsight-1-3-0-released/</guid>
+      <description>Main features  Added several derived results Added support for mapping a separate result on faults Improved text in Result Info when picking in 3D scene
+  Download Release Binaries on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.3.1 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-11-07-resinsight-1-3-1-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2014/2014-11-07-resinsight-1-3-1-released/</guid>
+      <description>Main features The main focus for this release has been performance improvements related to file reading and parsing. Significant improvements has been achieved on both Windows and Linux platforms.
+Download Release Binaries on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.4.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2015/2015-08-23-resinsight-1-4-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2015/2015-08-23-resinsight-1-4-0-released/</guid>
+      <description>We are happy to announce the release of ResInsight v1.4.0 which is a maintenance release.
+It also serves as an alignment of the codebase with the efforts done to add Geomechanical support to ResInsight.
+Download Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.4.0 on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.5.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2015/2015-11-09-resinsight-1-5-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2015/2015-11-09-resinsight-1-5-0-released/</guid>
+      <description>We are happy to announce the release of ResInsight v1.5.0.
+Download Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.5.0 on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.6.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2016/2016-01-11-resinsight-1-6-0-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2016/2016-01-11-resinsight-1-6-0-released/</guid>
+      <description>We are happy to announce the release of ResInsight v1.6.0.
+Download Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.6.0 on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2016.11 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2016/2016-11-29-resinsight-2016.11-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2016/2016-11-29-resinsight-2016.11-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2016.11.
+Download Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v2016.11 on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2017.05 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2017/2017-05-31-resinsight-2017.05-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2017/2017-05-31-resinsight-2017.05-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2017.05.
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2017.05.2 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2017/2017-06-21-resinsight-2017.05.2-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2017/2017-06-21-resinsight-2017.05.2-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2017.05.2.
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2019.04 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2019-04-26-resinsight-2019.04-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2019-04-26-resinsight-2019.04-released/</guid>
+      <description>We are happy to announce the release of ResInsight 2019.04.
+See Release Notes for an overview.
+Download Have a look at the GitHub release-page for details or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://oystholl.github.io/hugohomepage/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/search/</guid>
+      <description>Search for:       window.store = []; window.store[&#34;/hugohomepage/introduction/&#34;] = { title: &#34;Introduction&#34;, content: &#34; ResInsight 2018.11 ResInsight is an open source, cross-platform 3D visualization, curve plotting and post processing tool for Eclipse reservoir models and simulations. It can also be configured to visualize geomechanical simulations from ABAQUS.\nThe system also constitutes a framework for further development and can be extended to support new data sources and visualization methods, e.</description>
+    </item>
+    
+    <item>
+      <title>Support</title>
+      <link>https://oystholl.github.io/hugohomepage/project/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/project/support/</guid>
+      <description>For inquiries for new features, enhancements or support and maintenance agreements, please contact us for an offer.
+Bug reports and general feature requests can be filed directly on GitHub
+Phone : +47 73 60 43 00 e-mail : info@ceetronsolutions.com
+Ceetron Solutions AS </description>
+    </item>
+    
+    <item>
+      <title>Testimonials</title>
+      <link>https://oystholl.github.io/hugohomepage/project/testimonials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/project/testimonials/</guid>
+      <description>“I have been using ResInsight now for some time and have stopped using the commercial software as ResInsight is much more responsive and easier to use. It really is an excellent piece of software.”
+David Baxendale
+Senior Petroleum Engineering Advisor, RPS Energy
+&amp;ldquo;ResInsight is an excellent tool to visualize simulation results and offers good-looking and illustrative graphs for presentations. I found the integration with Octave especially powerful in my research.&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New in 2018.11</title>
+      <link>https://oystholl.github.io/hugohomepage/introduction/releasenotes_2018_11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/introduction/releasenotes_2018_11/</guid>
+      <description>ResInsight 2018.11 is the latest version of ResInsight, the professional quality, open source 3D visualization, curve plotting and post-processing tool for Eclipse reservoir models. Version 2018.11 contains a larger number of new and exciting features, some of which are listed below.
+Local Grid Refinement (LGR) Local Grid Refinement (LGR) can be created based on Eclipse simulations. The refined grids can also be visualised in 3D.
+See Completions LGR
+Well Path Creation ResInsight lets the user create new/custom well paths by clicking in the 3D view.</description>
+    </item>
+    
+  </channel>
+</rss>

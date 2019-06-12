@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 on My New Hugo Site</title>
+    <link>https://oystholl.github.io/hugohomepage/posts/news/2017/</link>
+    <description>Recent content in 2017 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://oystholl.github.io/hugohomepage/posts/news/2017/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ResInsight 2017.05 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2017/2017-05-31-resinsight-2017.05-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2017/2017-05-31-resinsight-2017.05-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2017.05.
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2017.05.2 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/posts/news/2017/2017-06-21-resinsight-2017.05.2-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/posts/news/2017/2017-06-21-resinsight-2017.05.2-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2017.05.2.
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+  </channel>
+</rss>

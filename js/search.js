@@ -44,15 +44,8 @@
                 if (subtitle !== null && lastSubtitle != subtitle.id) {
                     matchingText += subtitle.content;
                     lastSubtitle = subtitle.id;
-                    console.log("subtitle.content", subtitle.content);
-
-                    console.log("subtitle.id", subtitle.id);
-
-                    console.log("lastSubtitle", lastSubtitle);
                 }
                 matchingText += "<p class='search-result-data'>" + hilightText(regexes, text) + "</p>";
-
-                console.log("matchingText", matchingText);
 
                 return {
                     content: matchingText,
@@ -108,7 +101,6 @@
     }
 
     function createIndex() {
-        console.log("create index");
         var index = lunr(function() {
             this.field("title");
             this.field("content");
@@ -129,11 +121,8 @@
 
     if (searchTerm) {
         document.getElementById("search-title").innerHTML = searchTerm;
-
         var index = createIndex();
-
-        var results = index.mysearch(searchTerm);
-
+        var results = index.search(searchTerm);
         displaySearchResults(searchTerm, results, window.store);
     } else {
         noResults();
