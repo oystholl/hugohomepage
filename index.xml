@@ -63,15 +63,6 @@ These abbreviations are used in the tables below:
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://oystholl.github.io/hugohomepage/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oystholl.github.io/hugohomepage/about/</guid>
-      <description>Something</description>
-    </item>
-    
-    <item>
       <title>Downloads</title>
       <link>https://oystholl.github.io/hugohomepage/project/download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -236,7 +227,7 @@ Download Have a look at the GitHub release-page for details or download the new 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://oystholl.github.io/hugohomepage/search/</guid>
-      <description>Search content</description>
+      <description>Something</description>
     </item>
     
     <item>

@@ -108,6 +108,7 @@
     }
 
     function createIndex() {
+        console.log("create index");
         var index = lunr(function() {
             this.field("title");
             this.field("content");
@@ -131,7 +132,7 @@
 
         var index = createIndex();
 
-        var results = index.search(searchTerm);
+        var results = index.mysearch(searchTerm);
 
         displaySearchResults(searchTerm, results, window.store);
     } else {

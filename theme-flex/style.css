@@ -44,14 +44,14 @@ header {
   right: 0;
   top: 0;
   z-index: 100; }
-  /*header:after {
+  header:after {
     background: url(ribbon.png) 0 0/100% no-repeat;
     content: '';
     height: .35rem;
     left: 0;
     position: absolute;
     right: 0;
-    top: 100%; }*/
+    top: 100%; }
   header a {
     text-decoration: none; }
   header .logo {
@@ -175,7 +175,7 @@ article > aside {
     margin: 2rem 0rem; }
 
 /*!
- * facette-documentation - Facette project documentation
+ * facette-docs - Facette project documentation
  * Website: http://docs.facette.io/
  */
 * {
