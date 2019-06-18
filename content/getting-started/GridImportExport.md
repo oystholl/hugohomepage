@@ -36,9 +36,9 @@ See [Preferences: Behavior When Loading Data]({{ site.baseurl }}/docs/preference
 ### Time Step Filtered Eclipse Result
 Some Eclipse files have an enormous amount of time steps. If only a selection of the time steps really are needed for the session, the time steps can be filtered before loading. This can possibly speed up the import a great deal. Filtering can be done in the following way.
 
-Select **File->Import->Eclipse Cases-> ![]({{ site.baseurl }}/images/Case24x24.png) Import Eclipse Case (Time Step Filtered)** and select an _`*.EGRID`_ or _`*.GRID`_ Eclipse file for import. A dialog will appear.
+Select **File->Import->Eclipse Cases-> ![]({{< relref "" >}}images/getting-started/Case24x24.png) Import Eclipse Case (Time Step Filtered)** and select an _`*.EGRID`_ or _`*.GRID`_ Eclipse file for import. A dialog will appear.
 
-![]({{ site.baseurl }}/images/timeStepFilter.png)
+![]({{< relref "" >}}images/getting-started/timeStepFilter.png)
 
 Filtering can be done by adjusting the following parameters:
 * First and last time step
@@ -50,12 +50,12 @@ First and last time step to include in the import can be chosen in their respect
 
 Filtering can also be done after import, in a case's **Property Window**.
 
-![]({{ site.baseurl }}/images/timeStepFilterPropEditor.png)
+![]({{< relref "" >}}images/getting-started/timeStepFilterPropEditor.png)
 
 After clicking *Reload Case*, the time steps in the toolbar will be updated.
 
 ### Eclipse ASCII Input Data
-1. Select **File->Import->Eclipse Cases-> ![]({{ site.baseurl }}/images/EclipseInput24x24.png) Import Input Eclipse Case** and select a _`*.GRDECL`_ file.
+1. Select **File->Import->Eclipse Cases-> ![]({{< relref "" >}}images/getting-started/EclipseInput24x24.png) Import Input Eclipse Case** and select a _`*.GRDECL`_ file.
 2. The case is imported, and a view of the case is created
 3. Right-click the **Input Properties** in the generated **Input Case** and use the context menu to import additional Eclipse Property data files.
 
@@ -63,7 +63,7 @@ After clicking *Reload Case*, the time steps in the toolbar will be updated.
 
 The X and Y grid data can be negated in order to make the Grid model appear correctly in ResInsight. This functionality is accessible in the **Property Editor** for all Eclipse Case types as the toggle buttons **Flip X Axis** and **Flip Y Axis** as shown in the example below.
  
-![]({{ site.baseurl }}/images/CaseProperties.png)
+![]({{< relref "" >}}images/getting-started/CaseProperties.png)
 
 ### SourSimRL Import
 
@@ -72,6 +72,6 @@ Results From the simulation software SourSimRL can be imported using the **SourS
 ## Importing ABAQUS Odb Cases
 When ResInsight is compiled with ABAQUS-odb support, _`*.odb`_ files can be imported by selecting the command:
 
-**File->Import->Geo Mechanical Cases-> ![]({{ site.baseurl }}/images/GeoMechCase24x24.png) Import Geo Mechanical Model** 
+**File->Import->Geo Mechanical Cases-> ![]({{< relref "" >}}images/getting-started/GeoMechCase24x24.png) Import Geo Mechanical Model** 
 
 See [Build Instructions]({{ site.baseurl }}/docs/buildinstructions) on how to compile ResInsight with odb-support.
