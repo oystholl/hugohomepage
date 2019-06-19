@@ -22,5 +22,15 @@ See Completions LGR
 Well Path Creation ResInsight lets the user create new/custom well paths by clicking in the 3D view.</description>
     </item>
     
+    <item>
+      <title>What&#39;s New in 2019.04</title>
+      <link>https://oystholl.github.io/hugohomepage/introduction/releasenotes_2019_04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/introduction/releasenotes_2019_04/</guid>
+      <description>ResInsight 2019.04 is the latest version of ResInsight, the professional quality, open source 3D visualization, curve plotting and post-processing tool for Eclipse reservoir models. Version 2019.04 contains a larger number of new and exciting features, some of which are listed below.
+Grid Cross Plots ResInsight supports the creation of cross plots of two results against each other, with each cell in the grid representing one data point in the plot.</description>
+    </item>
+    
   </channel>
 </rss>

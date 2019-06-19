@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>_posts on My New Hugo Site</title>
+    <link>https://oystholl.github.io/hugohomepage/_posts/</link>
+    <description>Recent content in _posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Apr 2019 16:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://oystholl.github.io/hugohomepage/_posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ResInsight 2019.04 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2019-04-26-resinsight-2019.04-released/</link>
+      <pubDate>Tue, 30 Apr 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2019-04-26-resinsight-2019.04-released/</guid>
+      <description>We are happy to announce the release of ResInsight 2019.04.
+See Release Notes for an overview.
+Download Have a look at the GitHub release-page for details or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2018.11.2 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2019-02-04-resinsight-2018.11.2-released/</link>
+      <pubDate>Mon, 04 Feb 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2019-02-04-resinsight-2018.11.2-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2018.11.2. This is patch release, mainly related to import issues.
+Download Have a look at the GitHub release-page to read the release notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2018.11.1 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2018-12-21-resinsight-2018.11.1-released/</link>
+      <pubDate>Fri, 21 Dec 2018 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2018-12-21-resinsight-2018.11.1-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2018.11.1. This is mainly a patch release, but includes improved support for data source stepping of summary curves and ensemble curves.
+Download Have a look at the GitHub release-page to read the release notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2018.11 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2018-11-28-resinsight-2018.11-released/</link>
+      <pubDate>Wed, 28 Nov 2018 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2018-11-28-resinsight-2018.11-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2018.11
+See What&amp;rsquo;s New in 2018.11
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2018.05.1 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2018-05-22-resinsight-2018-05-1-released/</link>
+      <pubDate>Fri, 25 May 2018 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2018-05-22-resinsight-2018-05-1-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2018.05.1
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2018.05 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2018-05-22-resinsight-2018-05-released/</link>
+      <pubDate>Tue, 22 May 2018 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2018-05-22-resinsight-2018-05-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2018.05
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2018.01.1 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2018-02-22-resinsight-2018.01.1-released/</link>
+      <pubDate>Thu, 22 Feb 2018 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2018-02-22-resinsight-2018.01.1-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2018.01.1
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2018.01 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2018-01-05-resinsight-2018.01-released/</link>
+      <pubDate>Fri, 05 Jan 2018 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2018-01-05-resinsight-2018.01-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2018.01
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2017.05.2 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2017-06-21-resinsight-2017.05.2-released/</link>
+      <pubDate>Wed, 21 Jun 2017 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2017-06-21-resinsight-2017.05.2-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2017.05.2.
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2017.05 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2017-05-31-resinsight-2017.05-released/</link>
+      <pubDate>Wed, 31 May 2017 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2017-05-31-resinsight-2017.05-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2017.05.
+Download Have a look at the GitHub release-page to read the release-notes or download the new release from the Download page.</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 2016.11 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2016-11-29-resinsight-2016.11-released/</link>
+      <pubDate>Tue, 29 Nov 2016 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2016-11-29-resinsight-2016.11-released/</guid>
+      <description>We are happy to announce the release of ResInsight v2016.11.
+Download Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v2016.11 on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.6.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2016-01-11-resinsight-1-6-0-released/</link>
+      <pubDate>Mon, 11 Jan 2016 16:00:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2016-01-11-resinsight-1-6-0-released/</guid>
+      <description>We are happy to announce the release of ResInsight v1.6.0.
+Download Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.6.0 on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.5.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2015-11-09-resinsight-1-5-0-released/</link>
+      <pubDate>Mon, 09 Nov 2015 21:21:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2015-11-09-resinsight-1-5-0-released/</guid>
+      <description>We are happy to announce the release of ResInsight v1.5.0.
+Download Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.5.0 on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.4.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2015-08-23-resinsight-1-4-0-released/</link>
+      <pubDate>Sun, 23 Aug 2015 21:21:00 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2015-08-23-resinsight-1-4-0-released/</guid>
+      <description>We are happy to announce the release of ResInsight v1.4.0 which is a maintenance release.
+It also serves as an alignment of the codebase with the efforts done to add Geomechanical support to ResInsight.
+Download Have a look at the GitHub release-page to read the release-notes or to download the new release: Release v1.4.0 on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.3.1 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2014-11-07-resinsight-1-3-1-released/</link>
+      <pubDate>Fri, 07 Nov 2014 02:12:52 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2014-11-07-resinsight-1-3-1-released/</guid>
+      <description>Main features The main focus for this release has been performance improvements related to file reading and parsing. Significant improvements has been achieved on both Windows and Linux platforms.
+Download Release Binaries on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.3.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2014-09-24-resinsight-1-3-0-released/</link>
+      <pubDate>Wed, 24 Sep 2014 02:12:52 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2014-09-24-resinsight-1-3-0-released/</guid>
+      <description>Main features  Added several derived results Added support for mapping a separate result on faults Improved text in Result Info when picking in 3D scene
+  Download Release Binaries on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.2.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2014-07-14-resinsight-1-2-0-released/</link>
+      <pubDate>Mon, 14 Jul 2014 02:12:52 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2014-07-14-resinsight-1-2-0-released/</guid>
+      <description>Main features  Support for large datasets in Octave Custom display of ternary visualization  Download Release Binaries on GitHub</description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.1.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2014-01-23-resinsight-1-1-0-released/</link>
+      <pubDate>Thu, 23 Jan 2014 02:12:52 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2014-01-23-resinsight-1-1-0-released/</guid>
+      <description> Batch functionality  statistics computations efficient handlig of multiple cases  Faults Vizualisation of NNCS </description>
+    </item>
+    
+    <item>
+      <title>ResInsight 1.0 Released</title>
+      <link>https://oystholl.github.io/hugohomepage/_posts/2013-10-25-resinsight-1-0-0-released/</link>
+      <pubDate>Fri, 25 Oct 2013 02:12:52 +0200</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_posts/2013-10-25-resinsight-1-0-0-released/</guid>
+      <description> Grid visualization Range and property filters Basic Fault visualization Octave interface  </description>
+    </item>
+    
+  </channel>
+</rss>

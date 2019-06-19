@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My New Hugo Site</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-06-19T14:09:00 CEST">
+<title>Octave Interface :: My New Hugo Site</title>
+<link rel="shortcut icon" href="/hugohomepage/images/favicon.png" type="image/x-icon" />
+<link href="/hugohomepage/css/font-awesome.min.css" rel="stylesheet">
+<link href="/hugohomepage/css/nucleus.css" rel="stylesheet">
+<link href="/hugohomepage/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/hugohomepage/css/bootstrap.min.css">
+<script src="/hugohomepage/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/oystholl.github.io\/hugohomepage\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/hugohomepage/scripting/octaveinterface/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><img src="https://oystholl.github.io/hugohomepage/images/ResInsightCroppedIconPicture.png" alt="logo" /></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/OPM/ResInsight"  rel="noopener">
+                  <i class='fa fa-github'></i> Github repo
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/hugohomepage/" class="dd-item">
+          <a href="/hugohomepage/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li><form action="/hugohomepage/search/" method="GET" id="search-form">
+  <input type="search" name="q" id="search-box" placeholder="Search">
+</form>
+    <li data-nav-id="/hugohomepage/introduction/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/introduction/">Introduction</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/introduction/releasenotes_2018_11/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/introduction/releasenotes_2018_11/">
+            What&#39;s New in 2018.11
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/introduction/releasenotes_2019_04/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/introduction/releasenotes_2019_04/">
+            What&#39;s New in 2019.04
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/_posts/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/_posts/">_posts</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/_posts/2019-04-26-resinsight-2019.04-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2019-04-26-resinsight-2019.04-released/">
+            ResInsight 2019.04 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2019-02-04-resinsight-2018.11.2-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2019-02-04-resinsight-2018.11.2-released/">
+            ResInsight 2018.11.2 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2018-12-21-resinsight-2018.11.1-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2018-12-21-resinsight-2018.11.1-released/">
+            ResInsight 2018.11.1 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2018-11-28-resinsight-2018.11-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2018-11-28-resinsight-2018.11-released/">
+            ResInsight 2018.11 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2018-05-22-resinsight-2018-05-1-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2018-05-22-resinsight-2018-05-1-released/">
+            ResInsight 2018.05.1 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2018-05-22-resinsight-2018-05-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2018-05-22-resinsight-2018-05-released/">
+            ResInsight 2018.05 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2018-02-22-resinsight-2018.01.1-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2018-02-22-resinsight-2018.01.1-released/">
+            ResInsight 2018.01.1 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2018-01-05-resinsight-2018.01-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2018-01-05-resinsight-2018.01-released/">
+            ResInsight 2018.01 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2017-06-21-resinsight-2017.05.2-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2017-06-21-resinsight-2017.05.2-released/">
+            ResInsight 2017.05.2 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2017-05-31-resinsight-2017.05-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2017-05-31-resinsight-2017.05-released/">
+            ResInsight 2017.05 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2016-11-29-resinsight-2016.11-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2016-11-29-resinsight-2016.11-released/">
+            ResInsight 2016.11 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2016-01-11-resinsight-1-6-0-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2016-01-11-resinsight-1-6-0-released/">
+            ResInsight 1.6.0 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2015-11-09-resinsight-1-5-0-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2015-11-09-resinsight-1-5-0-released/">
+            ResInsight 1.5.0 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2015-08-23-resinsight-1-4-0-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2015-08-23-resinsight-1-4-0-released/">
+            ResInsight 1.4.0 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2014-11-07-resinsight-1-3-1-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2014-11-07-resinsight-1-3-1-released/">
+            ResInsight 1.3.1 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2014-09-24-resinsight-1-3-0-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2014-09-24-resinsight-1-3-0-released/">
+            ResInsight 1.3.0 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2014-07-14-resinsight-1-2-0-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2014-07-14-resinsight-1-2-0-released/">
+            ResInsight 1.2.0 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2014-01-23-resinsight-1-1-0-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2014-01-23-resinsight-1-1-0-released/">
+            ResInsight 1.1.0 Released
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/_posts/2013-10-25-resinsight-1-0-0-released/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/_posts/2013-10-25-resinsight-1-0-0-released/">
+            ResInsight 1.0 Released
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/3d-main-window/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/3d-main-window/">3D Main Window</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/3d-main-window/formations/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/formations/">
+             Zonations/Formations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/reservoirviews/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/reservoirviews/">
+            3D Views
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/filters/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/filters/">
+            Cell Filters
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/contourmaps/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/contourmaps/">
+            Contour Maps
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/hugohomepage/3d-main-window/customization/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/3d-main-window/customization/">Customization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/3d-main-window/customization/keyboardshortcuts/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/customization/keyboardshortcuts/">
+            Keyboard Shortcuts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/customization/memorymanagement/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/customization/memorymanagement/">
+            Memory Management
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/customization/preferences/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/customization/preferences/">
+            Preferences
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/faults/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/faults/">
+            Faults
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/casegroupsandstatistics/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/casegroupsandstatistics/">
+            Grid Case Groups and Statistics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/gridstatisticsdialog/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/gridstatisticsdialog/">
+            Grid Statistics Dialog
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/intersections/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/intersections/">
+            Intersections
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/linkedviews/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/linkedviews/">
+            Linked Views
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/measurement/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/measurement/">
+            Measurement
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/hugohomepage/3d-main-window/results/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/3d-main-window/results/">Results</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/3d-main-window/results/annotations/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/results/annotations/">
+            Annotations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/results/cellresults/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/results/cellresults/">
+            Cell Results
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/results/resultcolorlegend/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/results/resultcolorlegend/">
+            Result Color Legend
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/results/resultinspection/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/results/resultinspection/">
+            Result Inspection
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/tensors/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/tensors/">
+            Tensor Results
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/hugohomepage/3d-main-window/wells-and-completions/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/3d-main-window/wells-and-completions/">Wells and Completions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/3d-main-window/wells-and-completions/3dwelllogcurves/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/wells-and-completions/3dwelllogcurves/">
+            3D Well Log Plots
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/wells-and-completions/completions/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/wells-and-completions/completions/">
+            Completions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/wells-and-completions/completionslgr/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/wells-and-completions/completionslgr/">
+            Completions LGR
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/wells-and-completions/createnewwellpaths/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/wells-and-completions/createnewwellpaths/">
+            Create Well Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/wells-and-completions/simulationwells/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/wells-and-completions/simulationwells/">
+            Simulation Wells
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/3d-main-window/wells-and-completions/wellpaths/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/3d-main-window/wells-and-completions/wellpaths/">
+            Well Trajectories
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/appendix/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/appendix/">Appendix</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/appendix/derivedresults/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/appendix/derivedresults/">
+             Derived Results
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/appendix/buildinstructions/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/appendix/buildinstructions/">
+            Build Instructions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/appendix/octaveinterfacereference/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/appendix/octaveinterfacereference/">
+            Octave Interface Reference
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/appendix/regressiontestsystem/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/appendix/regressiontestsystem/">
+            Regression Test System
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/export/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/export/">Export</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/export/exportwellpaths/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/export/exportwellpaths/">
+             Export Well Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/export/completionexport/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/export/completionexport/">
+            Export Completions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/export/exporteclipseproperties/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/export/exporteclipseproperties/">
+            Export Eclipse Properties
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/export/exportsectormodel/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/export/exportsectormodel/">
+            Export Sector Model
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/export/exportfluxnummultnum/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/export/exportfluxnummultnum/">
+            FLUXNUM/MULTNUM
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/export/snapshots/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/export/snapshots/">
+            Snapshots
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/getting-started/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/getting-started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/getting-started/gridimportexport/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/getting-started/gridimportexport/">
+            Grid Import
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/getting-started/modelnavigation/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/getting-started/modelnavigation/">
+            Model Navigation
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/hugohomepage/getting-started/installation/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/getting-started/installation/">Installation</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/getting-started/installation/windows-installation/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/getting-started/installation/windows-installation/">
+            Windows Installation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/getting-started/installation/linux-installation/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/getting-started/installation/linux-installation/">
+            Linux Installation
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/import/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/import/">Import</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/import/odbsupport/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/import/odbsupport/">
+            ABAQUS Odb Support
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/import/elementpropertytableimport/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/import/elementpropertytableimport/">
+            Element Property Table Import
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/import/observeddata/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/import/observeddata/">
+            Observed Time History Data
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/import/pasteexceltimedata/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/import/pasteexceltimedata/">
+            Paste Excel Time History Data
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/plot-window/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/plot-window/">Plot Window</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/plot-window/curvecalculator/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/curvecalculator/">
+            Curve Calculator
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/ensembleplotting/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/ensembleplotting/">
+            Ensemble Plotting
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/flowdiagnosticsplots/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/flowdiagnosticsplots/">
+            Flow Diagnostics Plots
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/gridcrossplots/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/gridcrossplots/">
+            Grid Cross Plots
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/pltplot/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/pltplot/">
+            PLT Plot
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/rftplot/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/rftplot/">
+            RFT Plot
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/saturationpressureplots/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/saturationpressureplots/">
+            Saturation Pressure Plots
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/summarycrossplots/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/summarycrossplots/">
+            Summary Cross Plot
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/summaryploteditor/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/summaryploteditor/">
+            Summary Plot Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/summarysourcestepping/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/summarysourcestepping/">
+            Summary Plot Source Stepping
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/summaryplots/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/summaryplots/">
+            Summary Plots
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/wellborestabilityplots/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/wellborestabilityplots/">
+            Well Bore Stability Plots
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/plot-window/welllogsandplots/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/plot-window/welllogsandplots/">
+            Well Log Plots
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/project/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/project/">Project</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/project/download/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/project/download/">
+            Downloads
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/project/releasenotification/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/project/releasenotification/">
+            Release Notification Subscription
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/project/support/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/project/support/">
+            Support
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/project/testimonials/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/project/testimonials/">
+            Testimonials
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/hugohomepage/scripting/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/hugohomepage/scripting/">Scripting</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/hugohomepage/scripting/commandfile/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/scripting/commandfile/">
+            Command File
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/scripting/commandlineinterface/" class="dd-item">
+        <div>
+          <a href="/hugohomepage/scripting/commandlineinterface/">
+            Command Line Interface
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/hugohomepage/scripting/octaveinterface/" class="dd-item active">
+        <div>
+          <a href="/hugohomepage/scripting/octaveinterface/">
+            Octave Interface
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/hugohomepage/introduction/" >
+   Introduction</option>
+    <option value="/hugohomepage/_posts/" >
+   _posts</option>
+    <option value="/hugohomepage/3d-main-window/" >
+   3D Main Window</option>
+    <option value="/hugohomepage/appendix/" >
+   Appendix</option>
+    <option value="/hugohomepage/export/" >
+   Export</option>
+    <option value="/hugohomepage/getting-started/" >
+   Getting Started</option>
+    <option value="/hugohomepage/import/" >
+   Import</option>
+    <option value="/hugohomepage/plot-window/" >
+   Plot Window</option>
+    <option value="/hugohomepage/project/" >
+   Project</option>
+    <option value="/hugohomepage/scripting/" >
+   Scripting</option> 
+      <option value="/hugohomepage/scripting/commandfile/" >- Command File</option>
+      <option value="/hugohomepage/scripting/commandlineinterface/" >- Command Line Interface</option>
+      <option value="/hugohomepage/scripting/octaveinterface/"  selected>- Octave Interface</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+    
+
+    <h1>Octave Interface</h1>
+    
+    
+    
+    
+
+<p>ResInsight provides a flexible interface to <a href="http://www.gnu.org/software/octave/" title="Octave">Octave</a> including:</p>
+
+<ul>
+<li>Octave functions that communicates with a running ResInsight session</li>
+<li>Features to simplify management and editing of Octave scripts from ResInsight</li>
+<li>Commands to execute scripts using Octave.<br /></li>
+</ul>
+
+<p>The Octave functions are documented in <a href="/hugohomepage/appendix/octaveinterfacereference/">Octave Interface Reference</a>.</p>
+
+<div class="note info"> 
+<b>Note:</b> The Octave interface does not support Flow diagnostics and Injection flooding results in addition to Geomechanical cases. 
+</div>
+
+<h2 id="octave-script-management">Octave Script Management</h2>
+
+<p>Octave scripts are available in the <strong>Scripts</strong> folder in the <strong>Project Tree</strong>.</p>
+
+<p><img src="/hugohomepage/images/scripting/OctaveScriptTree.png" alt="" /></p>
+
+<p>This folder contains an entry for each of the directories you have added as a <strong>Script Folder</strong>. Each of the folder lists available <em><code>*.m</code></em> files and sub directories.</p>
+
+<h3 id="adding-script-folders">Adding Script Folders</h3>
+
+<p>You can add directories by right-clicking the <strong>Scripts</strong> item to access the context menu.</p>
+
+<p>Multiple standard script folder locations can also be defined in the field <strong>Shared Script Folder(s)</strong> in the <strong>Preferences Dialog</strong> (<strong>Edit -&gt; Preferences</strong>).</p>
+
+<h3 id="editing-octave-scripts">Editing Octave Scripts</h3>
+
+<p>To enable script editing from ResInsight you need to set up the path to a text editor in the <strong>Script Editor</strong> field in the <strong>Preferences Dialog</strong> (<strong>Edit -&gt; Preferences</strong>)</p>
+
+<p>When done, scripts can be edited using the context menu command <strong>Edit</strong> on the script item in the tree.</p>
+
+<p>If you add a script file directly by creating a new file, the new script can be made visible in the user interface by activating <strong>Refresh</strong> in the context menu of a script folder.</p>
+
+<h2 id="executing-octave-scripts">Executing Octave Scripts</h2>
+
+<p>ResInsight can be instructed to execute an Octave script once as a one shot operation, or several times, one time for each selected case. The <a href="/hugohomepage/appendix/octaveinterfacereference/">Octave Interface Reference</a> highlights in more depth how to design your Octave scripts to utilize these features.</p>
+
+<h3 id="executing-a-script-once">Executing a Script Once</h3>
+
+<p>A script can be started by navigating to the script in the <strong>Project Tree</strong>, and selecting <strong>Execute</strong> from the context menu. The currently active case (The one with the active 3D View) will then be set as ResInsight&rsquo;s <em>Current Case</em>, and the script is executed once.</p>
+
+<h3 id="executing-a-script-for-each-selected-case">Executing a Script for Each Selected Case</h3>
+
+<p>One script can be executed on many cases by first selecting a set of cases, and then activating <strong>Execute script</strong> from the context menu on the case selection. The script is then executed once per selected case setting the ResInsight&rsquo;s <em>Current Case</em> each time.</p>
+
+<p><img src="/hugohomepage/images/scripting/ExecuteOctaveScriptOnSelectedCases.png" alt="" /></p>
+
+<h3 id="process-monitor">Process Monitor</h3>
+
+<p>When an Octave script is executed, the <strong>Process Monitor</strong> pops up and displays the output from Octave during the script execution as displayed below:</p>
+
+<p><img src="/hugohomepage/images/scripting/ProcessMonitor.png" alt="" /></p>
+
+<p>In addition to the output from the script, it prints a start and stop time stamp. The <strong>Clear</strong>-button deletes all the text in the monitor, and the <strong>Stop</strong>-button tries to kill the running Octave process.</p>
+
+<h2 id="octave-script-examples">Octave Script Examples</h2>
+
+<p>Here are some example-scripts that illustrates the use of the octave interface.</p>
+
+<div class="note info"> 
+<b>Disclaimer:</b> The scripts are provided as illustration only. They are probably not the best way of using the octave script language, and could potentially be incorrect. 
+</div>
+
+<h4 id="example-1">Example 1</h4>
+
+<pre><code class="language-matlab"># Calculate change of oil saturation from time step to time step
+SOIL = riGetActiveCellProperty(&quot;SOIL&quot;);
+SOILDIFF = SOIL;
+
+i = 0;
+for timestep = SOIL
+	if (i &gt; 0) 
+		SOILDIFF(:,i) = timestep - SOIL(:,i);
+	endif
+	i++;
+endfor
+SOILDIFF(:,i) = 0;
+
+riSetActiveCellProperty(SOILDIFF, &quot;SOILDIFF&quot;);
+</code></pre>
+
+<h4 id="example-2">Example 2</h4>
+
+<pre><code class="language-matlab"># Set all values to &quot;Undefined&quot; exept k-layers from 17 to 20
+CInfo = riGetActiveCellInfo();
+SOIL = riGetActiveCellProperty(&quot;SOIL&quot;);
+
+Mask = (CInfo(:,4) &lt; 17) | (CInfo(:,4) &gt; 20)
+LGRSOIL = SOIL;
+i = 0;
+for i = (1:columns(LGRSOIL))
+    LGRSOIL(Mask,i) = nan;
+endfor
+
+riSetActiveCellProperty(LGRSOIL, &quot;KSlice&quot;);
+</code></pre>
+
+<h4 id="example-3">Example 3</h4>
+
+<pre><code class="language-matlab"># Keep the values in the first LGR only
+
+CInfo = riGetActiveCellInfo();
+SOIL = riGetActiveCellProperty(&quot;SOIL&quot;);
+
+Mask = (CInfo(:,1) != 1);
+
+LGRSOIL = SOIL;
+i = 0;
+for i = (1:columns(LGRSOIL))
+    LGRSOIL(Mask,i) = nan;
+endfor
+
+riSetActiveCellProperty(LGRSOIL, &quot;LGRSOIL&quot;);
+</code></pre>
+
+<h4 id="example-4-might-be-slow-on-big-models">Example 4 ( Might be slow on big models)</h4>
+
+<pre><code class="language-matlab"># Calculate the average SOIL value across K layers
+
+CInfo = riGetActiveCellInfo();
+SOIL = riGetActiveCellProperty(&quot;SOIL&quot;);
+
+SOIL_KAverage = SOIL;
+SOIL_KAverage(:) = nan;
+
+mini = min(CInfo(:,2))
+maxi = max(CInfo(:,2))
+
+minj = min(CInfo(:,3))
+maxj = max(CInfo(:,3))
+
+for i = mini:maxi
+  for j = minj:maxj 
+    Mask = (CInfo(:,1) == 0) &amp; (CInfo(:,2) == i) &amp; (CInfo(:,3) == j) ;
+
+    for ts = (1:columns(SOIL)) 
+      SOIL_KAverage(Mask, ts) = mean(SOIL(Mask, ts));
+    endfor
+  endfor
+endfor
+
+riSetActiveCellProperty(SOIL_KAverage, &quot;SOIL_KAverage&quot;);
+</code></pre>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/hugohomepage/scripting/commandlineinterface/" title="Command Line Interface"> <i class="fa fa-chevron-left"></i><label>Command Line Interface</label></a>
+    <a class="nav nav-next" href="/hugohomepage/scripting/commandfile/" title="Command File" style="margin-right: 0px;"><label>Command File</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/hugohomepage/js/clipboard.min.js"></script>
+
+<link href="/hugohomepage/css/featherlight.min.css" rel="stylesheet">
+<script src="/hugohomepage/js/featherlight.min.js"></script>
+
+
+
+<script src="/hugohomepage/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>
