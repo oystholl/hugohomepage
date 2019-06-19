@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ResInsight &amp;bull; 3D viewer and post processing of reservoir models on My New Hugo Site</title>
+    <title>ResInsight &amp;bull; 3D viewer and post processing of reservoir models on ResInsight</title>
     <link>https://oystholl.github.io/hugohomepage/</link>
-    <description>Recent content in ResInsight &amp;bull; 3D viewer and post processing of reservoir models on My New Hugo Site</description>
+    <description>Recent content in ResInsight &amp;bull; 3D viewer and post processing of reservoir models on ResInsight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Apr 2019 16:00:00 +0200</lastBuildDate>
@@ -242,6 +242,15 @@ Download Release Binaries on GitHub</description>
       
       <guid>https://oystholl.github.io/hugohomepage/_posts/2013-10-25-resinsight-1-0-0-released/</guid>
       <description> Grid visualization Range and property filters Basic Fault visualization Octave interface  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://oystholl.github.io/hugohomepage/_footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oystholl.github.io/hugohomepage/_footer/</guid>
+      <description> About Ceetron Solutions in collaboration with Equinor ASA Contact </description>
     </item>
     
     <item>
