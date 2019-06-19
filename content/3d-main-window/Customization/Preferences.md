@@ -37,7 +37,7 @@ This group contains the different fonts which are used through ResInsight.
 This group of options controls visual settings that will be used when creating new views.
 
 - **Show Grid Lines** -- Controls whether to show the grid lines by default for all cells or just along faults.
-- **Navigation mode** -- Defines how to use the mouse to interact with with the 3D model. Please refer to [Model Navigation]({{ site.baseurl }}/docs/modelnavigation) for details.
+- **Navigation mode** -- Defines how to use the mouse to interact with with the 3D model. Please refer to [Model Navigation]({{< relref "modelnavigation" >}}) for details.
 - **Default Z Scale Factor** -- Default depth scale for grid models.
 - **Show Box around Legends** -- Create a semi-transparent box containing each legend in the 3D Views.
 - **Use shaders** -- This option controls the use of OpenGL shaders. Should be left **On**. Available only for testing purposes.

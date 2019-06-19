@@ -8,7 +8,7 @@ published = true
 ResInsight can import Well trajectories from simple Ascii files. 
 In addition, a Statoil specific solution to retrieve Well Trajectories from their internal web service is implemented.
 
-ResInsight also supports creation of your own user-defined well paths. See [Create Well Paths]({{ site.baseurl }}/docs/createwellpaths)
+ResInsight also supports creation of your own user-defined well paths. See [Create Well Paths]({{< relref "createnewwellpaths" >}})
 
 ## Ascii Well Trajectories
 
@@ -110,10 +110,10 @@ If the LAS-file does not contain a well name, the file name is used instead.
 #### Moving LAS-file
 If ResInsight's automatic well matching fails and a LAS-file is matched with the wrong well path, it is possible to move the LAS-file to the correct well path. Select the LAS-file context menu click **Move LAS File to Well Path** and select destination well path.
 
-![]({{site.baseurl}}/images/MoveLasFileMenu.png)
+![]({{< relref "" >}}/images/3d-main-window/MoveLasFileMenu.png)
 
 ### Importing Well Path Files
-See [Importing Well Paths]({{ site.baseurl }}/docs/wellpaths#ascii-well-trajectories)
+See [Importing Well Paths](#ascii-well-trajectories)
 
 ### Look for an Existing Well Path
 Well log names may vary slightly among different files from the same well. When importing a well log file or a well log path file, ResInsight have to look for an existing well path item to ensure that the well log data and well path are imported to the correct well path item. The lookup is based on name comparison this way:
@@ -131,7 +131,7 @@ The well path property editor lets the user control the appearance of the well p
 - **File group** -- Information about the well path file
 - **Simulation Well group** -- Associated simulation well. ResInsight will try to associate each well path with a simulation well. This is done in the exact same way as looking up an existing well path. If the auto-association fails, the user can set the correct simulation well here.
 - **Well Info group** -- Metadata for the well path
-- **Well Picks group** -- Information about imported [well picks]({{site.baseurl}}/docs/formations#well-picks) file containing data for the current well path
+- **Well Picks group** -- Information about imported [well picks]({{< relref "formations" >}}#well-picks) file containing data for the current well path
 
 ### Casing Design
 Some Casing Design elements can be assigned to the well path by selecting **Create Casign Design** from the context menu of the well path.
@@ -141,6 +141,6 @@ well path containment properties such as Casing (with Casing Shoe) and Liner can
 
 ![]({{< relref "" >}}images/3d-main-window/CasignDesign.png)
 
-These can be visualised in the 3D View and Well Log Plots on a [Well Log Track]({{site.baseurl}}/docs/welllogsandplots#tracks).
+These can be visualised in the 3D View and Well Log Plots on a [Well Log Track]({{< relref "welllogsandplots" >}}#tracks).
 
 ![]({{< relref "" >}}images/3d-main-window/CasignDesign3D.png) ![]({{< relref "" >}}images/3d-main-window/CasignDesignPlot.png)

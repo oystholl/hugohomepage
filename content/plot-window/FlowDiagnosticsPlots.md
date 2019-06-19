@@ -13,7 +13,7 @@ They are managed from the folder **Flow Diagnostics Plots** located in **Plot Pr
 
 This folder contains a default **Flow Characteristics Plot** and **Well Allocation Plot**. In addition, two folders with stored  well allocation and flow characteristics plots will show up if there are any of those in the model.
 
-Please refer to [Cell Results-> Flow Diagnostic Results]({{ site.baseurl }}/docs/cellresults#flow-diagnostic-results) for a description of the results and references to more information about the methodology.
+Please refer to [Cell Results-> Flow Diagnostic Results]({{< relref "cellresults" >}}#flow-diagnostic-results) for a description of the results and references to more information about the methodology.
 
 ## Well Allocation Plots
 
@@ -23,8 +23,8 @@ In addition a **Cumulative Saturation by Time of Flight** plot may be shown. Thi
 
 ### Branches
 
-Each branch of the well will be assigned a separate **Track**. For normal wells this is based on the branch detection algorithm used for Well Pipe visualization, and will correspond to the pipe visualization with **Branch Detection** *On* ( See [Well Pipe Geometry]({{ site.baseurl }}/docs/simulationwells#well-pipe-geometry) ).
-Multi Segment Wells will be displayed according to their branch information, but tiny branches consisting of only one connection are lumped into the main branch to make the visualization more understandable ( See  [Dummy branches]({{ site.baseurl }}/docs/simulationwells#dummy-branches) ).
+Each branch of the well will be assigned a separate **Track**. For normal wells this is based on the branch detection algorithm used for Well Pipe visualization, and will correspond to the pipe visualization with **Branch Detection** *On* ( See [Well Pipe Geometry]({{< relref "simulationwells" >}}#well-pipe-geometry) ).
+Multi Segment Wells will be displayed according to their branch information, but tiny branches consisting of only one connection are lumped into the main branch to make the visualization more understandable ( See  [Dummy branches]({{< relref "simulationwells" >}}#dummy-branches) ).
 
 ### Creating Well Allocation Plots
 
@@ -69,7 +69,7 @@ The depth value in the plot can be controlled by selecting the **Accumulated Flo
   In this mode the curves are extended somewhat above zero depth keeping the curve 
   values constant. This is done to make it easier to see the final values of the curves relative to each other.  
   The depth are calculated with **Branch detection** *On* and using the **Interpolated** well pipe geometry.  
-  ( See [Well Pipe Geometry]({{ site.baseurl }}/docs/simulationwells#well-pipe-geometry) )
+  ( See [Well Pipe Geometry]({{< relref "simulationwells" >}}#well-pipe-geometry) )
   - **TVD** -- Use True Vertical Depth on the depth-axis. This will produce distorted plots for horizontal or near horizontal wells. 
   - **Connection Number** -- Use the number of connections counted from the top on the depth-axis.
 - **Visible Depth Range** -- These options control the depth zoom.
@@ -100,14 +100,14 @@ This window displays three different graphs describing the overall behavior of t
 
 - **Case** -- Selects the source case for the plot.
 - **Time Steps** -- These options selects the time steps to be used in the plot.
-  - **All With Calculated FlowDiagnostics** -- Plot data from all the time steps already solved by the Flow Diagnostics Solver, but nothing more. The solver will be run implicitly when the user requests any Flow Diagnostics results on a particular time step using  [Cell Results]({{ site.baseurl }}/docs/cellresults), Well Allocation Plots, or [Well Log Extraction Curves]({{ site.baseurl }}/docs/welllogsandplots#well-log-extraction-curves).  
+  - **All With Calculated FlowDiagnostics** -- Plot data from all the time steps already solved by the Flow Diagnostics Solver, but nothing more. The solver will be run implicitly when the user requests any Flow Diagnostics results on a particular time step using  [Cell Results]({{< relref "cellresults" >}}), Well Allocation Plots, or [Well Log Extraction Curves]({{< relref "welllogsandplots" >}}#well-log-extraction-curves).  
   - **Selected** -- Use the selected time steps only. Activating this options displays a listbox with all the available time steps in the 3D case. Time steps already solved by the Flow Diagnostics Solver are marked with an asterix _`*`_. Select the interesting time steps and press apply to invoke the solver for unsolved time steps, and to show them in the plot.
 - **Region** -- These group of options controls the cell region of interest for the plot.
   - **Cell Filter** -- Selects the type of cell filtering to apply. Sub-options are displayed depending on the selection.
     - **All Active Cells** -- Use all the active cells in the model (default)
     - **Visible Cells** -- Use the visible cells in a particular predefined view as cell region. This option will respect all the filter settings in the view, and use the correct cell set for each time step. 
       - **View** -- The view to use as cell filter
-    - **Injector Producer Communication** -- The region of communication between selected producers and injectors. See  [Flow Diagnostic Results]({{ site.baseurl }}/docs/cellresults#Flow-Diagnostic-Results)
+    - **Injector Producer Communication** -- The region of communication between selected producers and injectors. See  [Flow Diagnostic Results]({{< relref "cellresults" >}}#Flow-Diagnostic-Results)
       - **Tracer Filter** -- Wild card based filter-text to filter the list of tracers
       - **list** -- Producer and injector tracers to select
       - **Show Region** -- Button to create (or edit) a 3D View showing the selected region of cells.

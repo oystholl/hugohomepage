@@ -7,7 +7,7 @@ published = true
 
 A Summary Plot is a window displaying a graph in the main area of the **Plot Main Window**. It can contain Summary Curves, Grid time history curves and pasted ascii curves ( See below ).
 
-A new plot can be created by using the context menu of a plot selecting ![]({{< relref "" >}}images/plot-window/SummaryPlot16x16.png) **New Summary Plot**. The [Summary Plot Editor]({{ site.baseurl }}/docs/summaryploteditor) dialog will then open.
+A new plot can be created by using the context menu of a plot selecting ![]({{< relref "" >}}images/plot-window/SummaryPlot16x16.png) **New Summary Plot**. The [Summary Plot Editor]({{< relref "summaryploteditor" >}}) dialog will then open.
 
 ## Plot Data
 
@@ -20,27 +20,27 @@ Summary files can also be imported directly using one of the following commands 
 - **Import Summary Case**: Brings up the standard file selection dialog. Multiple selections are allowed.
 - **Import Summary Cases Recursively**: Brings up the recursive file selection dialog. This dialog is described in details [below](#recursive-summary-file-import)
 - **Import Summary Case Group**: Brings up the recursive file selection dialog. All files selected are automatically grouped in ResInsight.
-- **Import Ensemble**: Similar to the above, but in addition to just create a group, ResInsight performs some extra checking related to ensembles and converts the group to an ensemble. See [ensemble support description]({{site.baseurl}}/docs/ensembleplotting).
+- **Import Ensemble**: Similar to the above, but in addition to just create a group, ResInsight performs some extra checking related to ensembles and converts the group to an ensemble. See [ensemble support description]({{< relref "ensembleplotting" >}}).
 
 These commands can also be accessed in the right-click context menu for the **Summary Cases** entry in the **Plot Main Window Project Tree** under which the imported cases will also be listed.
 
 During summary file import, ResInsight checks whether the summary file is restarted, i.e. has an origin file. If an origin file is found, the Origin Files dialog is displayed. Origin file support is described [below](#origin-files).
 
 ### Summary Case Groups
-A selection of cases can be grouped by right-clicking  a selection of summary cases and selecting the command **Group Summary Cases**. Summary cases can also be drag-dropped between summary groups. The groups will be used when listing the cases in the [Summary Plot Editor]({{ site.baseurl }}/docs/summaryploteditor).
+A selection of cases can be grouped by right-clicking  a selection of summary cases and selecting the command **Group Summary Cases**. Summary cases can also be drag-dropped between summary groups. The groups will be used when listing the cases in the [Summary Plot Editor]({{< relref "summaryploteditor" >}}).
 
 ### Observed Data
 
-See [Observed Time History Data]({{ site.baseurl }}/docs/observeddata)
+See [Observed Time History Data]({{< relref "observeddata" >}})
 
 ### Grid Cell Time History Curve
 
 Time history curves from a grid cell property can also be added to a Summary Plot. 
-See [Result Inspection]({{ site.baseurl }}/docs/resultinspection#result-plot).
+See [Result Inspection]({{< relref "resultinspection" >}}#result-plot).
 
 ### Pasted Ascii Curves
 
-You can copy an ascii table directly from Excel or any text source and paste it directly into a Summary Plot using the command **Paste Excel Data to Summary Plot**. See [Paste Excel Time History Data]({{ site.baseurl }}/docs/pasteexceltimedata).
+You can copy an ascii table directly from Excel or any text source and paste it directly into a Summary Plot using the command **Paste Excel Data to Summary Plot**. See [Paste Excel Time History Data]({{< relref "pasteexceltimedata" >}}).
 
 ## Plot Settings
 
@@ -111,7 +111,7 @@ It is also possible to save the ascii data to a file directly by using the conte
 
 ## Summary Curves
 
-Summary curves are normally created using the **Plot Editor** see [Summary Plot Editor]({{ site.baseurl }}/docs/summaryploteditor), but can be created directly using the context menu in the **Main Plot Window Project Tree**. Right click a Summary Plot, the Summary Curves folder or an existing curve and select the command ![]({{< relref "" >}}images/plot-window/SummaryCurve16x16.png) **New Summary Curve**.
+Summary curves are normally created using the **Plot Editor** see [Summary Plot Editor]({{< relref "summaryploteditor" >}}), but can be created directly using the context menu in the **Main Plot Window Project Tree**. Right click a Summary Plot, the Summary Curves folder or an existing curve and select the command ![]({{< relref "" >}}images/plot-window/SummaryCurve16x16.png) **New Summary Curve**.
 
 ![]({{< relref "" >}}images/plot-window/summary_curve_properties.png)
 
@@ -135,7 +135,7 @@ Switching the Y-Axis for several curves in one go can be done using the context 
 
 To optional ways to select the curve data are available: The **Vector Selection Dialog** and the **Vector Selection Filter**.
 
-The first is accessed by clicking the button **Vector Selection Dialog**. This opens a dialog similar to the one used as Plot Editor. See [Summary Plot Editor]({{ site.baseurl }}/docs/summaryploteditor).
+The first is accessed by clicking the button **Vector Selection Dialog**. This opens a dialog similar to the one used as Plot Editor. See [Summary Plot Editor]({{< relref "summaryploteditor" >}}).
 
 The **Vector Selection Filter** group of options is a different way of selecting the curve data:
 - **Search** -- This option controls the filtering mode. Several are available and controls witch search fields that are made available. The search modes are described below 

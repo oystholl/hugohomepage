@@ -51,7 +51,7 @@ The directional combined parameters available are:
 
 ![]({{< relref "" >}}images/appendix/CompletionTypes.png)
 
-The dynamic cell property named **Completion Type** is calculated from the intersections between [Completions]({{ site.baseurl }}/docs/completions) and the grid cells. All grid cells intersected by a completion will be assigned a color based on the type of completion that intersects the cell.
+The dynamic cell property named **Completion Type** is calculated from the intersections between [Completions]({{< relref "completions" >}}) and the grid cells. All grid cells intersected by a completion will be assigned a color based on the type of completion that intersects the cell.
 
 If a cell is completed with multiple completions, the following priority is used : **Fracture**, **Fishbones**, and **Perforation Interval**.
 

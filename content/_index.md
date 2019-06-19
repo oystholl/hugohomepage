@@ -40,11 +40,11 @@ published = true
       <p>
         It's easy and free, both on Linux and Windows:
       </p>
-      <a href="{{ site.baseurl }}/docs/installation/">Installation &rarr;</a><br>
-      <a href="{{ site.baseurl }}/docs/gettingstarted/">Getting Started &rarr;</a>
+      <a href="{{< relref "getting-started/installation" >}}">Installation &rarr;</a><br>
+      <a href="{{< relref "getting-started" >}}">Getting Started &rarr;</a>
       <p>
 
-        Sign up to be notified of new releases:<br> <a href="{{ site.baseurl }}/project/releasenotification">Release Notification &rarr;</a>
+        Sign up to be notified of new releases:<br> <a href="{{< relref "releasenotification" >}}">Release Notification &rarr;</a>
       </p>
        Latest release is 2019.04
       </div>
@@ -53,7 +53,7 @@ published = true
 
   <div class="grid">
     <div class="unit whole center-on-mobiles">
-      <p>Here are some words from a few of the happy ResInsight users <a href="{{ site.baseurl }}/project/testimonials/">Testimonials &rarr;</a> </p>
+      <p>Here are some words from a few of the happy ResInsight users <a href="{{< relref "testimonials" >}}">Testimonials &rarr;</a> </p>
     </div>
   </div>
 </section>

@@ -16,11 +16,11 @@ During import of a summary case, ResInsight tries to find an associated **parame
 - The list of ensemble parameters differ between cases in the ensemble
 
 ## Plotting
-Ensembles are plotted in the summary plot the same way as ordinary summary curves. Create a new summary plot using the [summary plot editor]({{site.baseurl}}/docs/summaryploteditor). Imported ensembles will appear in a separate group in the list of summary cases. When an ensemble is selected, a new curve set is created and plotted as multiple summary curves. By default all curves in an ensemble curve set will have the same color. The coloring mode may be edited in the curve set's property editor in the project plot tree view. Two coloring modes are available:
+Ensembles are plotted in the summary plot the same way as ordinary summary curves. Create a new summary plot using the [summary plot editor]({{< relref "summaryploteditor" >}}). Imported ensembles will appear in a separate group in the list of summary cases. When an ensemble is selected, a new curve set is created and plotted as multiple summary curves. By default all curves in an ensemble curve set will have the same color. The coloring mode may be edited in the curve set's property editor in the project plot tree view. Two coloring modes are available:
 - **Single color** Use the same color for all curves in a curve set
 - **By Ensemble Parameter** One ensemble parameter is selected to control coloring. The ensemble parameter value for each case is used to pick a color in a color range. In this case a color legend appears.
 
-Stepping of data source for ensemble curves is described in [Summary Plot Source Stepping]({{site.baseurl}}/docs/summaryplotsourcestepping)
+Stepping of data source for ensemble curves is described in [Summary Plot Source Stepping]({{< relref "summaryplots" >}}ourcestepping)
 
 ### Statistics curves
 If the number of curves in a curve set is sufficient, ResInsight will calculate statistics for the curve set. The following statistics curves may be displayed:

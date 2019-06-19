@@ -5,7 +5,7 @@ published = true
 
 Element property tables in ABQUS input file format can be imported into ResInsight and displayed as Element Results. This can be used to display material properties, or any scalar value on each element.
 
-To view the data as a **Color Result** select the **Result Position**: ***Element*** ( See [Geomechanical Results]({{ site.baseurl }}/docs/cellresults#geomechanical-results) )
+To view the data as a **Color Result** select the **Result Position**: ***Element*** ( See [Geomechanical Results]({{< relref "cellresults" >}}#geomechanical-results) )
 
 A couple of property names are recognized and treated specially:
 - MODULUS -- Scaled by 1.0e-9 and shown as "Yong's Modulus" in the user interface

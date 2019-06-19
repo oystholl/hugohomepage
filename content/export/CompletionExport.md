@@ -34,7 +34,7 @@ The completions defined in ResInsight can be exported to Eclipse for use in new 
 
 The transmissibility calculation is performed for each direction, X, Y and Z, in an orthogonal coordinate system local to the cell. 
 
-Taking the X direction as an example, we first calculate the relevant permeability *K* from the Eclipse properties *PERMY* (K<sub></sub>) and PERMZ (K<sub>z</sub>): 
+Taking the X direction as an example, we first calculate the relevant permeability *K* from the Eclipse properties *PERMY* (K<sub>y</sub>) and PERMZ (K<sub>z</sub>): 
 
 ![]({{< relref "" >}}images/export/Equation_PerfInterval_K.png)
 
@@ -177,8 +177,8 @@ Completion data for LGR grids are exported to a separate file having the same na
 ### LGR for completions (Temporary LGRs)
 The previous section describes the export of COMPDATL for completions intersecting existing LGRs, loaded from file. This section will describe how to have ResInsight create temporary LGRs around completions, and then export COMPDATL for those LGRs.
 To accomplish this, do the following:
-- Create LGRs for completions on selected well paths. See [Completions LGR]({{ site.baseurl }}/docs/completionslgr)
-- Export completions the usual way. See [Completion Export]({{ site.baseurl }}/docs/completionexport)
+- Create LGRs for completions on selected well paths. See [Completions LGR]({{< relref "completions" >}}lgr)
+- Export completions the usual way. See [Completion Export]({{< relref "completionexport" >}})
 
 <div class="note info">
 In addition to the completion data, the geometrical definition of all temporary LGRs is also exported into "*.dat" files.

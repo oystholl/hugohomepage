@@ -52,8 +52,8 @@ In the mid-section of the dialog, the Summary Type and the corresponding Items c
 - **Lgr-Block** -- Select I, J, K - Block in LGR related vectors only
    - **Lgr name** -- Select Lgr name
    - **I, J, K** -- Select the I, J, K values of the Block in the Lgr. 
-- **Calculated** -- Select calculated vectors created by the [curve calculator]({{site.baseurl}}/docs/curvecalculator).
-- **Imported** -- Select observed data vectors [imported from file]({{site.baseurl}}/docs/observeddata) (e.g. CSV, RSM files)
+- **Calculated** -- Select calculated vectors created by the [curve calculator]({{< relref "curvecalculator" >}}).
+- **Imported** -- Select observed data vectors [imported from file]({{< relref "observeddata" >}}) (e.g. CSV, RSM files)
 
 ### Summaries
 This field contains the summaries/vectors for the highlighted summary category.

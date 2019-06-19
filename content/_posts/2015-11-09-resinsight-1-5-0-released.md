@@ -1,8 +1,12 @@
-+++
-title = "ResInsight 1.5.0 Released"
-published = true
-+++
-
+---
+layout: news_item
+title: "ResInsight 1.5.0 Released"
+date: "2015-11-09 21:21:00 +0200"
+author: magnesj
+version: 1.5.0
+categories: 
+  - release
+---
 We are happy to announce the release of ResInsight v1.5.0.
 
 ### Download

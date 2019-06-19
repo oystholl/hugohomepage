@@ -1,7 +1,12 @@
-+++
-title = "ResInsight 1.3.1 Released"
-published = true
-+++
+---
+layout: news_item
+title: "ResInsight 1.3.1 Released"
+date: "2014-11-07 02:12:52 +0200"
+author: magnesj
+version: 1.3.1
+categories: 
+  - release
+---
 
 ## Main features
 

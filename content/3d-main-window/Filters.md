@@ -11,7 +11,7 @@ Cell Filters are used to control visibility of the cells in the 3D view. Two typ
 - **Property Filter** -- Extracts cells with a property value matching a value range.
 
 <div class="note">
-The visibilities of cells connection to wells, and fences based on these cells can be controlled from <b> <a href="{{ site.baseurl }}/docs/simulationwells">Simulation Wells</a> </b>.<br> 
+The visibilities of cells connection to wells, and fences based on these cells can be controlled from <b> <a href="{{< relref "simulationwells" >}}">Simulation Wells</a> </b>.<br> 
 <small><i>(Not applicable for Geomechanical cases)</i></small>
 </div>
 
@@ -76,7 +76,7 @@ Normally the available range in the sliders is the max and min of all the values
 We still need to keep the range somewhat fixed while moving from time step to time step, so in order to do so ResInsight tries to keep the intentions of your range settings, as the available range changes. If either the max or min value is set to the limit, ResInsight will keep that setting at the limit even when the limit changes. If you set a specific value for the max or the min, that setting will keep its value, even if it happens to end up outside the available range at a time step.   
 
 ### Category Selection
-If the property is representing integer values, well tracer names or [ formation names ]({{ site.baseurl }}/docs/formations), the property filter displays a list of available categories used to filter cells. The separate values can then be toggled on or off using the list in the Property Editor.
+If the property is representing integer values, well tracer names or [ formation names ]({{< relref "" >}}3d-main-window/formations), the property filter displays a list of available categories used to filter cells. The separate values can then be toggled on or off using the list in the Property Editor.
 
 ![]({{< relref "" >}}images/3d-main-window/PropertyFilterWithCategories.png)
 

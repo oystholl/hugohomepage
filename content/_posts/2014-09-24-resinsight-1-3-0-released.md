@@ -1,11 +1,16 @@
-+++
-title = "ResInsight 1.3.0 Released"
-published = true
-+++
+---
+layout: news_item
+title: "ResInsight 1.3.0 Released"
+date: "2014-09-24 02:12:52 +0200"
+author: magnesj
+version: 1.3.0
+categories: 
+  - release
+---
 
 ## Main features
 
-- Added several [derived results](/docs/derivedresults)
+- Added several [derived results]({{< relref "" >}}appendix/derivedresults)
 - Added support for mapping a separate result on faults
 - Improved text in Result Info when picking in 3D scene  
 

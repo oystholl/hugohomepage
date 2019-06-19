@@ -3,7 +3,6 @@ title = "Completions LGR"
 published = true
 +++
 
-
 ![]({{< relref "" >}}images/3d-main-window/TemporaryLGR_CompletionType.png) ![]({{< relref "" >}}images/3d-main-window/TemporaryLGR_CompletionType2.png)
 
 ResInsight supports creating and exporting LGRs (Local Grid Refinement) in main grid cells intersected by completions.
@@ -26,7 +25,7 @@ The dialog contains several input fields
 After pressing the OK button, LGR(s) are created and will be visible in the grid view.
 Temporary LGRs are stored in memory, and are thus not saved to file. After restarting ResInsight those LGRs have to be recreated.
 
-Individual visibility of generated LGRs can be controlled from the [Grids]({{ site.baseurl }}/docs/reservoirviews/#grids-) section in a view.
+Individual visibility of generated LGRs can be controlled from the [Grids]({{< relref "reservoirviews" >}}#grids) section in a view.
 
 ### Delete temporary LGRs
 It is possible to explicitly delete all temporary LGRs. Right click on the **View -> Grids -> Temporary LGRs** project tree node and select **Delete Temporary LGRs**. This command deletes all temporary LGRs.

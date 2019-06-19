@@ -55,7 +55,7 @@ Tracks can be created by right-clicking a **Well Log Plot** and select **New Tra
 
 A track controls the x-axis range of the display, and can be edited from the property panel of the **Track**. In addition to the range, logarithmic display is controlled using the **Logarithmic Scale**, grid lines can be tweaked with the **Show Grid Lines** option and tick intervals can be controlled manually wih the **Manually Set Tick Intervals**  option.
 
-It is also possible to visualize **Zonation** or **Formation Names** in the track (see [Formations]({{site.baseurl}}/docs/formations) for details) as well as [Well Attributes]({{site.baseurl}}/docs/wellpaths#well-path-attributes) such as casing and liners. The following image shows some of the possibilities, with labels for the formations shown only on the second track, while the first track shows the a full cross section of the well attributes and the second track shows only a radial view.
+It is also possible to visualize **Zonation** or **Formation Names** in the track (see [Formations]({{< relref "formations" >}}) for details) as well as [Well Attributes]({{< relref "wellpaths" >}}#well-path-attributes) such as casing and liners. The following image shows some of the possibilities, with labels for the formations shown only on the second track, while the first track shows the a full cross section of the well attributes and the second track shows only a radial view.
 ![]({{< relref "" >}}images/plot-window/WellAttributeBothSides.png)
 
 Finally, the width of each track can be manipulated using the **Track Width** setting. This allows the creation of plots with varying width tracks.
@@ -95,7 +95,7 @@ This section describes how the values are extracted from the grid when creating 
 
 Extraction curves are calculated by finding the intersections between a well trajectory and the cell-faces in a particular grid model. Usually there are two intersections at nearly the same spot; the one leaving the previous cell, and the one entering the next one. At each intersection point the measured depth along the trajectory is interpolated from the trajectory data. The result value is retrieved from the corresponding cell in different ways depending on the nature of the underlying result. 
 
-For Eclipse results the cell face value is used directly. This is normally the same as the corresponding cell value, but if a **Directional combined results** is used ( See [ Derived Results ]({{ site.baseurl }}/docs/derivedresults) ), it will be that particular face's value.
+For Eclipse results the cell face value is used directly. This is normally the same as the corresponding cell value, but if a **Directional combined results** is used ( See [ Derived Results ]({{< relref "" >}}appendix/derivedresults) ), it will be that particular face's value.
 
 Abaqus results are interpolated across the intersected cell-face from the result values associated with the nodes of that face. This is also the case for integration point results, as they are directly associated with their corresponding element node in ResInsight. 
 
@@ -119,7 +119,7 @@ Common for the different ways of changing data source is that if a parameter is 
 
 ### Well Log RFT Curves
 
-Well Log RFT Curves shows the values in a RFT file. See [RFT Plot]({{ site.baseurl }}/docs/rftplot) for details abuot RFT. A curve in a RFT plot will look identical to a RFT curve in a well log plot, if the depth type of the well log plot is TVD, and the interpolation type of the curve is *Point to Point*.
+Well Log RFT Curves shows the values in a RFT file. See [RFT Plot]({{< relref "rftplot" >}}) for details abuot RFT. A curve in a RFT plot will look identical to a RFT curve in a well log plot, if the depth type of the well log plot is TVD, and the interpolation type of the curve is *Point to Point*.
 
 ### Well Log LAS Curves
 
@@ -138,7 +138,7 @@ You can also create a LAS-curve by a simple drag-drop operation in the <b>Projec
 ResInsight has some support for reading and writing LAS files. In the following two sections this support is described.
 
 ### Importing LAS-files
-See [Importing Well Log Files]({{site.baseurl}}/docs/wellpaths#importing-well-log-files) for details on LAS file import.
+See [Importing Well Log Files]({{< relref "wellpaths" >}}#importing-well-log-files) for details on LAS file import.
 
 ### Exporting LAS-files
 

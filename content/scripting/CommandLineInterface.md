@@ -7,7 +7,7 @@ ResInsight supports several command line parameters that can be used to automate
 
 Command line parameters are prefixed using a double dash. This convention is used on all platforms to make it possible to reuse scripts across different platforms. See GNU Standards for [Command Line Interfaces](http://www.gnu.org/prep/standards/html_node/Command_002dLine-Interfaces.html#Command_002dLine-Interfaces).
 
-Examples on how command line options are used are given [below]({{ site.baseurl }}/docs/commandlineinterface#usage-examples)
+Examples on how command line options are used are given [below]({{< relref "commandlineinterface" >}}#usage-examples)
 
 | Parameter | Description |
 |-----------|-------------|
@@ -20,7 +20,7 @@ Examples on how command line options are used are given [below]({{ site.baseurl 
 | &#45;&#45;replaceCase [&lt;caseId&gt;] &lt;newGridFile&gt;  | Replace grid in &lt;caseId&gt; or first case with &lt;newGridFile&gt;. Repeat parameter for multiple replace operations.|
 | &#45;&#45;replaceSourceCases [&lt;caseGroupId&gt;] &lt;gridListFile&gt; | Replace source cases in &lt;caseGroupId&gt; or first grid case group with the grid files listed in the &lt;gridListFile&gt; file. Repeat parameter for multiple replace operations.|
 | &#45;&#45;multiCaseSnapshots &lt;gridListFile&gt; | For each grid file listed in the &lt;gridListFile&gt; file, replace the first case in the project and save snapshot of all views. |
-| &#45;&#45;commandFile &lt;commandFile&gt; | Execute a command file. See [command file documentation.]({{site.baseurl}}/docs/commandfile) |
+| &#45;&#45;commandFile &lt;commandFile&gt; | Execute a command file. See [command file documentation.]({{< relref "commandfile" >}}) |
 | &#45;&#45;commandFileProject &lt;filename&gt; | Project to use if performing case looping for command file. Used in conjunction with `commandFileReplaceCases`. |
 | &#45;&#45;commandFileReplaceCases [&lt;caseId&gt;] &lt;caseListFile&gt; | Supply list of cases to replace in project, performing command file for each case. Project to replace cases in must be set with `commandFileProject`. If caseId is not supplied, first case is replaced. When supplying caseId, multiple cases may be replaced at once, by supplying several caseIds and a file containing a list of grid-files to replace with for each caseId. |
 | &#45;&#45;help, &#45;&#45;?       | Displays help text and version info |
@@ -28,7 +28,7 @@ Examples on how command line options are used are given [below]({{ site.baseurl 
 | &#45;&#45;updateregressiontestbase &lt;folder&gt; | For all sub-folders starting with `TestCase*`, copy the images in the sub-sub-folder **RegTestGeneratedImages** to the sub-sub-folder **RegTestBaseImages** after deleting **RegTestBaseImages** completely. |
 | &#45;&#45;unittest | Execute integration tests |
 
-See also the [Regression Test System ]({{site.baseurl }}/docs/regressiontestsystem) for a more in-depth explanation.
+See also the [Regression Test System ]({{< relref "regressiontestsystem" >}}) for a more in-depth explanation.
 
 <div class="note">
 <h5>Reduce project load time using <code>--replaceSourceCases</code> </h5>
