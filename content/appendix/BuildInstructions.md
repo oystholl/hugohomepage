@@ -94,7 +94,7 @@ You will find the ResInsight binary under the Install directory in your build di
 
 | CMake Name                                        | Default | Description                              |
 |---------------------------------------------------|---------|--------------------------------------------------------|
-| `RESINSIGHT_ENABLE_PROTOTYPE_FEATURE_SOURING`     | ON     | Enable Souring features |
+| `RESINSIGHT_ENABLE_PROTOTYPE_FEATURE_SOURING`     | ON      | Enable Souring features |
 | `RESINSIGHT_PRIVATE_INSTALL`                      | ON      | Linux only: Install the libecl shared libraries along the executable |
 | `RESINSIGHT_ENABLE_COTIRE`                        | OFF     | Experimental speedup of compilation using cotire |
 | `RESINSIGHT_HDF5_BUNDLE_LIBRARIES`                | OFF     | Bundle HDF5 libraries with ResInsight  |

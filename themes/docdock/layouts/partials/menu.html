@@ -1,6 +1,8 @@
-<form action="{{ relref . "search.md" }}" method="GET" id="search-form">
-  <input type="search" name="q" id="search-box" placeholder="Search">
-</form>
+<li>
+  <form action="{{ relref . "search.md" }}" method="GET" id="search-form">
+    <input type="search" name="q" id="search-box" placeholder="Search">
+  </form>
+</li>
 
 {{- $currentNode := . }}
 {{- $showvisitedlinks := .Site.Params.showVisitedLinks -}}

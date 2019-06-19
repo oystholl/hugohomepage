@@ -3,13 +3,18 @@ title = "ResInsight &bull; 3D viewer and post processing of reservoir models"
 published = true
 +++
 
+
+# Post Processing of Reservoir Simulations
+
+![]({{< relref "" >}}images/FrontPageImage.png)
+
 <section class="intro">
   <div class="grid">
     <div class="unit whole center-on-mobiles">
       <p class="first">Post Processing of Reservoir Simulations</p>
     </div>
     <div class="post-content">
-	  <img src="{{< relref "" >}}/images/FrontPageImage.png" alt="Reservoir" />
+	  <img src="{{< relref "" >}}images/FrontPageImage.png" alt="Reservoir" />
     </div>
   </div>
 </section>
