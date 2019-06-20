@@ -6,6 +6,7 @@ theme = "docdock"
 [params]
 disableSearch = true
 disableNavChevron = true
+ordersectionsby = ""
 
 [[menu.shortcuts]]
 	pre = "<h3>More</h3>"
