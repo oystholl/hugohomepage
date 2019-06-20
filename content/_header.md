@@ -2,4 +2,4 @@
 published = true
 +++
 
-![logo]({{< relref "" >}}images/ResInsightCroppedIconPicture.png)
+<a href="{{< relref "" >}}">![logo]({{< relref "" >}}images/ResInsightCroppedIconPicture.png)</a>
