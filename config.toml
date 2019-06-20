@@ -6,7 +6,7 @@ theme = "docdock"
 [params]
 disableSearch = true
 disableNavChevron = true
-ordersectionsby = ""
+ordersectionsby = "weight"
 
 [[menu.shortcuts]]
 	pre = "<h3>More</h3>"
@@ -14,9 +14,3 @@ ordersectionsby = ""
 	identifier = "ds"
 	url = "https://github.com/OPM/ResInsight"
 	weight = 1
-
-[[menu.shortcuts]]
-	name = "<i class='fa fa-github'></i> Github"
-	identifier = "is"
-	url = "https://github.com/OPM/"
-	weight = 2
