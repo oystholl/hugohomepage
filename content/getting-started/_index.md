@@ -69,7 +69,7 @@ Toggling a checkbox next to an item in the **Project Tree** will toggle visibili
 
 Context menu commands are also available to do special operations on a selected set of items.
 
-How to interact and manipulate the 3D model is described in [Model Navigation]({{< relref "" >}}getting-started/modelnavigation)
+How to interact and manipulate the 3D model is described in [Model Navigation]({{< relref "modelnavigation" >}})
 
 
 ### Cases and Their Types
