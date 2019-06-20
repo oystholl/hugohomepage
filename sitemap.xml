@@ -3,15 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://ceesol.no/3d-main-window/</loc>
-  </url>
-  
-  <url>
     <loc>http://ceesol.no/getting-started/installation/linux-installation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/</loc>
   </url>
   
   <url>
@@ -19,23 +11,7 @@
   </url>
   
   <url>
-    <loc>http://ceesol.no/getting-started/gridimportexport/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/introduction/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/getting-started/modelnavigation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/_footer/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/_header/</loc>
+    <loc>http://ceesol.no/getting-started/introduction/</loc>
   </url>
   
   <url>
@@ -43,19 +19,7 @@
   </url>
   
   <url>
-    <loc>http://ceesol.no/export/exportwellpaths/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/formations/</loc>
-  </url>
-  
-  <url>
     <loc>http://ceesol.no/3d-main-window/reservoirviews/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/wells-and-completions/3dwelllogcurves/</loc>
   </url>
   
   <url>
@@ -63,24 +27,7 @@
   </url>
   
   <url>
-    <loc>http://ceesol.no/3d-main-window/results/annotations/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/appendix/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/appendix/buildinstructions/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/filters/</loc>
+    <loc>http://ceesol.no/project/about/</loc>
   </url>
   
   <url>
@@ -88,95 +35,7 @@
   </url>
   
   <url>
-    <loc>http://ceesol.no/scripting/commandfile/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/scripting/commandlineinterface/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/wells-and-completions/completions/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/wells-and-completions/completionslgr/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/contourmaps/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/wells-and-completions/createnewwellpaths/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/curvecalculator/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/customization/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/project/download/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/import/elementpropertytableimport/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/ensembleplotting/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/export/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/export/completionexport/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/export/exporteclipseproperties/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/export/exportsectormodel/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/export/exportfluxnummultnum/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/faults/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/flowdiagnosticsplots/</loc>
-  </url>
-  
-  <url>
     <loc>http://ceesol.no/getting-started/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/casegroupsandstatistics/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/gridcrossplots/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/gridstatisticsdialog/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/import/</loc>
   </url>
   
   <url>
@@ -184,91 +43,11 @@
   </url>
   
   <url>
-    <loc>http://ceesol.no/3d-main-window/intersections/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/customization/keyboardshortcuts/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/linkedviews/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/measurement/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/customization/memorymanagement/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/import/observeddata/</loc>
-  </url>
-  
-  <url>
     <loc>http://ceesol.no/scripting/octaveinterface/</loc>
   </url>
   
   <url>
-    <loc>http://ceesol.no/appendix/octaveinterfacereference/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/pltplot/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/import/pasteexceltimedata/</loc>
-  </url>
-  
-  <url>
     <loc>http://ceesol.no/3d-main-window/customization/preferences/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/project/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/rftplot/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/appendix/regressiontestsystem/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/project/releasenotification/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/results/resultcolorlegend/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/results/resultinspection/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/results/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/saturationpressureplots/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/scripting/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/search/</loc>
   </url>
   
   <url>
@@ -280,11 +59,47 @@
   </url>
   
   <url>
-    <loc>http://ceesol.no/plot-window/summarycrossplots/</loc>
+    <loc>http://ceesol.no/plot-window/summaryplots/</loc>
   </url>
   
   <url>
-    <loc>http://ceesol.no/plot-window/summaryploteditor/</loc>
+    <loc>http://ceesol.no/project/whats-new/releasenotes_2019_04/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/scripting/commandlineinterface/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/import/elementpropertytableimport/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/export/exporteclipseproperties/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/getting-started/gridimportexport/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/customization/memorymanagement/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/appendix/octaveinterfacereference/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/results/resultcolorlegend/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/results/</loc>
   </url>
   
   <url>
@@ -292,32 +107,7 @@
   </url>
   
   <url>
-    <loc>http://ceesol.no/plot-window/summaryplots/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/project/support/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/3d-main-window/tensors/</loc>
-  </url>
-  
-  <url>
     <loc>http://ceesol.no/project/testimonials/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/wellborestabilityplots/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ceesol.no/plot-window/welllogsandplots/</loc>
   </url>
   
   <url>
@@ -325,15 +115,233 @@
   </url>
   
   <url>
+    <loc>http://ceesol.no/project/whats-new/releasenotes_2018_11/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/appendix/buildinstructions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/scripting/commandfile/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/wells-and-completions/createnewwellpaths/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/export/exportfluxnummultnum/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/gridstatisticsdialog/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/customization/keyboardshortcuts/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/getting-started/modelnavigation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/import/observeddata/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/results/resultinspection/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/summaryploteditor/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/project/support/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/wells-and-completions/3dwelllogcurves/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/export/completionexport/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/import/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/linkedviews/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/import/pasteexceltimedata/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/appendix/regressiontestsystem/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/project/releasenotification/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/summarycrossplots/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/export/exportwellpaths/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/wells-and-completions/completions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/project/download/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/ensembleplotting/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/export/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/faults/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/wells-and-completions/completionslgr/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/curvecalculator/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/export/exportsectormodel/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/scripting/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/tensors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/project/whats-new/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/intersections/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/welllogsandplots/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/filters/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/project/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/wellborestabilityplots/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/rftplot/</loc>
+  </url>
+  
+  <url>
     <loc>http://ceesol.no/3d-main-window/wells-and-completions/</loc>
   </url>
   
   <url>
-    <loc>http://ceesol.no/introduction/releasenotes_2018_11/</loc>
+    <loc>http://ceesol.no/3d-main-window/contourmaps/</loc>
   </url>
   
   <url>
-    <loc>http://ceesol.no/introduction/releasenotes_2019_04/</loc>
+    <loc>http://ceesol.no/plot-window/pltplot/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/formations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/flowdiagnosticsplots/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/casegroupsandstatistics/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/gridcrossplots/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/measurement/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/plot-window/saturationpressureplots/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/customization/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/_footer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/_header/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/3d-main-window/results/annotations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/search/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ceesol.no/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
