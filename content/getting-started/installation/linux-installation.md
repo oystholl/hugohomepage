@@ -1,7 +1,7 @@
 +++
 title = "Linux Installation"
 published = true
-weight = 3
+weight = 2
 +++
 
 <small>Note: None of the binary distributions includes support for ABAQUS odb files.</small>
