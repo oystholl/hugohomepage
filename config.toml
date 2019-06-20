@@ -1,4 +1,4 @@
-baseURL = "https://oystholl.github.io/hugohomepage/"
+baseURL = "http://ceesol.no"
 languageCode = "en-us"
 title = "ResInsight"
 theme = "docdock"
