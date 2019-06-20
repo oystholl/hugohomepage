@@ -1,6 +1,7 @@
 +++
 title = "Support"
 published = true
+weight = 30
 +++
 
 For inquiries for new features, enhancements or support and maintenance agreements, please contact us for an offer.

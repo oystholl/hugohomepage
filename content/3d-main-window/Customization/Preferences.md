@@ -1,6 +1,7 @@
 +++
 title = "Preferences"
 published = true
+weight = 10
 +++
 
 In this section the different settings that controls the default behavior of ResInsight is described. These settings can be controlled using the **Preference** dialog available from the **Edit -> Preferences** menu.

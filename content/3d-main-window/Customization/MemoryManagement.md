@@ -1,6 +1,7 @@
 +++
 title = "Memory Management"
 published = true
+weight = 20
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/MemoryManagementBanner.png)

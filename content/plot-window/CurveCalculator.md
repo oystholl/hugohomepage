@@ -1,6 +1,7 @@
 +++
 title = "Curve Calculator"
 published = true
+weight = 60
 +++
 
 ![]({{< relref "" >}}images/plot-window/SummaryCurveCalculator.png)

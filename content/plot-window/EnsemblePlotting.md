@@ -1,6 +1,7 @@
 +++
 title = "Ensemble Plotting"
 published = true
+weight = 50
 +++
 
 An ensemble is a group of cases that are tightly coupled, only a set of ensemble input parameters differ between cases. This makes it relevant to perform calculations and statistics analysis on ensembles.

@@ -1,6 +1,7 @@
 +++
 title = "Linked Views"
 published = true
+weight = 40
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/LinkedViewsOverview.png)

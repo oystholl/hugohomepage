@@ -1,6 +1,7 @@
 +++
 title = "Flow Diagnostics Plots"
 published = true
+weight = 110
 +++
 
 ![]({{< relref "" >}}images/plot-window/FlowDiagnosticsPlotsOverview.png)

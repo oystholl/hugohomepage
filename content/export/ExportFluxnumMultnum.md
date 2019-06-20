@@ -1,6 +1,7 @@
 +++
 title = "FLUXNUM/MULTNUM"
 published = true
+weight = 30
 +++
 
 The visible cells can be exported as a FLUXNUM or MULTNUM keyword that can be used in an Eclipse input data deck. 

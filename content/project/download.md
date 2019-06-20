@@ -1,6 +1,7 @@
 +++
 title = "Downloads"
 published = true
+weight = 50
 +++
 
 Windows : [ResInsight-2019.04_oct-4.0.0_souring_win64.zip](https://github.com/OPM/ResInsight/releases/download/v2019.04/ResInsight-2019.04.0_oct-4.0.0_souring_win64.zip)

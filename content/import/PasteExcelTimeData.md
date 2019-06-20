@@ -1,6 +1,7 @@
 +++
 title = "Paste Excel Time History Data"
 published = true
+weight = 40
 +++
 
 When text have been copied to the operating system's clipboard, it will be possible to paste that text into a summary plot. Right click on a summary plot in the **Plot Main Window Project Tree** and select **Paste Excel Data to Summary Plot**. Then a paste options dialog will appear.

@@ -1,6 +1,7 @@
 +++
 title = "Snapshots"
 published = true
+weight = 10
 +++
 
 ResInsight has several commands to create snapshots conveniently. 3 commands to take snapshots of existing Plot and 3D Views directly, and a more advanced export command that can automatically modify Eclipse 3D Views before snapshotting them. 

@@ -1,6 +1,7 @@
 +++
 title = "Regression Test System"
 published = true
+weight = 40
 +++
 
 A regression tool for QA is build into ResInsight. This tool will do the following: 

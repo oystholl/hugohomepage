@@ -1,6 +1,7 @@
 +++
 title = "Keyboard Shortcuts"
 published = true
+weight = 30
 +++
 
 ResInsight supports a selection of Keyboard Shortcuts for convenience. These include **Delete** for removing deletable items

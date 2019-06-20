@@ -1,6 +1,7 @@
 +++
 title = "Release Notification Subscription"
 published = true
+weight = 40
 +++
 
 ### LinkedIn

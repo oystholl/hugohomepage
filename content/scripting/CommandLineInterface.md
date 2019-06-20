@@ -1,6 +1,7 @@
 +++
 title = "Command Line Interface"
 published = true
+weight = 20
 +++
 
 ResInsight supports several command line parameters that can be used to automate some tasks using shell scripts. 

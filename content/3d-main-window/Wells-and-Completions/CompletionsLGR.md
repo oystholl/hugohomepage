@@ -1,6 +1,7 @@
 +++
 title = "Completions LGR"
 published = true
+weight = 60
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/TemporaryLGR_CompletionType.png) ![]({{< relref "" >}}images/3d-main-window/TemporaryLGR_CompletionType2.png)

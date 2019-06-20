@@ -1,6 +1,7 @@
 +++
 title = "Well Log Plots"
 published = true
+weight = 70
 +++
 
 ![]({{< relref "" >}}images/plot-window/WellLogPlotOverview.png)

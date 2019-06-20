@@ -1,6 +1,7 @@
 +++
 title = "3D Well Log Plots"
 published = true
+weight = 40
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/3dWellLogCurves.png)

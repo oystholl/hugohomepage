@@ -1,6 +1,7 @@
 +++
 title = "Faults"
 published = true
+weight = 50
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/FaultsIllustration.png)

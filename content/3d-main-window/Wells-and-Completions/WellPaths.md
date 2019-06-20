@@ -1,6 +1,7 @@
 +++
 title = "Well Trajectories"
 published = true
+weight = 20
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/ResInsight_WellPathWithSimulationWell.png)

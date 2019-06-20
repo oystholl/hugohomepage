@@ -1,6 +1,7 @@
 +++
 title = "Summary Plot Editor"
 published = true
+weight = 30
 +++
 
 ![]({{< relref "" >}}images/plot-window/SummaryPlotEditor.png)

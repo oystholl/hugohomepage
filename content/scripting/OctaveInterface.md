@@ -1,6 +1,7 @@
 +++
 title = "Octave Interface"
 published = true
+weight = 10
 +++
 
 ResInsight provides a flexible interface to [Octave](http://www.gnu.org/software/octave/ "Octave") including:

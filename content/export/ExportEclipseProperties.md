@@ -1,6 +1,7 @@
 +++
 title = "Export Eclipse Properties"
 published = true
+weight = 20
 +++
 
 Eclipse Properties can be exported to Eclipse ASCII files. 

@@ -1,6 +1,7 @@
 +++
 title = "Element Property Table Import"
 published = true
+weight = 20
 +++
 
 Element property tables in ABQUS input file format can be imported into ResInsight and displayed as Element Results. This can be used to display material properties, or any scalar value on each element.

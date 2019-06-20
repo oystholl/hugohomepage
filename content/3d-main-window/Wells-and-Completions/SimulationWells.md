@@ -1,6 +1,7 @@
 +++
 title = "Simulation Wells"
 published = true
+weight = 10
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/SimulationWells.png)

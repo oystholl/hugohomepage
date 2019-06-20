@@ -1,6 +1,7 @@
 +++
 title = "RFT Plot"
 published = true
+weight = 90
 +++
 
 ![]({{< relref "" >}}images/plot-window/RftPlot.png)

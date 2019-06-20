@@ -1,6 +1,7 @@
 +++
 title = "Summary Cross Plot"
 published = true
+weight = 40
 +++
 
 ![]({{< relref "" >}}images/plot-window/SummaryCrossPlot.png)

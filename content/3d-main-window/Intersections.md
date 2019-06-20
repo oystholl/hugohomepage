@@ -1,6 +1,7 @@
 +++
 title = "Intersections"
 published = true
+weight = 70
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/IntersectionOverview.png)

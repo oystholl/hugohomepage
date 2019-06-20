@@ -1,6 +1,7 @@
 +++
 title = "Export Sector Model"
 published = true
+weight = 60
 +++
 
 Sub-sections of the Eclipse Grid with Parameters and Faults can be exported to Eclipse ASCII files in order to create new

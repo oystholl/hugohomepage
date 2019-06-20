@@ -1,6 +1,7 @@
 +++
 title = "Observed Time History Data"
 published = true
+weight = 30
 +++
 
 Observed Time History Data, is data measured in time. On import of observed time history data, ResInsight translates the data to make it similar to summary data. Observed time history data can be plotted along with summary data in **Summary Plots**.

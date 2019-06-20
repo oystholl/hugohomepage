@@ -1,6 +1,7 @@
 +++
 title = "Summary Plots"
 published = true
+weight = 10
 +++
 
 ![]({{< relref "" >}}images/plot-window/ResInsightMainPlotMediumSize.png)

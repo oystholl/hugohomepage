@@ -1,6 +1,7 @@
 +++
 title = "Tensor Results"
 published = true
+weight = 60
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/tensorArrows.png)

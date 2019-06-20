@@ -1,7 +1,7 @@
 +++
 title = "Getting Started"
 published = true
-weigth = 1
+weight = 10
 +++
 
 ### User Interface Overview 

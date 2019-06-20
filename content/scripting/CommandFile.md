@@ -1,6 +1,7 @@
 +++
 title = "Command File"
 published = true
+weight = 30
 +++
 
 The command file interface allows a sequence of specified commands to be run in order from the command line.

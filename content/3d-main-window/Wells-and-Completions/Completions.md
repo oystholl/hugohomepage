@@ -1,6 +1,7 @@
 +++
 title = "Completions"
 published = true
+weight = 50
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/CompletionsIllustration.png)

@@ -1,6 +1,7 @@
 +++
 title = "Build Instructions"
 published = true
+weight = 30
 +++
 
 ## Source code

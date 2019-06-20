@@ -1,6 +1,7 @@
 +++
 title = " Export Well Paths"
 published = true
+weight = 50
 +++
 
 In order to export well paths to dev files, select the menu item **File -> Export -> Export Visible Well Paths** or select one or more well paths and then select one of the items in the context sub menu **Export Well Paths**.

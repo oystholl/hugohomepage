@@ -1,7 +1,7 @@
 +++
 title = "3D Main Window"
 published = true
-weight = 1
+weight = 20
 +++
 
 ![]({{< relref "" >}}images/3d-main-window/3DViewOverview.png)

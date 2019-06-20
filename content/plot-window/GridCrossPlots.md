@@ -1,6 +1,7 @@
 +++
 title = "Grid Cross Plots"
 published = true
+weight = 120
 +++
 
 ![]({{< relref "" >}}images/plot-window/GridCrossPlot.png)

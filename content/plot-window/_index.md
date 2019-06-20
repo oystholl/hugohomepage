@@ -1,5 +1,5 @@
 +++
 title = "Plot Window"
 published = true
-weight = 2
+weight = 30
 +++

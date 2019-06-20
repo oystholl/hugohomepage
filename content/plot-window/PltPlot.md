@@ -1,6 +1,7 @@
 +++
 title = "PLT Plot"
 published = true
+weight = 100
 +++
 
 ![]({{< relref "" >}}images/plot-window/PltPlot.png)

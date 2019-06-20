@@ -1,6 +1,7 @@
 +++
 title = "Well Bore Stability Plots"
 published = true
+weight = 80
 +++
 
 ![]({{< relref "" >}}images/plot-window/WellBoreStability.png)
