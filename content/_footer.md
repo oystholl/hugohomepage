@@ -6,4 +6,5 @@ published = true
 
 ### [Ceetron Solutions](http://www.ceetronsolutions.com) in collaboration with [Equinor ASA](https://www.equinor.com/)
 
-### [Contact](https://resinsight.org/project/contact/)
+### [Support](https://resinsight.org/project/support/)
+our

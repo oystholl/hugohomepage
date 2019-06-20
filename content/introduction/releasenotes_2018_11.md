@@ -13,7 +13,7 @@ ResInsight 2018.11 is the latest version of ResInsight, the professional quality
 
 Local Grid Refinement (LGR) can be created based on Eclipse simulations. The refined grids can also be visualised in 3D.
 
-See [Completions LGR]({{< relref "completions" >}}lgr)
+See [Completions LGR]({{< relref "completionslgr" >}})
 
 ## Well Path Creation
 ![Well Path Creation]({{< relref "" >}}images/introduction/WellPathCreation.png)
