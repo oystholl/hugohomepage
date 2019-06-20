@@ -8,6 +8,7 @@ published = true
 
 ![]({{< relref "" >}}images/FrontPageImage.png)
 
+<!--
 <section class="intro">
   <div class="grid">
     <div class="unit whole center-on-mobiles">
@@ -17,7 +18,7 @@ published = true
 	  <img src="{{< relref "" >}}images/FrontPageImage.png" alt="Reservoir" />
     </div>
   </div>
-</section>
+</section> -->
 <section class="features">
   <div class="grid">
     <div class="unit one-third">
