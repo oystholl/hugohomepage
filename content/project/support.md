@@ -10,6 +10,6 @@ Bug reports and general feature requests can be filed directly on [GitHub](https
 Phone : +47 73 60 43 00 <br>
 e-mail : info@ceetronsolutions.com
 
-[Ceetron Solutions AS](http://www.ceetronsolutions.com) <br>
-![](images/CeetronSolutionWebPage.png)
+[Ceetron Solutions AS](http://www.ceetronsolutions.com)
+<a href="http://www.ceetronsolutions.com">![]({{< relref "">}}images/CeetronSolutionWebPage.png)</a>
 
