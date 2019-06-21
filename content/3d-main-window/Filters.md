@@ -26,8 +26,7 @@ Range Filters and Property filters can either be set to **Include** cells or to 
 
 The **Exclude** setting is used to explicitly remove cells from the visualization, regardless of what other filters say. 
 The **Include** setting behaves differently for Range filters and Property Filters but marks the cells as visible.
-The icon in front of the filters show a + or - sign to indicate the setting ![]({{< relref "" >}}images/3d-main-window/FilterIncEx.png)
-
+The icon in front of the filters show a + or - sign to indicate the setting {{< image-in-text src="/images/3d-main-window/FilterIncEx.png" >}}.
 
 ## Range filters
 

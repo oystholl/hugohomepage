@@ -53,7 +53,7 @@ The default result mapping used on faults are to use the same as specified in **
 ### Toolbar Control
 Visualization mode and mesh lines can be controlled from the toolbar.
 
-- ![]({{< relref "" >}}images/3d-main-window/draw_style_faults_24x24.png) **Faults-Only** visualization mode. 
+- {{< image-in-text src="/images/3d-main-window/draw_style_faults_24x24.png" >}}**Faults-Only** visualization mode. 
    <br>When turned on, this option hides all the grid cells, and shows only the fault faces in the reservoir limited by the applied range and property filters. (Unless **Show faults outside filters** are turned on. See below.)
 - ![]({{< relref "" >}}images/3d-main-window/draw_style_surface_24x24.png) Turns faces on and mesh off
 - ![]({{< relref "" >}}images/3d-main-window/draw_style_surface_w_fault_mesh_24x24.png) Turns on all faces, and shows mesh lines on faults only.

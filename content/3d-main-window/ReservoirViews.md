@@ -26,13 +26,16 @@ Grid appearance can be controlled from the **Property Editor** when a view is se
 
 Visibility of the grid box with labels displaying the coordinates for the reservoir can also be controlled using **Show Grid Box**. 
 
-### Cell Result &nbsp;![]({{< relref "" >}}images/3d-main-window/CellResult.png)
+### Cell Result {{< image-in-text src="/images/3d-main-window/CellResult.png" >}}
 
-The **Cell Result** item defines which Eclipse or Geomechanical property the 3D View uses for the main cell color. The property can be chosen in the property panel of the **Cell Result** item. The mapping between cell values and color is defined by the **Legend Definition**  ![]({{< relref "" >}}images/3d-main-window/Legend.png) along with some appearance settings on the Legend itself. (Number format etc.)
+The **Cell Result** item defines which Eclipse or Geomechanical property the 3D View uses for the main cell color. The property can be chosen in the property panel of the **Cell Result** item. The mapping between cell values and color is defined by the **Legend Definition**{{< image-in-text src="/images/3d-main-window/Legend.png" >}} along with some appearance settings on the Legend itself. (Number format etc.)
 
 Please refer to [Result Color Legend]({{< relref "resultcolorlegend" >}}) for details.
 
-### Range Filters &nbsp;![]({{< relref "" >}}images/3d-main-window/CellFilter_Range.png) and Property Filters &nbsp;![]({{< relref "" >}}images/3d-main-window/CellFilter_Values.png) 
+
+
+### Range Filters {{< image-in-text src="/images/3d-main-window/CellFilter_Range.png" >}} and Property Filters {{< image-in-text src="/images/3d-main-window/CellFilter_Values.png" >}}
+
 
 In order to see different sets of cells, and cells inside the reservoir, Views use cell filters. Please refer to [Cell Filters]({{< relref "filters" >}}) to read more about them.
 
