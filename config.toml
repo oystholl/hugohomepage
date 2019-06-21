@@ -6,11 +6,25 @@ theme = "docdock"
 [params]
 disableSearch = true
 disableNavChevron = true
+disableHomeIcon = true
 ordersectionsby = "weight"
+themestyle = "flex"
 
 [[menu.shortcuts]]
-	pre = "<h3>More</h3>"
-	name = "<i class='fa fa-github'></i> Github repo"
-	identifier = "ds"
-	url = "https://github.com/OPM/ResInsight"
-	weight = 1
+	name = "Getting Started"
+	identifier = "getting-started"
+	url = "/getting-started"
+	weight = 10
+
+[[menu.shortcuts]]
+	name = "Download"
+	identifier = "download"
+	url = "/project/download"
+	weight = 20
+
+[[menu.shortcuts]]
+	name = "Project"
+	identifier = "project"
+	url = "/project"
+	weight = 30
+
