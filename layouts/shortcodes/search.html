@@ -1,4 +1,8 @@
 <h2>Search for: <span id="search-title"></span></h2>
+<form action="{{ relref . "search.md" }}" method="GET" id="search-form">
+    <input type="search" name="q" id="search-field" placeholder="Search">
+</form>
+
 <div id="search-results">
 </div>
 <div class="clear"></div>
