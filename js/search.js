@@ -121,6 +121,7 @@
 
     if (searchTerm) {
         document.getElementById("search-title").innerHTML = searchTerm;
+        document.getElementById("search-field").value = searchTerm;
         var index = createIndex();
         var results = index.search(searchTerm);
         displaySearchResults(searchTerm, results, window.store);
