@@ -1,676 +1,1890 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>ResInsight</title>
+<style>
+    #navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .navbar-item {
+        float: right;
+    }
+
+    .navbar-item a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar-item a:hover {
+        background-color: #111;
+    }
+</style>
+
+<ul id="navbar">
+    <section>
+        <li class="navbar-item" role="" ><a href="/getting-started" >Getting Started</a>
+        </li>
+        <li class="navbar-item" role="" ><a href="/project/download" >Download</a>
+        </li>
+        <li class="navbar-item" role="" ><a href="/project" >Project</a>
+        </li>
+    </section>
     
-      <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-06-21T16:11:45 CEST">
-<title>Search :: ResInsight</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
-<link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
-
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "http:\/\/ceesol.no";
-</script>
-<meta name="description" content="">
+</ul>
 
 
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="description" content="">
 
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Search :: ResInsight</title>
+
+    
+    <link href="/css/nucleus.css?1561372206" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561372206" rel="stylesheet">
+    <link href="/css/hybrid.css?1561372206" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561372206" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561372206" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561372206" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561372206" rel="stylesheet">
+    <link href="/css/theme.css?1561372206" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561372206" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1561372206"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
     
   </head>
-  <body data-url="/search/">
-    
-      <header>
-  <div class="logo">
-    
-	
-  
-    <p><a href="/"><img src="/images/ResInsightCroppedIconPicture.png" alt="logo" /></a></p>
-
-  
-
-
-  </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-    <nav class="shortcuts">
-            <li class="" role="">
-                <a href="/getting-started"  rel="noopener">
-                  Getting Started
-                </a>
-            </li>
-            <li class="" role="">
-                <a href="/project/download"  rel="noopener">
-                  Download
-                </a>
-            </li>
-            <li class="" role="">
-                <a href="/project"  rel="noopener">
-                  Project
-                </a>
-            </li>
-    </nav>
-</header>
-<article>
-  <aside>
-    <ul class="menu"><li>
-  <form action="/search/" method="GET" id="search-form">
-    <input type="search" name="q" id="search-box" placeholder="Search">
-  </form>
-</li>
-    <li data-nav-id="/getting-started/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/getting-started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/getting-started/introduction/" class="dd-item">
-        <div>
-          <a href="/getting-started/introduction/">
-            Introduction
-          </a>
-        </div>
-    </li>
-    <li data-nav-id="/getting-started/installation/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/getting-started/installation/">Installation</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/getting-started/installation/linux-installation/" class="dd-item">
-        <div>
-          <a href="/getting-started/installation/linux-installation/">
-            Linux Installation
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/getting-started/installation/windows-installation/" class="dd-item">
-        <div>
-          <a href="/getting-started/installation/windows-installation/">
-            Windows Installation
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-      <li data-nav-id="/getting-started/gridimportexport/" class="dd-item">
-        <div>
-          <a href="/getting-started/gridimportexport/">
-            Grid Import
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/getting-started/modelnavigation/" class="dd-item">
-        <div>
-          <a href="/getting-started/modelnavigation/">
-            Model Navigation
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/3d-main-window/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/3d-main-window/">3D Main Window</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/3d-main-window/reservoirviews/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/reservoirviews/">
-            3D Views
-          </a>
-        </div>
-    </li>
-    <li data-nav-id="/3d-main-window/results/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/3d-main-window/results/">Results</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/3d-main-window/results/cellresults/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/results/cellresults/">
-            Cell Results
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/results/resultcolorlegend/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/results/resultcolorlegend/">
-            Result Color Legend
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/results/resultinspection/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/results/resultinspection/">
-            Result Inspection
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/results/annotations/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/results/annotations/">
-            Annotations
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-      <li data-nav-id="/3d-main-window/gridstatisticsdialog/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/gridstatisticsdialog/">
-            Grid Statistics Dialog
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/linkedviews/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/linkedviews/">
-            Linked Views
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/faults/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/faults/">
-            Faults
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/tensors/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/tensors/">
-            Tensor Results
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/intersections/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/intersections/">
-            Intersections
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/filters/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/filters/">
-            Cell Filters
-          </a>
-        </div>
-    </li>
-    <li data-nav-id="/3d-main-window/wells-and-completions/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/3d-main-window/wells-and-completions/">Wells and Completions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/3d-main-window/wells-and-completions/simulationwells/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/wells-and-completions/simulationwells/">
-            Simulation Wells
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/wells-and-completions/wellpaths/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/wells-and-completions/wellpaths/">
-            Well Trajectories
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/wells-and-completions/createnewwellpaths/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/wells-and-completions/createnewwellpaths/">
-            Create Well Paths
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/wells-and-completions/3dwelllogcurves/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/wells-and-completions/3dwelllogcurves/">
-            3D Well Log Plots
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/wells-and-completions/completions/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/wells-and-completions/completions/">
-            Completions
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/wells-and-completions/completionslgr/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/wells-and-completions/completionslgr/">
-            Completions LGR
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-      <li data-nav-id="/3d-main-window/contourmaps/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/contourmaps/">
-            Contour Maps
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/formations/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/formations/">
-             Zonations/Formations
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/casegroupsandstatistics/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/casegroupsandstatistics/">
-            Grid Case Groups and Statistics
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/measurement/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/measurement/">
-            Measurement
-          </a>
-        </div>
-    </li>
-    <li data-nav-id="/3d-main-window/customization/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/3d-main-window/customization/">Customization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/3d-main-window/customization/preferences/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/customization/preferences/">
-            Preferences
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/customization/memorymanagement/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/customization/memorymanagement/">
-            Memory Management
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/3d-main-window/customization/keyboardshortcuts/" class="dd-item">
-        <div>
-          <a href="/3d-main-window/customization/keyboardshortcuts/">
-            Keyboard Shortcuts
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/plot-window/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/plot-window/">Plot Window</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/plot-window/summaryplots/" class="dd-item">
-        <div>
-          <a href="/plot-window/summaryplots/">
-            Summary Plots
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/summarysourcestepping/" class="dd-item">
-        <div>
-          <a href="/plot-window/summarysourcestepping/">
-            Summary Plot Source Stepping
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/summaryploteditor/" class="dd-item">
-        <div>
-          <a href="/plot-window/summaryploteditor/">
-            Summary Plot Editor
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/summarycrossplots/" class="dd-item">
-        <div>
-          <a href="/plot-window/summarycrossplots/">
-            Summary Cross Plot
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/ensembleplotting/" class="dd-item">
-        <div>
-          <a href="/plot-window/ensembleplotting/">
-            Ensemble Plotting
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/curvecalculator/" class="dd-item">
-        <div>
-          <a href="/plot-window/curvecalculator/">
-            Curve Calculator
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/welllogsandplots/" class="dd-item">
-        <div>
-          <a href="/plot-window/welllogsandplots/">
-            Well Log Plots
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/wellborestabilityplots/" class="dd-item">
-        <div>
-          <a href="/plot-window/wellborestabilityplots/">
-            Well Bore Stability Plots
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/rftplot/" class="dd-item">
-        <div>
-          <a href="/plot-window/rftplot/">
-            RFT Plot
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/pltplot/" class="dd-item">
-        <div>
-          <a href="/plot-window/pltplot/">
-            PLT Plot
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/flowdiagnosticsplots/" class="dd-item">
-        <div>
-          <a href="/plot-window/flowdiagnosticsplots/">
-            Flow Diagnostics Plots
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/gridcrossplots/" class="dd-item">
-        <div>
-          <a href="/plot-window/gridcrossplots/">
-            Grid Cross Plots
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/plot-window/saturationpressureplots/" class="dd-item">
-        <div>
-          <a href="/plot-window/saturationpressureplots/">
-            Saturation Pressure Plots
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/import/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/import/">Import</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/import/odbsupport/" class="dd-item">
-        <div>
-          <a href="/import/odbsupport/">
-            ABAQUS Odb Support
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/import/elementpropertytableimport/" class="dd-item">
-        <div>
-          <a href="/import/elementpropertytableimport/">
-            Element Property Table Import
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/import/observeddata/" class="dd-item">
-        <div>
-          <a href="/import/observeddata/">
-            Observed Time History Data
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/import/pasteexceltimedata/" class="dd-item">
-        <div>
-          <a href="/import/pasteexceltimedata/">
-            Paste Excel Time History Data
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/export/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/export/">Export</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/export/snapshots/" class="dd-item">
-        <div>
-          <a href="/export/snapshots/">
-            Snapshots
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/export/exporteclipseproperties/" class="dd-item">
-        <div>
-          <a href="/export/exporteclipseproperties/">
-            Export Eclipse Properties
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/export/exportfluxnummultnum/" class="dd-item">
-        <div>
-          <a href="/export/exportfluxnummultnum/">
-            FLUXNUM/MULTNUM
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/export/completionexport/" class="dd-item">
-        <div>
-          <a href="/export/completionexport/">
-            Export Completions
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/export/exportwellpaths/" class="dd-item">
-        <div>
-          <a href="/export/exportwellpaths/">
-             Export Well Paths
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/export/exportsectormodel/" class="dd-item">
-        <div>
-          <a href="/export/exportsectormodel/">
-            Export Sector Model
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/scripting/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/scripting/">Scripting</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/scripting/octaveinterface/" class="dd-item">
-        <div>
-          <a href="/scripting/octaveinterface/">
-            Octave Interface
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/scripting/commandlineinterface/" class="dd-item">
-        <div>
-          <a href="/scripting/commandlineinterface/">
-            Command Line Interface
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/scripting/commandfile/" class="dd-item">
-        <div>
-          <a href="/scripting/commandfile/">
-            Command File
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/appendix/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/appendix/">Appendix</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/appendix/derivedresults/" class="dd-item">
-        <div>
-          <a href="/appendix/derivedresults/">
-             Derived Results
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/appendix/octaveinterfacereference/" class="dd-item">
-        <div>
-          <a href="/appendix/octaveinterfacereference/">
-            Octave Interface Reference
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/appendix/buildinstructions/" class="dd-item">
-        <div>
-          <a href="/appendix/buildinstructions/">
-            Build Instructions
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/appendix/regressiontestsystem/" class="dd-item">
-        <div>
-          <a href="/appendix/regressiontestsystem/">
-            Regression Test System
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/project/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/project/">Project</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/project/about/" class="dd-item">
-        <div>
-          <a href="/project/about/">
-            About
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/project/testimonials/" class="dd-item">
-        <div>
-          <a href="/project/testimonials/">
-            Testimonials
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/project/support/" class="dd-item">
-        <div>
-          <a href="/project/support/">
-            Support
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/project/releasenotification/" class="dd-item">
-        <div>
-          <a href="/project/releasenotification/">
-            Release Notification Subscription
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/project/download/" class="dd-item">
-        <div>
-          <a href="/project/download/">
-            Downloads
-          </a>
-        </div>
-    </li>
-    <li data-nav-id="/project/whats-new/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/project/whats-new/">What&#39;s New</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/project/whats-new/releasenotes_2019_04/" class="dd-item">
-        <div>
-          <a href="/project/whats-new/releasenotes_2019_04/">
-            What&#39;s New in 2019.04
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/project/whats-new/releasenotes_2018_11/" class="dd-item">
-        <div>
-          <a href="/project/whats-new/releasenotes_2018_11/">
-            What&#39;s New in 2018.11
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
+  <body class="" data-url="/search/">
+    <nav id="sidebar" class="">
 
 
 
-
-    </ul>
-    <section>
-    </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/3d-main-window/" >
-   3D Main Window</option>
-    <option value="/plot-window/" >
-   Plot Window</option>
-    <option value="/import/" >
-   Import</option>
-    <option value="/export/" >
-   Export</option>
-    <option value="/scripting/" >
-   Scripting</option>
-    <option value="/appendix/" >
-   Appendix</option>
-    <option value="/project/" >
-   Project</option>
-
-
-
-        </select>
-      </center>
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/images/ResInsightCroppedIconPicture.png">
     </div>
     
+        <div class="searchbox">
+    <label for="search-box"><i class="fas fa-search"></i></label>
+    <form action="/search/" method="GET" id="search-form">
+      <input type="search" name="q" id="search-box" placeholder="Search">
+    </form>
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
 
-    <h1>Search</h1>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+        <a href="/getting-started/introduction/">
+        Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/installation/" title="Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/installation/">
+          Installation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/installation/linux-installation/" title="Linux Installation" class="dd-item ">
+        <a href="/getting-started/installation/linux-installation/">
+        Linux Installation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/installation/windows-installation/" title="Windows Installation" class="dd-item ">
+        <a href="/getting-started/installation/windows-installation/">
+        Windows Installation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/gridimportexport/" title="Grid Import" class="dd-item ">
+        <a href="/getting-started/gridimportexport/">
+        Grid Import
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/modelnavigation/" title="Model Navigation" class="dd-item ">
+        <a href="/getting-started/modelnavigation/">
+        Model Navigation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/3d-main-window/" title="3D Main Window" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3d-main-window/">
+          3D Main Window
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/reservoirviews/" title="3D Views" class="dd-item ">
+        <a href="/3d-main-window/reservoirviews/">
+        3D Views
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/3d-main-window/results/" title="Results" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3d-main-window/results/">
+          Results
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/results/cellresults/" title="Cell Results" class="dd-item ">
+        <a href="/3d-main-window/results/cellresults/">
+        Cell Results
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/results/resultcolorlegend/" title="Result Color Legend" class="dd-item ">
+        <a href="/3d-main-window/results/resultcolorlegend/">
+        Result Color Legend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/results/resultinspection/" title="Result Inspection" class="dd-item ">
+        <a href="/3d-main-window/results/resultinspection/">
+        Result Inspection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/results/annotations/" title="Annotations" class="dd-item ">
+        <a href="/3d-main-window/results/annotations/">
+        Annotations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/gridstatisticsdialog/" title="Grid Statistics Dialog" class="dd-item ">
+        <a href="/3d-main-window/gridstatisticsdialog/">
+        Grid Statistics Dialog
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/linkedviews/" title="Linked Views" class="dd-item ">
+        <a href="/3d-main-window/linkedviews/">
+        Linked Views
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/faults/" title="Faults" class="dd-item ">
+        <a href="/3d-main-window/faults/">
+        Faults
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/tensors/" title="Tensor Results" class="dd-item ">
+        <a href="/3d-main-window/tensors/">
+        Tensor Results
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/intersections/" title="Intersections" class="dd-item ">
+        <a href="/3d-main-window/intersections/">
+        Intersections
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/filters/" title="Cell Filters" class="dd-item ">
+        <a href="/3d-main-window/filters/">
+        Cell Filters
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/3d-main-window/wells-and-completions/" title="Wells and Completions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3d-main-window/wells-and-completions/">
+          Wells and Completions
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/wells-and-completions/simulationwells/" title="Simulation Wells" class="dd-item ">
+        <a href="/3d-main-window/wells-and-completions/simulationwells/">
+        Simulation Wells
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/wells-and-completions/wellpaths/" title="Well Trajectories" class="dd-item ">
+        <a href="/3d-main-window/wells-and-completions/wellpaths/">
+        Well Trajectories
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/wells-and-completions/createnewwellpaths/" title="Create Well Paths" class="dd-item ">
+        <a href="/3d-main-window/wells-and-completions/createnewwellpaths/">
+        Create Well Paths
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/wells-and-completions/3dwelllogcurves/" title="3D Well Log Plots" class="dd-item ">
+        <a href="/3d-main-window/wells-and-completions/3dwelllogcurves/">
+        3D Well Log Plots
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/wells-and-completions/completions/" title="Completions" class="dd-item ">
+        <a href="/3d-main-window/wells-and-completions/completions/">
+        Completions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/wells-and-completions/completionslgr/" title="Completions LGR" class="dd-item ">
+        <a href="/3d-main-window/wells-and-completions/completionslgr/">
+        Completions LGR
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/contourmaps/" title="Contour Maps" class="dd-item ">
+        <a href="/3d-main-window/contourmaps/">
+        Contour Maps
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/formations/" title=" Zonations/Formations" class="dd-item ">
+        <a href="/3d-main-window/formations/">
+         Zonations/Formations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/casegroupsandstatistics/" title="Grid Case Groups and Statistics" class="dd-item ">
+        <a href="/3d-main-window/casegroupsandstatistics/">
+        Grid Case Groups and Statistics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/measurement/" title="Measurement" class="dd-item ">
+        <a href="/3d-main-window/measurement/">
+        Measurement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/3d-main-window/customization/" title="Customization" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3d-main-window/customization/">
+          Customization
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/customization/preferences/" title="Preferences" class="dd-item ">
+        <a href="/3d-main-window/customization/preferences/">
+        Preferences
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/customization/memorymanagement/" title="Memory Management" class="dd-item ">
+        <a href="/3d-main-window/customization/memorymanagement/">
+        Memory Management
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/3d-main-window/customization/keyboardshortcuts/" title="Keyboard Shortcuts" class="dd-item ">
+        <a href="/3d-main-window/customization/keyboardshortcuts/">
+        Keyboard Shortcuts
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/plot-window/" title="Plot Window" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/plot-window/">
+          Plot Window
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/summaryplots/" title="Summary Plots" class="dd-item ">
+        <a href="/plot-window/summaryplots/">
+        Summary Plots
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/summarysourcestepping/" title="Summary Plot Source Stepping" class="dd-item ">
+        <a href="/plot-window/summarysourcestepping/">
+        Summary Plot Source Stepping
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/summaryploteditor/" title="Summary Plot Editor" class="dd-item ">
+        <a href="/plot-window/summaryploteditor/">
+        Summary Plot Editor
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/summarycrossplots/" title="Summary Cross Plot" class="dd-item ">
+        <a href="/plot-window/summarycrossplots/">
+        Summary Cross Plot
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/ensembleplotting/" title="Ensemble Plotting" class="dd-item ">
+        <a href="/plot-window/ensembleplotting/">
+        Ensemble Plotting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/curvecalculator/" title="Curve Calculator" class="dd-item ">
+        <a href="/plot-window/curvecalculator/">
+        Curve Calculator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/welllogsandplots/" title="Well Log Plots" class="dd-item ">
+        <a href="/plot-window/welllogsandplots/">
+        Well Log Plots
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/wellborestabilityplots/" title="Well Bore Stability Plots" class="dd-item ">
+        <a href="/plot-window/wellborestabilityplots/">
+        Well Bore Stability Plots
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/rftplot/" title="RFT Plot" class="dd-item ">
+        <a href="/plot-window/rftplot/">
+        RFT Plot
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/pltplot/" title="PLT Plot" class="dd-item ">
+        <a href="/plot-window/pltplot/">
+        PLT Plot
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/flowdiagnosticsplots/" title="Flow Diagnostics Plots" class="dd-item ">
+        <a href="/plot-window/flowdiagnosticsplots/">
+        Flow Diagnostics Plots
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/gridcrossplots/" title="Grid Cross Plots" class="dd-item ">
+        <a href="/plot-window/gridcrossplots/">
+        Grid Cross Plots
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/plot-window/saturationpressureplots/" title="Saturation Pressure Plots" class="dd-item ">
+        <a href="/plot-window/saturationpressureplots/">
+        Saturation Pressure Plots
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/import/" title="Import" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/import/">
+          Import
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/import/odbsupport/" title="ABAQUS Odb Support" class="dd-item ">
+        <a href="/import/odbsupport/">
+        ABAQUS Odb Support
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/import/elementpropertytableimport/" title="Element Property Table Import" class="dd-item ">
+        <a href="/import/elementpropertytableimport/">
+        Element Property Table Import
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/import/observeddata/" title="Observed Time History Data" class="dd-item ">
+        <a href="/import/observeddata/">
+        Observed Time History Data
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/import/pasteexceltimedata/" title="Paste Excel Time History Data" class="dd-item ">
+        <a href="/import/pasteexceltimedata/">
+        Paste Excel Time History Data
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/export/" title="Export" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/export/">
+          Export
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/export/snapshots/" title="Snapshots" class="dd-item ">
+        <a href="/export/snapshots/">
+        Snapshots
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/export/exporteclipseproperties/" title="Export Eclipse Properties" class="dd-item ">
+        <a href="/export/exporteclipseproperties/">
+        Export Eclipse Properties
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/export/exportfluxnummultnum/" title="FLUXNUM/MULTNUM" class="dd-item ">
+        <a href="/export/exportfluxnummultnum/">
+        FLUXNUM/MULTNUM
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/export/completionexport/" title="Export Completions" class="dd-item ">
+        <a href="/export/completionexport/">
+        Export Completions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/export/exportwellpaths/" title=" Export Well Paths" class="dd-item ">
+        <a href="/export/exportwellpaths/">
+         Export Well Paths
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/export/exportsectormodel/" title="Export Sector Model" class="dd-item ">
+        <a href="/export/exportsectormodel/">
+        Export Sector Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/scripting/" title="Scripting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/scripting/">
+          Scripting
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/scripting/octaveinterface/" title="Octave Interface" class="dd-item ">
+        <a href="/scripting/octaveinterface/">
+        Octave Interface
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/scripting/commandlineinterface/" title="Command Line Interface" class="dd-item ">
+        <a href="/scripting/commandlineinterface/">
+        Command Line Interface
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/scripting/commandfile/" title="Command File" class="dd-item ">
+        <a href="/scripting/commandfile/">
+        Command File
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/appendix/" title="Appendix" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/appendix/">
+          Appendix
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/appendix/derivedresults/" title=" Derived Results" class="dd-item ">
+        <a href="/appendix/derivedresults/">
+         Derived Results
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/appendix/octaveinterfacereference/" title="Octave Interface Reference" class="dd-item ">
+        <a href="/appendix/octaveinterfacereference/">
+        Octave Interface Reference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/appendix/buildinstructions/" title="Build Instructions" class="dd-item ">
+        <a href="/appendix/buildinstructions/">
+        Build Instructions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/appendix/regressiontestsystem/" title="Regression Test System" class="dd-item ">
+        <a href="/appendix/regressiontestsystem/">
+        Regression Test System
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/project/" title="Project" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/project/">
+          Project
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/about/" title="About" class="dd-item ">
+        <a href="/project/about/">
+        About
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/testimonials/" title="Testimonials" class="dd-item ">
+        <a href="/project/testimonials/">
+        Testimonials
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/support/" title="Support" class="dd-item ">
+        <a href="/project/support/">
+        Support
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/releasenotification/" title="Release Notification Subscription" class="dd-item ">
+        <a href="/project/releasenotification/">
+        Release Notification Subscription
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/download/" title="Downloads" class="dd-item ">
+        <a href="/project/download/">
+        Downloads
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/project/whats-new/" title="What&#39;s New" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/project/whats-new/">
+          What&#39;s New
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/whats-new/releasenotes_2019_04/" title="What&#39;s New in 2019.04" class="dd-item ">
+        <a href="/project/whats-new/releasenotes_2019_04/">
+        What&#39;s New in 2019.04
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/whats-new/releasenotes_2018_11/" title="What&#39;s New in 2018.11" class="dd-item ">
+        <a href="/project/whats-new/releasenotes_2018_11/">
+        What&#39;s New in 2018.11
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
     
     
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://ceesol.no/project">Project</a>
+              </li>
+          
+        </ul>
+      </section>
     
-    <!--- Uses html defined in /layouts/shortcodes/search.html--->
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > Search
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Search
+            </h1>
+          
+
+        
+
+
+
+<!--- Uses html defined in /layouts/shortcodes/search.html--->
 
 <h2>Search for: <span id="search-title"></span></h2>
 <form action="/search/" method="GET" id="search-form">
@@ -931,8 +2145,8 @@
          
             window.store["/3d-main-window/wells-and-completions/wellpaths/"] = {
                 title:    "Well Trajectories",
-                content:  " ResInsight can import Well trajectories from simple Ascii files. In addition, a Statoil specific solution to retrieve Well Trajectories from their internal web service is implemented.\nResInsight also supports creation of your own user-defined well paths. See Create Well Paths\nAscii Well Trajectories The command File -\u0026gt; Import -\u0026gt; Well Data -\u0026gt; Import Well Paths From File will read the well paths in the selected file, and create one entry for each trajectory under the Wells item in the Project Tree.\nThe supported ASCII format is quite flexible but the main requirements are:\n Each data line must contain four numbers: X Y TVD MD separated with white-space. Lines starting with \u0026quot;--\u0026quot; or \u0026quot;#\u0026quot; is considered to be comment lines A line starting with none-number-characters are used as a well name after the following rules:  If the line contains a pair of : \u0026quot;'\u0026quot;, \u0026quot;`\u0026quot;, \u0026quot;´\u0026quot;, \u0026quot;’\u0026quot; or \u0026quot;‘\u0026quot; the text between the quotation marks is used as a well name. If the line contains the case insensitive string \u0026ldquo;name\u0026rdquo; with an optional \u0026ldquo;:\u0026rdquo; after then the rest of the line is used as a well name. If there are no quotes or \u0026ldquo;name\u0026rdquo;\u0026rsquo;s, the complete line is used as a well name. If there are several consecutive name-like lines, only the last one will be used  If a well name is found, a new well is created and the following data points are added to it.  Example 1: WELLNAME: WELL1 6507.1 725 2542 2590 6523.5 757 2549 2626.6 6523.5 760 2559 2637.1 -999 WELLNAME: WELL2 550.7 1020.2 2410 2410 551 1004.1 2422.2 2430.2 555.2 993.9 2425 2441.6 -999  Example 2: X Y TVD MD Name Well_1 6507.1 725 2542 2542 6523.5 757 2549 2578.6 6523.5 760 2559 2589.1 -- A Comment new well This is not its name Name Well_2 550.7 1020.2 2410 2520 551 1004.1 2422.2 2540.2 # a comment inside the data 555.2 993.9 2425 2551.6 3Q AHB-J 5507.0 4638.5 0.0 0.0 5507 4638.5 1628.6 1628.6  Trajectory Files are Referenced The trajectory data is not copied into the ResInsight project as such. The project file only stores the file path, and the next time you open the project, ResInsight will try to read the well data from the file again.\nIf the well trajectory file is changed and you would like a running ResInsight to update accordingly, you will need to delete all the well trajectories that emerge from that file, and import it again.  Importing from SSI-Hub (Internal Statoil Web-service) In order to import from SSI-Hub, a project file must be present and stored to file. All imported well paths from the web service will be stored relative to this project file location. If no project file exists, the menu item is disabled.\nThe command File -\u0026gt; Import -\u0026gt; Well Data -\u0026gt; Import Well Paths From SSI-hub launches a wizard to guide you through the process of selecting the well trajectories you need.\nAccess to web service The import of well paths is using a web service. If you are a Statoil employee, make sure you have access to \"EDM Landmark\" and \"EDM Compass\".  After completing the wizard, the wells imported are accessible as Items under the Wells item in the Project Tree.\nThe trajectory data is not copied into the ResInsight project as such, but is stored in files in a directory called ProjectFileName_wellpaths in the same directory as your project file.\nWell Trajectory Visualization All the imported well trajectories are available below the Wells item in the Project Tree.\nThe visible wells are always shown in all the 3D Views in the complete project, so the toggles and settings control the overall project visibility of the Well Trajectories. The Property Editor of the Wells item is shown below\n Global well path visibility \u0026ndash; This option forces the well paths on or off, ignoring the individual settings unless it is set to Individual. Clip Well Paths \u0026ndash; This option hides the top of the Well Trajectories to avoid displaying the very long lines from the reservoir to the sea surface. Well Path clipping depth distance \u0026ndash; This number is the distance from the top of the reservoir to the clipping depth.  Individual Well Trajectories A well trajectory (well path) will hold well log data and well path data imported from files. A well path file is placed inside the well path item, while one or more well log files are placed as child items under the well path in the project tree.\nImporting Well Log Files Well log data is usually imported from LAS-files (*.las). LAS-files can be imported using the command: File-\u0026gt;Import-\u0026gt; Well Data-\u0026gt;Import Well Logs from File.\nResInsight will look for the the well name in the imported LAS-files among the existing Well Paths. If a match is found, the LAS-file is placed as a child of that trajectory. If not, a new empty well path entry is created with the imported LAS-file under it. A well path may have more than one LAS-files as children.\nIf the LAS-file does not contain a well name, the file name is used instead.\nMoving LAS-file If ResInsight\u0026rsquo;s automatic well matching fails and a LAS-file is matched with the wrong well path, it is possible to move the LAS-file to the correct well path. Select the LAS-file context menu click Move LAS File to Well Path and select destination well path.\nImporting Well Path Files See Importing Well Paths\nLook for an Existing Well Path Well log names may vary slightly among different files from the same well. When importing a well log file or a well log path file, ResInsight have to look for an existing well path item to ensure that the well log data and well path are imported to the correct well path item. The lookup is based on name comparison this way: - First remove any prefix (like xxxxx1111/1111- or xxxxx1111/1111_) - Then try an exact name match - If not found, try to match the names ignoring all spaces, dashes and underscores - If still no match, no existing well was found and a new one is created\nWell Path Property Editor The well path property editor lets the user control the appearance of the well path and associate the well path to a simulation well. It also gives some information about the well path metadata.\n Appearance group \u0026ndash; Settings in this group affect the well path appearance in the 3D view File group \u0026ndash; Information about the well path file Simulation Well group \u0026ndash; Associated simulation well. ResInsight will try to associate each well path with a simulation well. This is done in the exact same way as looking up an existing well path. If the auto-association fails, the user can set the correct simulation well here. Well Info group \u0026ndash; Metadata for the well path Well Picks group \u0026ndash; Information about imported well picks file containing data for the current well path  Casing Design Some Casing Design elements can be assigned to the well path by selecting Create Casign Design from the context menu of the well path.\nThis will create a new child object for the Well Path, named Casing Design. In the Casign Design Property editor well path containment properties such as Casing (with Casing Shoe) and Liner can be added to the well path along with a start and end depth and a diameter.\nThese can be visualised in the 3D View and Well Log Plots on a Well Log Track.\n",
-                html:     "\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/ResInsight_WellPathWithSimulationWell.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eResInsight can import Well trajectories from simple Ascii files.\nIn addition, a Statoil specific solution to retrieve Well Trajectories from their internal web service is implemented.\u003c/p\u003e\n\n\u003cp\u003eResInsight also supports creation of your own user-defined well paths. See \u003ca href=\"/3d-main-window/wells-and-completions/createnewwellpaths/\"\u003eCreate Well Paths\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2 id=\"ascii-well-trajectories\"\u003eAscii Well Trajectories\u003c/h2\u003e\n\n\u003cp\u003eThe command \u003cstrong\u003eFile -\u0026gt; Import -\u0026gt; Well Data -\u0026gt; Import Well Paths From File\u003c/strong\u003e will read the well paths in the selected file, and create one entry for each trajectory under the  \u003cimg src=\"/images/3d-main-window/WellCollection.png\" alt=\"\" /\u003e \u003cstrong\u003eWells\u003c/strong\u003e item in the \u003cstrong\u003eProject Tree\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003eThe supported ASCII format is quite flexible but the main requirements are:\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003eEach data line must contain four numbers: X Y TVD MD separated with white-space.\u003c/li\u003e\n\u003cli\u003eLines starting with \u003ccode\u003e\u0026quot;--\u0026quot; or \u0026quot;#\u0026quot;\u003c/code\u003e is considered to be comment lines\u003c/li\u003e\n\u003cli\u003eA line starting with none-number-characters are used as a well name after the following rules:\n\n\u003cul\u003e\n\u003cli\u003eIf the line contains a pair of : \u003ccode\u003e\u0026quot;'\u0026quot;, \u0026quot;`\u0026quot;, \u0026quot;´\u0026quot;, \u0026quot;’\u0026quot; or \u0026quot;‘\u0026quot;\u003c/code\u003e the text between the quotation marks is used as a well name.\u003c/li\u003e\n\u003cli\u003eIf the line contains the case insensitive string \u0026ldquo;name\u0026rdquo; with an optional \u0026ldquo;:\u0026rdquo; after then the rest of the line is used as a well name.\u003c/li\u003e\n\u003cli\u003eIf there are no quotes or \u0026ldquo;name\u0026rdquo;\u0026rsquo;s, the complete line is used as a well name.\u003c/li\u003e\n\u003cli\u003eIf there are several consecutive name-like lines, only the last one will be used\u003c/li\u003e\n\u003c/ul\u003e\u003c/li\u003e\n\u003cli\u003eIf a well name is found, a new well is created and the following data points are added to it.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch4 id=\"example-1\"\u003eExample 1:\u003c/h4\u003e\n\n\u003cpre\u003e\u003ccode\u003eWELLNAME: WELL1\n6507.1  725 2542    2590\n6523.5  757 2549    2626.6\n6523.5  760 2559    2637.1\n-999\nWELLNAME: WELL2\n550.7 1020.2  2410   2410\n551   1004.1  2422.2 2430.2\n555.2  993.9  2425   2441.6\n-999\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch4 id=\"example-2\"\u003eExample 2:\u003c/h4\u003e\n\n\u003cpre\u003e\u003ccode\u003eX Y TVD MD\nName Well_1\n6507.1  725 2542    2542\n6523.5  757 2549    2578.6\n6523.5  760 2559    2589.1\n\n-- A Comment new well\nThis is not its name\nName Well_2\n550.7   1020.2  2410    2520\n551 1004.1  2422.2  2540.2\n# a comment inside the data \n555.2   993.9   2425    2551.6\n\n3Q AHB-J\n5507.0  4638.5  0.0 0.0\n5507    4638.5  1628.6  1628.6\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch3 id=\"trajectory-files-are-referenced\"\u003eTrajectory Files are Referenced\u003c/h3\u003e\n\n\u003cp\u003eThe trajectory data is not copied into the ResInsight project as such. The project file only stores the file path, and the next time you open the project, ResInsight will try to read the well data from the file again.\u003c/p\u003e\n\n\u003cdiv class=\"note info\"\u003e\nIf the well trajectory file is changed and you would like a running ResInsight to update accordingly, you will need to delete all the well trajectories that emerge from that file, and import it again.\n\u003c/div\u003e\n\n\u003ch2 id=\"importing-from-ssi-hub-internal-statoil-web-service\"\u003eImporting from SSI-Hub (Internal Statoil Web-service)\u003c/h2\u003e\n\n\u003cp\u003eIn order to import from SSI-Hub, a project file must be present and stored to file. All imported well paths from the web service will be stored relative to this project file location. If no project file exists, the menu item is disabled.\u003c/p\u003e\n\n\u003cp\u003eThe command \u003cstrong\u003eFile -\u0026gt; Import -\u0026gt; Well Data -\u0026gt; Import Well Paths From SSI-hub\u003c/strong\u003e launches a wizard to guide you through the process of selecting the well trajectories you need.\u003c/p\u003e\n\n\u003cdiv class=\"note info\"\u003e\n\u003ch5\u003eAccess to web service\u003c/h5\u003e\nThe import of well paths is using a web service. If you are a Statoil employee, make sure you have access to \"EDM Landmark\" and \"EDM Compass\".\n\u003c/div\u003e\n\n\u003cp\u003eAfter completing the wizard, the wells imported are accessible as Items under the  \u003cimg src=\"/images/3d-main-window/WellCollection.png\" alt=\"\" /\u003e \u003cstrong\u003eWells\u003c/strong\u003e item in the \u003cstrong\u003eProject Tree\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003eThe trajectory data is not copied into the  ResInsight project as such, but is stored in files in a directory called \u003cem\u003eProjectFileName_wellpaths\u003c/em\u003e in the same directory as your project file.\u003c/p\u003e\n\n\u003ch2 id=\"well-trajectory-visualization\"\u003eWell Trajectory Visualization\u003c/h2\u003e\n\n\u003cp\u003eAll the imported well trajectories are available below the \u003cimg src=\"/images/3d-main-window/WellCollection.png\" alt=\"\" /\u003e \u003cstrong\u003eWells\u003c/strong\u003e item in the \u003cstrong\u003eProject Tree\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/WellsInTree.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eThe visible wells are always shown in all the 3D Views in the complete project, so the toggles and settings control the overall project visibility of the Well Trajectories. The \u003cstrong\u003eProperty Editor\u003c/strong\u003e of the \u003cstrong\u003eWells\u003c/strong\u003e item is shown below\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/WellPathCollectionProperties.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eGlobal well path visibility\u003c/strong\u003e \u0026ndash; This option forces the well paths on or off, ignoring the individual settings unless it is set to Individual.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eClip Well Paths\u003c/strong\u003e \u0026ndash; This option hides the top of the Well Trajectories to avoid displaying the very long lines from the reservoir to the sea surface.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWell Path clipping depth distance\u003c/strong\u003e \u0026ndash; This number is the distance from the top of the reservoir to the clipping depth.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"individual-well-trajectories\"\u003eIndividual Well Trajectories\u003c/h2\u003e\n\n\u003cp\u003eA well trajectory (well path) will hold well log data and well path data imported from files. A well path file is placed inside the well path item, while one or more well log files are placed as child items under the well path in the project tree.\u003c/p\u003e\n\n\u003ch3 id=\"importing-well-log-files\"\u003eImporting Well Log Files\u003c/h3\u003e\n\n\u003cp\u003eWell log data is usually imported from LAS-files (\u003cem\u003e*.las\u003c/em\u003e). LAS-files can be imported using the command: \u003cstrong\u003eFile-\u0026gt;Import-\u0026gt; Well Data-\u0026gt;Import Well Logs from File\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003eResInsight will look for the the well name in the imported LAS-files among the existing \u003cstrong\u003eWell Paths\u003c/strong\u003e.\nIf a match is found, the LAS-file is placed as a child of that trajectory. If not, a new empty well path entry is created with the imported LAS-file under it. A well path may have more than one LAS-files as children.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/LasFilesInTree.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eIf the LAS-file does not contain a well name, the file name is used instead.\u003c/p\u003e\n\n\u003ch4 id=\"moving-las-file\"\u003eMoving LAS-file\u003c/h4\u003e\n\n\u003cp\u003eIf ResInsight\u0026rsquo;s automatic well matching fails and a LAS-file is matched with the wrong well path, it is possible to move the LAS-file to the correct well path. Select the LAS-file context menu click \u003cstrong\u003eMove LAS File to Well Path\u003c/strong\u003e and select destination well path.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"//images/3d-main-window/MoveLasFileMenu.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003ch3 id=\"importing-well-path-files\"\u003eImporting Well Path Files\u003c/h3\u003e\n\n\u003cp\u003eSee \u003ca href=\"#ascii-well-trajectories\"\u003eImporting Well Paths\u003c/a\u003e\u003c/p\u003e\n\n\u003ch3 id=\"look-for-an-existing-well-path\"\u003eLook for an Existing Well Path\u003c/h3\u003e\n\n\u003cp\u003eWell log names may vary slightly among different files from the same well. When importing a well log file or a well log path file, ResInsight have to look for an existing well path item to ensure that the well log data and well path are imported to the correct well path item. The lookup is based on name comparison this way:\n- First remove any prefix (like \u003ccode\u003exxxxx1111/1111-\u003c/code\u003e or \u003ccode\u003exxxxx1111/1111_\u003c/code\u003e)\n- Then try an exact name match\n- If not found, try to match the names ignoring all spaces, dashes and underscores\n- If still no match, no existing well was found and a new one is created\u003c/p\u003e\n\n\u003ch3 id=\"well-path-property-editor\"\u003eWell Path Property Editor\u003c/h3\u003e\n\n\u003cp\u003eThe well path property editor lets the user control the appearance of the well path and associate the well path to a simulation well. It also gives some information about the well path metadata.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/WellPathPropertyEditor.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eAppearance group\u003c/strong\u003e \u0026ndash; Settings in this group affect the well path appearance in the 3D view\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eFile group\u003c/strong\u003e \u0026ndash; Information about the well path file\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSimulation Well group\u003c/strong\u003e \u0026ndash; Associated simulation well. ResInsight will try to associate each well path with a simulation well. This is done in the exact same way as looking up an existing well path. If the auto-association fails, the user can set the correct simulation well here.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWell Info group\u003c/strong\u003e \u0026ndash; Metadata for the well path\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWell Picks group\u003c/strong\u003e \u0026ndash; Information about imported \u003ca href=\"/3d-main-window/formations/#well-picks\"\u003ewell picks\u003c/a\u003e file containing data for the current well path\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"casing-design\"\u003eCasing Design\u003c/h3\u003e\n\n\u003cp\u003eSome Casing Design elements can be assigned to the well path by selecting \u003cstrong\u003eCreate Casign Design\u003c/strong\u003e from the context menu of the well path.\u003c/p\u003e\n\n\u003cp\u003eThis will create a new child object for the Well Path, named \u003cstrong\u003eCasing Design\u003c/strong\u003e. In the \u003cstrong\u003eCasign Design\u003c/strong\u003e Property editor\nwell path containment properties such as Casing (with Casing Shoe) and Liner can be added to the well path along with a start and end depth and a diameter.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/CasignDesign.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eThese can be visualised in the 3D View and Well Log Plots on a \u003ca href=\"/plot-window/welllogsandplots/#tracks\"\u003eWell Log Track\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/CasignDesign3D.png\" alt=\"\" /\u003e \u003cimg src=\"/images/3d-main-window/CasignDesignPlot.png\" alt=\"\" /\u003e\u003c/p\u003e\n",
+                content:  " ResInsight can import Well trajectories from simple Ascii files. In addition, a Statoil specific solution to retrieve Well Trajectories from their internal web service is implemented.\nResInsight also supports creation of your own user-defined well paths. See Create Well Paths\nAscii Well Trajectories The command File -\u0026gt; Import -\u0026gt; Well Data -\u0026gt; Import Well Paths From File will read the well paths in the selected file, and create one entry for each trajectory under the Wells item in the Project Tree.\nThe supported ASCII format is quite flexible but the main requirements are:\n Each data line must contain four numbers: X Y TVD MD separated with white-space. Lines starting with \u0026quot;--\u0026quot; or \u0026quot;#\u0026quot; is considered to be comment lines A line starting with none-number-characters are used as a well name after the following rules:  If the line contains a pair of : \u0026quot;'\u0026quot;, \u0026quot;`\u0026quot;, \u0026quot;´\u0026quot;, \u0026quot;’\u0026quot; or \u0026quot;‘\u0026quot; the text between the quotation marks is used as a well name. If the line contains the case insensitive string \u0026ldquo;name\u0026rdquo; with an optional \u0026ldquo;:\u0026rdquo; after then the rest of the line is used as a well name. If there are no quotes or \u0026ldquo;name\u0026rdquo;\u0026rsquo;s, the complete line is used as a well name. If there are several consecutive name-like lines, only the last one will be used  If a well name is found, a new well is created and the following data points are added to it.  Example 1: WELLNAME: WELL1 6507.1 725 2542 2590 6523.5 757 2549 2626.6 6523.5 760 2559 2637.1 -999 WELLNAME: WELL2 550.7 1020.2 2410 2410 551 1004.1 2422.2 2430.2 555.2 993.9 2425 2441.6 -999  Example 2: X Y TVD MD Name Well_1 6507.1 725 2542 2542 6523.5 757 2549 2578.6 6523.5 760 2559 2589.1 -- A Comment new well This is not its name Name Well_2 550.7 1020.2 2410 2520 551 1004.1 2422.2 2540.2 # a comment inside the data 555.2 993.9 2425 2551.6 3Q AHB-J 5507.0 4638.5 0.0 0.0 5507 4638.5 1628.6 1628.6  Trajectory Files are Referenced The trajectory data is not copied into the ResInsight project as such. The project file only stores the file path, and the next time you open the project, ResInsight will try to read the well data from the file again.\nIf the well trajectory file is changed and you would like a running ResInsight to update accordingly, you will need to delete all the well trajectories that emerge from that file, and import it again.  Importing from SSI-Hub (Internal Statoil Web-service) In order to import from SSI-Hub, a project file must be present and stored to file. All imported well paths from the web service will be stored relative to this project file location. If no project file exists, the menu item is disabled.\nThe command File -\u0026gt; Import -\u0026gt; Well Data -\u0026gt; Import Well Paths From SSI-hub launches a wizard to guide you through the process of selecting the well trajectories you need.\nAccess to web service:  The import of well paths is using a web service. If you are a Statoil employee, make sure you have access to \u0026ldquo;EDM Landmark\u0026rdquo; and \u0026ldquo;EDM Compass\u0026rdquo;.\n After completing the wizard, the wells imported are accessible as Items under the Wells item in the Project Tree.\nThe trajectory data is not copied into the ResInsight project as such, but is stored in files in a directory called ProjectFileName_wellpaths in the same directory as your project file.\nWell Trajectory Visualization All the imported well trajectories are available below the Wells item in the Project Tree.\nThe visible wells are always shown in all the 3D Views in the complete project, so the toggles and settings control the overall project visibility of the Well Trajectories. The Property Editor of the Wells item is shown below\n Global well path visibility \u0026ndash; This option forces the well paths on or off, ignoring the individual settings unless it is set to Individual. Clip Well Paths \u0026ndash; This option hides the top of the Well Trajectories to avoid displaying the very long lines from the reservoir to the sea surface. Well Path clipping depth distance \u0026ndash; This number is the distance from the top of the reservoir to the clipping depth.  Individual Well Trajectories A well trajectory (well path) will hold well log data and well path data imported from files. A well path file is placed inside the well path item, while one or more well log files are placed as child items under the well path in the project tree.\nImporting Well Log Files Well log data is usually imported from LAS-files (*.las). LAS-files can be imported using the command: File-\u0026gt;Import-\u0026gt; Well Data-\u0026gt;Import Well Logs from File.\nResInsight will look for the the well name in the imported LAS-files among the existing Well Paths. If a match is found, the LAS-file is placed as a child of that trajectory. If not, a new empty well path entry is created with the imported LAS-file under it. A well path may have more than one LAS-files as children.\nIf the LAS-file does not contain a well name, the file name is used instead.\nMoving LAS-file If ResInsight\u0026rsquo;s automatic well matching fails and a LAS-file is matched with the wrong well path, it is possible to move the LAS-file to the correct well path. Select the LAS-file context menu click Move LAS File to Well Path and select destination well path.\nImporting Well Path Files See Importing Well Paths\nLook for an Existing Well Path Well log names may vary slightly among different files from the same well. When importing a well log file or a well log path file, ResInsight have to look for an existing well path item to ensure that the well log data and well path are imported to the correct well path item. The lookup is based on name comparison this way: - First remove any prefix (like xxxxx1111/1111- or xxxxx1111/1111_) - Then try an exact name match - If not found, try to match the names ignoring all spaces, dashes and underscores - If still no match, no existing well was found and a new one is created\nWell Path Property Editor The well path property editor lets the user control the appearance of the well path and associate the well path to a simulation well. It also gives some information about the well path metadata.\n Appearance group \u0026ndash; Settings in this group affect the well path appearance in the 3D view File group \u0026ndash; Information about the well path file Simulation Well group \u0026ndash; Associated simulation well. ResInsight will try to associate each well path with a simulation well. This is done in the exact same way as looking up an existing well path. If the auto-association fails, the user can set the correct simulation well here. Well Info group \u0026ndash; Metadata for the well path Well Picks group \u0026ndash; Information about imported well picks file containing data for the current well path  Casing Design Some Casing Design elements can be assigned to the well path by selecting Create Casign Design from the context menu of the well path.\nThis will create a new child object for the Well Path, named Casing Design. In the Casign Design Property editor well path containment properties such as Casing (with Casing Shoe) and Liner can be added to the well path along with a start and end depth and a diameter.\nThese can be visualised in the 3D View and Well Log Plots on a Well Log Track.\n",
+                html:     "\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/ResInsight_WellPathWithSimulationWell.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eResInsight can import Well trajectories from simple Ascii files.\nIn addition, a Statoil specific solution to retrieve Well Trajectories from their internal web service is implemented.\u003c/p\u003e\n\n\u003cp\u003eResInsight also supports creation of your own user-defined well paths. See \u003ca href=\"/3d-main-window/wells-and-completions/createnewwellpaths/\"\u003eCreate Well Paths\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2 id=\"ascii-well-trajectories\"\u003eAscii Well Trajectories\u003c/h2\u003e\n\n\u003cp\u003eThe command \u003cstrong\u003eFile -\u0026gt; Import -\u0026gt; Well Data -\u0026gt; Import Well Paths From File\u003c/strong\u003e will read the well paths in the selected file, and create one entry for each trajectory under the  \u003cimg src=\"/images/3d-main-window/WellCollection.png\" alt=\"\" /\u003e \u003cstrong\u003eWells\u003c/strong\u003e item in the \u003cstrong\u003eProject Tree\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003eThe supported ASCII format is quite flexible but the main requirements are:\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003eEach data line must contain four numbers: X Y TVD MD separated with white-space.\u003c/li\u003e\n\u003cli\u003eLines starting with \u003ccode\u003e\u0026quot;--\u0026quot; or \u0026quot;#\u0026quot;\u003c/code\u003e is considered to be comment lines\u003c/li\u003e\n\u003cli\u003eA line starting with none-number-characters are used as a well name after the following rules:\n\n\u003cul\u003e\n\u003cli\u003eIf the line contains a pair of : \u003ccode\u003e\u0026quot;'\u0026quot;, \u0026quot;`\u0026quot;, \u0026quot;´\u0026quot;, \u0026quot;’\u0026quot; or \u0026quot;‘\u0026quot;\u003c/code\u003e the text between the quotation marks is used as a well name.\u003c/li\u003e\n\u003cli\u003eIf the line contains the case insensitive string \u0026ldquo;name\u0026rdquo; with an optional \u0026ldquo;:\u0026rdquo; after then the rest of the line is used as a well name.\u003c/li\u003e\n\u003cli\u003eIf there are no quotes or \u0026ldquo;name\u0026rdquo;\u0026rsquo;s, the complete line is used as a well name.\u003c/li\u003e\n\u003cli\u003eIf there are several consecutive name-like lines, only the last one will be used\u003c/li\u003e\n\u003c/ul\u003e\u003c/li\u003e\n\u003cli\u003eIf a well name is found, a new well is created and the following data points are added to it.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch4 id=\"example-1\"\u003eExample 1:\u003c/h4\u003e\n\n\u003cpre\u003e\u003ccode\u003eWELLNAME: WELL1\n6507.1  725 2542    2590\n6523.5  757 2549    2626.6\n6523.5  760 2559    2637.1\n-999\nWELLNAME: WELL2\n550.7 1020.2  2410   2410\n551   1004.1  2422.2 2430.2\n555.2  993.9  2425   2441.6\n-999\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch4 id=\"example-2\"\u003eExample 2:\u003c/h4\u003e\n\n\u003cpre\u003e\u003ccode\u003eX Y TVD MD\nName Well_1\n6507.1  725 2542    2542\n6523.5  757 2549    2578.6\n6523.5  760 2559    2589.1\n\n-- A Comment new well\nThis is not its name\nName Well_2\n550.7   1020.2  2410    2520\n551 1004.1  2422.2  2540.2\n# a comment inside the data \n555.2   993.9   2425    2551.6\n\n3Q AHB-J\n5507.0  4638.5  0.0 0.0\n5507    4638.5  1628.6  1628.6\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch3 id=\"trajectory-files-are-referenced\"\u003eTrajectory Files are Referenced\u003c/h3\u003e\n\n\u003cp\u003eThe trajectory data is not copied into the ResInsight project as such. The project file only stores the file path, and the next time you open the project, ResInsight will try to read the well data from the file again.\u003c/p\u003e\n\n\u003cdiv class=\"note info\"\u003e\nIf the well trajectory file is changed and you would like a running ResInsight to update accordingly, you will need to delete all the well trajectories that emerge from that file, and import it again.\n\u003c/div\u003e\n\n\u003ch2 id=\"importing-from-ssi-hub-internal-statoil-web-service\"\u003eImporting from SSI-Hub (Internal Statoil Web-service)\u003c/h2\u003e\n\n\u003cp\u003eIn order to import from SSI-Hub, a project file must be present and stored to file. All imported well paths from the web service will be stored relative to this project file location. If no project file exists, the menu item is disabled.\u003c/p\u003e\n\n\u003cp\u003eThe command \u003cstrong\u003eFile -\u0026gt; Import -\u0026gt; Well Data -\u0026gt; Import Well Paths From SSI-hub\u003c/strong\u003e launches a wizard to guide you through the process of selecting the well trajectories you need.\u003c/p\u003e\n\n\n\u003cdiv class=\"notices info\" \u003e\u003cp\u003e\u003cstrong\u003eAccess to web service: \u003c/strong\u003e\nThe import of well paths is using a web service. If you are a Statoil employee, make sure you have access to \u0026ldquo;EDM Landmark\u0026rdquo; and \u0026ldquo;EDM Compass\u0026rdquo;.\u003c/p\u003e\n\u003c/div\u003e\n\n\n\u003cp\u003eAfter completing the wizard, the wells imported are accessible as Items under the  \u003cimg src=\"/images/3d-main-window/WellCollection.png\" alt=\"\" /\u003e \u003cstrong\u003eWells\u003c/strong\u003e item in the \u003cstrong\u003eProject Tree\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003eThe trajectory data is not copied into the  ResInsight project as such, but is stored in files in a directory called \u003cem\u003eProjectFileName_wellpaths\u003c/em\u003e in the same directory as your project file.\u003c/p\u003e\n\n\u003ch2 id=\"well-trajectory-visualization\"\u003eWell Trajectory Visualization\u003c/h2\u003e\n\n\u003cp\u003eAll the imported well trajectories are available below the \u003cimg src=\"/images/3d-main-window/WellCollection.png\" alt=\"\" /\u003e \u003cstrong\u003eWells\u003c/strong\u003e item in the \u003cstrong\u003eProject Tree\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/WellsInTree.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eThe visible wells are always shown in all the 3D Views in the complete project, so the toggles and settings control the overall project visibility of the Well Trajectories. The \u003cstrong\u003eProperty Editor\u003c/strong\u003e of the \u003cstrong\u003eWells\u003c/strong\u003e item is shown below\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/WellPathCollectionProperties.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eGlobal well path visibility\u003c/strong\u003e \u0026ndash; This option forces the well paths on or off, ignoring the individual settings unless it is set to Individual.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eClip Well Paths\u003c/strong\u003e \u0026ndash; This option hides the top of the Well Trajectories to avoid displaying the very long lines from the reservoir to the sea surface.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWell Path clipping depth distance\u003c/strong\u003e \u0026ndash; This number is the distance from the top of the reservoir to the clipping depth.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"individual-well-trajectories\"\u003eIndividual Well Trajectories\u003c/h2\u003e\n\n\u003cp\u003eA well trajectory (well path) will hold well log data and well path data imported from files. A well path file is placed inside the well path item, while one or more well log files are placed as child items under the well path in the project tree.\u003c/p\u003e\n\n\u003ch3 id=\"importing-well-log-files\"\u003eImporting Well Log Files\u003c/h3\u003e\n\n\u003cp\u003eWell log data is usually imported from LAS-files (\u003cem\u003e*.las\u003c/em\u003e). LAS-files can be imported using the command: \u003cstrong\u003eFile-\u0026gt;Import-\u0026gt; Well Data-\u0026gt;Import Well Logs from File\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003eResInsight will look for the the well name in the imported LAS-files among the existing \u003cstrong\u003eWell Paths\u003c/strong\u003e.\nIf a match is found, the LAS-file is placed as a child of that trajectory. If not, a new empty well path entry is created with the imported LAS-file under it. A well path may have more than one LAS-files as children.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/LasFilesInTree.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eIf the LAS-file does not contain a well name, the file name is used instead.\u003c/p\u003e\n\n\u003ch4 id=\"moving-las-file\"\u003eMoving LAS-file\u003c/h4\u003e\n\n\u003cp\u003eIf ResInsight\u0026rsquo;s automatic well matching fails and a LAS-file is matched with the wrong well path, it is possible to move the LAS-file to the correct well path. Select the LAS-file context menu click \u003cstrong\u003eMove LAS File to Well Path\u003c/strong\u003e and select destination well path.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"//images/3d-main-window/MoveLasFileMenu.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003ch3 id=\"importing-well-path-files\"\u003eImporting Well Path Files\u003c/h3\u003e\n\n\u003cp\u003eSee \u003ca href=\"#ascii-well-trajectories\"\u003eImporting Well Paths\u003c/a\u003e\u003c/p\u003e\n\n\u003ch3 id=\"look-for-an-existing-well-path\"\u003eLook for an Existing Well Path\u003c/h3\u003e\n\n\u003cp\u003eWell log names may vary slightly among different files from the same well. When importing a well log file or a well log path file, ResInsight have to look for an existing well path item to ensure that the well log data and well path are imported to the correct well path item. The lookup is based on name comparison this way:\n- First remove any prefix (like \u003ccode\u003exxxxx1111/1111-\u003c/code\u003e or \u003ccode\u003exxxxx1111/1111_\u003c/code\u003e)\n- Then try an exact name match\n- If not found, try to match the names ignoring all spaces, dashes and underscores\n- If still no match, no existing well was found and a new one is created\u003c/p\u003e\n\n\u003ch3 id=\"well-path-property-editor\"\u003eWell Path Property Editor\u003c/h3\u003e\n\n\u003cp\u003eThe well path property editor lets the user control the appearance of the well path and associate the well path to a simulation well. It also gives some information about the well path metadata.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/WellPathPropertyEditor.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eAppearance group\u003c/strong\u003e \u0026ndash; Settings in this group affect the well path appearance in the 3D view\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eFile group\u003c/strong\u003e \u0026ndash; Information about the well path file\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSimulation Well group\u003c/strong\u003e \u0026ndash; Associated simulation well. ResInsight will try to associate each well path with a simulation well. This is done in the exact same way as looking up an existing well path. If the auto-association fails, the user can set the correct simulation well here.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWell Info group\u003c/strong\u003e \u0026ndash; Metadata for the well path\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWell Picks group\u003c/strong\u003e \u0026ndash; Information about imported \u003ca href=\"/3d-main-window/formations/#well-picks\"\u003ewell picks\u003c/a\u003e file containing data for the current well path\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"casing-design\"\u003eCasing Design\u003c/h3\u003e\n\n\u003cp\u003eSome Casing Design elements can be assigned to the well path by selecting \u003cstrong\u003eCreate Casign Design\u003c/strong\u003e from the context menu of the well path.\u003c/p\u003e\n\n\u003cp\u003eThis will create a new child object for the Well Path, named \u003cstrong\u003eCasing Design\u003c/strong\u003e. In the \u003cstrong\u003eCasign Design\u003c/strong\u003e Property editor\nwell path containment properties such as Casing (with Casing Shoe) and Liner can be added to the well path along with a start and end depth and a diameter.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/CasignDesign.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eThese can be visualised in the 3D View and Well Log Plots on a \u003ca href=\"/plot-window/welllogsandplots/#tracks\"\u003eWell Log Track\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/CasignDesign3D.png\" alt=\"\" /\u003e \u003cimg src=\"/images/3d-main-window/CasignDesignPlot.png\" alt=\"\" /\u003e\u003c/p\u003e\n",
                 url:      "/3d-main-window/wells-and-completions/wellpaths/"
             };
         
@@ -1264,8 +2478,8 @@
          
             window.store["/3d-main-window/filters/"] = {
                 title:    "Cell Filters",
-                content:  " Cell Filters are used to control visibility of the cells in the 3D view. Two types of filters exists:\n Range Filter \u0026ndash; Extracts an IJK subset of the model. Property Filter \u0026ndash; Extracts cells with a property value matching a value range.  The visibilities of cells connection to wells, and fences based on these cells can be controlled from  Simulation Wells .\n(Not applicable for Geomechanical cases)  Common Properties for Range and Property Filters Both filter types can be turned on or off using the toggle in the Project Tree and controlled from their corresponding Property Editor.\nRange Filters and Property filters can either be set to Include cells or to Exclude them.\nThe Exclude setting is used to explicitly remove cells from the visualization, regardless of what other filters say. The Include setting behaves differently for Range filters and Property Filters but marks the cells as visible. The icon in front of the filters show a + or - sign to indicate the setting .\nRange filters Range filters enables the user to define a set of visible regions in the 3D view based on IJK boxes. Each Include range filter will add more cells to the visualization. The view will show the union of all the Include range filters.\nA new range filter can be added by activating the context menu for the Range Filters collection in the Project Tree.\nAn I,J or K-slice range filter can be added directly from a Cell in the 3D View by right-clicking the cell and using the context menu.  Below is a snapshot of the Property Editor of the Range Filter :\n Filter Type \u0026ndash; The filter can either make the specified range visible ( Include ), or remove the range from the View ( Exclude ). Grid \u0026ndash; This option selects which of the grids the range is addressing. Apply to Subgrids \u0026ndash; This option tells ResInsight to use the visibility of the cells in the current grid to control the visibility of the cells in sub-LGR\u0026rsquo;s. If this option is turned off, Sub LGR-cells is not included in this particular Range Filter.\n  The Start and Width labels in front of the sliders features a number in parenthesis denoting maximum available value.\nThe Start labels shows the index of the start of the active cells.\nThe Width labels shows the number of active cells from the start of the active cells.\nProperty Filters Property Filters applies to the results of the Range Filters and limits the visible cells to the ones approved by the filter. For a cell to be visible it must be accepted by all the property filters.\nA new property filter can be made by activating the context menu on Property Filters or by right-clicking inside a 3D view. The new property filter is based on the currently viewed cell result by default.\nThe name of the property filter is automatically set to \u0026ldquo;propertyname (min .. max)\u0026rdquo; as you edit the property filter.\nThe context command Apply As Cell Result on a property filter, sets the Cell Color Result to the same values as the selected property filter.  Below is a snapshot of the Property Editor of the Property Filter.\nProperty Value Range The filter is based on a property value range (Min - Max). Cells in the range are either shown or hidden depending on the Filter Type (Include/Exclude). Exclude-filters removes the selected cells from the View even if some other filter includes them.\nRange Behavior for Flow Diagnostic Results Normally the available range in the sliders is the max and min of all the values in all the time steps. For Flow Diagnostics results, however, the available range is based on the current time step.\nWe still need to keep the range somewhat fixed while moving from time step to time step, so in order to do so ResInsight tries to keep the intentions of your range settings, as the available range changes. If either the max or min value is set to the limit, ResInsight will keep that setting at the limit even when the limit changes. If you set a specific value for the max or the min, that setting will keep its value, even if it happens to end up outside the available range at a time step.\nCategory Selection If the property is representing integer values, well tracer names or formation names , the property filter displays a list of available categories used to filter cells. The separate values can then be toggled on or off using the list in the Property Editor.\nIf it is more convenient to filter the values using a value range, toggle the Category Selection option off.\n",
-                html:     "\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/FiltersOverview.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eCell Filters are used to control visibility of the cells in the 3D view. Two types of filters exists:\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eRange Filter\u003c/strong\u003e \u0026ndash; Extracts an IJK subset of the model.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eProperty Filter\u003c/strong\u003e \u0026ndash; Extracts cells with a property value matching a value range.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cdiv class=\"note\"\u003e\nThe visibilities of cells connection to wells, and fences based on these cells can be controlled from \u003cb\u003e \u003ca href=\"/3d-main-window/wells-and-completions/simulationwells/\"\u003eSimulation Wells\u003c/a\u003e \u003c/b\u003e.\u003cbr\u003e \n\u003csmall\u003e\u003ci\u003e(Not applicable for Geomechanical cases)\u003c/i\u003e\u003c/small\u003e\n\u003c/div\u003e\n\n\u003ch2 id=\"common-properties-for-range-and-property-filters\"\u003eCommon Properties for Range and Property Filters\u003c/h2\u003e\n\n\u003cp\u003eBoth filter types can be turned on or off using the toggle in the \u003cstrong\u003eProject Tree\u003c/strong\u003e and controlled from their corresponding \u003cstrong\u003eProperty Editor\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/FiltersInTreeView.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eRange Filters and Property filters can either be set to \u003cstrong\u003eInclude\u003c/strong\u003e cells or to \u003cstrong\u003eExclude\u003c/strong\u003e them.\u003c/p\u003e\n\n\u003cp\u003eThe \u003cstrong\u003eExclude\u003c/strong\u003e setting is used to explicitly remove cells from the visualization, regardless of what other filters say.\nThe \u003cstrong\u003eInclude\u003c/strong\u003e setting behaves differently for Range filters and Property Filters but marks the cells as visible.\nThe icon in front of the filters show a + or - sign to indicate the setting \u003cimg src=/images/3d-main-window/FilterIncEx.png style=\"display:inline; vertical-align:middle; margin:0\"\u003e\n.\u003c/p\u003e\n\n\u003ch2 id=\"range-filters\"\u003eRange filters\u003c/h2\u003e\n\n\u003cp\u003eRange filters enables the user to define a set of visible regions in the 3D view based on IJK boxes.\nEach \u003cem\u003eInclude\u003c/em\u003e range filter will \u003cem\u003eadd more cells\u003c/em\u003e to the visualization. The view will show the union of all the \u003cem\u003eInclude\u003c/em\u003e range filters.\u003c/p\u003e\n\n\u003cp\u003eA new range filter can be added by activating the context menu for the \u003cstrong\u003eRange Filters\u003c/strong\u003e collection in the \u003cstrong\u003eProject Tree\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cdiv class=\"note\"\u003e\nAn I,J or K-slice range filter can be added directly from a Cell in the \u003cb\u003e3D View\u003c/b\u003e by right-clicking the cell and using the context menu. \n\u003c/div\u003e\n\n\u003cp\u003eBelow is a snapshot of the \u003cstrong\u003eProperty Editor\u003c/strong\u003e of the \u003cstrong\u003eRange Filter\u003c/strong\u003e :\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/RangeFilterProperties.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eFilter Type\u003c/strong\u003e \u0026ndash; The filter can either make the specified range visible ( \u003cem\u003eInclude\u003c/em\u003e ), or remove the range from the View ( \u003cem\u003eExclude\u003c/em\u003e ).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGrid\u003c/strong\u003e \u0026ndash;  This option selects which of the grids the range is addressing.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eApply to Subgrids\u003c/strong\u003e \u0026ndash; This option tells ResInsight to use the visibility of the cells in the current grid to control the visibility of the cells in sub-LGR\u0026rsquo;s. If this option is turned off, Sub LGR-cells is not included in this particular Range Filter.\u003cbr /\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eThe \u003cstrong\u003eStart\u003c/strong\u003e and \u003cstrong\u003eWidth\u003c/strong\u003e labels in front of the sliders features a number in parenthesis denoting maximum available value.\u003cbr\u003e\nThe \u003cstrong\u003eStart\u003c/strong\u003e labels shows the index of the start of the active cells.\u003cbr\u003e\nThe \u003cstrong\u003eWidth\u003c/strong\u003e labels shows the number of active cells from the start of the active cells.\u003c/p\u003e\n\n\u003ch2 id=\"property-filters\"\u003eProperty Filters\u003c/h2\u003e\n\n\u003cp\u003e\u003cstrong\u003eProperty Filters\u003c/strong\u003e applies to the results of the \u003cstrong\u003eRange Filters\u003c/strong\u003e and limits the visible cells to the ones approved by the filter. For a cell to be visible it must be accepted by all the property filters.\u003c/p\u003e\n\n\u003cp\u003eA new property filter can be made by activating the context menu on \u003cstrong\u003eProperty Filters\u003c/strong\u003e or by right-clicking inside a 3D view. The new property filter is based on the currently viewed cell result by default.\u003c/p\u003e\n\n\u003cp\u003eThe name of the property filter is automatically set to \u003cem\u003e\u0026ldquo;propertyname (min .. max)\u0026rdquo;\u003c/em\u003e as you edit the property filter.\u003c/p\u003e\n\n\u003cdiv class=\"note\"\u003e\nThe context command \u003cb\u003eApply As Cell Result\u003c/b\u003e on a property filter, sets the Cell Color Result to the same values as the selected property filter.\n\u003c/div\u003e\n\n\u003cp\u003eBelow is a snapshot of the \u003cstrong\u003eProperty Editor\u003c/strong\u003e of the \u003cstrong\u003eProperty Filter\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/PropertyFilterProperties.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003ch3 id=\"property-value-range\"\u003eProperty Value Range\u003c/h3\u003e\n\n\u003cp\u003eThe filter is based on a property value range (Min - Max). Cells in the range are either shown or hidden depending on the \u003cstrong\u003eFilter Type\u003c/strong\u003e (\u003cem\u003eInclude\u003c/em\u003e/\u003cem\u003eExclude\u003c/em\u003e). Exclude-filters removes the selected cells from the \u003cstrong\u003eView\u003c/strong\u003e even if some other filter includes them.\u003c/p\u003e\n\n\u003ch4 id=\"range-behavior-for-flow-diagnostic-results\"\u003eRange Behavior for Flow Diagnostic Results\u003c/h4\u003e\n\n\u003cp\u003eNormally the available range in the sliders is the max and min of all the values in all the time steps. For Flow Diagnostics results, however, the available range is based on the current time step.\u003c/p\u003e\n\n\u003cp\u003eWe still need to keep the range somewhat fixed while moving from time step to time step, so in order to do so ResInsight tries to keep the intentions of your range settings, as the available range changes. If either the max or min value is set to the limit, ResInsight will keep that setting at the limit even when the limit changes. If you set a specific value for the max or the min, that setting will keep its value, even if it happens to end up outside the available range at a time step.\u003c/p\u003e\n\n\u003ch3 id=\"category-selection\"\u003eCategory Selection\u003c/h3\u003e\n\n\u003cp\u003eIf the property is representing integer values, well tracer names or \u003ca href=\"/3d-main-window/formations\"\u003e formation names \u003c/a\u003e, the property filter displays a list of available categories used to filter cells. The separate values can then be toggled on or off using the list in the Property Editor.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/PropertyFilterWithCategories.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eIf it is more convenient to filter the values using a value range, toggle the \u003cstrong\u003eCategory Selection\u003c/strong\u003e option off.\u003c/p\u003e\n",
+                content:  " Cell Filters are used to control visibility of the cells in the 3D view. Two types of filters exists:\n Range Filter \u0026ndash; Extracts an IJK subset of the model. Property Filter \u0026ndash; Extracts cells with a property value matching a value range.  The visibilities of cells connection to wells, and fences based on these cells can be controlled from  Simulation Wells .\n(Not applicable for Geomechanical cases)\n Common Properties for Range and Property Filters Both filter types can be turned on or off using the toggle in the Project Tree and controlled from their corresponding Property Editor.\nRange Filters and Property filters can either be set to Include cells or to Exclude them.\nThe Exclude setting is used to explicitly remove cells from the visualization, regardless of what other filters say. The Include setting behaves differently for Range filters and Property Filters but marks the cells as visible. The icon in front of the filters show a + or - sign to indicate the setting .\nRange filters Range filters enables the user to define a set of visible regions in the 3D view based on IJK boxes. Each Include range filter will add more cells to the visualization. The view will show the union of all the Include range filters.\nA new range filter can be added by activating the context menu for the Range Filters collection in the Project Tree.\nAn I,J or K-slice range filter can be added directly from a Cell in the 3D View by right-clicking the cell and using the context menu.  Below is a snapshot of the Property Editor of the Range Filter :\n Filter Type \u0026ndash; The filter can either make the specified range visible ( Include ), or remove the range from the View ( Exclude ). Grid \u0026ndash; This option selects which of the grids the range is addressing. Apply to Subgrids \u0026ndash; This option tells ResInsight to use the visibility of the cells in the current grid to control the visibility of the cells in sub-LGR\u0026rsquo;s. If this option is turned off, Sub LGR-cells is not included in this particular Range Filter.\n  The Start and Width labels in front of the sliders features a number in parenthesis denoting maximum available value.\nThe Start labels shows the index of the start of the active cells.\nThe Width labels shows the number of active cells from the start of the active cells.\nProperty Filters Property Filters applies to the results of the Range Filters and limits the visible cells to the ones approved by the filter. For a cell to be visible it must be accepted by all the property filters.\nA new property filter can be made by activating the context menu on Property Filters or by right-clicking inside a 3D view. The new property filter is based on the currently viewed cell result by default.\nThe name of the property filter is automatically set to \u0026ldquo;propertyname (min .. max)\u0026rdquo; as you edit the property filter.\nThe context command Apply As Cell Result on a property filter, sets the Cell Color Result to the same values as the selected property filter.  Below is a snapshot of the Property Editor of the Property Filter.\nProperty Value Range The filter is based on a property value range (Min - Max). Cells in the range are either shown or hidden depending on the Filter Type (Include/Exclude). Exclude-filters removes the selected cells from the View even if some other filter includes them.\nRange Behavior for Flow Diagnostic Results Normally the available range in the sliders is the max and min of all the values in all the time steps. For Flow Diagnostics results, however, the available range is based on the current time step.\nWe still need to keep the range somewhat fixed while moving from time step to time step, so in order to do so ResInsight tries to keep the intentions of your range settings, as the available range changes. If either the max or min value is set to the limit, ResInsight will keep that setting at the limit even when the limit changes. If you set a specific value for the max or the min, that setting will keep its value, even if it happens to end up outside the available range at a time step.\nCategory Selection If the property is representing integer values, well tracer names or formation names , the property filter displays a list of available categories used to filter cells. The separate values can then be toggled on or off using the list in the Property Editor.\nIf it is more convenient to filter the values using a value range, toggle the Category Selection option off.\n",
+                html:     "\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/FiltersOverview.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eCell Filters are used to control visibility of the cells in the 3D view. Two types of filters exists:\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eRange Filter\u003c/strong\u003e \u0026ndash; Extracts an IJK subset of the model.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eProperty Filter\u003c/strong\u003e \u0026ndash; Extracts cells with a property value matching a value range.\u003c/li\u003e\n\u003c/ul\u003e\n\n\n\u003cdiv class=\"notices note\" \u003e\u003cp\u003eThe visibilities of cells connection to wells, and fences based on these cells can be controlled from \u003cb\u003e \u003ca href=\"/3d-main-window/wells-and-completions/simulationwells/\"\u003eSimulation Wells\u003c/a\u003e \u003c/b\u003e.\u003cbr\u003e\n\u003csmall\u003e\u003ci\u003e(Not applicable for Geomechanical cases)\u003c/i\u003e\u003c/small\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n\n\u003ch2 id=\"common-properties-for-range-and-property-filters\"\u003eCommon Properties for Range and Property Filters\u003c/h2\u003e\n\n\u003cp\u003eBoth filter types can be turned on or off using the toggle in the \u003cstrong\u003eProject Tree\u003c/strong\u003e and controlled from their corresponding \u003cstrong\u003eProperty Editor\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/FiltersInTreeView.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eRange Filters and Property filters can either be set to \u003cstrong\u003eInclude\u003c/strong\u003e cells or to \u003cstrong\u003eExclude\u003c/strong\u003e them.\u003c/p\u003e\n\n\u003cp\u003eThe \u003cstrong\u003eExclude\u003c/strong\u003e setting is used to explicitly remove cells from the visualization, regardless of what other filters say.\nThe \u003cstrong\u003eInclude\u003c/strong\u003e setting behaves differently for Range filters and Property Filters but marks the cells as visible.\nThe icon in front of the filters show a + or - sign to indicate the setting \u003cimg src=/images/3d-main-window/FilterIncEx.png style=\"display:inline; vertical-align:middle; margin:0\"\u003e\n.\u003c/p\u003e\n\n\u003ch2 id=\"range-filters\"\u003eRange filters\u003c/h2\u003e\n\n\u003cp\u003eRange filters enables the user to define a set of visible regions in the 3D view based on IJK boxes.\nEach \u003cem\u003eInclude\u003c/em\u003e range filter will \u003cem\u003eadd more cells\u003c/em\u003e to the visualization. The view will show the union of all the \u003cem\u003eInclude\u003c/em\u003e range filters.\u003c/p\u003e\n\n\u003cp\u003eA new range filter can be added by activating the context menu for the \u003cstrong\u003eRange Filters\u003c/strong\u003e collection in the \u003cstrong\u003eProject Tree\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cdiv class=\"note\"\u003e\nAn I,J or K-slice range filter can be added directly from a Cell in the \u003cb\u003e3D View\u003c/b\u003e by right-clicking the cell and using the context menu. \n\u003c/div\u003e\n\n\u003cp\u003eBelow is a snapshot of the \u003cstrong\u003eProperty Editor\u003c/strong\u003e of the \u003cstrong\u003eRange Filter\u003c/strong\u003e :\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/RangeFilterProperties.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eFilter Type\u003c/strong\u003e \u0026ndash; The filter can either make the specified range visible ( \u003cem\u003eInclude\u003c/em\u003e ), or remove the range from the View ( \u003cem\u003eExclude\u003c/em\u003e ).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGrid\u003c/strong\u003e \u0026ndash;  This option selects which of the grids the range is addressing.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eApply to Subgrids\u003c/strong\u003e \u0026ndash; This option tells ResInsight to use the visibility of the cells in the current grid to control the visibility of the cells in sub-LGR\u0026rsquo;s. If this option is turned off, Sub LGR-cells is not included in this particular Range Filter.\u003cbr /\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eThe \u003cstrong\u003eStart\u003c/strong\u003e and \u003cstrong\u003eWidth\u003c/strong\u003e labels in front of the sliders features a number in parenthesis denoting maximum available value.\u003cbr\u003e\nThe \u003cstrong\u003eStart\u003c/strong\u003e labels shows the index of the start of the active cells.\u003cbr\u003e\nThe \u003cstrong\u003eWidth\u003c/strong\u003e labels shows the number of active cells from the start of the active cells.\u003c/p\u003e\n\n\u003ch2 id=\"property-filters\"\u003eProperty Filters\u003c/h2\u003e\n\n\u003cp\u003e\u003cstrong\u003eProperty Filters\u003c/strong\u003e applies to the results of the \u003cstrong\u003eRange Filters\u003c/strong\u003e and limits the visible cells to the ones approved by the filter. For a cell to be visible it must be accepted by all the property filters.\u003c/p\u003e\n\n\u003cp\u003eA new property filter can be made by activating the context menu on \u003cstrong\u003eProperty Filters\u003c/strong\u003e or by right-clicking inside a 3D view. The new property filter is based on the currently viewed cell result by default.\u003c/p\u003e\n\n\u003cp\u003eThe name of the property filter is automatically set to \u003cem\u003e\u0026ldquo;propertyname (min .. max)\u0026rdquo;\u003c/em\u003e as you edit the property filter.\u003c/p\u003e\n\n\u003cdiv class=\"note\"\u003e\nThe context command \u003cb\u003eApply As Cell Result\u003c/b\u003e on a property filter, sets the Cell Color Result to the same values as the selected property filter.\n\u003c/div\u003e\n\n\u003cp\u003eBelow is a snapshot of the \u003cstrong\u003eProperty Editor\u003c/strong\u003e of the \u003cstrong\u003eProperty Filter\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/PropertyFilterProperties.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003ch3 id=\"property-value-range\"\u003eProperty Value Range\u003c/h3\u003e\n\n\u003cp\u003eThe filter is based on a property value range (Min - Max). Cells in the range are either shown or hidden depending on the \u003cstrong\u003eFilter Type\u003c/strong\u003e (\u003cem\u003eInclude\u003c/em\u003e/\u003cem\u003eExclude\u003c/em\u003e). Exclude-filters removes the selected cells from the \u003cstrong\u003eView\u003c/strong\u003e even if some other filter includes them.\u003c/p\u003e\n\n\u003ch4 id=\"range-behavior-for-flow-diagnostic-results\"\u003eRange Behavior for Flow Diagnostic Results\u003c/h4\u003e\n\n\u003cp\u003eNormally the available range in the sliders is the max and min of all the values in all the time steps. For Flow Diagnostics results, however, the available range is based on the current time step.\u003c/p\u003e\n\n\u003cp\u003eWe still need to keep the range somewhat fixed while moving from time step to time step, so in order to do so ResInsight tries to keep the intentions of your range settings, as the available range changes. If either the max or min value is set to the limit, ResInsight will keep that setting at the limit even when the limit changes. If you set a specific value for the max or the min, that setting will keep its value, even if it happens to end up outside the available range at a time step.\u003c/p\u003e\n\n\u003ch3 id=\"category-selection\"\u003eCategory Selection\u003c/h3\u003e\n\n\u003cp\u003eIf the property is representing integer values, well tracer names or \u003ca href=\"/3d-main-window/formations\"\u003e formation names \u003c/a\u003e, the property filter displays a list of available categories used to filter cells. The separate values can then be toggled on or off using the list in the Property Editor.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"/images/3d-main-window/PropertyFilterWithCategories.png\" alt=\"\" /\u003e\u003c/p\u003e\n\n\u003cp\u003eIf it is more convenient to filter the values using a value range, toggle the \u003cstrong\u003eCategory Selection\u003c/strong\u003e option off.\u003c/p\u003e\n",
                 url:      "/3d-main-window/filters/"
             };
         
@@ -1447,63 +2661,1349 @@
 <script type="text/javascript" src="/js/search.js"></script>
 
 
-    
-    
-        <div class="chevrons">
-    <div id="navigation">
-</div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    
-
-<h3 id="about-hahahugoshortcode-s0-hbhb"><a href="/project/about/">About</a></h3>
-
-<h3 id="ceetron-solutions-http-www-ceetronsolutions-com-in-collaboration-with-equinor-asa-https-www-equinor-com"><a href="http://www.ceetronsolutions.com">Ceetron Solutions</a> in collaboration with <a href="https://www.equinor.com/">Equinor ASA</a></h3>
-
-<h3 id="support-hahahugoshortcode-s1-hbhb"><a href="/project/support/">Support</a></h3>
-
-  
-
-
-
-	</div>
+<footer class=" footline" >
+	
 </footer>
 
-<script src="/js/clipboard.min.js"></script>
 
-<link href="/css/featherlight.min.css" rel="stylesheet">
-<script src="/js/featherlight.min.js"></script>
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
 
 
+	 
+	 
+		
+		
+			<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
 
-<script src="/theme-flex/script.js"></script>
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1561372206"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561372206"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561372206"></script>
+    <script src="/js/jquery.sticky.js?1561372206"></script>
+    <script src="/js/featherlight.min.js?1561372206"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561372206"></script>
+    <script src="/js/highlight.pack.js?1561372206"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561372206"></script>
+    <script src="/js/learn.js?1561372206"></script>
+    <script src="/js/hugo-learn.js?1561372206"></script>
 
-
+    <link href="/mermaid/mermaid.css?1561372206" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561372206"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
     
 
-    
-    
-
-    
   </body>
 </html>
+
