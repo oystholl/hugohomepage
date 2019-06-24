@@ -71,11 +71,10 @@ In order to import from SSI-Hub, a project file must be present and stored to fi
 
 The command **File -> Import -> Well Data -> Import Well Paths From SSI-hub** launches a wizard to guide you through the process of selecting the well trajectories you need.
 
-<div class="note info">
-<h5>Access to web service</h5>
+{{% notice info %}}
+<strong>Access to web service: </strong>
 The import of well paths is using a web service. If you are a Statoil employee, make sure you have access to "EDM Landmark" and "EDM Compass".
-</div>
-
+{{% /notice %}}
 
 After completing the wizard, the wells imported are accessible as Items under the  ![]({{< relref "" >}}images/3d-main-window/WellCollection.png) **Wells** item in the **Project Tree**.
 

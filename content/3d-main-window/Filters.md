@@ -11,10 +11,10 @@ Cell Filters are used to control visibility of the cells in the 3D view. Two typ
 - **Range Filter** -- Extracts an IJK subset of the model.
 - **Property Filter** -- Extracts cells with a property value matching a value range.
 
-<div class="note">
+{{% notice note %}}
 The visibilities of cells connection to wells, and fences based on these cells can be controlled from <b> <a href="{{< relref "simulationwells" >}}">Simulation Wells</a> </b>.<br> 
 <small><i>(Not applicable for Geomechanical cases)</i></small>
-</div>
+{{% /notice %}}
 
 ## Common Properties for Range and Property Filters
 
