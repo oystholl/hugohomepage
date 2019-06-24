@@ -4,7 +4,7 @@
 {{ $showvisitedlinks := .Site.Params.showVisitedLinks }}
   <div id="header-wrapper">
     <div id="header">
-      <img src="/images/ResInsightCroppedIconPicture.png">
+      {{ partial "logo.html" . }}
     </div>
     {{if not .Site.Params.disableSearch}}
         {{ partial "search.html" . }}
