@@ -1,10 +1,10 @@
 baseURL = "http://ceesol.no"
 languageCode = "en-us"
 title = "ResInsight"
-theme = "docdock"
+theme = "learn"
 
 [params]
-disableSearch = true
+disableSearch = false
 disableNavChevron = true
 disableHomeIcon = true
 ordersectionsby = "weight"
