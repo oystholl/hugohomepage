@@ -12,18 +12,18 @@
     <title>Well Trajectories :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379783" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379783" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379783" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379783" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379783" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379783" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379783" rel="stylesheet">
-    <link href="/css/theme.css?1561379783" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379783" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379783"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1821,7 +1814,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/3d-main-window/'>3D Main Window</a> > <a href='/3d-main-window/wells-and-completions/'>Wells and Completions</a> > Well Trajectories
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/3d-main-window/'>3D Main Window</a> > <a href='/3d-main-window/wells-and-completions/'>Wells and Completions</a> > Well Trajectories
           
          
           
@@ -1899,7 +1892,8 @@ In addition, a Statoil specific solution to retrieve Well Trajectories from thei
 
 <h2 id="ascii-well-trajectories">Ascii Well Trajectories</h2>
 
-<p>The command <strong>File -&gt; Import -&gt; Well Data -&gt; Import Well Paths From File</strong> will read the well paths in the selected file, and create one entry for each trajectory under the  <img src="/images/3d-main-window/WellCollection.png" alt="" /> <strong>Wells</strong> item in the <strong>Project Tree</strong>.</p>
+<p>The command <strong>File -&gt; Import -&gt; Well Data -&gt; Import Well Paths From File</strong> will read the well paths in the selected file, and create one entry for each trajectory under the <img src=/images/3d-main-window/WellCollection.png style="display:inline; vertical-align:middle; margin:0">
+ <strong>Wells</strong> item in the <strong>Project Tree</strong>.</p>
 
 <p>The supported ASCII format is quite flexible but the main requirements are:</p>
 
@@ -1956,9 +1950,10 @@ Name Well_2
 
 <p>The trajectory data is not copied into the ResInsight project as such. The project file only stores the file path, and the next time you open the project, ResInsight will try to read the well data from the file again.</p>
 
-<div class="note info">
-If the well trajectory file is changed and you would like a running ResInsight to update accordingly, you will need to delete all the well trajectories that emerge from that file, and import it again.
+
+<div class="notices info" ><p>If the well trajectory file is changed and you would like a running ResInsight to update accordingly, you will need to delete all the well trajectories that emerge from that file, and import it again.</p>
 </div>
+
 
 <h2 id="importing-from-ssi-hub-internal-statoil-web-service">Importing from SSI-Hub (Internal Statoil Web-service)</h2>
 
@@ -1972,13 +1967,15 @@ The import of well paths is using a web service. If you are a Statoil employee, 
 </div>
 
 
-<p>After completing the wizard, the wells imported are accessible as Items under the  <img src="/images/3d-main-window/WellCollection.png" alt="" /> <strong>Wells</strong> item in the <strong>Project Tree</strong>.</p>
+<p>After completing the wizard, the wells imported are accessible as Items under the <img src=/images/3d-main-window/WellCollection.png style="display:inline; vertical-align:middle; margin:0">
+ <strong>Wells</strong> item in the <strong>Project Tree</strong>.</p>
 
 <p>The trajectory data is not copied into the  ResInsight project as such, but is stored in files in a directory called <em>ProjectFileName_wellpaths</em> in the same directory as your project file.</p>
 
 <h2 id="well-trajectory-visualization">Well Trajectory Visualization</h2>
 
-<p>All the imported well trajectories are available below the <img src="/images/3d-main-window/WellCollection.png" alt="" /> <strong>Wells</strong> item in the <strong>Project Tree</strong>.</p>
+<p>All the imported well trajectories are available below the <img src=/images/3d-main-window/WellCollection.png style="display:inline; vertical-align:middle; margin:0">
+ <strong>Wells</strong> item in the <strong>Project Tree</strong>.</p>
 
 <p><img src="/images/3d-main-window/WellsInTree.png" alt="" /></p>
 
@@ -2011,7 +2008,7 @@ If a match is found, the LAS-file is placed as a child of that trajectory. If no
 
 <p>If ResInsight&rsquo;s automatic well matching fails and a LAS-file is matched with the wrong well path, it is possible to move the LAS-file to the correct well path. Select the LAS-file context menu click <strong>Move LAS File to Well Path</strong> and select destination well path.</p>
 
-<p><img src="//images/3d-main-window/MoveLasFileMenu.png" alt="" /></p>
+<p><img src="/images/3d-main-window/MoveLasFileMenu.png" alt="" /></p>
 
 <h3 id="importing-well-path-files">Importing Well Path Files</h3>
 
@@ -2050,7 +2047,9 @@ well path containment properties such as Casing (with Casing Shoe) and Liner can
 
 <p>These can be visualised in the 3D View and Well Log Plots on a <a href="/plot-window/welllogsandplots/#tracks">Well Log Track</a>.</p>
 
-<p><img src="/images/3d-main-window/CasignDesign3D.png" alt="" /> <img src="/images/3d-main-window/CasignDesignPlot.png" alt="" /></p>
+<p><img src="/images/3d-main-window/CasignDesign3D.png" alt="" /></p>
+
+<p><img src="/images/3d-main-window/CasignDesignPlot.png" alt="" /></p>
 
 
 <footer class=" footline" >
@@ -3391,20 +3390,20 @@ well path containment properties such as Casing (with Casing Shoe) and Liner can
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379783"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379783"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379783"></script>
-    <script src="/js/jquery.sticky.js?1561379783"></script>
-    <script src="/js/featherlight.min.js?1561379783"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379783"></script>
-    <script src="/js/highlight.pack.js?1561379783"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379783"></script>
-    <script src="/js/learn.js?1561379783"></script>
-    <script src="/js/hugo-learn.js?1561379783"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379783" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379783"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

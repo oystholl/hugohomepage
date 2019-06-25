@@ -12,18 +12,18 @@
     <title>Ensemble Plotting :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379784" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379784" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379784" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379784" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379784" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379784" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379784" rel="stylesheet">
-    <link href="/css/theme.css?1561379784" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379784" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379784"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1817,7 +1810,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/plot-window/'>Plot Window</a> > Ensemble Plotting
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/plot-window/'>Plot Window</a> > Ensemble Plotting
           
          
           
@@ -1872,30 +1865,42 @@
 
 <h2 id="import">Import</h2>
 
-<p>There are several ways to import an ensemble:
-- Use the <strong>Import Ensemble</strong> command in the window menu
-- Use the <strong>Import Summary Case group</strong> and then convert the group to an ensemble
-- Import a number of summary cases, move them into a group and then convert the group to an ensemble</p>
+<p>There are several ways to import an ensemble:</p>
 
-<p>During import of a summary case, ResInsight tries to find an associated <strong>parameters.txt</strong> file or <strong>runspecification.xml</strong> file containing ensemble parameters. If found, the ensemble parameters are stored together with the summary case. When the user adds a summary case to an ensemble, then ResInsight will perform ensemble parameters validation. A warning dialog is displayed in the following cases:
-- One or more of the cases in the ensemble have no ensemble parameters
-- The list of ensemble parameters differ between cases in the ensemble</p>
+<ul>
+<li>Use the <strong>Import Ensemble</strong> command in the window menu</li>
+<li>Use the <strong>Import Summary Case group</strong> and then convert the group to an ensemble</li>
+<li>Import a number of summary cases, move them into a group and then convert the group to an ensemble</li>
+</ul>
+
+<p>During import of a summary case, ResInsight tries to find an associated <strong>parameters.txt</strong> file or <strong>runspecification.xml</strong> file containing ensemble parameters. If found, the ensemble parameters are stored together with the summary case. When the user adds a summary case to an ensemble, then ResInsight will perform ensemble parameters validation. A warning dialog is displayed in the following cases:</p>
+
+<ul>
+<li>One or more of the cases in the ensemble have no ensemble parameters</li>
+<li>The list of ensemble parameters differ between cases in the ensemble</li>
+</ul>
 
 <h2 id="plotting">Plotting</h2>
 
-<p>Ensembles are plotted in the summary plot the same way as ordinary summary curves. Create a new summary plot using the <a href="/plot-window/summaryploteditor/">summary plot editor</a>. Imported ensembles will appear in a separate group in the list of summary cases. When an ensemble is selected, a new curve set is created and plotted as multiple summary curves. By default all curves in an ensemble curve set will have the same color. The coloring mode may be edited in the curve set&rsquo;s property editor in the project plot tree view. Two coloring modes are available:
-- <strong>Single color</strong> Use the same color for all curves in a curve set
-- <strong>By Ensemble Parameter</strong> One ensemble parameter is selected to control coloring. The ensemble parameter value for each case is used to pick a color in a color range. In this case a color legend appears.</p>
+<p>Ensembles are plotted in the summary plot the same way as ordinary summary curves. Create a new summary plot using the <a href="/plot-window/summaryploteditor/">summary plot editor</a>. Imported ensembles will appear in a separate group in the list of summary cases. When an ensemble is selected, a new curve set is created and plotted as multiple summary curves. By default all curves in an ensemble curve set will have the same color. The coloring mode may be edited in the curve set&rsquo;s property editor in the project plot tree view. Two coloring modes are available:</p>
+
+<ul>
+<li><strong>Single color</strong> Use the same color for all curves in a curve set</li>
+<li><strong>By Ensemble Parameter</strong> One ensemble parameter is selected to control coloring. The ensemble parameter value for each case is used to pick a color in a color range. In this case a color legend appears.</li>
+</ul>
 
 <p>Stepping of data source for ensemble curves is described in <a href="/plot-window/summarysourcestepping/">Summary Plot Source Stepping</a></p>
 
 <h3 id="statistics-curves">Statistics curves</h3>
 
-<p>If the number of curves in a curve set is sufficient, ResInsight will calculate statistics for the curve set. The following statistics curves may be displayed:
-- <strong>P10</strong> &ndash; 10% of the curves in the curve set are above this curve
-- <strong>P50</strong> &ndash; 50% of the curves in the curve set are above this curve
-- <strong>Mean</strong> &ndash; Aritmetic mean for the curves in the curve set
-- <strong>P90</strong> &ndash; 90% of the curves in the curve set are above this curve</p>
+<p>If the number of curves in a curve set is sufficient, ResInsight will calculate statistics for the curve set. The following statistics curves may be displayed:</p>
+
+<ul>
+<li><strong>P10</strong> &ndash; 10% of the curves in the curve set are above this curve</li>
+<li><strong>P50</strong> &ndash; 50% of the curves in the curve set are above this curve</li>
+<li><strong>Mean</strong> &ndash; Aritmetic mean for the curves in the curve set</li>
+<li><strong>P90</strong> &ndash; 90% of the curves in the curve set are above this curve</li>
+</ul>
 
 <p>Statistics curves may be toggled on or off in the curve set&rsquo;s property editor.</p>
 
@@ -3246,20 +3251,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379784"></script>
-    <script src="/js/jquery.sticky.js?1561379784"></script>
-    <script src="/js/featherlight.min.js?1561379784"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379784"></script>
-    <script src="/js/highlight.pack.js?1561379784"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379784"></script>
-    <script src="/js/learn.js?1561379784"></script>
-    <script src="/js/hugo-learn.js?1561379784"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379784" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379784"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

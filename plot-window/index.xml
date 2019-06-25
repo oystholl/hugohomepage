@@ -61,7 +61,8 @@ In this context highlighted means the marked item with a different background co
       
       <guid>http://ceesol.no/plot-window/ensembleplotting/</guid>
       <description>An ensemble is a group of cases that are tightly coupled, only a set of ensemble input parameters differ between cases. This makes it relevant to perform calculations and statistics analysis on ensembles.
-Import There are several ways to import an ensemble: - Use the Import Ensemble command in the window menu - Use the Import Summary Case group and then convert the group to an ensemble - Import a number of summary cases, move them into a group and then convert the group to an ensemble</description>
+Import There are several ways to import an ensemble:
+ Use the Import Ensemble command in the window menu Use the Import Summary Case group and then convert the group to an ensemble Import a number of summary cases, move them into a group and then convert the group to an ensemble  During import of a summary case, ResInsight tries to find an associated parameters.</description>
     </item>
     
     <item>
@@ -95,7 +96,8 @@ A new plot with a single Track and a Curve is created.</description>
       
       <guid>http://ceesol.no/plot-window/wellborestabilityplots/</guid>
       <description>ResInsight can create Well Bore Stability plots for Geomechanical cases. These plots are specialized Well Log Plots and contain a visualization of Formations, Well Path Attributes as well as a set of well path derived curves in two different tracks.
-The third track contains curves showing different stability gradients (all normalized by mud weight): - FG: Fracture Gradient for sands based on Kirsch. - OBG: Overburden stress gradient: Stress component S_33.</description>
+The third track contains curves showing different stability gradients (all normalized by mud weight):
+ FG: Fracture Gradient for sands based on Kirsch. OBG: Overburden stress gradient: Stress component S_33. PP: Pore pressure.</description>
     </item>
     
     <item>

@@ -28,7 +28,8 @@ If you have, and would like to a use these features, please see Build Instructio
       <guid>http://ceesol.no/import/elementpropertytableimport/</guid>
       <description>Element property tables in ABQUS input file format can be imported into ResInsight and displayed as Element Results. This can be used to display material properties, or any scalar value on each element.
 To view the data as a Color Result select the Result Position: Element ( See Geomechanical Results )
-A couple of property names are recognized and treated specially: - MODULUS &amp;ndash; Scaled by 1.0e-9 and shown as &amp;ldquo;Yong&amp;rsquo;s Modulus&amp;rdquo; in the user interface - RATIO &amp;ndash; Shown as &amp;ldquo;Poisson&amp;rsquo;s Ratio&amp;rdquo; in the user interface</description>
+A couple of property names are recognized and treated specially:
+ MODULUS &amp;ndash; Scaled by 1.0e-9 and shown as &amp;ldquo;Yong&amp;rsquo;s Modulus&amp;rdquo; in the user interface RATIO &amp;ndash; Shown as &amp;ldquo;Poisson&amp;rsquo;s Ratio&amp;rdquo; in the user interface  File Format A couple of examples on the file format are shown below.</description>
     </item>
     
     <item>
@@ -38,7 +39,8 @@ A couple of property names are recognized and treated specially: - MODULUS &amp;
       
       <guid>http://ceesol.no/import/observeddata/</guid>
       <description>Observed Time History Data, is data measured in time. On import of observed time history data, ResInsight translates the data to make it similar to summary data. Observed time history data can be plotted along with summary data in Summary Plots.
-Import Observed Time History Data Importing observed time history data to ResInsight may be performed in two different ways: - By selecting the main menu item File -&amp;gt; Import -&amp;gt; Import Observed Time History Data - By using the context command Import Observed Time History Data on the Observed Time History Data item in the Plot Main Window Project Tree</description>
+Import Observed Time History Data Importing observed time history data to ResInsight may be performed in two different ways:
+ By selecting the main menu item File -&amp;gt; Import -&amp;gt; Import Observed Time History Data By using the context command Import Observed Time History Data on the Observed Time History Data item in the Plot Main Window Project Tree  The following file types are supported:</description>
     </item>
     
     <item>

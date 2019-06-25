@@ -11,12 +11,12 @@
     
     
     <item>
-      <title>Introduction</title>
+      <title>ResInsight 2019.04</title>
       <link>http://ceesol.no/getting-started/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ceesol.no/getting-started/introduction/</guid>
-      <description>ResInsight 2018.11 ResInsight is an open source, cross-platform 3D visualization, curve plotting and post processing tool for Eclipse reservoir models and simulations. It can also be configured to visualize geomechanical simulations from ABAQUS.
+      <description>ResInsight is an open source, cross-platform 3D visualization, curve plotting and post processing tool for Eclipse reservoir models and simulations. It can also be configured to visualize geomechanical simulations from ABAQUS.
 The system also constitutes a framework for further development and can be extended to support new data sources and visualization methods, e.g. additional solvers, seismic data, CSEM, and more.
 Efficient User Interface The user interface is tailored for efficient interpretation of reservoir simulation data with specialized visualizations of properties, faults and wells.</description>
     </item>
@@ -28,7 +28,8 @@ Efficient User Interface The user interface is tailored for efficient interpreta
       
       <guid>http://ceesol.no/getting-started/gridimportexport/</guid>
       <description>Importing Eclipse Cases ResInsight supports the following type of Eclipse input data:
- *.GRID and *.EGRID files along with their *.INIT and restart files *.XNNN and *.UNRST. Grid and Property data from *.GRDECL files.  Release 2018.11 supports import of simulations from Intersect. To be able to import into ResInsight, the Intersect simulation must be exported into Eclipse file format.  Eclipse Results ResInsight offers several ways to import Eclipse (grid) files.</description>
+ *.GRID and *.EGRID files along with their *.INIT and restart files *.XNNN and *.UNRST. Grid and Property data from *.GRDECL files.  Release 2018.11 supports import of simulations from Intersect. To be able to import into ResInsight, the Intersect simulation must be exported into Eclipse file format.
+ Eclipse Results ResInsight offers several ways to import Eclipse (grid) files.</description>
     </item>
     
     <item>

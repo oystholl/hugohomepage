@@ -19,7 +19,8 @@
       <description>ResInsight provides a flexible interface to Octave including:
  Octave functions that communicates with a running ResInsight session Features to simplify management and editing of Octave scripts from ResInsight Commands to execute scripts using Octave.
   The Octave functions are documented in Octave Interface Reference.
-Note: The Octave interface does not support Flow diagnostics and Injection flooding results in addition to Geomechanical cases.  Octave Script Management Octave scripts are available in the Scripts folder in the Project Tree.</description>
+Note: The Octave interface does not support Flow diagnostics and Injection flooding results in addition to Geomechanical cases.
+ Octave Script Management Octave scripts are available in the Scripts folder in the Project Tree.</description>
     </item>
     
     <item>

@@ -12,18 +12,18 @@
     <title>Observed Time History Data :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379784" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379784" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379784" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379784" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379784" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379784" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379784" rel="stylesheet">
-    <link href="/css/theme.css?1561379784" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379784" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379784"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1817,7 +1810,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/import/'>Import</a> > Observed Time History Data
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/import/'>Import</a> > Observed Time History Data
           
          
           
@@ -1892,14 +1885,22 @@
 
 <h2 id="import-observed-time-history-data">Import Observed Time History Data</h2>
 
-<p>Importing observed time history data to ResInsight may be performed in two different ways:
-- By selecting the main menu item <strong>File -&gt; Import -&gt; Import Observed Time History Data</strong>
-- By using the context command <strong>Import Observed Time History Data</strong> on the <strong>Observed Time History Data</strong> item in the <strong>Plot Main Window Project Tree</strong></p>
+<p>Importing observed time history data to ResInsight may be performed in two different ways:</p>
 
-<p>The following file types are supported:
-- RSM observed time history data file (<em>*.rsm</em>)
-- Column based (Comma Separated Values, CSV) time history data file (<em>*.csv/*.txt</em>)
-The imported <img src="/images/import/Default.png" alt="" /> Observed Time History Data files will be added to <img src="/images/import/Folder.png" alt="" /><strong>Observed Time History Data</strong>.</p>
+<ul>
+<li>By selecting the main menu item <strong>File -&gt; Import -&gt; Import Observed Time History Data</strong></li>
+<li>By using the context command <strong>Import Observed Time History Data</strong> on the <strong>Observed Time History Data</strong> item in the <strong>Plot Main Window Project Tree</strong></li>
+</ul>
+
+<p>The following file types are supported:</p>
+
+<ul>
+<li>RSM observed time history data file (<em>*.rsm</em>)</li>
+<li>Column based (Comma Separated Values, CSV) time history data file (<em>*.csv/*.txt</em>)
+The imported <img src=/images/import/Default.png style="display:inline; vertical-align:middle; margin:0">
+ Observed Time History Data files will be added to <img src=/images/import/Folder.png style="display:inline; vertical-align:middle; margin:0">
+ <strong>Observed Time History Data</strong>.</li>
+</ul>
 
 <p>Which summaries that has been detected in a Observed Time History Data file can be read in an Observed Time History Data&rsquo;s <strong>Property Editor</strong>. In the image below, time and year info has been found together with the summary &ldquo;WBP9L&rdquo; for the well &ldquo;OP-1&rdquo;.</p>
 
@@ -1915,15 +1916,18 @@ The imported <img src="/images/import/Default.png" alt="" /> Observed Time Histo
 
 <p><img src="/images/import/ImportObservedTimeHistoryDataDialog.png" alt="" /></p>
 
-<p>Dialog fields description:
-- <strong>Cell Separator</strong> &ndash; Select the correct cell separator character. ResInsight will try to set the correct value as default.
-- <strong>Decimal Separator</strong> &ndash; Select the correct decimal separator. ResInsight will try to set the correct value as default.
-- <strong>Selected Time Column</strong> &ndash; Select the column that contains the time/date information. The first column is default.
-- <strong>Use Custom Date Time Format</strong> &ndash; Check this box if the Date Format and/or Time Format in the file do not match any of the most common formats.
-- <strong>Custom Date Time Format</strong> &ndash; Enter date time format to match the time information in the file. This field is visible only when the above check box checked. A tooltip will tell the user how to enter the correct information.
-- <strong>Date Format</strong> &ndash; Select the date format matching the date information in the file.
-- <strong>Time Format</strong> &ndash; Select the time format matching the time information in the file. If the file contains dates only, this field is ignored by ResInsight.
-- <strong>Preview</strong> &ndash; Preview the first 30 lines of the file contents. The view will reflect the currently selected Cell Separator and the selected time column is marked in yellow.</p>
+<p>Dialog fields description:</p>
+
+<ul>
+<li><strong>Cell Separator</strong> &ndash; Select the correct cell separator character. ResInsight will try to set the correct value as default.</li>
+<li><strong>Decimal Separator</strong> &ndash; Select the correct decimal separator. ResInsight will try to set the correct value as default.</li>
+<li><strong>Selected Time Column</strong> &ndash; Select the column that contains the time/date information. The first column is default.</li>
+<li><strong>Use Custom Date Time Format</strong> &ndash; Check this box if the Date Format and/or Time Format in the file do not match any of the most common formats.</li>
+<li><strong>Custom Date Time Format</strong> &ndash; Enter date time format to match the time information in the file. This field is visible only when the above check box checked. A tooltip will tell the user how to enter the correct information.</li>
+<li><strong>Date Format</strong> &ndash; Select the date format matching the date information in the file.</li>
+<li><strong>Time Format</strong> &ndash; Select the time format matching the time information in the file. If the file contains dates only, this field is ignored by ResInsight.</li>
+<li><strong>Preview</strong> &ndash; Preview the first 30 lines of the file contents. The view will reflect the currently selected Cell Separator and the selected time column is marked in yellow.</li>
+</ul>
 
 <h4 id="column-data">Column data</h4>
 
@@ -1933,34 +1937,73 @@ The imported <img src="/images/import/Default.png" alt="" /> Observed Time Histo
 
 <p>An Eclipse address consists of a vector name and zero or more parameters. The number of parameters are defined by the category of the vector. The category is determined by looking up the category in an internal vector table. A valid standard vector name has 3 to 5 characters. Optionally it may be postfixed by a user defined name of 3 characters. A vector name having both a standard part and a user part must have 8 characters (5+3). In this case, if the standard part has less than 5 characters, it must be padded with underscores up to 5 characters. Example: &lsquo;RPR__WEL&rsquo;. Vector names having only the standard part are not padded.</p>
 
-<p>Categories:
-- <strong>Field</strong> - &lt;VECTOR &lsquo;F&hellip;.&rsquo;&gt;
-  - Example: &lsquo;FOPT&rsquo;
-- <strong>Aquifer</strong> - &lt;VECTOR &lsquo;A&hellip;.&rsquo;&gt;:&lt;AQUIFER NUMBER&gt;
-  - Example: &lsquo;AAQR:1&rsquo;
-- <strong>Network</strong> - &lt;VECTOR &lsquo;N&hellip;.&rsquo;&gt;
-- <strong>Misc</strong> - &lt;VECTOR &lsquo;&hellip;.&rsquo;&gt;
-- <strong>Region</strong> - &lt;VECTOR &lsquo;R&hellip;.&rsquo;&gt;:&lt;REGION NUMBER&gt;
-  - Example: &lsquo;RPR:1&rsquo;
-- <strong>Region to Region</strong> - &lt;VECTOR &lsquo;R.F..&rsquo;&gt;:&lt;REGION NUMBER&gt;-&lt;REGION NUMBER&gt;
-  - Example: &lsquo;ROFR:1-2&rsquo;
-- <strong>Group</strong> - &lt;VECTOR &lsquo;G&hellip;.&rsquo;&gt;:&lt;GROUP NAME&gt;
-  - Example: &lsquo;GOPR:MANI-B1&rsquo;
-- <strong>Well</strong> - &lt;VECTOR &lsquo;W&hellip;.&rsquo;&gt;:&lt;WELL NAME&gt;
-  - Example: &lsquo;WOPR:B-2H&rsquo;
-- <strong>Completion</strong> - &lt;VECTOR &lsquo;C&hellip;.&rsquo;&gt;:&lt;WELL NAME&gt;:&lt;I&gt;,&lt;J&gt;,&lt;K&gt;
-  - Example: &lsquo;COFRL:C-1H:26,44,16&rsquo;
-- <strong>LGR Completion</strong> - &lt;VECTOR &lsquo;LC&hellip;&rsquo;&gt;:&lt;LGR NAME&gt;:&lt;WELL NAME&gt;:&lt;I&gt;,&lt;J&gt;,&lt;K&gt;
-  - Example: &lsquo;LCWIT:WELLI1:I1:5,5,5&rsquo;
-- <strong>LGR Well</strong> - &lt;VECTOR &lsquo;LW&hellip;&rsquo;&gt;:&lt;LGR NAME&gt;:&lt;WELL NAME&gt;
-  - Example: &lsquo;LWWIR:WELLI1:I1&rsquo;
-- <strong>Segment</strong> - &lt;VECTOR &rsquo;S&hellip;.&lsquo;&gt;:&lt;WELL NAME&gt;:&lt;SEGMENT NUMBER&gt;
-  - Example: &lsquo;SOFR:B-5H:32&rsquo;
-- <strong>Block</strong> - &lt;Vector &lsquo;B&hellip;.&rsquo;&gt;:&lt;I&gt;,&lt;J&gt;,&lt;K&gt;
-  - Example: &lsquo;BPR:15,18,21&rsquo;
-- <strong>LGR Block</strong> - &lt;VECTOR &lsquo;LB&hellip;&rsquo;&gt;:&lt;LGR NAME&gt;:&lt;I&gt;,&lt;J&gt;,&lt;K&gt;
-  - Example: &lsquo;LBOSAT:CENTER:5,5,5&rsquo;
-- <strong>Imported</strong> - &lt;SOME NAME&gt;</p>
+<p>Categories:</p>
+
+<ul>
+<li><strong>Field</strong> - &lt;VECTOR &lsquo;F&hellip;.&rsquo;&gt;
+
+<ul>
+<li>Example: &lsquo;FOPT&rsquo;</li>
+</ul></li>
+<li><strong>Aquifer</strong> - &lt;VECTOR &lsquo;A&hellip;.&rsquo;&gt;:&lt;AQUIFER NUMBER&gt;
+
+<ul>
+<li>Example: &lsquo;AAQR:1&rsquo;</li>
+</ul></li>
+<li><strong>Network</strong> - &lt;VECTOR &lsquo;N&hellip;.&rsquo;&gt;</li>
+<li><strong>Misc</strong> - &lt;VECTOR &lsquo;&hellip;.&rsquo;&gt;</li>
+<li><strong>Region</strong> - &lt;VECTOR &lsquo;R&hellip;.&rsquo;&gt;:&lt;REGION NUMBER&gt;
+
+<ul>
+<li>Example: &lsquo;RPR:1&rsquo;</li>
+</ul></li>
+<li><strong>Region to Region</strong> - &lt;VECTOR &lsquo;R.F..&rsquo;&gt;:&lt;REGION NUMBER&gt;-&lt;REGION NUMBER&gt;
+
+<ul>
+<li>Example: &lsquo;ROFR:1-2&rsquo;</li>
+</ul></li>
+<li><strong>Group</strong> - &lt;VECTOR &lsquo;G&hellip;.&rsquo;&gt;:&lt;GROUP NAME&gt;
+
+<ul>
+<li>Example: &lsquo;GOPR:MANI-B1&rsquo;</li>
+</ul></li>
+<li><strong>Well</strong> - &lt;VECTOR &lsquo;W&hellip;.&rsquo;&gt;:&lt;WELL NAME&gt;
+
+<ul>
+<li>Example: &lsquo;WOPR:B-2H&rsquo;</li>
+</ul></li>
+<li><strong>Completion</strong> - &lt;VECTOR &lsquo;C&hellip;.&rsquo;&gt;:&lt;WELL NAME&gt;:&lt;I&gt;,&lt;J&gt;,&lt;K&gt;
+
+<ul>
+<li>Example: &lsquo;COFRL:C-1H:26,44,16&rsquo;</li>
+</ul></li>
+<li><strong>LGR Completion</strong> - &lt;VECTOR &lsquo;LC&hellip;&rsquo;&gt;:&lt;LGR NAME&gt;:&lt;WELL NAME&gt;:&lt;I&gt;,&lt;J&gt;,&lt;K&gt;
+
+<ul>
+<li>Example: &lsquo;LCWIT:WELLI1:I1:5,5,5&rsquo;</li>
+</ul></li>
+<li><strong>LGR Well</strong> - &lt;VECTOR &lsquo;LW&hellip;&rsquo;&gt;:&lt;LGR NAME&gt;:&lt;WELL NAME&gt;
+
+<ul>
+<li>Example: &lsquo;LWWIR:WELLI1:I1&rsquo;</li>
+</ul></li>
+<li><strong>Segment</strong> - &lt;VECTOR &rsquo;S&hellip;.&lsquo;&gt;:&lt;WELL NAME&gt;:&lt;SEGMENT NUMBER&gt;
+
+<ul>
+<li>Example: &lsquo;SOFR:B-5H:32&rsquo;</li>
+</ul></li>
+<li><strong>Block</strong> - &lt;Vector &lsquo;B&hellip;.&rsquo;&gt;:&lt;I&gt;,&lt;J&gt;,&lt;K&gt;
+
+<ul>
+<li>Example: &lsquo;BPR:15,18,21&rsquo;</li>
+</ul></li>
+<li><strong>LGR Block</strong> - &lt;VECTOR &lsquo;LB&hellip;&rsquo;&gt;:&lt;LGR NAME&gt;:&lt;I&gt;,&lt;J&gt;,&lt;K&gt;
+
+<ul>
+<li>Example: &lsquo;LBOSAT:CENTER:5,5,5&rsquo;</li>
+</ul></li>
+<li><strong>Imported</strong> - &lt;SOME NAME&gt;</li>
+</ul>
 
 <p>When ResInsight parses an eclipse address, it first tries to identify an address category by analyzing the vector name, as described above. If no category could be found, the <strong>Imported</strong> category is used. This category is also used if the address format is wrong (for instance missing parameters) even though the vector name identifies a different category.</p>
 
@@ -1978,13 +2021,16 @@ Any address may have associated error data. Those type of data will have the sam
 
 <p>ResInsight supports a &lsquo;line based&rsquo; CSV file format variant as well. As opposed to the normal CSV format, data values are organized in lines. Each line must contain at least a date (and time), a vector address and a sample value. Optionally it may also contain an error value and a comment. The information carried by this format is equivalent to the normal CSV format, it is only a different file layout.</p>
 
-<p>When importing a line based CSV file, no dialog appears. Instead a more stict set of rules apply to this type of files:
-- At least <strong>DATE</strong>, <strong>VECTOR</strong> and <strong>VALUE</strong> columns must be present. The order of columns may be changed.
-- Optionally the columns <strong>ERROR</strong> and <strong>COMMENTS</strong> may be present
-- ISO date format must be used: &lsquo;yyyy-mm-dd&rsquo; or &lsquo;yyyy-mm-dd hh:mm&rsquo;
-- Semicolon (;) must be used as column separator
-- Point (.) must be used as decimal separator
-- The comment must not contain any semicolons</p>
+<p>When importing a line based CSV file, no dialog appears. Instead a more stict set of rules apply to this type of files:</p>
+
+<ul>
+<li>At least <strong>DATE</strong>, <strong>VECTOR</strong> and <strong>VALUE</strong> columns must be present. The order of columns may be changed.</li>
+<li>Optionally the columns <strong>ERROR</strong> and <strong>COMMENTS</strong> may be present</li>
+<li>ISO date format must be used: &lsquo;yyyy-mm-dd&rsquo; or &lsquo;yyyy-mm-dd hh:mm&rsquo;</li>
+<li>Semicolon (;) must be used as column separator</li>
+<li>Point (.) must be used as decimal separator</li>
+<li>The comment must not contain any semicolons</li>
+</ul>
 
 <h4 id="example">Example</h4>
 
@@ -3449,20 +3495,20 @@ UNITS YEAR
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379784"></script>
-    <script src="/js/jquery.sticky.js?1561379784"></script>
-    <script src="/js/featherlight.min.js?1561379784"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379784"></script>
-    <script src="/js/highlight.pack.js?1561379784"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379784"></script>
-    <script src="/js/learn.js?1561379784"></script>
-    <script src="/js/hugo-learn.js?1561379784"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379784" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379784"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

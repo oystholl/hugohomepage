@@ -12,18 +12,18 @@
     <title>Cell Filters :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379784" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379784" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379784" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379784" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379784" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379784" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379784" rel="stylesheet">
-    <link href="/css/theme.css?1561379784" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379784" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379784"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1817,7 +1810,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/3d-main-window/'>3D Main Window</a> > Cell Filters
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/3d-main-window/'>3D Main Window</a> > Cell Filters
           
          
           
@@ -1898,7 +1891,7 @@
 <p>The <strong>Exclude</strong> setting is used to explicitly remove cells from the visualization, regardless of what other filters say.
 The <strong>Include</strong> setting behaves differently for Range filters and Property Filters but marks the cells as visible.
 The icon in front of the filters show a + or - sign to indicate the setting <img src=/images/3d-main-window/FilterIncEx.png style="display:inline; vertical-align:middle; margin:0">
-.</p>
+</p>
 
 <h2 id="range-filters">Range filters</h2>
 
@@ -1907,9 +1900,10 @@ Each <em>Include</em> range filter will <em>add more cells</em> to the visualiza
 
 <p>A new range filter can be added by activating the context menu for the <strong>Range Filters</strong> collection in the <strong>Project Tree</strong>.</p>
 
-<div class="note">
-An I,J or K-slice range filter can be added directly from a Cell in the <b>3D View</b> by right-clicking the cell and using the context menu. 
+
+<div class="notices note" ><p>An I,J or K-slice range filter can be added directly from a Cell in the <b>3D View</b> by right-clicking the cell and using the context menu.</p>
 </div>
+
 
 <p>Below is a snapshot of the <strong>Property Editor</strong> of the <strong>Range Filter</strong> :</p>
 
@@ -1933,9 +1927,10 @@ The <strong>Width</strong> labels shows the number of active cells from the star
 
 <p>The name of the property filter is automatically set to <em>&ldquo;propertyname (min .. max)&rdquo;</em> as you edit the property filter.</p>
 
-<div class="note">
-The context command <b>Apply As Cell Result</b> on a property filter, sets the Cell Color Result to the same values as the selected property filter.
+
+<div class="notices note" ><p>The context command <b>Apply As Cell Result</b> on a property filter, sets the Cell Color Result to the same values as the selected property filter.</p>
 </div>
+
 
 <p>Below is a snapshot of the <strong>Property Editor</strong> of the <strong>Property Filter</strong>.</p>
 
@@ -3294,20 +3289,20 @@ The context command <b>Apply As Cell Result</b> on a property filter, sets the C
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379784"></script>
-    <script src="/js/jquery.sticky.js?1561379784"></script>
-    <script src="/js/featherlight.min.js?1561379784"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379784"></script>
-    <script src="/js/highlight.pack.js?1561379784"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379784"></script>
-    <script src="/js/learn.js?1561379784"></script>
-    <script src="/js/hugo-learn.js?1561379784"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379784" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379784"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

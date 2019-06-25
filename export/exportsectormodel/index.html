@@ -12,18 +12,18 @@
     <title>Export Sector Model :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379784" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379784" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379784" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379784" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379784" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379784" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379784" rel="stylesheet">
-    <link href="/css/theme.css?1561379784" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379784" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379784"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1817,7 +1810,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/export/'>Export</a> > Export Sector Model
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/export/'>Export</a> > Export Sector Model
           
          
           
@@ -1895,11 +1888,14 @@ be exported in a local coordinate system with no reference to actual location.</
 
 <h4 id="grid-box-selection">Grid Box Selection</h4>
 
-<p>The Grid Box selection group will allow the user to choose whether to export an IJK bounding box surrounding:
-- <strong>All Visible Cells</strong> &ndash; Controlled by range and property filters in the current view.
-- <strong>All Active Cells</strong> &ndash; All active cells in the Grid.
-- <strong>The Full Grid</strong> &ndash; The complete grid including inactive cells.
-- <strong>User Defined Selection</strong> &ndash; This will make the min and max IJK selection available to the user.</p>
+<p>The Grid Box selection group will allow the user to choose whether to export an IJK bounding box surrounding:</p>
+
+<ul>
+<li><strong>All Visible Cells</strong> &ndash; Controlled by range and property filters in the current view.</li>
+<li><strong>All Active Cells</strong> &ndash; All active cells in the Grid.</li>
+<li><strong>The Full Grid</strong> &ndash; The complete grid including inactive cells.</li>
+<li><strong>User Defined Selection</strong> &ndash; This will make the min and max IJK selection available to the user.</li>
+</ul>
 
 <p>Furthermore, by checking <strong>Make Invisible Cells Inactive</strong> any cells that are within the IJK bounding box, but are invisible, will be made
 inactive (ACTNUM = 0) in the exported grid.</p>
@@ -3260,20 +3256,20 @@ append them to the grid file, export them all into a single parameter file or om
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379784"></script>
-    <script src="/js/jquery.sticky.js?1561379784"></script>
-    <script src="/js/featherlight.min.js?1561379784"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379784"></script>
-    <script src="/js/highlight.pack.js?1561379784"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379784"></script>
-    <script src="/js/learn.js?1561379784"></script>
-    <script src="/js/hugo-learn.js?1561379784"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379784" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379784"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

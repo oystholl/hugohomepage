@@ -12,18 +12,18 @@
     <title>RFT Plot :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379784" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379784" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379784" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379784" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379784" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379784" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379784" rel="stylesheet">
-    <link href="/css/theme.css?1561379784" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379784" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379784"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1817,7 +1810,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/plot-window/'>Plot Window</a> > RFT Plot
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/plot-window/'>Plot Window</a> > RFT Plot
           
          
           
@@ -1880,14 +1873,23 @@
 
 <p>There are several ways to create new RFT Plots.</p>
 
-<p><strong>From the Project Tree in the Plot Main Window</strong>
-- Select context command <strong>New RFT Plot</strong> for <em>Well Path</em> node or <em>RFT Plots</em> node.</p>
+<p><strong>From the Project Tree in the Plot Main Window</strong></p>
 
-<p><strong>From the Project Tree in the 3D Main Window</strong>
-- Select context command <strong>New RFT plot</strong> for a simulation well.</p>
+<ul>
+<li>Select context command <strong>New RFT Plot</strong> for <em>Well Path</em> node or <em>RFT Plots</em> node.</li>
+</ul>
 
-<p><strong>From a 3D view</strong>
-- Right-click a simulation well select <strong>Well Plots -&gt; New RFT Plot</strong>.</p>
+<p><strong>From the Project Tree in the 3D Main Window</strong></p>
+
+<ul>
+<li>Select context command <strong>New RFT plot</strong> for a simulation well.</li>
+</ul>
+
+<p><strong>From a 3D view</strong></p>
+
+<ul>
+<li>Right-click a simulation well select <strong>Well Plots -&gt; New RFT Plot</strong>.</li>
+</ul>
 
 <h2 id="import-observed-rft-data">Import Observed RFT Data</h2>
 
@@ -1909,27 +1911,39 @@
 
 <h3 id="sources">Sources</h3>
 
-<p>After a well has been selected in the Well Name field, the relevant sources for that well will appear in the sources field. The sources are placed in one of three different groups:
-- <strong>RFT File Cases</strong> &ndash; Simulation cases may have associated formation pressure data in <em>*.rft</em> file(s). If the simulation case contains such files, those are imported together with the simulation case (See the keyword <code>WRFTPLT</code> in the Eclipse manual for information).
-- <strong>Grid Cases</strong> &ndash; The PRESSURE property in the 3D grid.
-- <strong>Observed Cases</strong> &ndash; Observed data imported from well log files.</p>
+<p>After a well has been selected in the Well Name field, the relevant sources for that well will appear in the sources field. The sources are placed in one of three different groups:</p>
+
+<ul>
+<li><strong>RFT File Cases</strong> &ndash; Simulation cases may have associated formation pressure data in <em>*.rft</em> file(s). If the simulation case contains such files, those are imported together with the simulation case (See the keyword <code>WRFTPLT</code> in the Eclipse manual for information).</li>
+<li><strong>Grid Cases</strong> &ndash; The PRESSURE property in the 3D grid.</li>
+<li><strong>Observed Cases</strong> &ndash; Observed data imported from well log files.</li>
+</ul>
 
 <p>When the user selects one or more sources, a selection of their time steps appears in the <strong>Time Steps</strong> field.</p>
 
 <h3 id="time-steps">Time Steps</h3>
 
-<p>The <strong>Time Steps</strong> field contains the relevant time steps according to the source selection. Time steps are deemed to be relevant by the following rules:
-1. If a single source or sources of the same type are selected, all available time steps in those sources are shown.
-2. If sources from two or tree types are selected, the time steps are filtered:
-  - The time steps matching the observed case(s) time steps.
-  - If no time steps from a case match the observed time step, the two adjacent ones are shown.
-  - The first time step from any grid case(s) (as initial pressure reference).
-If the Observed data isn&rsquo;t selected, the RFT data serves as filter reference.</p>
+<p>The <strong>Time Steps</strong> field contains the relevant time steps according to the source selection. Time steps are deemed to be relevant by the following rules:</p>
 
-<p>Each time step is postfixed by an indication of which source type(s) the time step is belonging to. This indication is displayed as one or more letters within square brackets. Examples: <strong>[ O ]</strong>, <strong>[ R G ]</strong>.
-- <strong>O</strong> &ndash; Time step has observed data
-- <strong>R</strong> &ndash; Time step has RFT data
-- <strong>G</strong> &ndash; Time step has Grid data</p>
+<ol>
+<li>If a single source or sources of the same type are selected, all available time steps in those sources are shown.</li>
+<li>If sources from two or tree types are selected, the time steps are filtered:
+
+<ul>
+<li>The time steps matching the observed case(s) time steps.</li>
+<li>If no time steps from a case match the observed time step, the two adjacent ones are shown.</li>
+<li>The first time step from any grid case(s) (as initial pressure reference).
+If the Observed data isn&rsquo;t selected, the RFT data serves as filter reference.</li>
+</ul></li>
+</ol>
+
+<p>Each time step is postfixed by an indication of which source type(s) the time step is belonging to. This indication is displayed as one or more letters within square brackets. Examples: <strong>[ O ]</strong>, <strong>[ R G ]</strong>.</p>
+
+<ul>
+<li><strong>O</strong> &ndash; Time step has observed data</li>
+<li><strong>R</strong> &ndash; Time step has RFT data</li>
+<li><strong>G</strong> &ndash; Time step has Grid data</li>
+</ul>
 
 <p>More than one letter for one single time step, means that the time steps comes from multiple case types.</p>
 
@@ -1941,30 +1955,43 @@ If the Observed data isn&rsquo;t selected, the RFT data serves as filter referen
 
 <p>Please see the <a href="/3d-main-window/formations/">full documentation</a> on the formations property editor for details about formations.</p>
 
-<div class="note">
-  When the formation names property editor is used in the context of RFT plots, the fields <b>Trajectory</b> and <b>Simulation Well</b> are hidden because those values are given by the RFT plot definition.
+
+<div class="notices note" ><p>When the formation names property editor is used in the context of RFT plots, the fields <b>Trajectory</b> and <b>Simulation Well</b> are hidden because those values are given by the RFT plot definition.</p>
 </div>
+
 
 <h3 id="legend-and-axis">Legend and Axis</h3>
 
 <p><img src="/images/plot-window/RftLegendAndAxis.png" alt="" /></p>
 
-<p>This property editor lets the user control visual properties for the legend and axis.
-- Title and Legends
-  - <strong>Show Title</strong> &ndash; Toggle on/off title in plot
-  - <strong>Show Legends</strong> &ndash; Toggle on/off legend in plot
-  - <strong>Legend Orientation</strong> &ndash; Vertical or horizontal
-- X Axis Settings
-  - <strong>Logarithmic Scale</strong> &ndash; Toggle between linear and logarithmic
-  - <strong>Min</strong> &ndash; Set X axis minimum value
-  - <strong>Max</strong> &ndash; Set X axis maximum value
-  - <strong>Show Grid Lines</strong> &ndash; Enable grid lines in background in plot
-- Depth Axis
-  - <strong>Type</strong> &ndash; Toggle between True Vertical Depth (MSL) or Measured Depth (MD)
-  - <strong>Unit</strong> &ndash;
-  - <strong>Min</strong> &ndash; Set depth axis minimum value
-  - <strong>Max</strong> &ndash; Set depth axis maximum value
-  - <strong>Show Grid Lines</strong> &ndash; Enable grid lines in background in plot</p>
+<p>This property editor lets the user control visual properties for the legend and axis.</p>
+
+<ul>
+<li>Title and Legends
+
+<ul>
+<li><strong>Show Title</strong> &ndash; Toggle on/off title in plot</li>
+<li><strong>Show Legends</strong> &ndash; Toggle on/off legend in plot</li>
+<li><strong>Legend Orientation</strong> &ndash; Vertical or horizontal</li>
+</ul></li>
+<li>X Axis Settings
+
+<ul>
+<li><strong>Logarithmic Scale</strong> &ndash; Toggle between linear and logarithmic</li>
+<li><strong>Min</strong> &ndash; Set X axis minimum value</li>
+<li><strong>Max</strong> &ndash; Set X axis maximum value</li>
+<li><strong>Show Grid Lines</strong> &ndash; Enable grid lines in background in plot</li>
+</ul></li>
+<li>Depth Axis
+
+<ul>
+<li><strong>Type</strong> &ndash; Toggle between True Vertical Depth (MSL) or Measured Depth (MD)</li>
+<li><strong>Unit</strong> &ndash;</li>
+<li><strong>Min</strong> &ndash; Set depth axis minimum value</li>
+<li><strong>Max</strong> &ndash; Set depth axis maximum value</li>
+<li><strong>Show Grid Lines</strong> &ndash; Enable grid lines in background in plot</li>
+</ul></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -3301,20 +3328,20 @@ If the Observed data isn&rsquo;t selected, the RFT data serves as filter referen
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379784"></script>
-    <script src="/js/jquery.sticky.js?1561379784"></script>
-    <script src="/js/featherlight.min.js?1561379784"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379784"></script>
-    <script src="/js/highlight.pack.js?1561379784"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379784"></script>
-    <script src="/js/learn.js?1561379784"></script>
-    <script src="/js/hugo-learn.js?1561379784"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379784" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379784"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

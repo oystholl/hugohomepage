@@ -12,18 +12,18 @@
     <title>3D Main Window :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379783" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379783" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379783" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379783" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379783" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379783" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379783" rel="stylesheet">
-    <link href="/css/theme.css?1561379783" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379783" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379783"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1813,7 +1806,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > 3D Main Window
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > 3D Main Window
           
          
           
@@ -1824,35 +1817,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#common-view-features">Common view features</a>
-<ul>
-<li><a href="#view-properties">View properties</a></li>
-<li><a href="#cell-result-nbsp-hahahugoshortcode-s3-hbhbimages-3d-main-window-cellresult-png">Cell Result &nbsp; <img src="HAHAHUGOSHORTCODE-s3-HBHBimages/3d-main-window/CellResult.png" alt="" /></a></li>
-<li><a href="#range-filters-nbsp-hahahugoshortcode-s6-hbhbimages-3d-main-window-cellfilter-range-png-and-property-filters-nbsp-hahahugoshortcode-s7-hbhbimages-3d-main-window-cellfilter-values-png">Range Filters &nbsp;<img src="HAHAHUGOSHORTCODE-s6-HBHBimages/3d-main-window/CellFilter_Range.png" alt="" /> and Property Filters &nbsp;<img src="HAHAHUGOSHORTCODE-s7-HBHBimages/3d-main-window/CellFilter_Values.png" alt="" /></a></li>
-<li><a href="#info-box">Info Box</a>
-<ul>
-<li><a href="#statistics-options">Statistics Options</a></li>
-</ul></li>
-<li><a href="#grids-nbsp-hahahugoshortcode-s12-hbhbimages-3d-main-window-draw-style-meshlines-24x24-png">Grids &nbsp;<img src="HAHAHUGOSHORTCODE-s12-HBHBimages/3d-main-window/draw_style_meshlines_24x24.png" alt="" /></a></li>
-<li><a href="#intersections-nbsp-hahahugoshortcode-s15-hbhbimages-3d-main-window-crosssections16x16-png">Intersections &nbsp;<img src="HAHAHUGOSHORTCODE-s15-HBHBimages/3d-main-window/CrossSections16x16.png" alt="" /></a></li>
-<li><a href="#activate-items-by-clicking">Activate items by clicking</a></li>
-</ul></li>
-<li><a href="#eclipse-only-features">Eclipse-only features</a>
-<ul>
-<li><a href="#cell-edge-results-hahahugoshortcode-s17-hbhbimages-3d-main-window-edgeresult-1-png">Cell Edge Results <img src="HAHAHUGOSHORTCODE-s17-HBHBimages/3d-main-window/EdgeResult_1.png" alt="" /></a></li>
-<li><a href="#separate-fault-result">Separate Fault Result</a></li>
-<li><a href="#simulation-wells">Simulation Wells</a></li>
-<li><a href="#well-connection-factors">Well Connection Factors</a></li>
-<li><a href="#fractures">Fractures</a></li>
-<li><a href="#faults">Faults</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -1878,125 +1843,6 @@
 
 
 	
-
-<p><img src="/images/3d-main-window/3DViewOverview.png" alt="" /></p>
-
-<p>3D Views are the windows displaying the Grid Models. The visualization is controlled by the <strong>Project Tree</strong> item representing the <strong>View</strong> and their sub items.</p>
-
-<p><img src="/images/3d-main-window/ViewTree.png" alt="" /></p>
-
-<p>Each item has a set of properties that can be edited in the <strong>Property Editor</strong>.</p>
-
-<p>Several views can be added to the same case by right-clicking the case or a view and select <strong>New View</strong>. You can also <strong>Copy</strong> and then <strong>Paste</strong> a view into a Case. All the settings are then copied to the new view.</p>
-
-<p>Views of Eclipse models and Geomechanical models has a lot in common, but Eclipse views has some features that applies to Eclipse simulations only.</p>
-
-<h2 id="common-view-features">Common view features</h2>
-
-<h3 id="view-properties">View properties</h3>
-
-<p>Grid appearance can be controlled from the <strong>Property Editor</strong> when a view is selected. This includes background color and z scaling. In addition, cell visibility controls of inactive and invalid cells.</p>
-
-<p><img src="/images/3d-main-window/ViewProperties.png" alt="" /></p>
-
-<p>Visibility of the grid box with labels displaying the coordinates for the reservoir can also be controlled using <strong>Show Grid Box</strong>.</p>
-
-<h3 id="cell-result-nbsp-hahahugoshortcode-s3-hbhbimages-3d-main-window-cellresult-png">Cell Result &nbsp; <img src="/images/3d-main-window/CellResult.png" alt="" /></h3>
-
-<p>The <strong>Cell Result</strong> item defines which Eclipse or Geomechanical property the 3D View uses for the main cell color. The property can be chosen in the property panel of the <strong>Cell Result</strong> item. The mapping between cell values and color is defined by the <strong>Legend Definition</strong>  <img src="/images/3d-main-window/Legend.png" alt="" /> along with some appearance settings on the Legend itself. (Number format etc.)</p>
-
-<p>Please refer to <a href="/3d-main-window/results/resultcolorlegend/">Result Color Legend</a> for details.</p>
-
-<h3 id="range-filters-nbsp-hahahugoshortcode-s6-hbhbimages-3d-main-window-cellfilter-range-png-and-property-filters-nbsp-hahahugoshortcode-s7-hbhbimages-3d-main-window-cellfilter-values-png">Range Filters &nbsp;<img src="/images/3d-main-window/CellFilter_Range.png" alt="" /> and Property Filters &nbsp;<img src="/images/3d-main-window/CellFilter_Values.png" alt="" /></h3>
-
-<p>In order to see different sets of cells, and cells inside the reservoir, Views use cell filters. Please refer to <a href="/3d-main-window/filters/">Cell Filters</a> to read more about them.</p>
-
-<h3 id="info-box">Info Box</h3>
-
-<p>The <strong>Info Box</strong> controls the visibility of the animation progress, the Case description box, and the results histogram displayed in the top right corner of the view.</p>
-
-<p>The <strong>Animation Progress</strong> shows which time step you are viewing.</p>
-
-<p><img src="/images/3d-main-window/AnimationProgress.png" alt="" /></p>
-
-<p>The <strong>Info Text</strong> shows general info about the case, the selected results, and some statistics. <strong>Mobile Volume Weighted Mean</strong> is the mean of the current <strong>Cell Property</strong> weighted by the <strong>Mobile pore volume</strong>. Mobile pore volume is defined in every cell as: MULTPV <em>*</em> PORV(1-SWCR). If MULTPV data is not present, it is ignored in the equation. The same applies to SWCR data.</p>
-
-<p><img src="/images/3d-main-window/infoBox.png" alt="" /></p>
-
-<p>The <strong>Histogram</strong> shows a histogram of the complete time series of the currently loaded <strong>Cell Result</strong> together with:</p>
-
-<ul>
-<li>The mean value ( a blue line )</li>
-<li>P10 and P90 ( red lines )</li>
-</ul>
-
-<p><img src="/images/3d-main-window/HistogramExample.png" alt="" /></p>
-
-<h4 id="statistics-options">Statistics Options</h4>
-
-<ul>
-<li><strong>Statistics Time Range</strong> &ndash; controls whether all time steps or only the current time step are included when statistics is computed. Flow Diagnostic results can only use the current time step option.</li>
-<li><strong>Statistics Cell Range</strong> &ndash; controls if visible cells or all active cells is included when statistics is computed.</li>
-</ul>
-
-<div class="note">
-The <b>Info Box</b> settings can be activated by clicking on the Info Text in the 3D view.
-</div>
-
-<h3 id="grids-nbsp-hahahugoshortcode-s12-hbhbimages-3d-main-window-draw-style-meshlines-24x24-png">Grids &nbsp;<img src="/images/3d-main-window/draw_style_meshlines_24x24.png" alt="" /></h3>
-
-<p><img src="/images/3d-main-window/ViewTreeGrids.png" alt="" /></p>
-
-<p>The <strong>Grids</strong> node contains child nodes for <strong>Main Grid</strong>, <strong>LGRs</strong> and <strong>Temporary LGRs</strong> where each grid&rsquo;s visibilty can be controlled. The <strong>LGRs</strong> node contains all LGRs loaded from file, while <strong>Temporary LGRs</strong> contains all temporary LGRs (see <a href="/3d-main-window/wells-and-completions/completionslgr/">Completions LGR</a>).
-Toggling <strong>Grids</strong> off will hide all grids cell geometry. This option is used to display geometry for faults and intersections. This feature is also available as a toolbutton called <em>Hide grid cells</em>.</p>
-
-<h3 id="intersections-nbsp-hahahugoshortcode-s15-hbhbimages-3d-main-window-crosssections16x16-png">Intersections &nbsp;<img src="/images/3d-main-window/CrossSections16x16.png" alt="" /></h3>
-
-<p>Intersections are used to cut the geometry and show result values mapped onto this geometry.
-Please refer to <a href="/3d-main-window/intersections/">Intersections</a> for details.</p>
-
-<h3 id="activate-items-by-clicking">Activate items by clicking</h3>
-
-<p>Selected overlay items in the 3D view can activate a corresponding item in the <strong>Property Editor</strong>. This is implemented for Info box and result color legends. Please note that this feature is activated by clicking inside the texture/colored part of the legend.</p>
-
-<h2 id="eclipse-only-features">Eclipse-only features</h2>
-
-<h3 id="cell-edge-results-hahahugoshortcode-s17-hbhbimages-3d-main-window-edgeresult-1-png">Cell Edge Results <img src="/images/3d-main-window/EdgeResult_1.png" alt="" /></h3>
-
-<p><img src="/images/3d-main-window/CellEdgeExample.png" alt="" /></p>
-
-<p>The <strong>Cell Edge Result</strong> visualization mode is one of ResInsight&rsquo;s special features. Its main use is to show the MULT(X, Y, Z) properties at the same time. This will show the MULT property values <em>different from 1.0</em> along the correct edges of the cells. In effect this highlights the faults and makes it easy to verify all the MULT values in one go.</p>
-
-<p>ResInsight supports all properties ending with X, Y, Z and X-, Y-, Z-. However, it is only the MULT property that ignores values of 1.0.</p>
-
-<p>When selecting a result variable for cell edge, a second legend shows up in the 3D view showing the variation in values for this second property. Color legend management is available when selecting the <strong>Legend Definition</strong> item belonging to the <strong>Cell Edge Result</strong> item.</p>
-
-<p>Select <strong>Custom Edge Result</strong> to specify one cell result to be mapped onto all cell edges. This way two cell results can easily be compared and visualized in the same view. The <strong>Custom Edge Result</strong> can either be a static or dynamic result.</p>
-
-<h3 id="separate-fault-result">Separate Fault Result</h3>
-
-<p>Default result mapping on faults is using the result specified in <strong>Cell Result</strong>. If a different result mapping is wanted, enable the checkbox and select the result from the result selection dialog in the <strong>Property Editor</strong>. A second legend for the fault result is added to the view.</p>
-
-<h3 id="simulation-wells">Simulation Wells</h3>
-
-<p>This item controls the visualization of the Eclipse simulation wells.
-Please refer to <a href="/3d-main-window/wells-and-completions/simulationwells/">Simulation Wells</a> to read more.</p>
-
-<h3 id="well-connection-factors">Well Connection Factors</h3>
-
-<p>This item controls the visualization of well connection factors.
-See <a href="/3d-main-window/wells-and-completions/completions/#visualization-and-inspection-of-well-connection-factors">Visualization and Inspection of Well Connection Factors</a> for details.</p>
-
-<h3 id="fractures">Fractures</h3>
-
-<p>This item controls the visualization of fractures.
-See <a href="/3d-main-window/wells-and-completions/completions/#fractures">Fractures</a> for details.</p>
-
-<h3 id="faults">Faults</h3>
-
-<p>Visualization of the faults in the model is controlled by this item.
-Please refer to <a href="/3d-main-window/faults/">Faults</a> to read more.</p>
-
 
 
 
@@ -3330,20 +3176,20 @@ Please refer to <a href="/3d-main-window/faults/">Faults</a> to read more.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379783"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379783"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379783"></script>
-    <script src="/js/jquery.sticky.js?1561379783"></script>
-    <script src="/js/featherlight.min.js?1561379783"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379783"></script>
-    <script src="/js/highlight.pack.js?1561379783"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379783"></script>
-    <script src="/js/learn.js?1561379783"></script>
-    <script src="/js/hugo-learn.js?1561379783"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379783" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379783"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

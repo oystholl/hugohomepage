@@ -12,18 +12,18 @@
     <title>Summary Plots :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379783" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379783" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379783" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379783" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379783" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379783" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379783" rel="stylesheet">
-    <link href="/css/theme.css?1561379783" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379783" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379783"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1817,7 +1810,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/plot-window/'>Plot Window</a> > Summary Plots
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/plot-window/'>Plot Window</a> > Summary Plots
           
          
           
@@ -1894,7 +1887,8 @@
 
 <p>A Summary Plot is a window displaying a graph in the main area of the <strong>Plot Main Window</strong>. It can contain Summary Curves, Grid time history curves and pasted ascii curves ( See below ).</p>
 
-<p>A new plot can be created by using the context menu of a plot selecting <img src="/images/plot-window/SummaryPlot16x16.png" alt="" /> <strong>New Summary Plot</strong>. The <a href="/plot-window/summaryploteditor/">Summary Plot Editor</a> dialog will then open.</p>
+<p>A new plot can be created by using the context menu of a plot selecting <img src=/images/plot-window/SummaryPlot16x16.png style="display:inline; vertical-align:middle; margin:0">
+ <strong>New Summary Plot</strong>. The <a href="/plot-window/summaryploteditor/">Summary Plot Editor</a> dialog will then open.</p>
 
 <h2 id="plot-data">Plot Data</h2>
 
@@ -1903,11 +1897,14 @@
 <h3 id="summary-files">SUMMARY Files</h3>
 
 <p>When opening an Eclipse case in the 3D view, the associated summary file is opened automatically by default, and made available as a <strong>Summary Case</strong>.
-Summary files can also be imported directly using one of the following commands in the <strong>File-&gt;Import-&gt;Summary Cases</strong> menu:
-- <strong>Import Summary Case</strong>: Brings up the standard file selection dialog. Multiple selections are allowed.
-- <strong>Import Summary Cases Recursively</strong>: Brings up the recursive file selection dialog. This dialog is described in details <a href="#recursive-summary-file-import">below</a>
-- <strong>Import Summary Case Group</strong>: Brings up the recursive file selection dialog. All files selected are automatically grouped in ResInsight.
-- <strong>Import Ensemble</strong>: Similar to the above, but in addition to just create a group, ResInsight performs some extra checking related to ensembles and converts the group to an ensemble. See <a href="/plot-window/ensembleplotting/">ensemble support description</a>.</p>
+Summary files can also be imported directly using one of the following commands in the <strong>File-&gt;Import-&gt;Summary Cases</strong> menu:</p>
+
+<ul>
+<li><strong>Import Summary Case</strong>: Brings up the standard file selection dialog. Multiple selections are allowed.</li>
+<li><strong>Import Summary Cases Recursively</strong>: Brings up the recursive file selection dialog. This dialog is described in details <a href="#recursive-summary-file-import">below</a></li>
+<li><strong>Import Summary Case Group</strong>: Brings up the recursive file selection dialog. All files selected are automatically grouped in ResInsight.</li>
+<li><strong>Import Ensemble</strong>: Similar to the above, but in addition to just create a group, ResInsight performs some extra checking related to ensembles and converts the group to an ensemble. See <a href="/plot-window/ensembleplotting/">ensemble support description</a>.</li>
+</ul>
 
 <p>These commands can also be accessed in the right-click context menu for the <strong>Summary Cases</strong> entry in the <strong>Plot Main Window Project Tree</strong> under which the imported cases will also be listed.</p>
 
@@ -1968,25 +1965,37 @@ The format of dates is <em><code>yyyy-mm-ddThh:mm:ssZ</code></em></li>
 
 <h3 id="y-axis-properties">Y-axis Properties</h3>
 
-<p><img src="/images/plot-window/summary_plot_yaxis_properties.png" alt="" />
-- <strong>Axis Title</strong>
-  - <strong>Auto Title</strong> &ndash; If enabled, the y-axis title is derived from the vectors associated with the axis. Long names, acronymes  and unit can be used.
-    - <strong>Names</strong> &ndash; Use the long name of the quantities
-    - <strong>Acronymes</strong> &ndash; Add the shortname/acronyme of the quantities
-  - <strong>Title</strong> &ndash; If <strong>Auto Title</strong> is disabled, the plot title is set using this field.
-- <strong>Title Layout</strong>
-  - <strong>Title Position</strong> &ndash; Controls the position of the title. Center or At End.
-  - <strong>Font Size</strong> &ndash;  Defines the font size used by the axis title.
-- <strong>Axis Values</strong>
-  - <strong>Logarithmic Scale</strong>  - Draw plot curves using a logarithmic scale.
-  - <strong>Number Format</strong> &ndash; Defines how the legend numbers are formatted.
-    - <strong>Auto</strong> &ndash; Legend numbers are either using a scientific or decimal notation based on the number of digits of the value
-    - <strong>Decimal</strong> &ndash; Legend numbers are displayed using decimal notation.
-    - <strong>Scientific</strong> &ndash; Legend numbers are displayed using scientific notation (ie. 1.2e+6).
-  - <strong>Number of Decimals</strong> &ndash; Controls the number of digits after &ldquo;.&rdquo; (for  <strong>Decimal</strong> or <strong>Scientific</strong> format options).
-  - <strong>Scale Factor</strong> &ndash; &ldquo;Moves&rdquo; the scale value away from the values along the axis and into the unit on the axis title (for  <strong>Decimal</strong> or <strong>Scientific</strong> format options).
-  - <strong>Max and Min</strong> &ndash; Defines the visible y range.
-  - <strong>Font Size</strong> &ndash; The font size used for the values shown at the ticks on the axis.</p>
+<p><img src="/images/plot-window/summary_plot_yaxis_properties.png" alt="" /></p>
+
+<ul>
+<li><strong>Axis Title</strong>
+
+<ul>
+<li><strong>Auto Title</strong> &ndash; If enabled, the y-axis title is derived from the vectors associated with the axis. Long names, acronymes  and unit can be used.</li>
+<li><strong>Names</strong> &ndash; Use the long name of the quantities</li>
+<li><strong>Acronymes</strong> &ndash; Add the shortname/acronyme of the quantities</li>
+<li><strong>Title</strong> &ndash; If <strong>Auto Title</strong> is disabled, the plot title is set using this field.</li>
+</ul></li>
+<li><strong>Title Layout</strong>
+
+<ul>
+<li><strong>Title Position</strong> &ndash; Controls the position of the title. Center or At End.</li>
+<li><strong>Font Size</strong> &ndash;  Defines the font size used by the axis title.</li>
+</ul></li>
+<li><strong>Axis Values</strong>
+
+<ul>
+<li><strong>Logarithmic Scale</strong>  - Draw plot curves using a logarithmic scale.</li>
+<li><strong>Number Format</strong> &ndash; Defines how the legend numbers are formatted.</li>
+<li><strong>Auto</strong> &ndash; Legend numbers are either using a scientific or decimal notation based on the number of digits of the value</li>
+<li><strong>Decimal</strong> &ndash; Legend numbers are displayed using decimal notation.</li>
+<li><strong>Scientific</strong> &ndash; Legend numbers are displayed using scientific notation (ie. 1.2e+6).</li>
+<li><strong>Number of Decimals</strong> &ndash; Controls the number of digits after &ldquo;.&rdquo; (for  <strong>Decimal</strong> or <strong>Scientific</strong> format options).</li>
+<li><strong>Scale Factor</strong> &ndash; &ldquo;Moves&rdquo; the scale value away from the values along the axis and into the unit on the axis title (for  <strong>Decimal</strong> or <strong>Scientific</strong> format options).</li>
+<li><strong>Max and Min</strong> &ndash; Defines the visible y range.</li>
+<li><strong>Font Size</strong> &ndash; The font size used for the values shown at the ticks on the axis.<br /></li>
+</ul></li>
+</ul>
 
 <h3 id="plot-mouse-interaction">Plot Mouse Interaction</h3>
 
@@ -1999,7 +2008,8 @@ The format of dates is <em><code>yyyy-mm-ddThh:mm:ssZ</code></em></li>
 <li>Each of the Plot Axes.</li>
 <li>The Plot itself if none of the above is hit and the Plot window is activated by the mouse click.</li>
 </ul></li>
-<li><strong>Window Zoom</strong> &ndash; Window zoom is available by dragging the mouse when the left mouse button is pressed. Use <img src="/images/plot-window/ZoomAll16x16.png" alt="" /> <strong>Zoom All</strong> to restore default zoom level.</li>
+<li><strong>Window Zoom</strong> &ndash; Window zoom is available by dragging the mouse when the left mouse button is pressed. Use <img src=/images/plot-window/ZoomAll16x16.png style="display:inline; vertical-align:middle; margin:0">
+ <strong>Zoom All</strong> to restore default zoom level.</li>
 <li><strong>Wheel Zoom</strong> &ndash; The mouse wheel will zoom the plot in and out towards the current mouse cursor position.</li>
 </ul>
 
@@ -2013,7 +2023,8 @@ The format of dates is <em><code>yyyy-mm-ddThh:mm:ssZ</code></em></li>
 
 <h2 id="summary-curves">Summary Curves</h2>
 
-<p>Summary curves are normally created using the <strong>Plot Editor</strong> see <a href="/plot-window/summaryploteditor/">Summary Plot Editor</a>, but can be created directly using the context menu in the <strong>Main Plot Window Project Tree</strong>. Right click a Summary Plot, the Summary Curves folder or an existing curve and select the command <img src="/images/plot-window/SummaryCurve16x16.png" alt="" /> <strong>New Summary Curve</strong>.</p>
+<p>Summary curves are normally created using the <strong>Plot Editor</strong> see <a href="/plot-window/summaryploteditor/">Summary Plot Editor</a>, but can be created directly using the context menu in the <strong>Main Plot Window Project Tree</strong>. Right click a Summary Plot, the Summary Curves folder or an existing curve and select the command <img src=/images/plot-window/SummaryCurve16x16.png style="display:inline; vertical-align:middle; margin:0">
+ <strong>New Summary Curve</strong>.</p>
 
 <p><img src="/images/plot-window/summary_curve_properties.png" alt="" /></p>
 
@@ -2035,18 +2046,22 @@ The format of dates is <em><code>yyyy-mm-ddThh:mm:ssZ</code></em></li>
 <li><strong>Axis</strong> &ndash; Controls whether the curve is to be associated with the left or right Y-Axis.</li>
 </ul>
 
-<div class="note">
-Switching the Y-Axis for several curves in one go can be done using the context command <b>Switch Plot Axis</b>.  
+
+<div class="notices note" ><p>Switching the Y-Axis for several curves in one go can be done using the context command <b>Switch Plot Axis</b>.</p>
 </div>
+
 
 <p>To optional ways to select the curve data are available: The <strong>Vector Selection Dialog</strong> and the <strong>Vector Selection Filter</strong>.</p>
 
 <p>The first is accessed by clicking the button <strong>Vector Selection Dialog</strong>. This opens a dialog similar to the one used as Plot Editor. See <a href="/plot-window/summaryploteditor/">Summary Plot Editor</a>.</p>
 
-<p>The <strong>Vector Selection Filter</strong> group of options is a different way of selecting the curve data:
-- <strong>Search</strong> &ndash; This option controls the filtering mode. Several are available and controls witch search fields that are made available. The search modes are described below
-- <strong>Options depending on Search Mode</strong> &ndash; Described below.
-- <strong>List of vector names</strong> &ndash; This list displays the set of vectors filtered by the search options. Use this to select which of the vectors you want to plot.</p>
+<p>The <strong>Vector Selection Filter</strong> group of options is a different way of selecting the curve data:</p>
+
+<ul>
+<li><strong>Search</strong> &ndash; This option controls the filtering mode. Several are available and controls witch search fields that are made available. The search modes are described below</li>
+<li><strong>Options depending on Search Mode</strong> &ndash; Described below.</li>
+<li><strong>List of vector names</strong> &ndash; This list displays the set of vectors filtered by the search options. Use this to select which of the vectors you want to plot.</li>
+</ul>
 
 <p>In the following, all the search fields are wildcard-based text filters. An empty search string will match anything: any value or no value at all. A single <em><code>*</code></em> however, will only match something: There has to be some value for that particular quantity to make the filter match.</p>
 
@@ -2171,14 +2186,20 @@ Switching the Y-Axis for several curves in one go can be done using the context 
 
 <p><img src="/images/plot-window/RecursiveImportDialog1.png" alt="" /></p>
 
-<p>The dialog consists of the following fields:
-- <strong>Root Folder</strong>: The root directory where the file search starts. Text may be entered directly into the field. Alternatively press the browse button to display the directory selection dialog.
-- <strong>Path Pattern</strong>: The search pattern that applies to the start of the relative search path. If the pattern does not end with a &ldquo;*&rdquo;, an implicit wildcard is added silently. Supported wildcards:
-  - <strong>*</strong> Matches any number of any characters except the directory separator
-  - <strong>?</strong> Matches one character exception the directory separator
-  - <strong>[abc]</strong> Matches one of the specified characters. Ex. a, b or c
-- <strong>File Pattern</strong>: The search pattern that applies to the file name.
-- <strong>Effective Filter</strong>: The effective filter displays the resulting full path search pattern. It is updated on the fly as the user edits the pattern fields.</p>
+<p>The dialog consists of the following fields:</p>
+
+<ul>
+<li><strong>Root Folder</strong>: The root directory where the file search starts. Text may be entered directly into the field. Alternatively press the browse button to display the directory selection dialog.</li>
+<li><strong>Path Pattern</strong>: The search pattern that applies to the start of the relative search path. If the pattern does not end with a &ldquo;*&rdquo;, an implicit wildcard is added silently. Supported wildcards:
+
+<ul>
+<li><strong>*</strong> Matches any number of any characters except the directory separator</li>
+<li><strong>?</strong> Matches one character exception the directory separator</li>
+<li><strong>[abc]</strong> Matches one of the specified characters. Ex. a, b or c</li>
+</ul></li>
+<li><strong>File Pattern</strong>: The search pattern that applies to the file name.</li>
+<li><strong>Effective Filter</strong>: The effective filter displays the resulting full path search pattern. It is updated on the fly as the user edits the pattern fields.</li>
+</ul>
 
 <p>After pressing the &ldquo;Find&rdquo; button, a file search is performed in the root directory and the directories below matching the path pattern. The files found are presented in a list, where the user can check/uncheck each file individually.</p>
 
@@ -2194,17 +2215,26 @@ Switching the Y-Axis for several curves in one go can be done using the context 
 
 <p>Depending on what triggered the summary file import, the dialog shows slightly different information. If the summary file import was triggered by a grid file import, the dialog displays information about grid files in addition to the summary origin file(s). If the summary file was imported directly, information about grid files are not relevant and thus not displayed.</p>
 
-<p>The dialog contents are organized in groups:
-- <strong>Current Grid and Summary Files</strong> or <strong>Current Summary Files</strong>: This group displays the name of the main summary file to import. If the import is triggered by a grid file import, the name of the grid file is also displayed.
-- <strong>Origin Summary Files</strong>: This group displays the names of the origin summary file(s) found. If there are more than one file listed, it means that the found origin file also has an origin file. ResInsight will search the &ldquo;chain&rdquo; of summary origin files until it reaches the end.
-  - <strong>Import Options</strong> There are three options to control how origin summary file are imported
-    - <strong>Unified</strong>: The main summary files and all origin files are imported into one single summary case
-    - <strong>Separate Cases</strong>: The main files and all origin files are imported into separate summary cases
-    - <strong>Skip</strong>: Only the main summary file is imported. The origin summary files are skipped.
-- <strong>Origin Grid Files</strong>: If the summary file import was triggered by a grid file import, this group is visible. It contains a list of the grid files associated to the origin summary files
-  - <strong>Import Options</strong> There are two options to control how the grid files are imported
-    - <strong>Separate Cases</strong>: All &ldquo;origin&rdquo; grid files are imported into separate grid cases
-    - <strong>Skip</strong>: Only the main grid file is imported. The &ldquo;origin&rdquo; grid files are skipped.</p>
+<p>The dialog contents are organized in groups:</p>
+
+<ul>
+<li><strong>Current Grid and Summary Files</strong> or <strong>Current Summary Files</strong>: This group displays the name of the main summary file to import. If the import is triggered by a grid file import, the name of the grid file is also displayed.</li>
+<li><strong>Origin Summary Files</strong>: This group displays the names of the origin summary file(s) found. If there are more than one file listed, it means that the found origin file also has an origin file. ResInsight will search the &ldquo;chain&rdquo; of summary origin files until it reaches the end.
+
+<ul>
+<li><strong>Import Options</strong> There are three options to control how origin summary file are imported</li>
+<li><strong>Unified</strong>: The main summary files and all origin files are imported into one single summary case</li>
+<li><strong>Separate Cases</strong>: The main files and all origin files are imported into separate summary cases</li>
+<li><strong>Skip</strong>: Only the main summary file is imported. The origin summary files are skipped.</li>
+</ul></li>
+<li><strong>Origin Grid Files</strong>: If the summary file import was triggered by a grid file import, this group is visible. It contains a list of the grid files associated to the origin summary files
+
+<ul>
+<li><strong>Import Options</strong> There are two options to control how the grid files are imported</li>
+<li><strong>Separate Cases</strong>: All &ldquo;origin&rdquo; grid files are imported into separate grid cases</li>
+<li><strong>Skip</strong>: Only the main grid file is imported. The &ldquo;origin&rdquo; grid files are skipped.</li>
+</ul></li>
+</ul>
 
 <p>By default the file names are displayed using relative path based on the common root folder for all files. In order to display the full path, check the <strong>Show full paths</strong> checkbox. Regardless of the checkbox state, there is always a tooltip showing the full path for every file. It is also possible to copy a full path file name to the clipboard. Right click on the file name and select <strong>Copy file name</strong>.</p>
 
@@ -3542,20 +3572,20 @@ Switching the Y-Axis for several curves in one go can be done using the context 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379783"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379783"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379783"></script>
-    <script src="/js/jquery.sticky.js?1561379783"></script>
-    <script src="/js/featherlight.min.js?1561379783"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379783"></script>
-    <script src="/js/highlight.pack.js?1561379783"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379783"></script>
-    <script src="/js/learn.js?1561379783"></script>
-    <script src="/js/hugo-learn.js?1561379783"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379783" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379783"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

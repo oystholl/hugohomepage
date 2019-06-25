@@ -12,18 +12,18 @@
     <title>Cell Results :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379783" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379783" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379783" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379783" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379783" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379783" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379783" rel="stylesheet">
-    <link href="/css/theme.css?1561379783" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379783" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379783"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1821,7 +1814,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/3d-main-window/'>3D Main Window</a> > <a href='/3d-main-window/results/'>Results</a> > Cell Results
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/3d-main-window/'>3D Main Window</a> > <a href='/3d-main-window/results/'>Results</a> > Cell Results
           
          
           
@@ -1952,31 +1945,43 @@ Each well is assigned an opposite flow name by adding &ldquo;-XF&rdquo; to the e
 
 <p><img src="/images/3d-main-window/CellResultFlowDiagnostics.png" alt="" /></p>
 
-<p>There are two main selections you need to make: The tracers and the result property
-- <strong>Tracers</strong> &ndash; Option to select how/what tracers to use. Available options are:
-    - <strong>All Injectors and Producers</strong> &ndash;  Selects all the wells, including the opposite flow tracers
-    - <strong>All Producers</strong> &ndash; Selects all producer tracers, including the opposite flow tracers of injectors.
-    - <strong>All Injectors</strong> &ndash; Selects all injector tracers, including the opposite flow tracers of producers.
-    - <strong>By Selection</strong> &ndash; Displays lists of all the injector tracers and producer tracers side-by-side allowing any to be selected freely.
-       - Both lists of selectable tracers can be filtered by typing in parts of the name.
-       - The tracers will have a suffix of [I/P] if they are both injector and producer, thus appearing in both lists.
-       - All producers communicating with the selected injectors (and vice-versa) can be selected with the &ldquo;Add Communicator&rdquo; buttons.
-- <strong>Phases</strong> &ndash; Select the fluid phase you are interested in: All, Oil, Gas or Water. If one of the separate phases are selected, only the <em>Time Of Flight</em> result property will be available in the list below.
-- <strong>Result property</strong> &ndash; Displays a list of the available results:
-    - <strong>Residence Time</strong> &ndash; The time for some fluid in the cell to reach a producer,
-    or the time it takes to reach the cell from an injector. The option changes name depending on the selection of injectors and producers and will be Forward Time of Flight if only injectors are selected and Reverse Time of Flight if only producers are selected.
-    When selecting several tracers, the time of flight values from each of the tracers are weighted
-    by their cell fraction before they are averaged. The suffix (Average) will then be added to the option label.
-    - <strong>Tracer Cell Fraction (Sum)</strong> &ndash; The volume fraction of a cell occupied by the selected tracers.
-    The injector and producer tracers counts as independent in this regard, so the sum of fractions for
-    all the producer tracers will be 1.0 and the same for the injector tracers. If both types of tracers
-    are selected, the total sum will normally reach 2.0.
-    - <strong>Drainage/Flooding Regions</strong> &ndash; Shows which of the selected tracers that has the largest fraction in each cell.
-    This is shown as a category result displaying a color for each tracer, and the names in the legend. If only injectors are selected, this option will be labelled <strong>Drainage Regions</strong> and if only producers are selected, it is called <strong>Flooding Regions</strong>.
-    - <strong>Injector Producer Communication</strong> &ndash; The communication in a cell between a set of producers and a set of injectors
-    is calculated as the sum of producer fractions multiplied by the sum of injector fractions in the cell.
-    This produces values between 0.0 and 1.0 where high values indicate that both the injectors and the producers
-    have a high influence.</p>
+<p>There are two main selections you need to make: The tracers and the result property</p>
+
+<ul>
+<li><strong>Tracers</strong> &ndash; Option to select how/what tracers to use. Available options are:
+
+<ul>
+<li><strong>All Injectors and Producers</strong> &ndash;  Selects all the wells, including the opposite flow tracers</li>
+<li><strong>All Producers</strong> &ndash; Selects all producer tracers, including the opposite flow tracers of injectors.</li>
+<li><strong>All Injectors</strong> &ndash; Selects all injector tracers, including the opposite flow tracers of producers.</li>
+<li><strong>By Selection</strong> &ndash; Displays lists of all the injector tracers and producer tracers side-by-side allowing any to be selected freely.
+
+<ul>
+<li>Both lists of selectable tracers can be filtered by typing in parts of the name.</li>
+<li>The tracers will have a suffix of [I/P] if they are both injector and producer, thus appearing in both lists.</li>
+<li>All producers communicating with the selected injectors (and vice-versa) can be selected with the &ldquo;Add Communicator&rdquo; buttons.</li>
+</ul></li>
+</ul></li>
+<li><strong>Phases</strong> &ndash; Select the fluid phase you are interested in: All, Oil, Gas or Water. If one of the separate phases are selected, only the <em>Time Of Flight</em> result property will be available in the list below.</li>
+<li><strong>Result property</strong> &ndash; Displays a list of the available results:
+
+<ul>
+<li><strong>Residence Time</strong> &ndash; The time for some fluid in the cell to reach a producer,
+or the time it takes to reach the cell from an injector. The option changes name depending on the selection of injectors and producers and will be Forward Time of Flight if only injectors are selected and Reverse Time of Flight if only producers are selected.
+When selecting several tracers, the time of flight values from each of the tracers are weighted
+by their cell fraction before they are averaged. The suffix (Average) will then be added to the option label.</li>
+<li><strong>Tracer Cell Fraction (Sum)</strong> &ndash; The volume fraction of a cell occupied by the selected tracers.
+The injector and producer tracers counts as independent in this regard, so the sum of fractions for
+all the producer tracers will be 1.0 and the same for the injector tracers. If both types of tracers
+are selected, the total sum will normally reach 2.0.</li>
+<li><strong>Drainage/Flooding Regions</strong> &ndash; Shows which of the selected tracers that has the largest fraction in each cell.
+This is shown as a category result displaying a color for each tracer, and the names in the legend. If only injectors are selected, this option will be labelled <strong>Drainage Regions</strong> and if only producers are selected, it is called <strong>Flooding Regions</strong>.</li>
+<li><strong>Injector Producer Communication</strong> &ndash; The communication in a cell between a set of producers and a set of injectors
+is calculated as the sum of producer fractions multiplied by the sum of injector fractions in the cell.
+This produces values between 0.0 and 1.0 where high values indicate that both the injectors and the producers
+have a high influence.</li>
+</ul></li>
+</ul>
 
 <h4 id="on-demand-calculation">On-Demand Calculation</h4>
 
@@ -1992,14 +1997,17 @@ Each well is assigned an opposite flow name by adding &ldquo;-XF&rdquo; to the e
 
 <h2 id="geomechanical-results">Geomechanical Results</h2>
 
-<p>Geomechanical results are sorted in different <strong>Result Position</strong>s:
-- <strong>Nodal</strong> &ndash; Results given a value per node in the grid
-- <strong>Element Nodal</strong> &ndash; Results with values per element node
-- <strong>Integration Point</strong> &ndash; Results with values per integration point. These are displayed in the same way as element nodal results.
-- <strong>Element Nodal on Face</strong> &ndash; Results with values transformed to element faces or intersections.
-See <a href="/appendix/derivedresults#element-nodal-on-face">Element Nodal on Face</a> for more information
-- <strong>Formation Names</strong> &ndash; Lists the <strong>Active Formation Names</strong> selected on the case. ( See <a href="/3d-main-window/formations">Formations</a> )
-- <strong>Element</strong> &ndash; Imported element property table results. One value pr element. See <a href="/import/elementpropertytableimport/">Element Property Table Import</a></p>
+<p>Geomechanical results are sorted in different <strong>Result Position</strong>s:</p>
+
+<ul>
+<li><strong>Nodal</strong> &ndash; Results given a value per node in the grid</li>
+<li><strong>Element Nodal</strong> &ndash; Results with values per element node</li>
+<li><strong>Integration Point</strong> &ndash; Results with values per integration point. These are displayed in the same way as element nodal results.</li>
+<li><strong>Element Nodal on Face</strong> &ndash; Results with values transformed to element faces or intersections.
+See <a href="/appendix/derivedresults#element-nodal-on-face">Element Nodal on Face</a> for more information</li>
+<li><strong>Formation Names</strong> &ndash; Lists the <strong>Active Formation Names</strong> selected on the case. ( See <a href="/3d-main-window/formations">Formations</a> )</li>
+<li><strong>Element</strong> &ndash; Imported element property table results. One value pr element. See <a href="/import/elementpropertytableimport/">Element Property Table Import</a></li>
+</ul>
 
 <p>Several derived cell properties are calculated. Please refer to <a href="/appendix/derivedresults">Derived Results</a> for more information.</p>
 
@@ -3351,20 +3359,20 @@ See <a href="/appendix/derivedresults#element-nodal-on-face">Element Nodal on Fa
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379783"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379783"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379783"></script>
-    <script src="/js/jquery.sticky.js?1561379783"></script>
-    <script src="/js/featherlight.min.js?1561379783"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379783"></script>
-    <script src="/js/highlight.pack.js?1561379783"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379783"></script>
-    <script src="/js/learn.js?1561379783"></script>
-    <script src="/js/hugo-learn.js?1561379783"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379783" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379783"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

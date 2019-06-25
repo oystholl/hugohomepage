@@ -12,18 +12,18 @@
     <title>Faults :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561379784" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561379784" rel="stylesheet">
-    <link href="/css/hybrid.css?1561379784" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561379784" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561379784" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561379784" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561379784" rel="stylesheet">
-    <link href="/css/theme.css?1561379784" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561379784" rel="stylesheet">
+    <link href="/css/nucleus.css?1561464856" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561464856" rel="stylesheet">
+    <link href="/css/hybrid.css?1561464856" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561464856" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561464856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561464856" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561464856" rel="stylesheet">
+    <link href="/css/theme.css?1561464856" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561464856" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561379784"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561464856"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -47,9 +47,9 @@
     </div>
     
         <div class="searchbox">
-    <label for="search-box"><i class="fas fa-search"></i></label>
+    <label for="searchbox"><i class="fas fa-search"></i></label>
     <form action="/search/" method="GET" id="search-form">
-      <input type="search" name="q" id="search-box" placeholder="Search">
+      <input type="search" name="q" id="searchbox" placeholder="Search">
     </form>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
@@ -58,7 +58,25 @@
     
   </div>
 
-    <div class="highlightable">
+  
+  
+  <section id="shortcuts">
+    <h3></h3>
+    <ul>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/about">About</a>
+      </li>
+      
+      <li>
+        <a class="padding" href="http://ceesol.no/project/download">Download</a>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <div class="highlightable">
     <ul class="topics">
 
         
@@ -96,9 +114,9 @@
  
   
     
-      <li data-nav-id="/getting-started/introduction/" title="Introduction" class="dd-item ">
+      <li data-nav-id="/getting-started/introduction/" title="ResInsight 2019.04" class="dd-item ">
         <a href="/getting-started/introduction/">
-        Introduction
+        ResInsight 2019.04
         
         </a>
     </li>
@@ -1752,33 +1770,8 @@
          
     </ul>
 
-    
-    
-      <section id="shortcuts">
-        <h3>More</h3>
-        <ul>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/getting-started">Getting Started</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project/download">Download</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="http://ceesol.no/project">Project</a>
-              </li>
-          
-        </ul>
-      </section>
-    
 
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
-
-    </section>
   </div>
 </nav>
 
@@ -1817,7 +1810,7 @@
             
           
           
-            <a href='/'>ResInsight &bull; 3D viewer and post processing of reservoir models</a> > <a href='/3d-main-window/'>3D Main Window</a> > Faults
+            <a href='/'>ResInsight • 3D viewer and post processing of reservoir models</a> > <a href='/3d-main-window/'>3D Main Window</a> > Faults
           
          
           
@@ -1913,10 +1906,11 @@
 
 <p>If enabled in <strong>Preferences</strong>, ResInsight will import fault information from the <em><code>*.DATA</code></em> files and use this information to group the cell faces into named items. The imported faults are ordered in ascending order based on their name.</p>
 
-<div class="note info">
-The <b>DATA</b> file is parsed for the <b>FAULT</b> keyword while respecting any <b>INCLUDE</b> and <b>PATH</b> keywords.<br>
-As import of faults can be time consuming, reading of faults can be disabled from <b>Preferences->Import faults</b>
+
+<div class="notices info" ><p>The <b>DATA</b> file is parsed for the <b>FAULT</b> keyword while respecting any <b>INCLUDE</b> and <b>PATH</b> keywords.<br>
+As import of faults can be time consuming, reading of faults can be disabled from <b>Preferences-&gt;Import faults</b></p>
 </div>
+
 
 <h4 id="nnc-data">NNC Data</h4>
 
@@ -1951,15 +1945,19 @@ The NNC&rsquo;s are sorted onto the Fault&rsquo;s and their visibility is contro
 <li><img src=/images/3d-main-window/draw_style_faults_24x24.png style="display:inline; vertical-align:middle; margin:0">
 <strong>Faults-Only</strong> visualization mode.
 <br>When turned on, this option hides all the grid cells, and shows only the fault faces in the reservoir limited by the applied range and property filters. (Unless <strong>Show faults outside filters</strong> are turned on. See below.)</li>
-<li><img src="/images/3d-main-window/draw_style_surface_24x24.png" alt="" /> Turns faces on and mesh off</li>
-<li><img src="/images/3d-main-window/draw_style_surface_w_fault_mesh_24x24.png" alt="" /> Turns on all faces, and shows mesh lines on faults only.
+<li><img src=/images/3d-main-window/draw_style_surface_24x24.png style="display:inline; vertical-align:middle; margin:0">
+ Turns faces on and mesh off</li>
+<li><img src=/images/3d-main-window/draw_style_surface_w_fault_mesh_24x24.png style="display:inline; vertical-align:middle; margin:0">
+ Turns on all faces, and shows mesh lines on faults only.
 <br> This is a useful method to highlight the faults in your reservoir, because the faults stands out with black outlining.</li>
-<li><img src="/images/3d-main-window/draw_style_faults_label_24x24.png" alt="" /> Shows labels for faults<br /></li>
+<li><img src=/images/3d-main-window/draw_style_faults_label_24x24.png style="display:inline; vertical-align:middle; margin:0">
+ Shows labels for faults<br /></li>
 </ul>
 
 <h3 id="faults-properties">Faults Properties</h3>
 
-<p>By clicking the <img src="/images/3d-main-window/draw_style_faults_24x24.png" alt="" /> <strong>Faults</strong> item in the <strong>Project Tree</strong>, the following options common to all the faults are displayed:</p>
+<p>By clicking the <img src=/images/3d-main-window/draw_style_faults_24x24.png style="display:inline; vertical-align:middle; margin:0">
+ <strong>Faults</strong> item in the <strong>Project Tree</strong>, the following options common to all the faults are displayed:</p>
 
 <p><img src="/images/3d-main-window/FaultProperties.png" alt="" /></p>
 
@@ -2000,9 +1998,10 @@ This means that ResInsight turns on or off the faces based on your view position
 <li><strong>Hide NNC geometry if no NNC result is available</strong> &ndash; Automatically hides NNC geometry if no NNC results are available</li>
 </ul>
 
-<div class="note info">
-The color of the NNC faces are set to be a bit lighter than their corresponding named fault, and can not be controlled directly.
+
+<div class="notices info" ><p>The color of the NNC faces are set to be a bit lighter than their corresponding named fault, and can not be controlled directly.</p>
 </div>
+
 
 <h2 id="fault-export">Fault Export</h2>
 
@@ -3351,20 +3350,20 @@ The color of the NNC faces are set to be a bit lighter than their corresponding 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561379784"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561379784"></script>
-    <script src="/js/jquery.sticky.js?1561379784"></script>
-    <script src="/js/featherlight.min.js?1561379784"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561379784"></script>
-    <script src="/js/highlight.pack.js?1561379784"></script>
+    <script src="/js/clipboard.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561464856"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561464856"></script>
+    <script src="/js/jquery.sticky.js?1561464856"></script>
+    <script src="/js/featherlight.min.js?1561464856"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561464856"></script>
+    <script src="/js/highlight.pack.js?1561464856"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561379784"></script>
-    <script src="/js/learn.js?1561379784"></script>
-    <script src="/js/hugo-learn.js?1561379784"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561464856"></script>
+    <script src="/js/learn.js?1561464856"></script>
+    <script src="/js/hugo-learn.js?1561464856"></script>
 
-    <link href="/mermaid/mermaid.css?1561379784" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561379784"></script>
+    <link href="/mermaid/mermaid.css?1561464856" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561464856"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

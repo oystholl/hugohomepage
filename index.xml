@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ResInsight &amp;bull; 3D viewer and post processing of reservoir models on ResInsight</title>
+    <title>ResInsight • 3D viewer and post processing of reservoir models on ResInsight</title>
     <link>http://ceesol.no/</link>
-    <description>Recent content in ResInsight &amp;bull; 3D viewer and post processing of reservoir models on ResInsight</description>
+    <description>Recent content in ResInsight • 3D viewer and post processing of reservoir models on ResInsight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -32,12 +32,12 @@ ResInsight Installation  Download ZIP binary distribution from https://github.co
     </item>
     
     <item>
-      <title>Introduction</title>
+      <title>ResInsight 2019.04</title>
       <link>http://ceesol.no/getting-started/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ceesol.no/getting-started/introduction/</guid>
-      <description>ResInsight 2018.11 ResInsight is an open source, cross-platform 3D visualization, curve plotting and post processing tool for Eclipse reservoir models and simulations. It can also be configured to visualize geomechanical simulations from ABAQUS.
+      <description>ResInsight is an open source, cross-platform 3D visualization, curve plotting and post processing tool for Eclipse reservoir models and simulations. It can also be configured to visualize geomechanical simulations from ABAQUS.
 The system also constitutes a framework for further development and can be extended to support new data sources and visualization methods, e.g. additional solvers, seismic data, CSEM, and more.
 Efficient User Interface The user interface is tailored for efficient interpretation of reservoir simulation data with specialized visualizations of properties, faults and wells.</description>
     </item>
@@ -106,7 +106,8 @@ Cell Results are used in several operations and settings:
       <description>ResInsight provides a flexible interface to Octave including:
  Octave functions that communicates with a running ResInsight session Features to simplify management and editing of Octave scripts from ResInsight Commands to execute scripts using Octave.
   The Octave functions are documented in Octave Interface Reference.
-Note: The Octave interface does not support Flow diagnostics and Injection flooding results in addition to Geomechanical cases.  Octave Script Management Octave scripts are available in the Scripts folder in the Project Tree.</description>
+Note: The Octave interface does not support Flow diagnostics and Injection flooding results in addition to Geomechanical cases.
+ Octave Script Management Octave scripts are available in the Scripts folder in the Project Tree.</description>
     </item>
     
     <item>
@@ -137,8 +138,7 @@ Commands Several commands are available as context commands on a simulation well
       
       <guid>http://ceesol.no/export/snapshots/</guid>
       <description>ResInsight has several commands to create snapshots conveniently. 3 commands to take snapshots of existing Plot and 3D Views directly, and a more advanced export command that can automatically modify Eclipse 3D Views before snapshotting them.
-Snapshots of Existing Views The commands to snapshot existing views and plots are available from the toolbar and the Edit and File-&amp;gt;Export menus in the main windows
-Snapshot to Clipboard  A snapshot of the active view is copied to the clipboard using Edit -&amp;gt; Copy Snapshot To Clipboard.</description>
+Snapshots of Existing Views The commands to snapshot existing views and plots are available from the toolbar and the Edit and File-&amp;gt;Export menus in the main windows Snapshot to Clipboard  A snapshot of the active view is copied to the clipboard using Edit -&amp;gt; Copy Snapshot To Clipboard.</description>
     </item>
     
     <item>
@@ -182,7 +182,8 @@ Examples on how command line options are used are given below
       <guid>http://ceesol.no/import/elementpropertytableimport/</guid>
       <description>Element property tables in ABQUS input file format can be imported into ResInsight and displayed as Element Results. This can be used to display material properties, or any scalar value on each element.
 To view the data as a Color Result select the Result Position: Element ( See Geomechanical Results )
-A couple of property names are recognized and treated specially: - MODULUS &amp;ndash; Scaled by 1.0e-9 and shown as &amp;ldquo;Yong&amp;rsquo;s Modulus&amp;rdquo; in the user interface - RATIO &amp;ndash; Shown as &amp;ldquo;Poisson&amp;rsquo;s Ratio&amp;rdquo; in the user interface</description>
+A couple of property names are recognized and treated specially:
+ MODULUS &amp;ndash; Scaled by 1.0e-9 and shown as &amp;ldquo;Yong&amp;rsquo;s Modulus&amp;rdquo; in the user interface RATIO &amp;ndash; Shown as &amp;ldquo;Poisson&amp;rsquo;s Ratio&amp;rdquo; in the user interface  File Format A couple of examples on the file format are shown below.</description>
     </item>
     
     <item>
@@ -204,7 +205,8 @@ The following dialog will appear:
       
       <guid>http://ceesol.no/getting-started/gridimportexport/</guid>
       <description>Importing Eclipse Cases ResInsight supports the following type of Eclipse input data:
- *.GRID and *.EGRID files along with their *.INIT and restart files *.XNNN and *.UNRST. Grid and Property data from *.GRDECL files.  Release 2018.11 supports import of simulations from Intersect. To be able to import into ResInsight, the Intersect simulation must be exported into Eclipse file format.  Eclipse Results ResInsight offers several ways to import Eclipse (grid) files.</description>
+ *.GRID and *.EGRID files along with their *.INIT and restart files *.XNNN and *.UNRST. Grid and Property data from *.GRDECL files.  Release 2018.11 supports import of simulations from Intersect. To be able to import into ResInsight, the Intersect simulation must be exported into Eclipse file format.
+ Eclipse Results ResInsight offers several ways to import Eclipse (grid) files.</description>
     </item>
     
     <item>
@@ -366,7 +368,8 @@ These abbreviations are used in the tables below:
       
       <guid>http://ceesol.no/import/observeddata/</guid>
       <description>Observed Time History Data, is data measured in time. On import of observed time history data, ResInsight translates the data to make it similar to summary data. Observed time history data can be plotted along with summary data in Summary Plots.
-Import Observed Time History Data Importing observed time history data to ResInsight may be performed in two different ways: - By selecting the main menu item File -&amp;gt; Import -&amp;gt; Import Observed Time History Data - By using the context command Import Observed Time History Data on the Observed Time History Data item in the Plot Main Window Project Tree</description>
+Import Observed Time History Data Importing observed time history data to ResInsight may be performed in two different ways:
+ By selecting the main menu item File -&amp;gt; Import -&amp;gt; Import Observed Time History Data By using the context command Import Observed Time History Data on the Observed Time History Data item in the Plot Main Window Project Tree  The following file types are supported:</description>
     </item>
     
     <item>
@@ -376,7 +379,8 @@ Import Observed Time History Data Importing observed time history data to ResIns
       
       <guid>http://ceesol.no/3d-main-window/results/resultinspection/</guid>
       <description>The results mapped on the 3D model can be inspected in detail by left clicking cells in the 3D view. The selected cells will be highlighted, text information displayed in the Result Info docking window, and the time-history values plotted in the Result Plot, if available.
-Visibility of the docking widows can be controlled from the Windows menu.  Result Info Clicking cells will display slightly different information text based on the case type as described in the following tables.</description>
+Visibility of the docking widows can be controlled from the Windows menu.
+ Result Info Clicking cells will display slightly different information text based on the case type as described in the following tables.</description>
     </item>
     
     <item>
@@ -457,9 +461,9 @@ Paste Options Dialog Most of the fields in this dialog are the same as in the CS
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ceesol.no/project/releasenotification/</guid>
-      <description> LinkedIn Feel free to join ResInsight on LinkedIn
+      <description>LinkedIn Feel free to join ResInsight on LinkedIn
 Newsletter By subscribing to the Release Notification you will get notified when new releases are available. Please use the button below to send a request for subscription mail.
- Subscribe     </description>
+Subscribe</description>
     </item>
     
     <item>
@@ -511,7 +515,8 @@ For older versions, release notes and source code, please visit ResInsight on Gi
       
       <guid>http://ceesol.no/plot-window/ensembleplotting/</guid>
       <description>An ensemble is a group of cases that are tightly coupled, only a set of ensemble input parameters differ between cases. This makes it relevant to perform calculations and statistics analysis on ensembles.
-Import There are several ways to import an ensemble: - Use the Import Ensemble command in the window menu - Use the Import Summary Case group and then convert the group to an ensemble - Import a number of summary cases, move them into a group and then convert the group to an ensemble</description>
+Import There are several ways to import an ensemble:
+ Use the Import Ensemble command in the window menu Use the Import Summary Case group and then convert the group to an ensemble Import a number of summary cases, move them into a group and then convert the group to an ensemble  During import of a summary case, ResInsight tries to find an associated parameters.</description>
     </item>
     
     <item>
@@ -610,7 +615,8 @@ A new plot with a single Track and a Curve is created.</description>
       
       <guid>http://ceesol.no/plot-window/wellborestabilityplots/</guid>
       <description>ResInsight can create Well Bore Stability plots for Geomechanical cases. These plots are specialized Well Log Plots and contain a visualization of Formations, Well Path Attributes as well as a set of well path derived curves in two different tracks.
-The third track contains curves showing different stability gradients (all normalized by mud weight): - FG: Fracture Gradient for sands based on Kirsch. - OBG: Overburden stress gradient: Stress component S_33.</description>
+The third track contains curves showing different stability gradients (all normalized by mud weight):
+ FG: Fracture Gradient for sands based on Kirsch. OBG: Overburden stress gradient: Stress component S_33. PP: Pore pressure.</description>
     </item>
     
     <item>
