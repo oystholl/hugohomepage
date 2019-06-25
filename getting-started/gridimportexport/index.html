@@ -12,18 +12,18 @@
     <title>Grid Import :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561465603" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561465603" rel="stylesheet">
-    <link href="/css/hybrid.css?1561465603" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561465603" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561465603" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561465603" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561465603" rel="stylesheet">
-    <link href="/css/theme.css?1561465603" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561465603" rel="stylesheet">
+    <link href="/css/nucleus.css?1561469271" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561469271" rel="stylesheet">
+    <link href="/css/hybrid.css?1561469271" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561469271" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561469271" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561469271" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561469271" rel="stylesheet">
+    <link href="/css/theme.css?1561469271" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561469271" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561465603"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561469271"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -1883,12 +1883,15 @@
 
 <h3 id="eclipse-results">Eclipse Results</h3>
 
-<p>ResInsight offers several ways to import Eclipse (grid) files. Use one of the following commands in the <strong>File-&gt;Import-&gt;Eclipse Cases</strong> menu:
-- <strong>Import Eclipse Case</strong>: Brings up the standard file selection dialog. Select <em><code>*.EGRID</code></em> or <em><code>*.GRID</code></em> Eclipse files for import. Multiple selections are allowed.
-- <strong>Import Eclipse Cases Recursively</strong>: Brings up the recursive file selection dialog. This dialog is described in detail on the <a href="/plot-window/summaryplots/#recursive-summary-file-import">Summary Plots page</a>.
-- <strong>Import Eclipse Case (Time Step Filtered)</strong>: See <a href="#time-step-filtered-eclipse-result">description</a>
-- <strong>Import Input Eclipse Case</strong>: See <a href="#eclipse-ascii-input-data">description</a>
-- <strong>Create Grid Case Group from Files</strong> and <strong>Create Grid Case Group from Files Recursively</strong>: These commands import a number of Eclipse files and places the cases in a <a href="/3d-main-window/casegroupsandstatistics/#creating-grid-case-groups">grid case group</a>. The only difference between the two commands, is the dialog used to select files. The recursive version is using the <a href="/plot-window/summaryplots/#recursive-summary-file-import">recursive file selection dialog</a> and is considered the new way of selecting files.</p>
+<p>ResInsight offers several ways to import Eclipse (grid) files. Use one of the following commands in the <strong>File-&gt;Import-&gt;Eclipse Cases</strong> menu:</p>
+
+<ul>
+<li><strong>Import Eclipse Case</strong>: Brings up the standard file selection dialog. Select <em><code>*.EGRID</code></em> or <em><code>*.GRID</code></em> Eclipse files for import. Multiple selections are allowed.</li>
+<li><strong>Import Eclipse Cases Recursively</strong>: Brings up the recursive file selection dialog. This dialog is described in detail on the <a href="/plot-window/summaryplots/#recursive-summary-file-import">Summary Plots page</a>.</li>
+<li><strong>Import Eclipse Case (Time Step Filtered)</strong>: See <a href="#time-step-filtered-eclipse-result">description</a></li>
+<li><strong>Import Input Eclipse Case</strong>: See <a href="#eclipse-ascii-input-data">description</a></li>
+<li><strong>Create Grid Case Group from Files</strong> and <strong>Create Grid Case Group from Files Recursively</strong>: These commands import a number of Eclipse files and places the cases in a <a href="/3d-main-window/casegroupsandstatistics/#creating-grid-case-groups">grid case group</a>. The only difference between the two commands, is the dialog used to select files. The recursive version is using the <a href="/plot-window/summaryplots/#recursive-summary-file-import">recursive file selection dialog</a> and is considered the new way of selecting files.</li>
+</ul>
 
 <p>The <strong>Reload Case</strong> command can be used to reload a previously imported case, to make sure it is up to date. This is useful if the grid or result files changes while a ResInsight session is active.</p>
 
@@ -1906,7 +1909,8 @@ See <a href="/3d-main-window/customization/preferences/#behavior-when-loading-da
 
 <p>Some Eclipse files have an enormous amount of time steps. If only a selection of the time steps really are needed for the session, the time steps can be filtered before loading. This can possibly speed up the import a great deal. Filtering can be done in the following way.</p>
 
-<p>Select <strong>File-&gt;Import-&gt;Eclipse Cases-&gt; <img src="/images/getting-started/Case24x24.png" alt="" /> Import Eclipse Case (Time Step Filtered)</strong> and select an <em><code>*.EGRID</code></em> or <em><code>*.GRID</code></em> Eclipse file for import. A dialog will appear.</p>
+<p>Select <strong>File-&gt;Import-&gt;Eclipse Cases-&gt; <img src=/images/getting-started/Case24x24.png style="display:inline; vertical-align:middle; margin:0">
+ Import Eclipse Case (Time Step Filtered)</strong> and select an <em><code>*.EGRID</code></em> or <em><code>*.GRID</code></em> Eclipse file for import. A dialog will appear.</p>
 
 <p><img src="/images/getting-started/timeStepFilter.png" alt="" /></p>
 
@@ -1927,7 +1931,8 @@ See <a href="/3d-main-window/customization/preferences/#behavior-when-loading-da
 <h3 id="eclipse-ascii-input-data">Eclipse ASCII Input Data</h3>
 
 <ol>
-<li>Select <strong>File-&gt;Import-&gt;Eclipse Cases-&gt; <img src="/images/getting-started/EclipseInput24x24.png" alt="" /> Import Input Eclipse Case</strong> and select a <em><code>*.GRDECL</code></em> file.</li>
+<li>Select <strong>File-&gt;Import-&gt;Eclipse Cases-&gt; <img src=/images/getting-started/EclipseInput24x24.png style="display:inline; vertical-align:middle; margin:0">
+ Import Input Eclipse Case</strong> and select a <em><code>*.GRDECL</code></em> file.</li>
 <li>The case is imported, and a view of the case is created</li>
 <li>Right-click the <strong>Input Properties</strong> in the generated <strong>Input Case</strong> and use the context menu to import additional Eclipse Property data files.</li>
 </ol>
@@ -1946,7 +1951,8 @@ See <a href="/3d-main-window/customization/preferences/#behavior-when-loading-da
 
 <p>When ResInsight is compiled with ABAQUS-odb support, <em><code>*.odb</code></em> files can be imported by selecting the command:</p>
 
-<p><strong>File-&gt;Import-&gt;Geo Mechanical Cases-&gt; <img src="/images/getting-started/GeoMechCase24x24.png" alt="" /> Import Geo Mechanical Model</strong></p>
+<p><strong>File-&gt;Import-&gt;Geo Mechanical Cases-&gt; <img src=/images/getting-started/GeoMechCase24x24.png style="display:inline; vertical-align:middle; margin:0">
+ Import Geo Mechanical Model</strong></p>
 
 <p>See <a href="/appendix/buildinstructions/">Build Instructions</a> on how to compile ResInsight with odb-support.</p>
 
@@ -3282,20 +3288,20 @@ See <a href="/3d-main-window/customization/preferences/#behavior-when-loading-da
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561465603"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561465603"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561465603"></script>
-    <script src="/js/jquery.sticky.js?1561465603"></script>
-    <script src="/js/featherlight.min.js?1561465603"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561465603"></script>
-    <script src="/js/highlight.pack.js?1561465603"></script>
+    <script src="/js/clipboard.min.js?1561469271"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561469271"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561469271"></script>
+    <script src="/js/jquery.sticky.js?1561469271"></script>
+    <script src="/js/featherlight.min.js?1561469271"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561469271"></script>
+    <script src="/js/highlight.pack.js?1561469271"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561465603"></script>
-    <script src="/js/learn.js?1561465603"></script>
-    <script src="/js/hugo-learn.js?1561465603"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561469271"></script>
+    <script src="/js/learn.js?1561469271"></script>
+    <script src="/js/hugo-learn.js?1561469271"></script>
 
-    <link href="/mermaid/mermaid.css?1561465603" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561465603"></script>
+    <link href="/mermaid/mermaid.css?1561469271" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561469271"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
