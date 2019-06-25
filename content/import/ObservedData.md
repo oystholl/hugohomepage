@@ -8,13 +8,15 @@ Observed Time History Data, is data measured in time. On import of observed time
 
 ## Import Observed Time History Data
 Importing observed time history data to ResInsight may be performed in two different ways:
+
 - By selecting the main menu item **File -> Import -> Import Observed Time History Data**
 - By using the context command **Import Observed Time History Data** on the **Observed Time History Data** item in the **Plot Main Window Project Tree** 
 
 The following file types are supported:
+
 - RSM observed time history data file (_\*.rsm_)
 - Column based (Comma Separated Values, CSV) time history data file (_\*.csv/\*.txt_)
-The imported ![]({{< relref "" >}}images/import/Default.png) Observed Time History Data files will be added to ![]({{< relref "" >}}images/import/Folder.png)**Observed Time History Data**. 
+The imported {{< image-in-text src="/images/import/Default.png" >}} Observed Time History Data files will be added to {{< image-in-text src="/images/import/Folder.png" >}} **Observed Time History Data**. 
 
 Which summaries that has been detected in a Observed Time History Data file can be read in an Observed Time History Data's **Property Editor**. In the image below, time and year info has been found together with the summary "WBP9L" for the well "OP-1".
 
@@ -29,6 +31,7 @@ CSV/txt files are generic ascii files where data is arranged in columns. Some va
 ![]({{< relref "" >}}images/import/ImportObservedTimeHistoryDataDialog.png)
 
 Dialog fields description:
+
 - **Cell Separator** -- Select the correct cell separator character. ResInsight will try to set the correct value as default.
 - **Decimal Separator** -- Select the correct decimal separator. ResInsight will try to set the correct value as default.
 - **Selected Time Column** -- Select the column that contains the time/date information. The first column is default.
@@ -45,6 +48,7 @@ Each column must have a header text, which may be a name/description for the dat
 An Eclipse address consists of a vector name and zero or more parameters. The number of parameters are defined by the category of the vector. The category is determined by looking up the category in an internal vector table. A valid standard vector name has 3 to 5 characters. Optionally it may be postfixed by a user defined name of 3 characters. A vector name having both a standard part and a user part must have 8 characters (5+3). In this case, if the standard part has less than 5 characters, it must be padded with underscores up to 5 characters. Example: 'RPR__WEL'. Vector names having only the standard part are not padded.
 
 Categories:
+
 - **Field** - \<VECTOR 'F....'>
   - Example: 'FOPT'
 - **Aquifer** - \<VECTOR 'A....'>:\<AQUIFER NUMBER>
@@ -89,6 +93,7 @@ Example:
 ResInsight supports a 'line based' CSV file format variant as well. As opposed to the normal CSV format, data values are organized in lines. Each line must contain at least a date (and time), a vector address and a sample value. Optionally it may also contain an error value and a comment. The information carried by this format is equivalent to the normal CSV format, it is only a different file layout.
 
 When importing a line based CSV file, no dialog appears. Instead a more stict set of rules apply to this type of files:
+
 - At least **DATE**, **VECTOR** and **VALUE** columns must be present. The order of columns may be changed.
 - Optionally the columns **ERROR** and **COMMENTS** may be present
 - ISO date format must be used: 'yyyy-mm-dd' or 'yyyy-mm-dd hh:mm'

@@ -12,10 +12,10 @@ Completions can be modeled by adding new perforation intervals, fishbones subs o
 
 For fishbones completions, multi-segment well information can even be exported to the Eclipse Keywords WELSEGS, COMPSEGS and WSEGVALV. See [ Export Well Segments]({{< relref "completionexport" >}}#export-well-segments)
 
-<div class="note">
+{{% notice note %}}
   The derived cell property <b>Completion Type</b> displays wich cells are intersected by the completions.
   See <a href="{{< relref "" >}}appendix/derivedresults#completion-type">Derived Results&rarr;Completion Type</a>
-</div>
+{{% /notice %}}
 
 
 ## Visualization and Inspection of Well Connection Factors
@@ -132,9 +132,9 @@ The files can start with a unit definition line:
 
     UNITS <unitname>
 
-<div class="note info">
+{{% notice info %}}
 This line is ignored for now. The numbers are interpreted to be in the units present in the case. 
-</div>
+{{% /notice %}}
 
 In the following any number of :
 
@@ -229,9 +229,9 @@ The command **Import Completions From File** can be used to import well trajecto
 
 The **Export Laterals** command will export the fishbone laterals as a well trajectory into a  _`*.dev*`_ -file. 
 
-<div class="note info">
+{{% notice info %}}
 Notice that only the trajectory data is exported. Properties related to well segment data or Completion Data export can not be written to <code>*.dev*</code> files. 
-</div>
+{{% /notice %}}
 
 ## Fractures
 

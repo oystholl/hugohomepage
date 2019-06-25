@@ -69,6 +69,7 @@ There are several options available to define the particular result you want to 
 ![]({{< relref "" >}}images/3d-main-window/CellResultFlowDiagnostics.png)
 
 There are two main selections you need to make: The tracers and the result property 
+
 - **Tracers** -- Option to select how/what tracers to use. Available options are:
     - **All Injectors and Producers** --  Selects all the wells, including the opposite flow tracers
     - **All Producers** -- Selects all producer tracers, including the opposite flow tracers of injectors.
@@ -110,6 +111,7 @@ This result type is used to plot derived results based on a selection of simulat
 ## Geomechanical Results
 
 Geomechanical results are sorted in different **Result Position**s:
+
 - **Nodal** -- Results given a value per node in the grid
 - **Element Nodal** -- Results with values per element node
 - **Integration Point** -- Results with values per integration point. These are displayed in the same way as element nodal results. 

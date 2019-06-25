@@ -63,18 +63,18 @@ The **Histogram** shows a histogram of the complete time series of the currently
 - **Statistics Time Range** -- controls whether all time steps or only the current time step are included when statistics is computed. Flow Diagnostic results can only use the current time step option.  
 - **Statistics Cell Range** -- controls if visible cells or all active cells is included when statistics is computed.
 
-<div class="note">
+{{% notice note %}}
 The <b>Info Box</b> settings can be activated by clicking on the Info Text in the 3D view.
-</div>
+{{% /notice %}}
 
-### Grids &nbsp;![]({{< relref "" >}}images/3d-main-window/draw_style_meshlines_24x24.png) 
+### Grids {{< image-in-text src="/images/3d-main-window/draw_style_meshlines_24x24.png" >}} 
 
 ![]({{< relref "" >}}images/3d-main-window/ViewTreeGrids.png)
 
 The **Grids** node contains child nodes for **Main Grid**, **LGRs** and **Temporary LGRs** where each grid's visibilty can be controlled. The **LGRs** node contains all LGRs loaded from file, while **Temporary LGRs** contains all temporary LGRs (see [Completions LGR]({{< relref "completionslgr" >}})).
 Toggling **Grids** off will hide all grids cell geometry. This option is used to display geometry for faults and intersections. This feature is also available as a toolbutton called *Hide grid cells*.
 
-### Intersections &nbsp;![]({{< relref "" >}}images/3d-main-window/CrossSections16x16.png)
+### Intersections {{< image-in-text src="/images/3d-main-window/CrossSections16x16.png" >}}
 Intersections are used to cut the geometry and show result values mapped onto this geometry.
 Please refer to [Intersections]({{< relref "intersections" >}}) for details.
 
@@ -84,7 +84,7 @@ Selected overlay items in the 3D view can activate a corresponding item in the *
 
 ## Eclipse-only features
 
-### Cell Edge Results ![]({{< relref "" >}}images/3d-main-window/EdgeResult_1.png)
+### Cell Edge Results {{< image-in-text src="/images/3d-main-window/EdgeResult_1.png" >}}
 
 ![]({{< relref "" >}}images/3d-main-window/CellEdgeExample.png)
 

@@ -26,7 +26,7 @@ Range Filters and Property filters can either be set to **Include** cells or to 
 
 The **Exclude** setting is used to explicitly remove cells from the visualization, regardless of what other filters say. 
 The **Include** setting behaves differently for Range filters and Property Filters but marks the cells as visible.
-The icon in front of the filters show a + or - sign to indicate the setting {{< image-in-text src="/images/3d-main-window/FilterIncEx.png" >}}.
+The icon in front of the filters show a + or - sign to indicate the setting {{< image-in-text src="/images/3d-main-window/FilterIncEx.png" >}}
 
 ## Range filters
 
@@ -35,9 +35,9 @@ Each *Include* range filter will *add more cells* to the visualization. The view
 
 A new range filter can be added by activating the context menu for the **Range Filters** collection in the **Project Tree**. 
 
-<div class="note">
+{{% notice note %}}
 An I,J or K-slice range filter can be added directly from a Cell in the <b>3D View</b> by right-clicking the cell and using the context menu. 
-</div>
+{{% /notice %}}
 
 Below is a snapshot of the **Property Editor** of the **Range Filter** :
 
@@ -59,9 +59,9 @@ A new property filter can be made by activating the context menu on **Property F
 
 The name of the property filter is automatically set to *"propertyname (min .. max)"* as you edit the property filter.
 
-<div class="note">
+{{% notice note %}}
 The context command <b>Apply As Cell Result</b> on a property filter, sets the Cell Color Result to the same values as the selected property filter.
-</div>
+{{% /notice %}}
 
 Below is a snapshot of the **Property Editor** of the **Property Filter**.
   

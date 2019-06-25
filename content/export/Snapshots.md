@@ -8,30 +8,28 @@ ResInsight has several commands to create snapshots conveniently. 3 commands to 
 
 ## Snapshots of Existing Views
 
-The commands to snapshot existing views and plots are available from the toolbar and the **Edit** and **File**->**Export** menus in the main windows
+The commands to snapshot existing views and plots are available from the toolbar and the **Edit** and **File**->**Export** menus in the main windows {{< image-in-text src="/images/export/SnapShotToolBar.png" >}}
 
-![]({{< relref "" >}}images/export/SnapShotToolBar.png)
-
-### Snapshot to Clipboard ![]({{< relref "" >}}images/export/SnapShot.png)
+### Snapshot to Clipboard {{< image-in-text src="/images/export/SnapShot.png" >}}
 
 A snapshot of the active view is copied to the clipboard using **Edit -> Copy Snapshot To Clipboard**.
 
-### Snapshot to File ![]({{< relref "" >}}images/export/SnapShotSave.png)
+### Snapshot to File {{< image-in-text src="/images/export/SnapShotSave.png" >}}
 
 Image export of the currently active 3D View or Plot Window can be launched from **File -> Export -> Snapshot To File**. 
 
-### Snapshot All Views/Plots to File ![]({{< relref "" >}}images/export/SnapShotSaveViews.png)
+### Snapshot All Views/Plots to File {{< image-in-text src="/images/export/SnapShotSaveViews.png" >}}
 
 If a project contains multiple 3D Views or Plot Windows, all of them can be exported in one go using **File -> Export -> Snapshot All Views To File**. This will either export all the 3D Views or all the Plot Windows, depending on whether you invoke the command in the 3D Main Window or the Plot Main Window.
 
 The files generated are stored in a folder named _`snapshots`_ within the folder where the Project File resides. 
 
-<div class="note">
+{{% notice note %}}
  Snapshots of existing views can also be created and saved from the command line 
  ( See <a href="{{< relref "commandlineinterface" >}}">Command Line Interface</a> ).
-</div>
+{{% /notice %}}
 
-## Advanced Snapshot Export  ![]({{< relref "" >}}images/export/SnapShotSaveViews.png)
+## Advanced Snapshot Export {{< image-in-text src="/images/export/SnapShotSaveViews.png" >}}
 
 The **Advanced Snapshot Export** command is useful for exporting several images of a specified set of views while simultaneously changing some of their settings. By using this command it is easy to document all layers of a specific model, or generate images with identical setup across several different cases. It is also easy to export an image for each of the time steps in a case, or even a combination of all these parameters.
 

@@ -9,6 +9,7 @@ weight = 80
 ResInsight can create **Well Bore Stability** plots for Geomechanical cases. These plots are specialized [Well Log Plots]({{< relref "welllogsandplots" >}}) and contain a visualization of [Formations]({{< relref "formations" >}}), [Well Path Attributes]({{< relref "wellpaths" >}}#well-path-attributes) as well as a set of well path derived curves in two different tracks. 
 
 The third track contains curves showing different stability gradients (all normalized by mud weight):
+
 - **FG**: Fracture Gradient for sands based on Kirsch.
 - **OBG**: Overburden stress gradient: Stress component S_33.
 - **PP**: Pore pressure.

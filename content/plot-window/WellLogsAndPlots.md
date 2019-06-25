@@ -84,9 +84,9 @@ The property panel for an eclipse model is shown below:
 
 The first group of options controls all the input needed to setup the data extraction for the curve - Well Path, Case, and result value. The selection of result value is somewhat different between geomechanical cases and Eclipse cases. In addition you can select what time step to address if the selected property is a dynamic one. 
 
-<div class="note">
+{{% notice note %}}
 Placing keyboard focus in the <b>Time Step</b> drop-downbox will allow you to use the arrow keys or the mouse wheel to quickly step through the timesteps while watching the changes in the curve. 
-</div>
+{{% /notice %}}
 
 The display name of a curve is normally generated automatically. The options grouped below **Auto Name** can be used to tailor the length and content of the curve name.
 
@@ -130,9 +130,9 @@ The property panel of a LAS-curve is shown below:
 
 ![]({{< relref "" >}}images/plot-window/WellLogLasCurveProperties.png)
 
-<div class="note">
+{{% notice note %}}
 You can also create a LAS-curve by a simple drag-drop operation in the <b>Project Tree</b>: Drag one of the LAS channels and drop it onto a <b>Track</b>. A new curve will be created with the correct setting.
-</div>
+{{% /notice %}}
 
 ## LAS-file Support
 

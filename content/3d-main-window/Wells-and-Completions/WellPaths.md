@@ -13,7 +13,7 @@ ResInsight also supports creation of your own user-defined well paths. See [Crea
 
 ## Ascii Well Trajectories
 
-The command **File -> Import -> Well Data -> Import Well Paths From File** will read the well paths in the selected file, and create one entry for each trajectory under the  ![]({{< relref "" >}}images/3d-main-window/WellCollection.png) **Wells** item in the **Project Tree**. 
+The command **File -> Import -> Well Data -> Import Well Paths From File** will read the well paths in the selected file, and create one entry for each trajectory under the {{< image-in-text src="/images/3d-main-window/WellCollection.png" >}} **Wells** item in the **Project Tree**. 
 
 The supported ASCII format is quite flexible but the main requirements are: 
 
@@ -61,9 +61,9 @@ The supported ASCII format is quite flexible but the main requirements are:
 ### Trajectory Files are Referenced
 The trajectory data is not copied into the ResInsight project as such. The project file only stores the file path, and the next time you open the project, ResInsight will try to read the well data from the file again.  
 
-<div class="note info">
+{{% notice info %}}
 If the well trajectory file is changed and you would like a running ResInsight to update accordingly, you will need to delete all the well trajectories that emerge from that file, and import it again.
-</div>
+{{% /notice %}}
 
 ## Importing from SSI-Hub (Internal Statoil Web-service)
 
@@ -76,13 +76,13 @@ The command **File -> Import -> Well Data -> Import Well Paths From SSI-hub** la
 The import of well paths is using a web service. If you are a Statoil employee, make sure you have access to "EDM Landmark" and "EDM Compass".
 {{% /notice %}}
 
-After completing the wizard, the wells imported are accessible as Items under the  ![]({{< relref "" >}}images/3d-main-window/WellCollection.png) **Wells** item in the **Project Tree**.
+After completing the wizard, the wells imported are accessible as Items under the {{< image-in-text src="/images/3d-main-window/WellCollection.png" >}} **Wells** item in the **Project Tree**.
 
 The trajectory data is not copied into the  ResInsight project as such, but is stored in files in a directory called *ProjectFileName_wellpaths* in the same directory as your project file.   
 
 ## Well Trajectory Visualization
 
-All the imported well trajectories are available below the ![]({{< relref "" >}}images/3d-main-window/WellCollection.png) **Wells** item in the **Project Tree**. 
+All the imported well trajectories are available below the {{< image-in-text src="/images/3d-main-window/WellCollection.png" >}} **Wells** item in the **Project Tree**. 
 
 ![]({{< relref "" >}}images/3d-main-window/WellsInTree.png)
 
@@ -110,7 +110,7 @@ If the LAS-file does not contain a well name, the file name is used instead.
 #### Moving LAS-file
 If ResInsight's automatic well matching fails and a LAS-file is matched with the wrong well path, it is possible to move the LAS-file to the correct well path. Select the LAS-file context menu click **Move LAS File to Well Path** and select destination well path.
 
-![]({{< relref "" >}}/images/3d-main-window/MoveLasFileMenu.png)
+![]({{< relref "" >}}images/3d-main-window/MoveLasFileMenu.png)
 
 ### Importing Well Path Files
 See [Importing Well Paths](#ascii-well-trajectories)
@@ -143,4 +143,6 @@ well path containment properties such as Casing (with Casing Shoe) and Liner can
 
 These can be visualised in the 3D View and Well Log Plots on a [Well Log Track]({{< relref "welllogsandplots" >}}#tracks).
 
-![]({{< relref "" >}}images/3d-main-window/CasignDesign3D.png) ![]({{< relref "" >}}images/3d-main-window/CasignDesignPlot.png)
+![]({{< relref "" >}}images/3d-main-window/CasignDesign3D.png) 
+
+![]({{< relref "" >}}images/3d-main-window/CasignDesignPlot.png)

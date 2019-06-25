@@ -26,10 +26,10 @@ These particular Faults will always be present, even when reading of fault infor
 #### Fault Information
 If enabled in **Preferences**, ResInsight will import fault information from the _`*.DATA`_ files and use this information to group the cell faces into named items. The imported faults are ordered in ascending order based on their name.
 
-<div class="note info">
+{{% notice info %}}
 The <b>DATA</b> file is parsed for the <b>FAULT</b> keyword while respecting any <b>INCLUDE</b> and <b>PATH</b> keywords.<br>
 As import of faults can be time consuming, reading of faults can be disabled from <b>Preferences->Import faults</b>
-</div>
+{{% /notice %}}
 
 #### NNC Data
 If enabled in **Preferences**, ResInsight will read Non Neighbor Connections from the Eclipse output file (_`*.INIT`_), and create explicit visualizations of those. 
@@ -55,13 +55,13 @@ Visualization mode and mesh lines can be controlled from the toolbar.
 
 - {{< image-in-text src="/images/3d-main-window/draw_style_faults_24x24.png" >}}**Faults-Only** visualization mode. 
    <br>When turned on, this option hides all the grid cells, and shows only the fault faces in the reservoir limited by the applied range and property filters. (Unless **Show faults outside filters** are turned on. See below.)
-- ![]({{< relref "" >}}images/3d-main-window/draw_style_surface_24x24.png) Turns faces on and mesh off
-- ![]({{< relref "" >}}images/3d-main-window/draw_style_surface_w_fault_mesh_24x24.png) Turns on all faces, and shows mesh lines on faults only.
+- {{< image-in-text src="/images/3d-main-window/draw_style_surface_24x24.png" >}} Turns faces on and mesh off
+- {{< image-in-text src="/images/3d-main-window/draw_style_surface_w_fault_mesh_24x24.png" >}} Turns on all faces, and shows mesh lines on faults only.
    <br> This is a useful method to highlight the faults in your reservoir, because the faults stands out with black outlining. 
-- ![]({{< relref "" >}}images/3d-main-window/draw_style_faults_label_24x24.png) Shows labels for faults  
+- {{< image-in-text src="/images/3d-main-window/draw_style_faults_label_24x24.png" >}} Shows labels for faults  
 
 ### Faults Properties
-By clicking the ![]({{< relref "" >}}images/3d-main-window/draw_style_faults_24x24.png) **Faults** item in the **Project Tree**, the following options common to all the faults are displayed: 
+By clicking the {{< image-in-text src="/images/3d-main-window/draw_style_faults_24x24.png" >}} **Faults** item in the **Project Tree**, the following options common to all the faults are displayed: 
 
  ![]({{< relref "" >}}images/3d-main-window/FaultProperties.png)
  
@@ -91,9 +91,9 @@ Secondly, the option you would normally want to adjust is **Dynamic Face Selecti
 - **Show NNCs** -- Toggles whether to display the Non Neighbor Connections, or not.
 - **Hide NNC geometry if no NNC result is available** -- Automatically hides NNC geometry if no NNC results are available
 
-<div class="note info">
+{{% notice info %}}
 The color of the NNC faces are set to be a bit lighter than their corresponding named fault, and can not be controlled directly.
-</div>
+{{% /notice %}}
 
 ## Fault Export
 

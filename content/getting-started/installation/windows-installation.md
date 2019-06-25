@@ -18,10 +18,10 @@ weight = 3
 3. On the **Octave** tab, enter the path to the Octave command line interpreter executable.  
    ( Usually _`C:\Your\Path\To\Octave-x.x.x\bin\octave-cli.exe`_ )
 
-<div class="note info">
+{{% notice info %}}
 A binary package of ResInsight will normally <b>not</b> work with other Octave versions than the one it is compiled with. 
-</div>
+{{% /notice %}}
 
-<div class="note info">
+{{% notice info %}}
 You <b>have</b> to point to the <b>cli</b> binary in the windows octave installation. The <code>octave.exe</code> will not work as it is launching the octave GUI.
-</div>
+{{% /notice %}}

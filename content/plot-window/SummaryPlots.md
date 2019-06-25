@@ -8,7 +8,7 @@ weight = 10
 
 A Summary Plot is a window displaying a graph in the main area of the **Plot Main Window**. It can contain Summary Curves, Grid time history curves and pasted ascii curves ( See below ).
 
-A new plot can be created by using the context menu of a plot selecting ![]({{< relref "" >}}images/plot-window/SummaryPlot16x16.png) **New Summary Plot**. The [Summary Plot Editor]({{< relref "summaryploteditor" >}}) dialog will then open.
+A new plot can be created by using the context menu of a plot selecting {{< image-in-text src="/images/plot-window/SummaryPlot16x16.png" >}} **New Summary Plot**. The [Summary Plot Editor]({{< relref "summaryploteditor" >}}) dialog will then open.
 
 ## Plot Data
 
@@ -18,6 +18,7 @@ ResInsight can create summary plots based on vectors from SUMMARY files ( _`*.SM
 
 When opening an Eclipse case in the 3D view, the associated summary file is opened automatically by default, and made available as a **Summary Case**.
 Summary files can also be imported directly using one of the following commands in the **File->Import->Summary Cases** menu:
+
 - **Import Summary Case**: Brings up the standard file selection dialog. Multiple selections are allowed.
 - **Import Summary Cases Recursively**: Brings up the recursive file selection dialog. This dialog is described in details [below](#recursive-summary-file-import)
 - **Import Summary Case Group**: Brings up the recursive file selection dialog. All files selected are automatically grouped in ResInsight.
@@ -72,6 +73,7 @@ Most of the settings for the Plot itself is controlled by its sub items in the P
 ### Y-axis Properties
 
 ![]({{< relref "" >}}images/plot-window/summary_plot_yaxis_properties.png)
+
 - **Axis Title**
   - **Auto Title** -- If enabled, the y-axis title is derived from the vectors associated with the axis. Long names, acronymes  and unit can be used. 
     - **Names** -- Use the long name of the quantities
@@ -98,7 +100,7 @@ Most of the settings for the Plot itself is controlled by its sub items in the P
   - The closest curve.
   - Each of the Plot Axes.
   - The Plot itself if none of the above is hit and the Plot window is activated by the mouse click.
-- **Window Zoom** -- Window zoom is available by dragging the mouse when the left mouse button is pressed. Use ![]({{< relref "" >}}images/plot-window/ZoomAll16x16.png) **Zoom All** to restore default zoom level.
+- **Window Zoom** -- Window zoom is available by dragging the mouse when the left mouse button is pressed. Use {{< image-in-text src="/images/plot-window/ZoomAll16x16.png" >}} **Zoom All** to restore default zoom level.
 - **Wheel Zoom** -- The mouse wheel will zoom the plot in and out towards the current mouse cursor position.
 
 ### Accessing the Plot Data
@@ -112,7 +114,7 @@ It is also possible to save the ascii data to a file directly by using the conte
 
 ## Summary Curves
 
-Summary curves are normally created using the **Plot Editor** see [Summary Plot Editor]({{< relref "summaryploteditor" >}}), but can be created directly using the context menu in the **Main Plot Window Project Tree**. Right click a Summary Plot, the Summary Curves folder or an existing curve and select the command ![]({{< relref "" >}}images/plot-window/SummaryCurve16x16.png) **New Summary Curve**.
+Summary curves are normally created using the **Plot Editor** see [Summary Plot Editor]({{< relref "summaryploteditor" >}}), but can be created directly using the context menu in the **Main Plot Window Project Tree**. Right click a Summary Plot, the Summary Curves folder or an existing curve and select the command {{< image-in-text src="/images/plot-window/SummaryCurve16x16.png" >}} **New Summary Curve**.
 
 ![]({{< relref "" >}}images/plot-window/summary_curve_properties.png)
 
@@ -130,15 +132,16 @@ This group of options is used to define the summary vector data that the curve w
 - **Vector** -- Displays a short name/ acronyme of the selected vector.
 - **Axis** -- Controls whether the curve is to be associated with the left or right Y-Axis. 
 
-<div class="note">
+{{% notice note %}}
 Switching the Y-Axis for several curves in one go can be done using the context command <b>Switch Plot Axis</b>.  
-</div>
+{{% /notice %}}
 
 To optional ways to select the curve data are available: The **Vector Selection Dialog** and the **Vector Selection Filter**.
 
 The first is accessed by clicking the button **Vector Selection Dialog**. This opens a dialog similar to the one used as Plot Editor. See [Summary Plot Editor]({{< relref "summaryploteditor" >}}).
 
 The **Vector Selection Filter** group of options is a different way of selecting the curve data:
+
 - **Search** -- This option controls the filtering mode. Several are available and controls witch search fields that are made available. The search modes are described below 
 - **Options depending on Search Mode** -- Described below. 
 - **List of vector names** -- This list displays the set of vectors filtered by the search options. Use this to select which of the vectors you want to plot.
@@ -217,6 +220,7 @@ When using the standard file selection dialog, the user is limited to select fil
 ![]({{< relref "" >}}images/plot-window/RecursiveImportDialog1.png)
 
 The dialog consists of the following fields:
+
 - **Root Folder**: The root directory where the file search starts. Text may be entered directly into the field. Alternatively press the browse button to display the directory selection dialog.
 - **Path Pattern**: The search pattern that applies to the start of the relative search path. If the pattern does not end with a "\*", an implicit wildcard is added silently. Supported wildcards:
   - **\*** Matches any number of any characters except the directory separator
@@ -239,6 +243,7 @@ During summary file import, ResInsight checks whether the summary file is restar
 Depending on what triggered the summary file import, the dialog shows slightly different information. If the summary file import was triggered by a grid file import, the dialog displays information about grid files in addition to the summary origin file(s). If the summary file was imported directly, information about grid files are not relevant and thus not displayed.
 
 The dialog contents are organized in groups:
+
 - **Current Grid and Summary Files** or **Current Summary Files**: This group displays the name of the main summary file to import. If the import is triggered by a grid file import, the name of the grid file is also displayed.
 - **Origin Summary Files**: This group displays the names of the origin summary file(s) found. If there are more than one file listed, it means that the found origin file also has an origin file. ResInsight will search the "chain" of summary origin files until it reaches the end.
   - **Import Options** There are three options to control how origin summary file are imported

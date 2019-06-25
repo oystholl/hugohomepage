@@ -22,6 +22,7 @@ The Grid Cross plots may have a Symbol Legend below the plot, separating the Dat
 ![]({{< relref "" >}}images/plot-window/GridCrossPlot_Create.png)
 
 Grid Cross Plots can be created in a couple of ways:
+
 1. Select a 3D view or Cell Result in the main ResInsight window, right-click and select **Create Grid Cross Plot from 3d View**. The resulting cross plot will display the current 3d Result x DEPTH and only contain data points for the visible cells.
 2. Right-click on the **Grid Cross Plots** entry under **Plots** in the **Plot Window**. By default the plot will contain the result values PORO x PERMX and will be grouped by formations (if any are loaded in the project). Data for all active cells will be displayed.
 

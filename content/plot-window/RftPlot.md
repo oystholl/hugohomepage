@@ -13,12 +13,15 @@ An RFT (_Repeated Formation Tester_) plot is a special well plot for comparing o
 There are several ways to create new RFT Plots.
 
 **From the Project Tree in the Plot Main Window**
+
 - Select context command **New RFT Plot** for _Well Path_ node or _RFT Plots_ node.
 
 **From the Project Tree in the 3D Main Window**
+
 - Select context command **New RFT plot** for a simulation well.
 
 **From a 3D view**
+
 - Right-click a simulation well select **Well Plots -> New RFT Plot**.
 
 ## Import Observed RFT Data
@@ -38,6 +41,7 @@ Select the well to display in the plot. Wells postfixed by _'(Well Path)'_ have 
 
 ### Sources
 After a well has been selected in the Well Name field, the relevant sources for that well will appear in the sources field. The sources are placed in one of three different groups:
+
 - **RFT File Cases** -- Simulation cases may have associated formation pressure data in _\*.rft_ file(s). If the simulation case contains such files, those are imported together with the simulation case (See the keyword `WRFTPLT` in the Eclipse manual for information).
 - **Grid Cases** -- The PRESSURE property in the 3D grid.
 - **Observed Cases** -- Observed data imported from well log files.
@@ -46,6 +50,7 @@ When the user selects one or more sources, a selection of their time steps appea
 
 ### Time Steps
 The **Time Steps** field contains the relevant time steps according to the source selection. Time steps are deemed to be relevant by the following rules:
+
 1. If a single source or sources of the same type are selected, all available time steps in those sources are shown.
 2. If sources from two or tree types are selected, the time steps are filtered: 
   - The time steps matching the observed case(s) time steps.
@@ -54,6 +59,7 @@ The **Time Steps** field contains the relevant time steps according to the sourc
 If the Observed data isn't selected, the RFT data serves as filter reference. 
 
 Each time step is postfixed by an indication of which source type(s) the time step is belonging to. This indication is displayed as one or more letters within square brackets. Examples: **[ O ]**, **[ R G ]**.
+
 - **O** -- Time step has observed data
 - **R** -- Time step has RFT data
 - **G** -- Time step has Grid data
@@ -67,14 +73,15 @@ This property editor lets the user control the visibility of formations lines. T
 
 Please see the [full documentation]({{< relref "formations" >}}) on the formations property editor for details about formations.
 
-<div class="note">
+{{% notice note %}}
   When the formation names property editor is used in the context of RFT plots, the fields <b>Trajectory</b> and <b>Simulation Well</b> are hidden because those values are given by the RFT plot definition.
-</div>
+{{% /notice %}}
 
 ### Legend and Axis
 ![]({{< relref "" >}}images/plot-window/RftLegendAndAxis.png)
 
 This property editor lets the user control visual properties for the legend and axis.
+
 - Title and Legends
   - **Show Title** -- Toggle on/off title in plot
   - **Show Legends** -- Toggle on/off legend in plot

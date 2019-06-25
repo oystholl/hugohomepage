@@ -1,8 +1,8 @@
 +++
-title = "ResInsight &bull; 3D viewer and post processing of reservoir models"
+title = "ResInsight • 3D viewer and post processing of reservoir models"
 published = true
 +++
-
+<title>ResInsight • 3D viewer and post processing of reservoir models</title>
 
 # Post Processing of Reservoir Simulations
 
@@ -22,7 +22,7 @@ published = true
 <section class="features">
   <div class="grid">
     <div class="unit one-third">
-      <h2>Fast and Free</h2>
+      <h3>Fast and Free</h3>
       <p>
         &#x2713; Open source<br>
         &#x2713; Efficient user interface<br>
@@ -32,7 +32,7 @@ published = true
       </p>
     </div>
     <div class="unit one-third">
-      <h2>Unique Features</h2>
+      <h3>Unique Features</h3>
       <p>
         &#x2713; NNC visualization<br>
         &#x2713; Cell Edge Coloring<br>
@@ -42,15 +42,15 @@ published = true
       </p>
     </div>
     <div class="unit one-third">
-      <h2>Getting started</h2>
+      <h3>Getting started</h3>
       <p>
         It's easy and free, both on Linux and Windows:
       </p>
       <a href="{{< relref "getting-started/installation" >}}">Installation &rarr;</a><br>
       <a href="{{< relref "getting-started" >}}">Getting Started &rarr;</a>
-      <p>
-
-        Sign up to be notified of new releases:<br> <a href="{{< relref "releasenotification" >}}">Release Notification &rarr;</a>
+      <p>Sign up to be notified of new releases:
+        <br>
+        <a href="{{< relref "releasenotification" >}}">Release Notification &rarr;</a>
       </p>
        Latest release is 2019.04
       </div>

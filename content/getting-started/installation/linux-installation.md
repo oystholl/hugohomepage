@@ -54,14 +54,14 @@ Start ResInsight by typing : `ResInsight`
 2. Launch ResInsight, open **Edit->Preferences** 
 3. Enter the path to the Octave command line interpreter executable `octave-cli` (for older version of octave use `octave`)
 
-<div class="note info">
+{{% notice info %}}
 The precompiled octave interface distributed in the tarball is only tested for RedHat 6. <br>
 It is <b>not</b> expected to work for other configurations.
 (ResInsight 1.3.2-dev and earlier, was also tested on RedHat 5)<br>
 <br>
 If you need the octave interface to work on a different OS, you need to build ResInsight yourself.<br> 
 See <a href="{{< relref "buildinstructions" >}}">Build Instructions</a> 
-</div>
+{{% /notice %}}
 
 
 ## Workaround for crash using Virtual Box

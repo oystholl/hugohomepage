@@ -12,13 +12,16 @@ A PLT (Production Log Tool) plot is a special well plot for comparing observed p
 There are several ways to create new PLT Plots
 
 **From Project Tree in the Plot Main Window**
+
 - Select context command **New PLT Plot** for the _PLT Plots_ node.
 
 **From the Project Tree in the Main Window**
+
 - Select context command **New PLT Plot** for a _Well Path_ node or a _Simulation Well_ node that has an associated well path.
 
 **From the 3D view**
-- Right-click a well path, or a simulation well that has an associated well path, and select **Well Plots -> New PLT Plot**.
+ 
+ - Right-click a well path, or a simulation well that has an associated well path, and select **Well Plots -> New PLT Plot**.
 
 ## Plot Observed Data
 To be able to plot observed production data for a well, a well log file containing that data must be imported. Production data in a well log file is expected to have column names:
@@ -44,6 +47,8 @@ Select the well to display in the plot. Only observed well paths are displayed.
 
 ### Sources
 After a well has been selected in the Well Name field, sources for that well should appear in the sources field. The sources are placed in one of three different groups:
+
+
 - **RFT File Cases** -- Simulation cases may have associated PLT data in _\*.rft_ file(s). If the simulation case contains such files, those are imported together with the simulation case (See the keyword `WRFTPLT` in the Eclipse manual for information)
 - **Grid Cases** -- Simulation cases
 - **Observed Cases** -- Observed data imported from well log files and well path files
@@ -52,6 +57,7 @@ When the user selects a source, time steps for that source appears in the **Time
 
 ### Time Steps
 The **Time Steps** field contains available time steps for the selected source(s). Some combinations of selected sources may display a filtered list of time steps instead of the union of all time steps for all selected sources. The policy is as follows:
+
 1. **Exclusively grid cases selected**. All available time steps for the selected grid cases are displayed.
 2. **Grid case(s) and observed data case selected**. Time steps shown are:
   - The first time step from the merged time step list from all grid cases.
@@ -60,6 +66,7 @@ The **Time Steps** field contains available time steps for the selected source(s
 4. **All types of cases selected**. Same display logic as point 2 with the exception that RFT File case time steps are treated as grid time steps.
 
 Each time step is postfixed by an indication of which source type(s) the time step is belonging to. This indication is displayed as one or more letters within square brackets. Examples: **[ O ]**, **[ R G ]**.
+
 - **O** -- Time step belongs to observed data
 - **R** -- Time step belongs to RFT data
 - **G** -- Time step belongs to Grid data
@@ -68,6 +75,7 @@ More than one letter for one single time step, means that the time step belongs 
 
 ### Curve Selection
 The curve selection group lets the user control which component(s) of the PLT data to display.
+
 - **Standard Volume** -- Production data at standard conditions (normal air pressure)
 - **Reservoir Volume** -- Production data at reservoir pressure (high air pressure)
 - **Oil** -- The oil production component
@@ -82,14 +90,15 @@ This property editor lets the user control how formations are handled. This is w
 
 Please see the [full documentation]({{< relref "formations" >}}) on the formations property editor for details.
 
-<div class="note">
+{{% notice note %}}
   When the formation names property editor is used in the context of PLT plots, the fields <b>Trajectory</b> and <b>Simulation Well</b> are hidden because those values are given by the PLT plot definition.
-</div>
+{{% /notice %}}
 
 ### Legend and Axis
 ![]({{< relref "" >}}images/plot-window/PltLegendAndAxis.png)
 
 This property editor lets the user control visual properties for the legend and axis.
+
 - Title and Legends
   - **Show Title** -- Toggle on/off title in plot
   - **Show Legends** -- Toggle on/off legend in plot

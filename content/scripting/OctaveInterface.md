@@ -12,9 +12,9 @@ ResInsight provides a flexible interface to [Octave](http://www.gnu.org/software
 
 The Octave functions are documented in [Octave Interface Reference]({{< relref "octaveinterfacereference" >}}).
 
-<div class="note info"> 
+{{% notice info %}} 
 <b>Note:</b> The Octave interface does not support Flow diagnostics and Injection flooding results in addition to Geomechanical cases. 
-</div>
+{{% /notice %}}
 
 ## Octave Script Management 
 Octave scripts are available in the **Scripts** folder in the **Project Tree**. 
@@ -61,9 +61,9 @@ In addition to the output from the script, it prints a start and stop time stamp
 
 Here are some example-scripts that illustrates the use of the octave interface. 
 
-<div class="note info"> 
+{{% notice info %}} 
 <b>Disclaimer:</b> The scripts are provided as illustration only. They are probably not the best way of using the octave script language, and could potentially be incorrect. 
-</div>
+{{% /notice %}}
 
 #### Example 1
 

@@ -181,9 +181,9 @@ To accomplish this, do the following:
 - Create LGRs for completions on selected well paths. See [Completions LGR]({{< relref "completionslgr" >}})
 - Export completions the usual way. See [Completion Export]({{< relref "completionexport" >}})
 
-<div class="note info">
+{{% notice info %}}
 In addition to the completion data, the geometrical definition of all temporary LGRs is also exported into "*.dat" files.
-</div>
+{{% /notice %}}
 
 ## Multi Segment Well Model
 

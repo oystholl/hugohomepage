@@ -24,13 +24,13 @@ Once created, the intersections may be copied to other views by selecting the **
 
 There are four types of curve based intersections: Well Path, Simulation Well, Polyline, and Azimuth and Dip. Azimuth and Dip differs from the other three curves, as it is defined just by one straight line. It is called Azimuth and Dip because the plane's extrusion direction can be defined by the two angles.
 
-Any of these intersections can be created by activating ![]({{< relref "" >}}images/3d-main-window/CrossSection16x16.png) **New Intersection** from the context menu of the **Intersections** item in the Project Tree.
+Any of these intersections can be created by activating {{< image-in-text src="/images/3d-main-window/CrossSection16x16.png" >}} **New Intersection** from the context menu of the **Intersections** item in the Project Tree.
 
 They can also be created from the context menu in the 3D view, as described below.
 
-<div class="note info">
+{{% notice info %}}
 To be able to see the intersections in the 3D view, the grid cells can be hidden by disabling the <b>Grids</b> item in the Project Tree or activating the <b>Hide Grid Cells</b> toolbar button.
-</div>
+{{% /notice %}}
 
 ### Common Curve Based Intersection Options
 

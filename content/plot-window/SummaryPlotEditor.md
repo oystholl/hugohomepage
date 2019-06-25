@@ -10,9 +10,9 @@ The plot editor is a separate ResInsight dialog window where the user can select
 
 The upper part of the editor contains editors for selecting which vectors/summaries to display in the plot. The number of fields vary from 3 to 6 depending on the **Summary Type** currently highlighted. 
 
-<div class="note">
+{{% notice note %}}
 In this context <b>highlighted</b> means the marked item with a different background color, while <b>selected</b> means an item or items that have a ticked check box.
-</div>
+{{% /notice %}}
 
 ## Selection Fields
 This section describes the different selection fields in the selection part of the plot editor. A complete/valid vector selection consists of a selected source, a selected summary category, a selected item in each dynamic field (if any) and a selected vector among the Summaries.
@@ -82,10 +82,10 @@ The **Apply** button must be clicked to apply the new settings to all curves.
 
 The curve appearance settings apply to single summary curves only and do not affect ensemble curve sets. Curve sets receive their appearance automatically from a set of color ranges.
 
-<div class="note">
+{{% notice note %}}
 Assignment of curve appearance are incremental, and can end up as sub optimal if adding curves in several steps.
 Press the <b>Apply</b> button to apply consistent appearance settings according to the current curve selection.
-</div>
+{{% /notice %}}
 
 ### Curves
 ![]({{< relref "" >}}images/plot-window/SummaryPreviewCurves.png)

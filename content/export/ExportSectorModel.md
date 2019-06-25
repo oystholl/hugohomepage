@@ -26,6 +26,7 @@ be exported in a local coordinate system with no reference to actual location.
 #### Grid Box Selection
 
 The Grid Box selection group will allow the user to choose whether to export an IJK bounding box surrounding:
+
 - **All Visible Cells** -- Controlled by range and property filters in the current view.
 - **All Active Cells** -- All active cells in the Grid.
 - **The Full Grid** -- The complete grid including inactive cells.

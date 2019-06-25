@@ -10,9 +10,9 @@ ResInsight supports the following type of Eclipse input data:
 - _`*.GRID`_ and _`*.EGRID`_ files along with their _`*.INIT`_ and restart files _`*.XNNN`_ and _`*.UNRST`_. 
 - Grid and Property data from  _`*.GRDECL`_ files.
 
-<div class="note">
+{{% notice note %}}
 Release 2018.11 supports import of simulations from Intersect. To be able to import into ResInsight, the Intersect simulation must be exported into Eclipse file format.
-</div>
+{{% /notice %}}
 
 ### Eclipse Results
 ResInsight offers several ways to import Eclipse (grid) files. Use one of the following commands in the **File->Import->Eclipse Cases** menu:
@@ -24,9 +24,9 @@ ResInsight offers several ways to import Eclipse (grid) files. Use one of the fo
 
 The **Reload Case** command can be used to reload a previously imported case, to make sure it is up to date. This is useful if the grid or result files changes while a ResInsight session is active.
 
-<div class="note">
+{{% notice note %}}
 You can select several grid files in one go by multiple selection of files (Ctrl + left mouse button, Shift + left mouse button). 
-</div>
+{{% /notice %}}
 
 #### Result Index File
 
