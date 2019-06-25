@@ -16,6 +16,7 @@ Release 2018.11 supports import of simulations from Intersect. To be able to imp
 
 ### Eclipse Results
 ResInsight offers several ways to import Eclipse (grid) files. Use one of the following commands in the **File->Import->Eclipse Cases** menu:
+
 - **Import Eclipse Case**: Brings up the standard file selection dialog. Select _`*.EGRID`_ or _`*.GRID`_ Eclipse files for import. Multiple selections are allowed.
 - **Import Eclipse Cases Recursively**: Brings up the recursive file selection dialog. This dialog is described in detail on the [Summary Plots page]({{< relref "summaryplots" >}}#recursive-summary-file-import).
 - **Import Eclipse Case (Time Step Filtered)**: See [description](#time-step-filtered-eclipse-result)
@@ -36,7 +37,7 @@ See [Preferences: Behavior When Loading Data]({{< relref "preferences" >}}#behav
 ### Time Step Filtered Eclipse Result
 Some Eclipse files have an enormous amount of time steps. If only a selection of the time steps really are needed for the session, the time steps can be filtered before loading. This can possibly speed up the import a great deal. Filtering can be done in the following way.
 
-Select **File->Import->Eclipse Cases-> ![]({{< relref "" >}}images/getting-started/Case24x24.png) Import Eclipse Case (Time Step Filtered)** and select an _`*.EGRID`_ or _`*.GRID`_ Eclipse file for import. A dialog will appear.
+Select **File->Import->Eclipse Cases-> {{< image-in-text src="/images/getting-started/Case24x24.png" >}} Import Eclipse Case (Time Step Filtered)** and select an _`*.EGRID`_ or _`*.GRID`_ Eclipse file for import. A dialog will appear.
 
 ![]({{< relref "" >}}images/getting-started/timeStepFilter.png)
 
@@ -55,7 +56,7 @@ Filtering can also be done after import, in a case's **Property Window**.
 After clicking *Reload Case*, the time steps in the toolbar will be updated.
 
 ### Eclipse ASCII Input Data
-1. Select **File->Import->Eclipse Cases-> ![]({{< relref "" >}}images/getting-started/EclipseInput24x24.png) Import Input Eclipse Case** and select a _`*.GRDECL`_ file.
+1. Select **File->Import->Eclipse Cases-> {{< image-in-text src="/images/getting-started/EclipseInput24x24.png" >}} Import Input Eclipse Case** and select a _`*.GRDECL`_ file.
 2. The case is imported, and a view of the case is created
 3. Right-click the **Input Properties** in the generated **Input Case** and use the context menu to import additional Eclipse Property data files.
 
@@ -72,6 +73,6 @@ Results From the simulation software SourSimRL can be imported using the **SourS
 ## Importing ABAQUS Odb Cases
 When ResInsight is compiled with ABAQUS-odb support, _`*.odb`_ files can be imported by selecting the command:
 
-**File->Import->Geo Mechanical Cases-> ![]({{< relref "" >}}images/getting-started/GeoMechCase24x24.png) Import Geo Mechanical Model** 
+**File->Import->Geo Mechanical Cases-> {{< image-in-text src="/images/getting-started/GeoMechCase24x24.png" >}} Import Geo Mechanical Model** 
 
 See [Build Instructions]({{< relref "buildinstructions" >}}) on how to compile ResInsight with odb-support.

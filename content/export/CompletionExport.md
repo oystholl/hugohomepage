@@ -243,7 +243,8 @@ An example of the COMPSEGS keyword as exported is shown below.
        28     40     8      27            2.34748          2.96577         /
     /
 
-The first COMPSEGS entry is a line with the well path name. Each following entry is for the segments in the well, and containing the following field: 
+The first COMPSEGS entry is a line with the well path name. Each following entry is for the segments in the well, and containing the following field:
+
 - **I**, **J** and **K** -- The Eclipse cell index
 - **Branch no** -- Branch number for the segment
 - **Start Length**, **End Length** -- Start and end length along the well for the relevant segment. 
@@ -259,6 +260,7 @@ An example of the WSEGVALV keyword as exported is shown below.
     /
     
 The parameters exported in the WEGVALV keyword are
+
 - **Well Name** -- The name of the well.
 - **Seg No** -- Segment number along the well.
 - **Cv** -- The ICD Flow Coefficient, as entered by the user.

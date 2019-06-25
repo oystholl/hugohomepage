@@ -7,6 +7,7 @@ weight = 30
 The visible cells can be exported as a FLUXNUM or MULTNUM keyword that can be used in an Eclipse input data deck. 
 
 You can do this by using the command **Export Visible Cells as FLUXNUM/MULTNUM** found by right clicking:
+
 - **View** in the Project Tree.
 - **Cell Result** in the Project Tree.
 - In any Eclipse **3D View**.

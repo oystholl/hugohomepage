@@ -105,6 +105,7 @@ The flow diagnostics results are only calculated when asked for, and only for re
 This result type is used to plot derived results based on a selection of simulated tracers, typically seawater injection. Currently the only derived property available is **Water Flooded PV**. Please refer to [Derived Results]({{< relref "" >}}appendix/derivedresults) for more information.
 
 ![]({{< relref "" >}}images/3d-main-window/InjectionFloodingPropertyPanel.png)
+
 - **Tracers** -- Lists the available simulation tracers from the Eclipse Case. The list is produced by showing only the properties with names ending with the letter "F". Select the tracers you want to investigate.
 - **Result Property** -- Select the variable you want to calculate. (_Number Of Flooded PV_ is currently the only one) 
 

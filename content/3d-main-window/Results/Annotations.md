@@ -26,6 +26,7 @@ Global annotations sub tree
 
 ## Text Annotations
 There are two ways of creating a new text annotation.
+
 - Right click **Annotations** or **Text Annotations** tree node in either the global annotatyion sub tree or the local annotations sub tree. The scope of the annotation depends on which node was clicked. When text annotations are created this way, all text annotation fields must be entered manunally in the property editor.
 - Right click on an object in the view and select **Create Text Annotation**. ResInsight will then create a text annotation at the clicked point. In this case, only th text must be entered manually in the property editor. When creating a text annotation this way, it will become a local annotation by default.
 
