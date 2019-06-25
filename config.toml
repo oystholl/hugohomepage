@@ -5,16 +5,10 @@ theme = "learn"
 
 [params]
 disableSearch = false
-disableNavChevron = true
 disableHomeIcon = true
 ordersectionsby = "weight"
-themestyle = "flex"
+disableShortcutsTitle = true
 
-[[menu.shortcuts]]
-	name = "Getting Started"
-	identifier = "getting-started"
-	url = "/getting-started"
-	weight = 10
 
 [[menu.shortcuts]]
 	name = "Download"
@@ -23,8 +17,8 @@ themestyle = "flex"
 	weight = 20
 
 [[menu.shortcuts]]
-	name = "Project"
-	identifier = "project"
-	url = "/project"
-	weight = 30
+	name = "About"
+	identifier = "about"
+	url = "/project/about"
+	weight = 10
 
