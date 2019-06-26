@@ -12,18 +12,18 @@
     <title>Completions :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561469271" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561469271" rel="stylesheet">
-    <link href="/css/hybrid.css?1561469271" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561469271" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561469271" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561469271" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561469271" rel="stylesheet">
-    <link href="/css/theme.css?1561469271" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561469271" rel="stylesheet">
+    <link href="/css/nucleus.css?1561541977" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561541977" rel="stylesheet">
+    <link href="/css/hybrid.css?1561541977" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561541977" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561541977" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561541977" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561541977" rel="stylesheet">
+    <link href="/css/theme.css?1561541977" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561541977" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561469271"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561541977"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -1772,6 +1772,16 @@
 
 
     
+    <section id="footer">
+      <a href="https://www.ceetronsolutions.com">Ceetron Solutions</a>
+<p>in collaboration with</p>
+<a href="https://www.equinor.com">Equinor ASA</a>
+<br><br>
+<a href="http://ceesol.no/project/support">Support</a>
+<br><br>
+<p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
   </div>
 </nav>
 
@@ -1927,12 +1937,15 @@
 
 <p><img src="/images/3d-main-window/PerforationIntervals_propEditor.png" alt="" /></p>
 
-<p>After creating the perforation interval, the following properties of the perforation can be set in the property editor:
-- <strong>Start MD</strong>, <strong>End MD</strong> &ndash; Measured depth along the well path for the perforation to start/stop.
-- <strong>Diameter</strong> &ndash; Diameter of the perforation, used in calculation of transmissibility ( For details on the transmissibility calculation, see <a href="/export/completionexport/#transmissibility-calculations">Transmissibility Calculations</a>).
-- <strong>Skin Factor</strong> &ndash; Skin factor for the perforation, used in calculation of transmissibility.
-- <strong>All Timesteps</strong> &ndash; If on, the perforation interval will be present for all time steps
-- <strong>Start Date</strong> &ndash; The perforation will be included in the model for all time steps after this date. If &ldquo;All TimeSteps&rdquo; is turned on, this option is not available and the perforation is included for all time steps.</p>
+<p>After creating the perforation interval, the following properties of the perforation can be set in the property editor:</p>
+
+<ul>
+<li><strong>Start MD</strong>, <strong>End MD</strong> &ndash; Measured depth along the well path for the perforation to start/stop.</li>
+<li><strong>Diameter</strong> &ndash; Diameter of the perforation, used in calculation of transmissibility ( For details on the transmissibility calculation, see <a href="/export/completionexport/#transmissibility-calculations">Transmissibility Calculations</a>).</li>
+<li><strong>Skin Factor</strong> &ndash; Skin factor for the perforation, used in calculation of transmissibility.</li>
+<li><strong>All Timesteps</strong> &ndash; If on, the perforation interval will be present for all time steps</li>
+<li><strong>Start Date</strong> &ndash; The perforation will be included in the model for all time steps after this date. If &ldquo;All TimeSteps&rdquo; is turned on, this option is not available and the perforation is included for all time steps.</li>
+</ul>
 
 <p>The perforation intervals will be indicated by different color along the well path.</p>
 
@@ -1994,10 +2007,14 @@
 
 <p><img src="/images/3d-main-window/NewValveWithoutTemplate.png" alt="" /></p>
 
-<p>This will create a new <strong>Valve Template</strong> which can be of three different types:
-- <strong>ICD</strong> - In-flow Control Device, allowing the setting of <strong>Orifice Diameter</strong> and <strong>Flow Coefficient</strong>. ICDs are displayed in Orange.
-- <strong>AICD</strong> - Autonomous In-flow Control Device, providing several more parameters associated with the Eclipse simulation and seen in the picture below. AICDs are displayed in Dark Purple.
-- <strong>ICV</strong> - Interval Control Valves. Contains the same parameters as ICDs. The difference between the two in ResInsight is that many ICDs can be added at the same time, while there is only expected to be one ICV per perforation interval. ICVs are displayed in Pink.</p>
+<p>This will create a new <strong>Valve Template</strong> which can be of three different types:</p>
+
+<ul>
+<li><strong>ICD</strong> - In-flow Control Device, allowing the setting of <strong>Orifice Diameter</strong> and <strong>Flow Coefficient</strong>. ICDs are displayed in Orange.</li>
+<li><strong>AICD</strong> - Autonomous In-flow Control Device, providing several more parameters associated with the Eclipse simulation and seen in the picture below. AICDs are displayed in Dark Purple.</li>
+<li><strong>ICV</strong> - Interval Control Valves. Contains the same parameters as ICDs. The difference between the two in ResInsight is that many ICDs can be added at the same time, while there is only expected to be one ICV per perforation interval. ICVs are displayed in Pink.
+<br /></li>
+</ul>
 
 <p>An example of the ICD parameters can be seen below:
 <img src="/images/3d-main-window/ValveTemplate.png" alt="" /></p>
@@ -2101,35 +2118,53 @@ For multi-segment wells there are additional parameters which should be set. The
 
 <p>The new <strong>Fishbones Subs Definition</strong> (a group of fishbone subs) is created in the Project tree. Several subs definitions can be created on the same well trajectory to give more flexibility in placing of the fishbones. The default sub definition is based on the Fishbones Drilling System with 3 laterals exiting per sub in a 8 <sup>1</sup>&frasl;<sub>2</sub>&rdquo; main bore.</p>
 
-<p><img src="/images/3d-main-window/Fishbones_SubDefPropEdit.png" alt="" />
-- <strong>Appearance</strong>
-  - <strong>Fishbones Color</strong> &ndash; The 3D View color of the fishbones created by this definition
-- <strong>Location</strong> &ndash; Options to control the position and number of fishbone subs created by this definition
-  - <strong>Location Defined By</strong> &ndash; This setting will select how to define the location of the subs in this group.
-  - <strong>Start MD</strong> &ndash; Position, in Measured depth along the well, of the first fishbone Sub.
-  - <strong>End MD</strong> &ndash; Position of the last fishbone Sub.
-  - <strong>Number of Subs</strong> &ndash; Defines the number of subs to create in the defined interval
-  - <strong>Spacing</strong> &ndash; Spacing between the subs within the interval
-  - <strong>Measured Depths</strong> &ndash; The measured depth of each of the fishbone subs. If the <strong>Location Defined By</strong> is set to the <strong>User Specified</strong> this will be directly editable by the user.
-- <strong>Laterals Configuration</strong> &ndash; Configures the laterals at each sub position.<br />
-  - <strong>Laterals Per Sub</strong> &ndash; Number of laterals for each sub position
-  - <strong>Lenght(s)</strong> &ndash; Length of each lateral, in m or ft.
-  - <strong>Exit Angle</strong> &ndash; Exit angle for fishbone lateral, in degree.
-  - <strong>Build Angle</strong> &ndash; Build angle for fishbone lateral, in degree pr meter.
-  - <strong>Orientation</strong>
-    - <strong>Fixed Angle</strong> &ndash; The user can specify the angle for the first lateral
-    - <strong>Random angle</strong> &ndash; Each sub will have a random orientation. Notice that the angle between each of the laterals will be constant, with the laterals equally spaced.
-  - <strong>Install Success Rate</strong> &ndash; Gives the probability of success for installation of each of the fishbones laterals. If 1, all laterals are installed.<br />
-- <strong>Well Properties</strong> &ndash; Settings to control the connection factor calculation used in <a href="/export/completionexport/">Completion Export</a>)
-  - <strong>Hole Diameter</strong> &ndash; The hole diameter of the lateral
-  - <strong>Skin Factor</strong> &ndash; The skin factor used in the transmissibility calculation for the lateral.
-- <strong>Multi Segment Wells</strong> &ndash; Settings used for Well Segment Export
-  - <strong>Tubing Diameter</strong> &ndash; The diameter used in the <em>WELSEGS</em> export of the laterals.
-  - <strong>Open Hole Roughness Factor</strong> &ndash; Exported directly to the <em>WELSEGS</em> keyword.
-  - <strong>Tubing Roughness Factor</strong> &ndash; Exported directly to the <em>WELSEGS</em> keyword.
-  - <strong>ICDs per Sub</strong> &ndash; The number of ICD (valves) per Sub, used for calculation of total ICD area for <em>WSEGVALV</em> export.
-  - <strong>ICD Orifice Diameter</strong> &ndash; The Diameter of the ICD, used for calculation of ICD area for <em>WSEGVALV</em> export.
-  - <strong>ICD Flow Coefficient</strong> &ndash; The flow coefficient, exported directly as a part of <em>WSEGVALV</em>.</p>
+<p><img src="/images/3d-main-window/Fishbones_SubDefPropEdit.png" alt="" /></p>
+
+<ul>
+<li><strong>Appearance</strong>
+
+<ul>
+<li><strong>Fishbones Color</strong> &ndash; The 3D View color of the fishbones created by this definition</li>
+</ul></li>
+<li><strong>Location</strong> &ndash; Options to control the position and number of fishbone subs created by this definition
+
+<ul>
+<li><strong>Location Defined By</strong> &ndash; This setting will select how to define the location of the subs in this group.</li>
+<li><strong>Start MD</strong> &ndash; Position, in Measured depth along the well, of the first fishbone Sub.</li>
+<li><strong>End MD</strong> &ndash; Position of the last fishbone Sub.</li>
+<li><strong>Number of Subs</strong> &ndash; Defines the number of subs to create in the defined interval</li>
+<li><strong>Spacing</strong> &ndash; Spacing between the subs within the interval</li>
+<li><strong>Measured Depths</strong> &ndash; The measured depth of each of the fishbone subs. If the <strong>Location Defined By</strong> is set to the <strong>User Specified</strong> this will be directly editable by the user.</li>
+</ul></li>
+<li><strong>Laterals Configuration</strong> &ndash; Configures the laterals at each sub position.<br />
+
+<ul>
+<li><strong>Laterals Per Sub</strong> &ndash; Number of laterals for each sub position</li>
+<li><strong>Lenght(s)</strong> &ndash; Length of each lateral, in m or ft.</li>
+<li><strong>Exit Angle</strong> &ndash; Exit angle for fishbone lateral, in degree.</li>
+<li><strong>Build Angle</strong> &ndash; Build angle for fishbone lateral, in degree pr meter.</li>
+<li><strong>Orientation</strong></li>
+<li><strong>Fixed Angle</strong> &ndash; The user can specify the angle for the first lateral</li>
+<li><strong>Random angle</strong> &ndash; Each sub will have a random orientation. Notice that the angle between each of the laterals will be constant, with the laterals equally spaced.</li>
+<li><strong>Install Success Rate</strong> &ndash; Gives the probability of success for installation of each of the fishbones laterals. If 1, all laterals are installed.<br /></li>
+</ul></li>
+<li><strong>Well Properties</strong> &ndash; Settings to control the connection factor calculation used in <a href="/export/completionexport/">Completion Export</a>)
+
+<ul>
+<li><strong>Hole Diameter</strong> &ndash; The hole diameter of the lateral</li>
+<li><strong>Skin Factor</strong> &ndash; The skin factor used in the transmissibility calculation for the lateral.</li>
+</ul></li>
+<li><strong>Multi Segment Wells</strong> &ndash; Settings used for Well Segment Export
+
+<ul>
+<li><strong>Tubing Diameter</strong> &ndash; The diameter used in the <em>WELSEGS</em> export of the laterals.</li>
+<li><strong>Open Hole Roughness Factor</strong> &ndash; Exported directly to the <em>WELSEGS</em> keyword.</li>
+<li><strong>Tubing Roughness Factor</strong> &ndash; Exported directly to the <em>WELSEGS</em> keyword.</li>
+<li><strong>ICDs per Sub</strong> &ndash; The number of ICD (valves) per Sub, used for calculation of total ICD area for <em>WSEGVALV</em> export.</li>
+<li><strong>ICD Orifice Diameter</strong> &ndash; The Diameter of the ICD, used for calculation of ICD area for <em>WSEGVALV</em> export.</li>
+<li><strong>ICD Flow Coefficient</strong> &ndash; The flow coefficient, exported directly as a part of <em>WSEGVALV</em>.</li>
+</ul></li>
+</ul>
 
 <h3 id="import-well-trajectories-as-fishbones-laterals">Import Well Trajectories as Fishbones Laterals</h3>
 
@@ -2234,20 +2269,32 @@ For multi-segment wells there are additional parameters which should be set. The
 
 <p><img src="/images/3d-main-window/FractureNonDarcyFlow.png" alt="" /></p>
 
-<p>Non-Darcy Flow is used to improve the computation of connection factors for cells penetrated by well pipes. A pre-computed D-factor can be set using <strong>User Defined D-factor</strong>. Selecting the option <strong>Compute D-factor</strong> displays the following set of properties:
-  - <strong>Inertial Coefficient</strong>
-    - <strong>User Defined</strong> &ndash; Beta-factor in Forcheimer units
-    - <strong>Use Fracture Beta Factor</strong> &ndash; Extract beta factor from the fracture template at the well intersection location. For transversal fractures, the conductivity is computed from the geometric average of fracture cells intersected by the fracture perforation length.
-  - <strong>Effective Permeability</strong>
-    - <strong>User Defined</strong> &ndash; Defines the permeability <em>Ke</em> in milliDarcy in the property <strong>Effective Permeability</strong>
-    - <strong>Use Fracture Conductivity</strong> &ndash; Extract conductivity from the fracture template at the well intersection location and scale with <strong>Relative Permeability</strong>. For transversal fractures, the conductivity is computed from the weighted average of fracture cells intersected by the fracture perforation length.
-  - <strong>Width</strong>
-    - <strong>User Defined</strong> &ndash; Defines the width of the fracture
-    - <strong>Use Fracture Width</strong> &ndash; Extract width from the fracture template at the well intersection location. For transversal fractures, the width is based on the weighted average of fracture cells intersected by the fracture perforation length.
-  - <strong>Relative Gas Density</strong>
-  - <strong>Gas Viscosity</strong>
-  - <strong>D Factor</strong> &ndash; Displays the computed value of the D factor. NOTE : For <em>transversal fractures</em>, the computed D factor is scaled by 1.2 to compensate for a different flow model
-  - <strong>D Factor Details</strong> &ndash; Displays the value of variables used to compute the D factor</p>
+<p>Non-Darcy Flow is used to improve the computation of connection factors for cells penetrated by well pipes. A pre-computed D-factor can be set using <strong>User Defined D-factor</strong>. Selecting the option <strong>Compute D-factor</strong> displays the following set of properties:</p>
+
+<ul>
+<li><strong>Inertial Coefficient</strong>
+
+<ul>
+<li><strong>User Defined</strong> &ndash; Beta-factor in Forcheimer units</li>
+<li><strong>Use Fracture Beta Factor</strong> &ndash; Extract beta factor from the fracture template at the well intersection location. For transversal fractures, the conductivity is computed from the geometric average of fracture cells intersected by the fracture perforation length.</li>
+</ul></li>
+<li><strong>Effective Permeability</strong>
+
+<ul>
+<li><strong>User Defined</strong> &ndash; Defines the permeability <em>Ke</em> in milliDarcy in the property <strong>Effective Permeability</strong></li>
+<li><strong>Use Fracture Conductivity</strong> &ndash; Extract conductivity from the fracture template at the well intersection location and scale with <strong>Relative Permeability</strong>. For transversal fractures, the conductivity is computed from the weighted average of fracture cells intersected by the fracture perforation length.</li>
+</ul></li>
+<li><strong>Width</strong>
+
+<ul>
+<li><strong>User Defined</strong> &ndash; Defines the width of the fracture</li>
+<li><strong>Use Fracture Width</strong> &ndash; Extract width from the fracture template at the well intersection location. For transversal fractures, the width is based on the weighted average of fracture cells intersected by the fracture perforation length.</li>
+</ul></li>
+<li><strong>Relative Gas Density</strong></li>
+<li><strong>Gas Viscosity</strong></li>
+<li><strong>D Factor</strong> &ndash; Displays the computed value of the D factor. NOTE : For <em>transversal fractures</em>, the computed D factor is scaled by 1.2 to compensate for a different flow model</li>
+<li><strong>D Factor Details</strong> &ndash; Displays the value of variables used to compute the D factor</li>
+</ul>
 
 <h4 id="ellipse-fracture-template">Ellipse Fracture Template</h4>
 
@@ -3697,20 +3744,20 @@ For multi-segment wells there are additional parameters which should be set. The
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561469271"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561469271"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561469271"></script>
-    <script src="/js/jquery.sticky.js?1561469271"></script>
-    <script src="/js/featherlight.min.js?1561469271"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561469271"></script>
-    <script src="/js/highlight.pack.js?1561469271"></script>
+    <script src="/js/clipboard.min.js?1561541977"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561541977"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561541977"></script>
+    <script src="/js/jquery.sticky.js?1561541977"></script>
+    <script src="/js/featherlight.min.js?1561541977"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561541977"></script>
+    <script src="/js/highlight.pack.js?1561541977"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561469271"></script>
-    <script src="/js/learn.js?1561469271"></script>
-    <script src="/js/hugo-learn.js?1561469271"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561541977"></script>
+    <script src="/js/learn.js?1561541977"></script>
+    <script src="/js/hugo-learn.js?1561541977"></script>
 
-    <link href="/mermaid/mermaid.css?1561469271" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561469271"></script>
+    <link href="/mermaid/mermaid.css?1561541977" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561541977"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

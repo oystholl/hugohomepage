@@ -235,7 +235,7 @@ Memory Indicator The tools are available from the memory indicator in the bottom
       
       <guid>http://ceesol.no/3d-main-window/results/resultcolorlegend/</guid>
       <description>The color mapping of the displayed cell result is controlled by the Color Legend located below a result node in the Project Tree. The legend can be shown or hidden by checking or unchecking the box in front of the Legend Definition.
- Number of levels &amp;ndash; Defines the number of tick marks displayed next to the color legend Significant digits &amp;ndash; Defines the number of significant digits in the number formatting Number format &amp;ndash; Defines how the numbers are formatted Colors &amp;ndash; Defines the color palette</description>
+ Number of levels &amp;ndash; Defines the number of tick marks displayed next to the color legend Significant digits &amp;ndash; Defines the number of significant digits in the number formatting Number format &amp;ndash; Defines how the numbers are formatted Colors &amp;ndash; Defines the color palette Mapping &amp;ndash; This option defines how the values are mapped onto the color distribution  Discrete Linear &amp;ndash; Legend divided into linear levels defined by Number of levels Continuous Linear &amp;ndash; Continuous linear legend with tick mark count defined by Number of levels Continuous Logarithmic &amp;ndash; Continuous logarithmic legend with tick mark count defined by Number of levels Discrete Logarithmic &amp;ndash; Logarithmic legend divided into levels defined by Number of levels Category &amp;ndash; Special legend with one level for each category, either integer values or formation names.</description>
     </item>
     
     <item>
@@ -315,7 +315,8 @@ Command List Case Control Commands  openProject closeProject setStartDir loadCas
       
       <guid>http://ceesol.no/3d-main-window/wells-and-completions/createnewwellpaths/</guid>
       <description>ResInsight lets the user create new/custom well paths by clicking in the 3D view. A self created well path will behave the same way as an ordinary imported well path.
-To create a well path: 1. Right click Wells in the project tree 2. Select Create Well Path in the context menu. A new well node and a well targets node are created. 3. Click in the 3D view on locations where the well path will pass (targets).</description>
+To create a well path:
+ Right click Wells in the project tree Select Create Well Path in the context menu. A new well node and a well targets node are created. Click in the 3D view on locations where the well path will pass (targets).</description>
     </item>
     
     <item>
@@ -336,7 +337,8 @@ You can do this by using the command Export Visible Cells as FLUXNUM/MULTNUM fou
       
       <guid>http://ceesol.no/3d-main-window/gridstatisticsdialog/</guid>
       <description>ResInsight 3D Views has an info box in the upper right corner displaying statistics for the current view. A more detailed version of this information may also be displayed in a separate dialog window. Right click on the 3D view background and select Grid Statistics to bring up the dialog.
-Grid Statistics Dialog Fields The dialog consist of three information parts. - Info text - Histogram - Cumulative Histogram</description>
+Grid Statistics Dialog Fields The dialog consist of three information parts.
+ Info text Histogram Cumulative Histogram  Info Text The Info Text field shows general info about the case, the selected results, and some statistics.</description>
     </item>
     
     <item>
@@ -346,7 +348,8 @@ Grid Statistics Dialog Fields The dialog consist of three information parts. - I
       
       <guid>http://ceesol.no/3d-main-window/customization/keyboardshortcuts/</guid>
       <description>ResInsight supports a selection of Keyboard Shortcuts for convenience. These include Delete for removing deletable items from the project tree, Ctrl-Alt-A for Zoom All and Ctrl-Alt-S/N/W/E/D/U for changing the camera view to South, North, West, East, Down and Up respectively.
-Other available keyboard shortcuts are - Ctrl-Shift-P for opening up the plot window when you are in the 3d View - Ctrl-Shift-3 for opening up the 3d View while you are in the Plot Window - Ctrl-X for Cut and Ctrl-V for Paste of project tree items where this functionality is available.</description>
+Other available keyboard shortcuts are
+ Ctrl-Shift-P for opening up the plot window when you are in the 3d View Ctrl-Shift-3 for opening up the 3d View while you are in the Plot Window Ctrl-X for Cut and Ctrl-V for Paste of project tree items where this functionality is available.</description>
     </item>
     
     <item>
@@ -538,7 +541,8 @@ All the tagged cell faces are then compared to the faults possibly imported from
       <guid>http://ceesol.no/3d-main-window/wells-and-completions/completionslgr/</guid>
       <description>ResInsight supports creating and exporting LGRs (Local Grid Refinement) in main grid cells intersected by completions.
 Create Temporary LGRs To create temporary LGR(s), first select one or more well paths in the project tree, right click and select &amp;lsquo;Create Temporary LGR&amp;rsquo;. This command brings up the following dialog.
-The dialog contains several input fields - Source Case &amp;ndash; The source case/grid - Time Step &amp;ndash; The time step to use - Fractures, Fishbones, Perforations &amp;ndash; Check boxes to control which completion types to create LGRs for - Split Type &amp;ndash; Three options controlling how the LGRs will be created - LGR Per Cell &amp;ndash; One LGR is created for each main grid cell intersected by completions of the selected type - LGR Per Completion &amp;ndash; One LGR is created for each completion of the selected types.</description>
+The dialog contains several input fields
+ Source Case &amp;ndash; The source case/grid Time Step &amp;ndash; The time step to use Fractures, Fishbones, Perforations &amp;ndash; Check boxes to control which completion types to create LGRs for Split Type &amp;ndash; Three options controlling how the LGRs will be created  LGR Per Cell &amp;ndash; One LGR is created for each main grid cell intersected by completions of the selected type LGR Per Completion &amp;ndash; One LGR is created for each completion of the selected types.</description>
     </item>
     
     <item>

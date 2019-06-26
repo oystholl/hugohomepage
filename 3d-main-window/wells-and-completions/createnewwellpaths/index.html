@@ -12,18 +12,18 @@
     <title>Create Well Paths :: ResInsight</title>
 
     
-    <link href="/css/nucleus.css?1561469271" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1561469271" rel="stylesheet">
-    <link href="/css/hybrid.css?1561469271" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1561469271" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1561469271" rel="stylesheet">
-    <link href="/css/auto-complete.css?1561469271" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1561469271" rel="stylesheet">
-    <link href="/css/theme.css?1561469271" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1561469271" rel="stylesheet">
+    <link href="/css/nucleus.css?1561541977" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561541977" rel="stylesheet">
+    <link href="/css/hybrid.css?1561541977" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561541977" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561541977" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561541977" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561541977" rel="stylesheet">
+    <link href="/css/theme.css?1561541977" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561541977" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1561469271"></script>
+    <script src="/js/jquery-3.3.1.min.js?1561541977"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -1772,6 +1772,16 @@
 
 
     
+    <section id="footer">
+      <a href="https://www.ceetronsolutions.com">Ceetron Solutions</a>
+<p>in collaboration with</p>
+<a href="https://www.equinor.com">Equinor ASA</a>
+<br><br>
+<a href="http://ceesol.no/project/support">Support</a>
+<br><br>
+<p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
   </div>
 </nav>
 
@@ -1869,26 +1879,35 @@
 
 <p>ResInsight lets the user create new/custom well paths by clicking in the 3D view. A self created well path will behave the same way as an ordinary imported well path.</p>
 
-<p>To create a well path:
-1. Right click <strong>Wells</strong> in the project tree
-2. Select <strong>Create Well Path</strong> in the context menu. A new well node and a well targets node are created.
-3. Click in the 3D view on locations where the well path will pass (targets). Note. A 3D object must be hit when clicking. Clicking in thin air will not work.
-4. When finished placing targets, click on &ldquo;Stop Picking Targets&rdquo; in the property editor</p>
+<p>To create a well path:</p>
+
+<ol>
+<li>Right click <strong>Wells</strong> in the project tree</li>
+<li>Select <strong>Create Well Path</strong> in the context menu. A new well node and a well targets node are created.</li>
+<li>Click in the 3D view on locations where the well path will pass (targets). Note. A 3D object must be hit when clicking. Clicking in thin air will not work.</li>
+<li>When finished placing targets, click on &ldquo;Stop Picking Targets&rdquo; in the property editor</li>
+</ol>
 
 <p><img src="/images/3d-main-window/WellTargetsTree.png" alt="" /></p>
 
 <p><img src="/images/3d-main-window/WellTargetsPropertyEditor.png" alt="" /></p>
 
-<p>Well targets property editor fields
-- <strong>UTM Reference Point</strong> - Reference point. Defaults to the first target point clicked
-- <strong>MDRKB at First Target</strong> - Define MD (referenced to Rotary Kelly Bushing) at first target point. Applies to well path export only.
-- <strong>Well Targets:</strong> List of targets. Will have pink background when in picking state.
-  - <strong>Point</strong> - Target position relative to reference point
-  - <strong>DL in</strong> - Dog leg inwards. Unit: Degrees/30m
-  - <strong>DL out</strong> - Dog leg outwards. Unit: Degrees/30m
-  - <strong>Dir</strong> - Check box for overriding well path auto calculated directions
-  - <strong>Azi (deg)</strong> - Azimuth. Y axis is 0 degrees
-  - <strong>Inc (deg)</strong> - Inclination. Z axis is 0 degrees</p>
+<p>Well targets property editor fields</p>
+
+<ul>
+<li><strong>UTM Reference Point</strong> - Reference point. Defaults to the first target point clicked</li>
+<li><strong>MDRKB at First Target</strong> - Define MD (referenced to Rotary Kelly Bushing) at first target point. Applies to well path export only.</li>
+<li><strong>Well Targets:</strong> List of targets. Will have pink background when in picking state.
+
+<ul>
+<li><strong>Point</strong> - Target position relative to reference point</li>
+<li><strong>DL in</strong> - Dog leg inwards. Unit: Degrees/30m</li>
+<li><strong>DL out</strong> - Dog leg outwards. Unit: Degrees/30m</li>
+<li><strong>Dir</strong> - Check box for overriding well path auto calculated directions</li>
+<li><strong>Azi (deg)</strong> - Azimuth. Y axis is 0 degrees</li>
+<li><strong>Inc (deg)</strong> - Inclination. Z axis is 0 degrees</li>
+</ul></li>
+</ul>
 
 <p>A self created well path may be edited by either editing coordinates in the property editor or clicking and dragging targets in the 3D view.</p>
 
@@ -3249,20 +3268,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1561469271"></script>
-    <script src="/js/perfect-scrollbar.min.js?1561469271"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1561469271"></script>
-    <script src="/js/jquery.sticky.js?1561469271"></script>
-    <script src="/js/featherlight.min.js?1561469271"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1561469271"></script>
-    <script src="/js/highlight.pack.js?1561469271"></script>
+    <script src="/js/clipboard.min.js?1561541977"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561541977"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561541977"></script>
+    <script src="/js/jquery.sticky.js?1561541977"></script>
+    <script src="/js/featherlight.min.js?1561541977"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561541977"></script>
+    <script src="/js/highlight.pack.js?1561541977"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1561469271"></script>
-    <script src="/js/learn.js?1561469271"></script>
-    <script src="/js/hugo-learn.js?1561469271"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561541977"></script>
+    <script src="/js/learn.js?1561541977"></script>
+    <script src="/js/hugo-learn.js?1561541977"></script>
 
-    <link href="/mermaid/mermaid.css?1561469271" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1561469271"></script>
+    <link href="/mermaid/mermaid.css?1561541977" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561541977"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

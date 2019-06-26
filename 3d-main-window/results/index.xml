@@ -28,7 +28,7 @@ Cell Results are used in several operations and settings:
       
       <guid>http://ceesol.no/3d-main-window/results/resultcolorlegend/</guid>
       <description>The color mapping of the displayed cell result is controlled by the Color Legend located below a result node in the Project Tree. The legend can be shown or hidden by checking or unchecking the box in front of the Legend Definition.
- Number of levels &amp;ndash; Defines the number of tick marks displayed next to the color legend Significant digits &amp;ndash; Defines the number of significant digits in the number formatting Number format &amp;ndash; Defines how the numbers are formatted Colors &amp;ndash; Defines the color palette</description>
+ Number of levels &amp;ndash; Defines the number of tick marks displayed next to the color legend Significant digits &amp;ndash; Defines the number of significant digits in the number formatting Number format &amp;ndash; Defines how the numbers are formatted Colors &amp;ndash; Defines the color palette Mapping &amp;ndash; This option defines how the values are mapped onto the color distribution  Discrete Linear &amp;ndash; Legend divided into linear levels defined by Number of levels Continuous Linear &amp;ndash; Continuous linear legend with tick mark count defined by Number of levels Continuous Logarithmic &amp;ndash; Continuous logarithmic legend with tick mark count defined by Number of levels Discrete Logarithmic &amp;ndash; Logarithmic legend divided into levels defined by Number of levels Category &amp;ndash; Special legend with one level for each category, either integer values or formation names.</description>
     </item>
     
     <item>

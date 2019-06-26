@@ -28,7 +28,8 @@ Several views can be added to the same case by right-clicking the case or a view
       
       <guid>http://ceesol.no/3d-main-window/gridstatisticsdialog/</guid>
       <description>ResInsight 3D Views has an info box in the upper right corner displaying statistics for the current view. A more detailed version of this information may also be displayed in a separate dialog window. Right click on the 3D view background and select Grid Statistics to bring up the dialog.
-Grid Statistics Dialog Fields The dialog consist of three information parts. - Info text - Histogram - Cumulative Histogram</description>
+Grid Statistics Dialog Fields The dialog consist of three information parts.
+ Info text Histogram Cumulative Histogram  Info Text The Info Text field shows general info about the case, the selected results, and some statistics.</description>
     </item>
     
     <item>
