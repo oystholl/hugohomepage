@@ -78,13 +78,16 @@
         </a>
         </li>
       {{end}}
-      
-      {{ if $showvisitedlinks}}
+
+        {{ if $showvisitedlinks}}
         <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> {{T "Clear-History"}}</a></li>
-      {{ end }}
+        {{ end }}
       </ul>
     </section>
     {{ end }}
+    <section id="footer">
+      {{ partial "menu-footer.html" . }}
+    </section>
   </div>
 </nav>
 
