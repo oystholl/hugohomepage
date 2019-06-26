@@ -12,7 +12,6 @@ The color mapping of the displayed cell result is controlled by the **Color Lege
 - **Significant digits** -- Defines the number of significant digits in the number formatting
 - **Number format** -- Defines how the numbers are formatted
 - **Colors** -- Defines the color palette
-
 - **Mapping** -- This option defines how the values are mapped onto the color distribution
   - **Discrete Linear** -- Legend divided into linear levels defined by **Number of levels**
   - **Continuous Linear** -- Continuous linear legend with tick mark count defined by **Number of levels**

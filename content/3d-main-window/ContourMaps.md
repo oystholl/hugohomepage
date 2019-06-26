@@ -33,6 +33,7 @@ A contour Map has many of the same options available as a 3D View, but is always
 The Map Projection settings control how the 3D Data is aggregated onto the 2D plane. In all cases the results are calculated for a square 2D Cell lying in an arbitrary z-plane of the 3D Grid. For each 2D cell a cuboid extrusion in the full bounding extent of the 3D grid is created and this cuboid extrusion is used to calculate the volume of intersection with the 3D Grid cells for all volume weighted sums and averages. For the regular sums, a vertical ray through the center of the 2D cell is used instead. Since the ray may travel through multiple cells in the same K-layer, all the values from within one K-layer are averaged before being added to the sum.
 
 A set of parameters governs this projection:
+
 - The first option **Sample Spacing Factor** controls how many 2D Grid Cells are used in the map. The factor is multiplied by the characteristic cell length/width of the 3D grid to get the 2D Cell Size. A smaller factor will thus create a finer Contour Map. 
 - The second option **Show Contour Lines** toggles on/off the contour lines in the view.
 - The final control in the **Projection Settings** box is the **Result Aggregation**. Here the following options are available:

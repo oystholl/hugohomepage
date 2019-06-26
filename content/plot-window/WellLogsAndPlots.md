@@ -111,6 +111,7 @@ To change data source for some curves, select the curves you wish to change sour
 ![]({{< relref "" >}}images/plot-window/WellLogExtractionChangeDataSource.png)
 
 In both cases, the following parameters are available to change:
+
 - **Case** -- Applies the selected case to all the curves.
 - **Trajectory Type** -- Sets whether to use Simulation Wells or Well Paths as a data source for all curves.
 - **Well Name** -- Applies this well path to all the curves.

@@ -12,6 +12,7 @@ from the project tree, **Ctrl-Alt-A** for Zoom All and **Ctrl-Alt-S/N/W/E/D/U** 
 ![]({{< relref "" >}}images/3d-main-window/KeyboardPlot.png)
 
 Other available keyboard shortcuts are
+
 - **Ctrl-Shift-P** for opening up the plot window when you are in the 3d View 
 - **Ctrl-Shift-3** for opening up the 3d View while you are in the Plot Window
 - **Ctrl-X** for Cut and **Ctrl-V** for Paste of project tree items where this functionality is available.

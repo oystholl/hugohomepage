@@ -14,6 +14,7 @@ To create temporary LGR(s), first select one or more well paths in the project t
 ![]({{< relref "" >}}images/3d-main-window/TemporaryLgrDialog.png)
 
 The dialog contains several input fields
+
 - **Source Case** -- The source case/grid
 - **Time Step** -- The time step to use
 - **Fractures, Fishbones, Perforations** -- Check boxes to control which completion types to create LGRs for

@@ -83,6 +83,7 @@ Open Simulation Wells will be drawn with a slightly larger radius than closed we
 - **Individual Pipe Colors** - Select how each pipe will be colored.
 
 The **Individual Pipe Color** setting has two different options:
+
 - **Unique Colors** -- Selecting this will apply unique colors from a pre-defined color palette to all the wells, overwriting the colors they had.
 - **Uniform Default Color** -- Selecting this will apply the same color (made available in the **Uniform Well Color** option to all simulation wells.
 

@@ -32,15 +32,17 @@ Examples on how command line options are used are given [below]({{< relref "comm
 See also the [Regression Test System ]({{< relref "regressiontestsystem" >}}) for a more in-depth explanation.
 
 {{% notice note %}}
-<h5>Reduce project load time using <code>--replaceSourceCases</code></h5>
-  
+<b>Reduce project load time using <code>--replaceSourceCases</code></b>
+ <br>
 ResInsight stores data computed by statistics calculation in a cache file. When a project file is loaded, data from this cache is also imported. For large cases, the cached data can be large. When replacing source cases during batch, this data is never used and can be removed from the cache using the following workaround:
-<ul>
-  <li>Open the project file used to produce statistics</li>
-  <li>Select the statistics object in the project tree</li>
-  <li>Click the button <b>Edit (Will DELETE current result)</b></li>
-  <li>Save the project file</li>
-</ul> 
+<br>
+  - Open the project file used to produce statistics
+  <br>
+  - Select the statistics object in the project tree
+  <br>
+  - Click the button <b>Edit (Will DELETE current result)</b>
+  <br>
+  - Save the project file 
 {{% /notice %}}
 
 ## Usage Examples 

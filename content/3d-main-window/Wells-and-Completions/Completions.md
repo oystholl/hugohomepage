@@ -41,7 +41,8 @@ A new perforation interval on a well can be set up by right-clicking on the well
 
 ![]({{< relref "" >}}images/3d-main-window/PerforationIntervals_propEditor.png)
 
-After creating the perforation interval, the following properties of the perforation can be set in the property editor: 
+After creating the perforation interval, the following properties of the perforation can be set in the property editor:
+
 - **Start MD**, **End MD** -- Measured depth along the well path for the perforation to start/stop. 
 - **Diameter** -- Diameter of the perforation, used in calculation of transmissibility ( For details on the transmissibility calculation, see [Transmissibility Calculations]({{< relref "completionexport" >}}#transmissibility-calculations)). 
 - **Skin Factor** -- Skin factor for the perforation, used in calculation of transmissibility. 
@@ -97,6 +98,7 @@ Each Valve require a **Valve Template** containing properties which can be share
 ![]({{< relref "" >}}images/3d-main-window/NewValveWithoutTemplate.png)  
 
 This will create a new **Valve Template** which can be of three different types:
+
 - **ICD** - In-flow Control Device, allowing the setting of **Orifice Diameter** and **Flow Coefficient**. ICDs are displayed in Orange.
 - **AICD** - Autonomous In-flow Control Device, providing several more parameters associated with the Eclipse simulation and seen in the picture below. AICDs are displayed in Dark Purple.
 - **ICV** - Interval Control Valves. Contains the same parameters as ICDs. The difference between the two in ResInsight is that many ICDs can be added at the same time, while there is only expected to be one ICV per perforation interval. ICVs are displayed in Pink.
@@ -190,6 +192,7 @@ To add new fishbones completions, select the **New Fishbones Subs Definition** c
 The new **Fishbones Subs Definition** (a group of fishbone subs) is created in the Project tree. Several subs definitions can be created on the same well trajectory to give more flexibility in placing of the fishbones. The default sub definition is based on the Fishbones Drilling System with 3 laterals exiting per sub in a 8 1/2" main bore. 
 
 ![]({{< relref "" >}}images/3d-main-window/Fishbones_SubDefPropEdit.png)
+
 - **Appearance**
   - **Fishbones Color** -- The 3D View color of the fishbones created by this definition
 - **Location** -- Options to control the position and number of fishbone subs created by this definition
@@ -299,6 +302,7 @@ To create a new fracture template, right-click the **Fracture Template** item in
 ![]({{< relref "" >}}images/3d-main-window/FractureNonDarcyFlow.png)
 
 Non-Darcy Flow is used to improve the computation of connection factors for cells penetrated by well pipes. A pre-computed D-factor can be set using **User Defined D-factor**. Selecting the option **Compute D-factor** displays the following set of properties:
+  
   - **Inertial Coefficient** 
     - **User Defined** -- Beta-factor in Forcheimer units
     - **Use Fracture Beta Factor** -- Extract beta factor from the fracture template at the well intersection location. For transversal fractures, the conductivity is computed from the geometric average of fracture cells intersected by the fracture perforation length.

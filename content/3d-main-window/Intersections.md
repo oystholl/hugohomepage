@@ -101,10 +101,12 @@ The points in the list can be deleted and edited using the keyboard. To append m
 The points in the list can be copied to clipboard using **CTRL-C** when keyboard focus is inside the point list. A new list of points can be pasted into the point list by using **CTRL-V**.
 
 When two points are picked, a plane between the points will appear in the 3D view, with a 90 degrees **Dip**, and the **Azimuth** angle calculated from the two points. The two angles can be edited in the **Property Editor** of the intersection, and is defined by the following:
+
 - **Dip** is the angle between the horizontal plane and down. 
 - **Azimuth** is the angle between North and the plane. Changing the azimuth will rotate the plane about the first point picked in the 3D view.
 
 The length of the plane can also be set manually in the **Property Editor**.
+
 - **Length Up** is the distance from the user defined horizontal line, to the top of the plane intersecting the model.
 - **Length Down** is the distance from the user defined horizontal line, to the bottom of the plane intersecting the model.
 
@@ -127,8 +129,6 @@ Scales along the edges of the view show the depth and the horizontal length of t
 The view is mostly controlled by the options in the 3D view where the intersection is defined. There are, however some independent controls, like drawstyle, timestep and Z-scale.
 
 ![]({{< relref "" >}}images/3d-main-window/2DIntersectionViewProperties.png)
-
-
 
 - **Viewer**
   - **Name** -- User editable name of the view. The default name is set by combining the name of the origin view and the intersection name.

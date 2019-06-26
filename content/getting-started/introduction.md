@@ -29,6 +29,7 @@ ResInsight can also be built with support for Geomechanical models from ABAQUS i
 
 ### Updating and Refining Eclipse simulation models
 ResInsight contains several pre-processing tools for updating and improving Eclipse reservoir models, including but not limited to:
+
 - Adding **Well Path Completions** such as fractures, fishbones and perforations to well paths, including transmissibility calculations to allow for simulation in Eclipse.
 - Easily and visually generate setup files for **Local Grid Refinement** (LGR)
 - The generation of Eclipse **Multi Segment Well**-models for well path completions.

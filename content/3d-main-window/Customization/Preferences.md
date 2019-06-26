@@ -28,6 +28,7 @@ This group contains the colors that will be applied to the 3D views.
 ### Default Font Sizes
 
 This group contains the different fonts which are used through ResInsight.
+
 - **Viewer Font Size** -- The fonts used for axes labels, legends and info boxes in the 3d View.
 - **Annotation Font Size** -- The font used as default for Text Annotations.
 - **Well Label Font Size** -- The font used for all Well Path labels.

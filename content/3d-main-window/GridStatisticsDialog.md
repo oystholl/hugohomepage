@@ -10,6 +10,7 @@ ResInsight 3D Views has an [info box]({{< relref "reservoirviews" >}}#info-box) 
 
 ## Grid Statistics Dialog Fields
 The dialog consist of three information parts.
+
 - Info text
 - Histogram
 - Cumulative Histogram
@@ -19,6 +20,7 @@ The Info Text field shows general info about the case, the selected results, and
 
 ### Histogram
 The histogram shows a histogram of the complete time series of the currently loaded Cell Result together with:
+
 - The mean value ( a blue line )
 - P10 and P90 ( red lines )
 
