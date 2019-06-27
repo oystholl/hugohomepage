@@ -16,7 +16,7 @@ The following file types are supported:
 
 - RSM observed time history data file (_\*.rsm_)
 - Column based (Comma Separated Values, CSV) time history data file (_\*.csv/\*.txt_)
-The imported {{< image-in-text src="/images/import/Default.png" >}} Observed Time History Data files will be added to {{< image-in-text src="/images/import/Folder.png" >}} **Observed Time History Data**. 
+The imported {{< image-in-text src="images/import/Default.png" >}} Observed Time History Data files will be added to {{< image-in-text src="images/import/Folder.png" >}} **Observed Time History Data**. 
 
 Which summaries that has been detected in a Observed Time History Data file can be read in an Observed Time History Data's **Property Editor**. In the image below, time and year info has been found together with the summary "WBP9L" for the well "OP-1".
 

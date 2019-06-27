@@ -53,15 +53,15 @@ The default result mapping used on faults are to use the same as specified in **
 ### Toolbar Control
 Visualization mode and mesh lines can be controlled from the toolbar.
 
-- {{< image-in-text src="/images/3d-main-window/draw_style_faults_24x24.png" >}}**Faults-Only** visualization mode. 
+- {{< image-in-text src="images/3d-main-window/draw_style_faults_24x24.png" >}}**Faults-Only** visualization mode. 
    <br>When turned on, this option hides all the grid cells, and shows only the fault faces in the reservoir limited by the applied range and property filters. (Unless **Show faults outside filters** are turned on. See below.)
-- {{< image-in-text src="/images/3d-main-window/draw_style_surface_24x24.png" >}} Turns faces on and mesh off
-- {{< image-in-text src="/images/3d-main-window/draw_style_surface_w_fault_mesh_24x24.png" >}} Turns on all faces, and shows mesh lines on faults only.
+- {{< image-in-text src="images/3d-main-window/draw_style_surface_24x24.png" >}} Turns faces on and mesh off
+- {{< image-in-text src="images/3d-main-window/draw_style_surface_w_fault_mesh_24x24.png" >}} Turns on all faces, and shows mesh lines on faults only.
    <br> This is a useful method to highlight the faults in your reservoir, because the faults stands out with black outlining. 
-- {{< image-in-text src="/images/3d-main-window/draw_style_faults_label_24x24.png" >}} Shows labels for faults  
+- {{< image-in-text src="images/3d-main-window/draw_style_faults_label_24x24.png" >}} Shows labels for faults  
 
 ### Faults Properties
-By clicking the {{< image-in-text src="/images/3d-main-window/draw_style_faults_24x24.png" >}} **Faults** item in the **Project Tree**, the following options common to all the faults are displayed: 
+By clicking the {{< image-in-text src="images/3d-main-window/draw_style_faults_24x24.png" >}} **Faults** item in the **Project Tree**, the following options common to all the faults are displayed: 
 
  ![]({{< relref "" >}}images/3d-main-window/FaultProperties.png)
  

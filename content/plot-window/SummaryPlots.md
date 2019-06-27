@@ -8,7 +8,7 @@ weight = 10
 
 A Summary Plot is a window displaying a graph in the main area of the **Plot Main Window**. It can contain Summary Curves, Grid time history curves and pasted ascii curves ( See below ).
 
-A new plot can be created by using the context menu of a plot selecting {{< image-in-text src="/images/plot-window/SummaryPlot16x16.png" >}} **New Summary Plot**. The [Summary Plot Editor]({{< relref "summaryploteditor" >}}) dialog will then open.
+A new plot can be created by using the context menu of a plot selecting {{< image-in-text src="images/plot-window/SummaryPlot16x16.png" >}} **New Summary Plot**. The [Summary Plot Editor]({{< relref "summaryploteditor" >}}) dialog will then open.
 
 ## Plot Data
 
@@ -100,7 +100,7 @@ Most of the settings for the Plot itself is controlled by its sub items in the P
   - The closest curve.
   - Each of the Plot Axes.
   - The Plot itself if none of the above is hit and the Plot window is activated by the mouse click.
-- **Window Zoom** -- Window zoom is available by dragging the mouse when the left mouse button is pressed. Use {{< image-in-text src="/images/plot-window/ZoomAll16x16.png" >}} **Zoom All** to restore default zoom level.
+- **Window Zoom** -- Window zoom is available by dragging the mouse when the left mouse button is pressed. Use {{< image-in-text src="images/plot-window/ZoomAll16x16.png" >}} **Zoom All** to restore default zoom level.
 - **Wheel Zoom** -- The mouse wheel will zoom the plot in and out towards the current mouse cursor position.
 
 ### Accessing the Plot Data
@@ -114,7 +114,7 @@ It is also possible to save the ascii data to a file directly by using the conte
 
 ## Summary Curves
 
-Summary curves are normally created using the **Plot Editor** see [Summary Plot Editor]({{< relref "summaryploteditor" >}}), but can be created directly using the context menu in the **Main Plot Window Project Tree**. Right click a Summary Plot, the Summary Curves folder or an existing curve and select the command {{< image-in-text src="/images/plot-window/SummaryCurve16x16.png" >}} **New Summary Curve**.
+Summary curves are normally created using the **Plot Editor** see [Summary Plot Editor]({{< relref "summaryploteditor" >}}), but can be created directly using the context menu in the **Main Plot Window Project Tree**. Right click a Summary Plot, the Summary Curves folder or an existing curve and select the command {{< image-in-text src="images/plot-window/SummaryCurve16x16.png" >}} **New Summary Curve**.
 
 ![]({{< relref "" >}}images/plot-window/summary_curve_properties.png)
 

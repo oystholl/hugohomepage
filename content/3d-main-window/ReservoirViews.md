@@ -26,15 +26,15 @@ Grid appearance can be controlled from the **Property Editor** when a view is se
 
 Visibility of the grid box with labels displaying the coordinates for the reservoir can also be controlled using **Show Grid Box**. 
 
-### Cell Result {{< image-in-text src="/images/3d-main-window/CellResult.png" >}}
+### Cell Result {{< image-in-text src="images/3d-main-window/CellResult.png" >}}
 
-The **Cell Result** item defines which Eclipse or Geomechanical property the 3D View uses for the main cell color. The property can be chosen in the property panel of the **Cell Result** item. The mapping between cell values and color is defined by the **Legend Definition**{{< image-in-text src="/images/3d-main-window/Legend.png" >}} along with some appearance settings on the Legend itself. (Number format etc.)
+The **Cell Result** item defines which Eclipse or Geomechanical property the 3D View uses for the main cell color. The property can be chosen in the property panel of the **Cell Result** item. The mapping between cell values and color is defined by the **Legend Definition**{{< image-in-text src="images/3d-main-window/Legend.png" >}} along with some appearance settings on the Legend itself. (Number format etc.)
 
 Please refer to [Result Color Legend]({{< relref "resultcolorlegend" >}}) for details.
 
 
 
-### Range Filters {{< image-in-text src="/images/3d-main-window/CellFilter_Range.png" >}} and Property Filters {{< image-in-text src="/images/3d-main-window/CellFilter_Values.png" >}}
+### Range Filters {{< image-in-text src="images/3d-main-window/CellFilter_Range.png" >}} and Property Filters {{< image-in-text src="images/3d-main-window/CellFilter_Values.png" >}}
 
 
 In order to see different sets of cells, and cells inside the reservoir, Views use cell filters. Please refer to [Cell Filters]({{< relref "filters" >}}) to read more about them.
@@ -67,14 +67,14 @@ The **Histogram** shows a histogram of the complete time series of the currently
 The <b>Info Box</b> settings can be activated by clicking on the Info Text in the 3D view.
 {{% /notice %}}
 
-### Grids {{< image-in-text src="/images/3d-main-window/draw_style_meshlines_24x24.png" >}} 
+### Grids {{< image-in-text src="images/3d-main-window/draw_style_meshlines_24x24.png" >}} 
 
 ![]({{< relref "" >}}images/3d-main-window/ViewTreeGrids.png)
 
 The **Grids** node contains child nodes for **Main Grid**, **LGRs** and **Temporary LGRs** where each grid's visibilty can be controlled. The **LGRs** node contains all LGRs loaded from file, while **Temporary LGRs** contains all temporary LGRs (see [Completions LGR]({{< relref "completionslgr" >}})).
 Toggling **Grids** off will hide all grids cell geometry. This option is used to display geometry for faults and intersections. This feature is also available as a toolbutton called *Hide grid cells*.
 
-### Intersections {{< image-in-text src="/images/3d-main-window/CrossSections16x16.png" >}}
+### Intersections {{< image-in-text src="images/3d-main-window/CrossSections16x16.png" >}}
 Intersections are used to cut the geometry and show result values mapped onto this geometry.
 Please refer to [Intersections]({{< relref "intersections" >}}) for details.
 
@@ -84,7 +84,7 @@ Selected overlay items in the 3D view can activate a corresponding item in the *
 
 ## Eclipse-only features
 
-### Cell Edge Results {{< image-in-text src="/images/3d-main-window/EdgeResult_1.png" >}}
+### Cell Edge Results {{< image-in-text src="images/3d-main-window/EdgeResult_1.png" >}}
 
 ![]({{< relref "" >}}images/3d-main-window/CellEdgeExample.png)
 

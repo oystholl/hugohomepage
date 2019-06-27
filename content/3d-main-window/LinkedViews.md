@@ -10,7 +10,7 @@ One or more views can be linked together to allow some settings like camera posi
 
 ## Establish Linked Views
 
-To establish a link between views, select {{< image-in-text src="/images/3d-main-window/chain.png">}}**Link Visible Views** from the View toolbar. This will open a dialog where the Master View is selected. When pressing Ok in this dialog, the **Linked Views** items are displayed in the top of the **Project Tree**.
+To establish a link between views, select {{< image-in-text src="images/3d-main-window/chain.png">}}**Link Visible Views** from the View toolbar. This will open a dialog where the Master View is selected. When pressing Ok in this dialog, the **Linked Views** items are displayed in the top of the **Project Tree**.
 
 ![]({{< relref "" >}}images/3d-main-window/LinkedViewsInProjectTree.png)
 

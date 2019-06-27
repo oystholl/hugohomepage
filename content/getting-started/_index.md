@@ -16,7 +16,7 @@ ResInsight has two main windows. One for 3D related visualization, and one for 2
 
 #### Switching Between the Two Main Windows
 
-The two main windows has a toolbar button each, that directly opens and raises the other window. {{< image-in-text src="/images/getting-started/3DWindow24x24.png" >}}{{< image-in-text src="/images/getting-started/PlotWindow24x24.png" >}}
+The two main windows has a toolbar button each, that directly opens and raises the other window. {{< image-in-text src="images/getting-started/3DWindow24x24.png" >}}{{< image-in-text src="images/getting-started/PlotWindow24x24.png" >}}
 
 Each of the windows can also be closed freely, but if both are closed, ResInsight exits.
 
@@ -63,7 +63,7 @@ Commands to arrange the windows in the standard ways are available from the **Wi
 
 Most of the settings and features of ResInsight is accessible through the **Project Tree** and the **Property Editor**. Selecting an item in the **Project Tree** activates the corresponding Window, and shows the item properties in the **Property Editor** available for editing. 
 
-Toggling a checkbox next to an item in the **Project Tree** will toggle visibility in the window. Toggling a checkbox for a collection of items will affect the visibility for all items in the collection. {{< image-in-text src="/images/getting-started/TreeViewToggle.png" >}}
+Toggling a checkbox next to an item in the **Project Tree** will toggle visibility in the window. Toggling a checkbox for a collection of items will affect the visibility for all items in the collection. {{< image-in-text src="images/getting-started/TreeViewToggle.png" >}}
 
 Context menu commands are also available to do special operations on a selected set of items.
 
@@ -77,26 +77,26 @@ A *Case* in ResInsight means a Grid model with a particular set of results or pr
 #### Eclipse Cases
 There are three different Eclipse Case types: 
 
-##### Result Case {{< image-in-text src="/images/getting-started/Case24x24.png" >}}
+##### Result Case {{< image-in-text src="images/getting-started/Case24x24.png" >}}
 This is a Case based on the results of an Eclipse simulation, read from a grid file together with static and restart data. Multiple Cases can be selected and read from a folder.
 
-##### Input Case {{< image-in-text src="/images/getting-started/EclipseInput24x24.png" >}}
+##### Input Case {{< image-in-text src="images/getting-started/EclipseInput24x24.png" >}}
 This Case type is based on a _`*.GRDECL`_ file, or a part of an Eclipse *Input* file. This Case type supports loading single ASCII files defining Eclipse Cell Properties, and also to export modified property sets to ASCII files.
 Each of the Eclipse properties are listed as separate entities in the **Project Tree**, and can be renamed and exported.
 See [ Grid Import and Property Export ]({{< relref "gridimportexport" >}})
 
-#####  Statistics Case {{< image-in-text src="/images/getting-started/Histogram24x24.png" >}}
+#####  Statistics Case {{< image-in-text src="images/getting-started/Histogram24x24.png" >}}
 This is a Case type that belongs to a *Grid Case Group* and makes statistical calculations based on the source cases in the Grid Case Group. See [ Grid Case Groups and Statistics ]({{< relref "casegroupsandstatistics" >}}).
 
-##### Summary Case {{< image-in-text src="/images/getting-started/SummaryCase24x24.png" >}}
+##### Summary Case {{< image-in-text src="images/getting-started/SummaryCase24x24.png" >}}
 
 This is the case type listed in the Plot Main Window, and represents an _`*.SMSPEC`_ file. These Cases are available for Summary Plotting. See [ Summary Plots ]({{< relref "summaryplots" >}}).
  
-#### Geomechanical cases {{< image-in-text src="/images/getting-started/GeoMechCase24x24.png" >}}
+#### Geomechanical cases {{< image-in-text src="images/getting-started/GeoMechCase24x24.png" >}}
 
-There are only one type of geomechanical cases, namely the ABAQUS-odb case type. The geomechanical cases are sorted into its own folder in the project tree named **Geomechanical Models** {{< image-in-text src="/images/getting-started/GeoMechCases24x24.png" >}} as opposed to the **Grid Models** folder where the Eclipse cases and **Grid Case Groups** resides.
+There are only one type of geomechanical cases, namely the ABAQUS-odb case type. The geomechanical cases are sorted into its own folder in the project tree named **Geomechanical Models** {{< image-in-text src="images/getting-started/GeoMechCases24x24.png" >}} as opposed to the **Grid Models** folder where the Eclipse cases and **Grid Case Groups** resides.
 
-#### Grid Case Groups {{< image-in-text src="/images/getting-started/GridCaseGroup24x24.png" >}}
+#### Grid Case Groups {{< image-in-text src="images/getting-started/GridCaseGroup24x24.png" >}}
 
 A **Grid Case Group** is a group of Eclipse **Result Cases** with identical grids, but generally different active cells, initial values and results. These cases are called *Source Cases*. The purpose of a Grid Case group is to make it easy to calculate statistics across the source cases both for static and dynamic Eclipse Properties. See [ Grid Case Groups and Statistics ]({{< relref "casegroupsandstatistics" >}}).
 
